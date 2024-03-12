@@ -25,9 +25,5 @@ about:
 The NASCENT-PERU project is centered around developing normative, nature positive scenarios for future landscape development in Peru and assessing their impacts on land use and land cover (LULC), biodiversity, and ecosystem services (BES) from 2020 to 2060. The scenarios will be developed through an inclusive participatory process with a cross-section of Peruvian stakeholders, employing the IPBES Nature Futures Framework to encourage a shift beyond typical exploratory trends such as ‘Business as Usual’ to envisage future landscapes that meet the needs of society, support cultural values and preserve nature. Building upon the approach of the ValPar.CH project, quantitative simulation modelling along with economic analysis will be leveraged to identify trade-offs and synergies in BES outcomes, to inform an ongoing dialogue regarding the desirability and feasibility of the different scenario goals.
 
 
-```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
-</div>
-```
+
 
