@@ -23,8 +23,8 @@ website:
         href: impressions/index.qmd
       - text: "Glossary"
         href: glossary/index.qmd
-      - text: "Contact"
-        href: contact/index.qmd
+      - text: "About"
+        href: about/index.qmd
     
     # your social media handles
     right:

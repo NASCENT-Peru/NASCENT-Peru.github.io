@@ -2,7 +2,7 @@
 about:
   template: jolla
   id: about-block
-  image: "img/NASCENT_logo_horizontal.jpg"
+  image: "img/NASCENT_logo_horizontal_upscayl.png"
   image-shape: rectangle
   image-width: "100%"
   links:
