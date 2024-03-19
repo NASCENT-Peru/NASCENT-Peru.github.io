@@ -1,0 +1,77 @@
+# This file controls the settings for your Quarto template from www.marvinschmitt.com
+
+# website settings
+website:
+  title: "NASCENT-PERU"                             # Your name
+  description: "NAture-positive SCenarios for ENvironmental Transitions: Peru"   # A brief slogan (optional)
+  image: img/NASCENT_logo_vertical.jpg
+  
+  favicon: img/NASCENT_logo_no_text.jpg.png
+  
+  # start of the navigation bar at the top of the website
+  navbar:
+    background: "white"
+    foreground: "dark"
+    pinned: true
+    logo: /img/NASCENT_logo_no_text.jpg.png
+    
+    # your sub-pages
+    left:
+      - text: "Project"
+        href: project/index.qmd
+      - text: "Impressions"
+        href: impressions/index.qmd
+      - text: "Glossary"
+        href: glossary/index.qmd
+      - text: "About"
+        href: about/index.qmd
+    
+    # your social media handles
+    right:
+      - icon: github
+        href: https://github.com/blenback/NASCENT-Peru
+      - icon: mortarboard
+        href: https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/
+      - icon: envelope
+        aria-label: email
+        href: "mailto:bblack@ethz.ch"  
+  
+  
+
+# Don't touch unless you know what you are doing :) ------------
+  #search: 
+    #location: navbar
+    #type: textbox
+  #page-footer: 
+    #left: |
+      #<span class="faux-block">&#169; 2023 Marvin Schmitt CC BY-SA 4.0</span>
+    #center: |
+      #<span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">View the tutorial for this template!</a></span>
+    #right: |
+      #<span class="faux-block"><a href="https://github.com/marvinschmitt/quarto-website-template/">View source on GitHub</a></span>
+
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+execute:
+  freeze: true
+
+format:
+  html:
+    fontsize: 1.1em
+    theme: 
+      - pulse
+      - html/styles.scss
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
