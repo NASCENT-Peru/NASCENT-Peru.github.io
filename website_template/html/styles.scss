@@ -131,6 +131,7 @@ font-size: 1.6em !important;
 
 .portrait
 {
+border: 1px solid #e5e4e2;
 border-radius: 25%;
   width: 100%;
   height: 100%;
@@ -144,4 +145,24 @@ td {
 
 tr {
 	height: 130px;
+}
+
+summary {
+    font-size: 1.7em;
+}
+
+.glossimg {
+	height: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #e5e4e2;
+}
+
+body {
+  overflow-y: scroll; /* Show vertical scrollbar */
+}
+
+text{
+	font-size: 1.2em;
 }

@@ -8,24 +8,55 @@ The participatory stakeholder workshops form the basis for the development of th
 ## National Workshop Lima
 
 ::: {layout-ncol=2}
-
+<!--
 ![](gandalf_image_1.jpg)
 
 ![](gandalf_image_2.jpg)
+-->
+:::
+
+## Regional Workshop Coast
+
+::: {layout-ncol=2}
+<!--
+![](gandalf_image_1.jpg)
+
+![](gandalf_image_2.jpg)
+-->
+
 :::
 
 ## Regional Workshop Puerto Maldonado
 
 ::: {layout-ncol=2}
 
-![](gandalf_image_3.jpg)
+<!--
+![](gandalf_image_1.jpg)
 
-
-![](gandalf_image_4.jpg)
-
+![](gandalf_image_2.jpg)
+-->
 :::
 
+## Regional Workshop Huaraz
 
+::: {layout-ncol=2}
 
+<!--
+![](gandalf_image_1.jpg)
 
+![](gandalf_image_2.jpg)
+-->
+:::
+
+## Regional Workshop Northern Amazon
+
+::: {layout-ncol=2}
+
+<!--
+![](gandalf_image_1.jpg)
+
+![](gandalf_image_2.jpg)
+-->
+
+:::
 
