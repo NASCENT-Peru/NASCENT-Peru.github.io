@@ -1,0 +1,12 @@
+Quarto notes:
+
+
+- map & contact form from: https://affcom.ku.edu/contact.html
+
+- general nice design (maybe not suitable for our case): https://silviacanelon.com/about/
+
+- technical standard design: https://robjhyndman.com/research-team/ & https://quartoand.me/blog/ & https://rebeccabarter.com/blog
+	
+- darkmode: https://blog.damoncroberts.com/posts/quarto-website-creation/website_index
+
+- How not to design: https://robertmitchellv.com/
