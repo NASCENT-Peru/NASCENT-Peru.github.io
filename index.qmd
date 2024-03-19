@@ -5,16 +5,16 @@ about:
   image: "img/NASCENT_logo_horizontal_upscayl.png"
   image-shape: rectangle
   image-width: "100%"
-  links:
-    - icon: github
-      text: Github
-      href: https://github.com/blenback/NASCENT-Peru
-    - icon: mortarboard-fill
-      text: PLUS ETHZ
-      href: https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/
-    - icon: envelope
-      text: Email
-      href: "mailto:bblack@ethz.ch"
+  # links:
+  #   - icon: github
+  #     text: Github
+  #     href: https://github.com/blenback/NASCENT-Peru
+  #   - icon: mortarboard-fill
+  #     text: PLUS ETHZ
+  #     href: https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/
+  #   - icon: envelope
+  #     text: Email
+  #     href: "mailto:bblack@ethz.ch"
 ---
 
 ::: {#about-block}

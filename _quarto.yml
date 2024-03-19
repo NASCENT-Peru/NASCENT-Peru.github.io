@@ -24,7 +24,12 @@ website:
       - text: "Glossary"
         href: glossary/index.qmd
       - text: "About"
-        href: about/index.qmd
+        menu: 
+          - about/team.qmd
+          - about/funding.qmd
+    menu:
+      - talks.qmd
+      - about.qmd 
     
     # your social media handles
     right:
