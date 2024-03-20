@@ -1,0 +1,22 @@
+---
+title: "Benjamin Black"
+sortby: "2"
+subtitle: "PhD Student"
+image: Ben.jpg
+toc: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://plus.ethz.ch/chair/people/person-detail.MjgyMjA5.TGlzdC8xMjQyLDE0MzMyMTIxNTg=.html
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://plus.ethz.ch/chair/people/person-detail.MjgyMjA5.TGlzdC8xMjQyLDE0MzMyMTIxNTg=.html'" />
+```
+
+:::{#person-profile}
+:::

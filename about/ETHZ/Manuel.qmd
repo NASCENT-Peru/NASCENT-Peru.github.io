@@ -1,0 +1,22 @@
+---
+title: "Manuel Kurmann"
+sortby: "3"
+image: Manuel.jpg
+toc: false
+#resources: 
+  #- "girard_cv.pdf"
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://plus.ethz.ch/chair/people/person-detail.MjM2NjYz.TGlzdC8xMjQyLDE0MzMyMTIxNTg=.html
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://plus.ethz.ch/chair/people/person-detail.MjM2NjYz.TGlzdC8xMjQyLDE0MzMyMTIxNTg=.html'" />
+```
+
+:::{#person-profile}
+:::

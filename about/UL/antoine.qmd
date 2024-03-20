@@ -1,0 +1,21 @@
+---
+title: "Prof. Dr. Antoine Guisan"
+sortby: "1"
+image: antoine.jpeg
+toc: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://www.unil.ch/dee/en/home/menuguid/people/group-leaders/prof-antoine-guisan.html
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://www.unil.ch/dee/en/home/menuguid/people/group-leaders/prof-antoine-guisan.html'" />
+```
+
+:::{#person-profile}
+:::

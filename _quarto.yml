@@ -3,7 +3,7 @@
 # website settings
 website:
   title: "NASCENT-PERU"                             # Your name
-  description: "NAture-positive SCenarios for ENvironmental Transitions: Peru"   # A brief slogan (optional)
+  description: "NAture-positive SCenarios for ENvironmental Transitions: Peru"  
   image: img/NASCENT_logo_vertical.jpg
   
   favicon: img/NASCENT_logo_no_text.jpg.png
