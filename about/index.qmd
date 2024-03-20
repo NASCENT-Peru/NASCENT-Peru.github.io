@@ -46,7 +46,7 @@ listing:
 ---
 
 
-
+# Team
 
 ## ETH Zurich
 
@@ -67,3 +67,14 @@ listing:
 
 :::{#UGA}
 :::
+
+
+---
+
+
+# Finances
+
+The project is funded as part of the Biodiversity and Ecosystem Services Scenario modelling challenge financed by the <a href="https://www.swissrefoundation.org/">Swiss Re Foundation</a>, <a href="https://www.swissre.com/institute/">Swiss Re Institute</a>, <a href="https://corporatesolutions.swissre.com/">Swiss Re Corporate Solutions</a>, <a href="https://www.ey.com/de_ch">EY</a>, <a href="https://www.wwf.ch/de">WWF</a> and the <a href="https://axa-research.org/">AXA Research Fund</a>.
+
+
+<img src="finances.png" style="height: 100%; width: 100%;"/>
