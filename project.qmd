@@ -1,0 +1,31 @@
+---
+title: Project
+---
+
+## Workflow
+
+<img src="project/workflow_NASCENT_Peru.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://arxiv.org/abs/2210.07278', 'blank');"/>
+
+The process of creating normative, nature-positive scenarios for future landscape development in Peru and assessing their impacts on land use and land cover (LULC), biodiversity, and ecosystem services (BES) is conducted in six steps. 
+
+1. **Workshops**: The project's participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.
+
+2. **Narratives**: In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of 'business as usual' and negative scenarios, while the normative scenarios consist of nature-positive scenarios.
+
+3. **Quantification**: 
+The rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers.
+
+4. **Simulations**: During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors.
+
+5. **Economic Analysis**: The economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES).
+
+6. **Communication**: As part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.
+
+The workflow used in NASCENT-Peru is based on the methodology used in
+<a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a><br>
+
+
+
+## Timeline
+
+<img data-quarto-disable-processing="true" src="project/Timeline.png" style="height: 150%; width: 150%;);"/>

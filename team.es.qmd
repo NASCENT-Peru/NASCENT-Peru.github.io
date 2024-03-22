@@ -1,0 +1,70 @@
+---
+title: "Equipo"
+toc: false
+listing:
+  - id: ETHZ
+    contents: "about/ETHZ/*.qmd"
+    type: grid
+    #image: "ETHZ/*.jpg"
+    image-height: 225px
+    grid-columns: 3
+    fields: [image, title]
+    grid-item-align: center
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+  - id: WAN
+    contents: "about/WAN/*.qmd"
+    type: grid
+    image-height: 225px
+    grid-columns: 3
+    sort: sortby
+    fields: [image, title]
+    field-display-names: 
+      started: "Started"
+    grid-item-align: center
+  - id: UL
+    contents: "about/UL/*.qmd"
+    type: grid
+    image-height: 225px
+    grid-columns: 3
+    fields: [image, title]
+    grid-item-align: center
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+  - id: UGA
+    contents: "about/UGA/*.qmd"
+    type: grid
+    image-height: 225px
+    grid-columns: 3
+    fields: [image, title]
+    grid-item-align: center
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+---
+
+
+
+## ETH Zurich
+
+:::{#ETHZ}
+:::
+
+## Wyss Academy for Nature
+
+:::{#WAN}
+:::
+
+## Université de Lausanne
+
+:::{#UL}
+:::
+
+## Université Grenoble Alpes
+
+:::{#UGA}
+:::
+
+
