@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  site-url: "https://nascent-peru.github.io/""
+  site-url: "https://nascent-peru.github.io/"
   repo-url: "https://github.com/NASCENT-Peru/NASCENT-Peru.github.io/"
   title: "NASCENT-PERU"
   description: "NAture-positive SCenarios for ENvironmental Transitions: Peru"
