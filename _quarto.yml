@@ -4,7 +4,7 @@ project:
 
 website:
   site-url: "https://nascent-peru.github.io/"
-  repo-url: "https://github.com/NASCENT-Peru/NASCENT-Peru.github.io/"
+  repo-url: "https://github.com/NASCENT-Peru/NASCENT-Peru.github.io"
   title: "NASCENT-PERU"
   description: "NAture-positive SCenarios for ENvironmental Transitions: Peru"
   #image: img/NASCENT_logo_vertical.jpg
