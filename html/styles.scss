@@ -1,6 +1,5 @@
 /*-- scss:defaults --*/
 
-/* From https://github.com/andrewheiss/ath-quarto/blob/main/html/ath.scss */
 
 $white:    #ffffff !default;
 $gray-100: #f8f9fa !default;
@@ -26,7 +25,7 @@ $green:   #118230 !default;
 $teal:    #068194 !default;
 $cyan:    #3093CF !default;
 
-$primary:   $teal!default;
+$primary:   $white!default;
 $secondary: $gray-700 !default;
 $success:   $green !default;
 $info:      $cyan !default;
@@ -38,7 +37,7 @@ $dark:      $black !default;
 
 
 // Links
-$link-color: $primary !default;
+$link-color: $teal !default;
 $link-decoration: none !default;
 $link-hover-color: $red !default;
 $link-hover-decoration: underline !default;
@@ -80,7 +79,7 @@ font-size: 1.6em !important;
     //font-family: $footer-font-family;
 
     a {
-        color: $primary;
+        color: $teal;
     }
 
     .faux-block {

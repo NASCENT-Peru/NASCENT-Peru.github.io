@@ -1,0 +1,21 @@
+---
+title: "Dr. Ignacio Palomo"
+sortby: "1"
+image: Ignacio.jpg
+toc: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://globalyoungacademy.net/ipalomo
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://globalyoungacademy.net/ipalomo'" />
+```
+
+:::{#person-profile}
+:::

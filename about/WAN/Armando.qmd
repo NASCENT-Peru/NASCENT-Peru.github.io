@@ -1,0 +1,22 @@
+---
+title: "Armando Valdés-Velásquez"
+sortby: "1"
+subtitle: "Professor"
+image: Armando.jpg
+toc: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://www.wyssacademy.org/team/prof.-dr.-armando-vald%C3%A9s-vel%C3%A1squez
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://www.wyssacademy.org/team/prof.-dr.-armando-vald%C3%A9s-vel%C3%A1squez'" />
+```
+
+:::{#person-profile}
+:::
