@@ -1,1 +1,1 @@
-Sitemap: C:/Users/mankurma/Documents/SwissRE_Peru/multiling_test/_NASCENT-Peru.github.io/docs/sitemap.xml
+Sitemap: C:/Users/mankurma/Documents/SwissRE_Peru/Github/NASCENT-Peru.github.io/docs/sitemap.xml

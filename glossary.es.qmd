@@ -69,7 +69,7 @@ Source: <a href="https://doi.org/10.5281/zenodo.5101125">Pörtner et al., 2021</
 ```{=html}
 <details>
 <summary>Nature Futures Framework (NFF)</summary>
-<img src="glossary/naturefutureframework.png" class = "glossimg", object-fit: contain" onclick="window.open('https://www.ipbes.net/scenarios-models', 'blank');"/>
+<img src="glossary/naturefutureframework_es.png" class = "glossimg", object-fit: contain" onclick="window.open('https://www.ipbes.net/scenarios-models', 'blank');"/>
 <text>
 <p></p>
 Una heurística que capta diversos valores positivos de las relaciones entre los seres humanos y la naturaleza a lo largo de tres tipos de perspectivas de valores específicos sobre la naturaleza: valores intrínsecos (también conocidos como "la naturaleza por la naturaleza"), instrumentales ("la naturaleza para la sociedad") y relacionales ("la naturaleza como cultura/uno con la naturaleza"). Estos valores de la naturaleza no se excluyen mutuamente y están intrínsecamente entrelazados. En el contexto de la ciencia occidental, estos valores positivos pueden situarse en un espacio triangular cuyas puntas representan los tres tipos de perspectivas de valor de la naturaleza.
@@ -83,7 +83,7 @@ Source: <a href="https://doi.org/10.5281/zenodo.8171339">IPBES, 2023</a>
 ```{=html}
 <details>
 <summary>Normative Scenarios</summary>
-<img src="glossary/Normative.png" class = "glossimg", 'blank');"/>
+<img src="glossary/Normative_es.png" class = "glossimg", 'blank');"/>
 <text>
 <p></p>
 Los escenarios de búsqueda de objetivos (también conocidos como "escenarios de búsqueda de metas" o "escenarios normativos") son escenarios que comienzan con la definición de un objetivo claro, o un conjunto de objetivos, especificados en términos de metas alcanzables, o como una función objetivo que debe optimizarse, y luego identifican diferentes vías para lograr este resultado (por ejemplo, mediante backcasting).

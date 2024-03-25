@@ -3,8 +3,8 @@ project:
   output-dir: docs
 
 website:
-  site-url: "C:/Users/mankurma/Documents/SwissRE_Peru/multiling_test/_NASCENT-Peru.github.io/docs/"
-  repo-url: "C:/Users/mankurma/Documents/SwissRE_Peru/multiling_test/_NASCENT-Peru.github.io/"
+  site-url: "C:/Users/mankurma/Documents/SwissRE_Peru/Github/NASCENT-Peru.github.io/docs/"
+  repo-url: "C:/Users/mankurma/Documents/SwissRE_Peru/Github/NASCENT-Peru.github.io/"
   title: "NASCENT-PERU"
   description: "NAture-positive SCenarios for ENvironmental Transitions: Peru"
   #image: img/NASCENT_logo_vertical.jpg
