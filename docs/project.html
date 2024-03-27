@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
+}</script><script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script><link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script><script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script><link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.1/leaflet.js"></script>
 </head>
 <body class="nav-fixed fullcontent">
 
@@ -62,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
 <div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="C:/Users/mankurma/Documents/SwissRE_Peru/Github/NASCENT-Peru.github.io/docs/es/project.html" id="language-link-es">Español</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://nascent-peru.github.io//es/project.html" id="language-link-es">Español</a></li></ul>
 </div>
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item">
@@ -134,17 +137,66 @@ ul.task-list li input[type="checkbox"] {
   
 
 </header><section id="workflow" class="level2"><h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
-<p><img src="project/workflow_NASCENT_Peru.png" style="height: 100%; width: 100%;'blank');"></p>
-<p>The process of creating normative, nature-positive scenarios for future landscape development in Peru and assessing their impacts on land use and land cover (LULC), biodiversity, and ecosystem services (BES) is conducted in six steps.</p>
-<ol type="1">
-<li><p><strong>Workshops</strong>: The project’s participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.</p></li>
-<li><p><strong>Narratives</strong>: In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of ‘business as usual’ and negative scenarios, while the normative scenarios consist of nature-positive scenarios.</p></li>
-<li><p><strong>Quantification</strong>: The rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers.</p></li>
-<li><p><strong>Simulations</strong>: During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors.</p></li>
-<li><p><strong>Economic Analysis</strong>: The economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES).</p></li>
-<li><p><strong>Communication</strong>: As part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.</p></li>
-</ol>
+<p><img src="project/workflow_NASCENT_Peru.png" usemap="#image-map" class="wf_map"></p>
+<map name="image-map"><area target="" alt="Workshops" title="Workshops" href="#workshops" coords="8.3%,25%,8%" shape="circle">
+<area target="" alt="Narratives" title="Narratives" href="#narratives" coords="25%,75%,8%" shape="circle">
+<area target="" alt="Quantification" title="Quantification" href="#quantification" coords="41.7%,25%,8%" shape="circle">
+<area target="" alt="Simulations" title="Simulations" href="#simulations" coords="58.3%,75%,8%" shape="circle">
+<area target="" alt="Economic analysis" title="Economic analysis" href="#economic-analysis" coords="75%,25%,8%" shape="circle">
+<area target="" alt="Communication" title="Communication" href="#communication" coords="91.7%,75%,8%" shape="circle"></map><script>
+function updateMapCoords() {
+    const img = document.querySelector('.wf_map');
+    if (!img) return;
+
+    const width = img.offsetWidth;
+    const height = img.offsetHeight;
+
+    const areasPercent = [
+        {x: 8.3, y: 25, r: 28}, // Workshops
+        {x: 25, y: 75, r: 28}, // Narratives
+        {x: 41.7, y: 25, r: 28}, // Workshops
+        {x: 58.3, y: 75, r: 28}, // Narratives
+        {x: 75, y: 25, r: 28}, // Workshops
+        {x: 91.7, y: 75, r: 28}, // Narratives
+        // Add the rest of your areas here
+    ];
+
+    const areas = document.querySelectorAll('area');
+    areas.forEach((area, index) => {
+        if (index >= areasPercent.length) return;
+        const ap = areasPercent[index];
+        const coords = [
+            Math.round(ap.x * width / 100),
+            Math.round(ap.y * height / 100),
+            Math.round(ap.r * Math.min(width, height) / 100) // Assuming radius scales with the smaller of width or height
+        ];
+        area.coords = coords.join(',');
+    });
+}
+
+window.onload = updateMapCoords;
+window.onresize = updateMapCoords;
+</script><p>The process of creating normative, nature-positive scenarios for future landscape development in Peru and assessing their impacts on land use and land cover (LULC), biodiversity, and ecosystem services (BES) is conducted in six steps.</p>
+<section id="workshops" class="level4"><h4 class="anchored" data-anchor-id="workshops">1. Workshops:</h4>
+<p>The project’s participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.</p>
+</section><section id="narratives" class="level4"><h4 class="anchored" data-anchor-id="narratives">2. Narratives:</h4>
+<p>In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of ‘business as usual’ and negative scenarios, while the normative scenarios consist of nature-positive scenarios.</p>
+</section><section id="quantification" class="level4"><h4 class="anchored" data-anchor-id="quantification">3. Quantification:</h4>
+<p>The rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers.</p>
+</section><section id="simulations" class="level4"><h4 class="anchored" data-anchor-id="simulations">4. Simulations:</h4>
+<p>During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors.</p>
+</section><section id="economic-analysis" class="level4"><h4 class="anchored" data-anchor-id="economic-analysis">5. Economic Analysis:</h4>
+<p>The economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES).</p>
+</section><section id="communication" class="level4"><h4 class="anchored" data-anchor-id="communication">6. Communication:</h4>
+<p>As part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.</p>
 <p>The workflow used in NASCENT-Peru is based on the methodology used in <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a><br></p>
+</section></section><section id="workshop-locations" class="level2"><h2 class="anchored" data-anchor-id="workshop-locations">Workshop Locations</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-ca72591f4398e4898e7a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-ca72591f4398e4898e7a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-12.038,-77.04300000000001,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Lima, National Workshop",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[-12.594,-69.18899999999999,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Puerto Maldonado, Regional Workshop",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[-9.526,-77.529,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Huaraz, Regional Workshop",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[-6.485,-76.37,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Tarapoto, Regional Workshop",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-12.594,-6.485],"lng":[-77.529,-69.18899999999999]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 </section><section id="timeline" class="level2"><h2 class="anchored" data-anchor-id="timeline">Timeline</h2>
 <p><img data-quarto-disable-processing="true" src="project/Timeline.png" style="height: 150%; width: 150%;);"></p>
 

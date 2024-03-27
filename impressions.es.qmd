@@ -3,7 +3,7 @@ title: "Impresiones"
 toc: false
 listing:
   - id: Workshops
-    contents: "Workshops/*.qmd"
+    #contents: "Workshops/*.qmd"
     type: grid
     #image: "ETHZ/*.jpg"
     image-height: 225px

@@ -1,10 +1,16 @@
 ---
 title: Glossary
+format:
+  html:
+    margin-left: 0.5em
+    toc: true
+    toc-title: Contents
+    toc-location: left
+    toc-depth: 3
 ---
 
+## Biodiversity {#Biodiversity}
 ```{=html}
-<details>
-<summary>Biodiversity</summary>
 <img src="glossary/dummybiodiversity.png" class = "glossimg", 'blank');"/>
 <text>
 <p></p>
@@ -12,12 +18,11 @@ The variability among living organisms from all sources including terrestrial, m
 <p></p>
 Source: <a href="https://doi.org/10.1016/j.cosust.2014.11.002">Diaz et al., 2015</a>
 </text>
-</details>
+
 ```
 
+## Ecosystem Services (ES) {#ES}
 ```{=html}
-<details>
-<summary>Ecosystem Services (ES)</summary>
 <img src="glossary/dummyES.png" class = "glossimg", 'blank');"/>
 <text>
 <p></p>
@@ -25,12 +30,10 @@ The benefits people obtain from ecosystems. In the Millennium Ecosystem Assessme
 <p></p>
 Source: <a href="https://www.ipbes.net/glossary-tag/ecosystem-service">IPBES core glossary, 2021</a>
 </text>
-</details>
 ```
 
+## Land Use Land Cover (LULC) {#LULC}
 ```{=html}
-<details>
-<summary>Land Use Land Cover (LULC)</summary>
 <img src="glossary/dummyLULCC.png" class = "glossimg", 'blank');"/>
 <text>
 <p></p>
@@ -50,12 +53,10 @@ Land Cover">Milenium Ecosystem Assessement, 2005
 </a>
 
 </text>
-</details>
 ```
 
+## Nature's Contribution to People (NCP) {#NCP}
 ```{=html}
-<details>
-<summary>Nature's Contribution to People (NCP)</summary>
 <img src="glossary/NCP.png" class = "glossimg", 'blank');"/>
 <text>
 <p></p>
@@ -63,13 +64,10 @@ Nature's contributions to people (NCP) are all the contributions, both positive 
 <p></p>
 Source: <a href="https://doi.org/10.5281/zenodo.5101125">Pörtner et al., 2021</a>
 </text>
-</details>
 ```
 
-
+## Nature Futures Framework (NFF) {#NFF}
 ```{=html}
-<details>
-<summary>Nature Futures Framework (NFF)</summary>
 <img src="glossary/naturefutureframework.png" class = "glossimg", object-fit: contain" onclick="window.open('https://www.ipbes.net/scenarios-models', 'blank');"/>
 <text>
 <p></p>
@@ -77,13 +75,10 @@ A heuristic that captures diverse, positive values of human-nature relationships
 <p></p>
 Source: <a href="https://doi.org/10.5281/zenodo.8171339">IPBES, 2023</a>
 </text>
-</details>
 ```
 
-
+## Normative Scenarios {#NScenarios}
 ```{=html}
-<details>
-<summary>Normative Scenarios</summary>
 <img src="glossary/Normative.png" class = "glossimg", 'blank');"/>
 <text>
 <p></p>
@@ -91,12 +86,10 @@ Target-seeking scenarios (also known as “goal-seeking scenarios” or “norma
 <p></p>
 Source: <a href="https://www.ipbes.net/glossary-tag/scenarios">IPBES core glossary, 2021</a>
 </text>
-</details>
 ```
 
+## Scenarios {#Scenarios}
 ```{=html}
-<details>
-<summary>Scenarios</summary>
 <img src="glossary/Scenario.png" class = "glossimg", 'blank');"/>
 <text>
 <p></p>
@@ -104,7 +97,6 @@ Representations of possible futures for one or more components of a system, part
 <p></p>
 Source: <a href="https://doi.org/10.5281/zenodo.3237429">IPBES, 2018</a>
 </text>
-</details>
 ```
 
 
