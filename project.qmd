@@ -4,27 +4,90 @@ title: Project
 
 ## Workflow
 
-<img src="project/workflow_NASCENT_Peru.png" style="height: 100%; width: 100%;'blank');"/>
+<img src="project/workflow_NASCENT_Peru.png" usemap="#image-map" class="wf_map">
+
+<map name="image-map">
+    <area target="" alt="Workshops" title="Workshops" href="#workshops" coords="8.3%,25%,8%" shape="circle">
+    <area target="" alt="Narratives" title="Narratives" href="#narratives" coords="25%,75%,8%" shape="circle">
+    <area target="" alt="Quantification" title="Quantification" href="#quantification" coords="41.7%,25%,8%" shape="circle">
+    <area target="" alt="Simulations" title="Simulations" href="#simulations" coords="58.3%,75%,8%" shape="circle">
+    <area target="" alt="Economic analysis" title="Economic analysis" href="#economic-analysis" coords="75%,25%,8%" shape="circle">
+    <area target="" alt="Communication" title="Communication" href="#communication" coords="91.7%,75%,8%" shape="circle">
+</map>
+
+<script>
+function updateMapCoords() {
+    const img = document.querySelector('.wf_map');
+    if (!img) return;
+
+    const width = img.offsetWidth;
+    const height = img.offsetHeight;
+
+    const areasPercent = [
+        {x: 8.3, y: 25, r: 28}, // Workshops
+        {x: 25, y: 75, r: 28}, // Narratives
+        {x: 41.7, y: 25, r: 28}, // Workshops
+        {x: 58.3, y: 75, r: 28}, // Narratives
+        {x: 75, y: 25, r: 28}, // Workshops
+        {x: 91.7, y: 75, r: 28}, // Narratives
+        // Add the rest of your areas here
+    ];
+
+    const areas = document.querySelectorAll('area');
+    areas.forEach((area, index) => {
+        if (index >= areasPercent.length) return;
+        const ap = areasPercent[index];
+        const coords = [
+            Math.round(ap.x * width / 100),
+            Math.round(ap.y * height / 100),
+            Math.round(ap.r * Math.min(width, height) / 100) // Assuming radius scales with the smaller of width or height
+        ];
+        area.coords = coords.join(',');
+    });
+}
+
+window.onload = updateMapCoords;
+window.onresize = updateMapCoords;
+</script>
+
+
 
 The process of creating normative, nature-positive scenarios for future landscape development in Peru and assessing their impacts on land use and land cover (LULC), biodiversity, and ecosystem services (BES) is conducted in six steps. 
 
-1. **Workshops**: The project's participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.
+#### 1. Workshops: {#workshops}
+The project's participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.
 
-2. **Narratives**: In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of 'business as usual' and negative scenarios, while the normative scenarios consist of nature-positive scenarios.
+#### 2. Narratives: {#narratives}
+In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of 'business as usual' and negative scenarios, while the normative scenarios consist of nature-positive scenarios.
 
-3. **Quantification**: 
+#### 3. Quantification: {#quantification}
 The rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers.
 
-4. **Simulations**: During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors.
+#### 4. Simulations: {#simulations}
+During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors.
 
-5. **Economic Analysis**: The economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES).
+#### 5. Economic Analysis: {#economic-analysis}
+The economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES).
 
-6. **Communication**: As part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.
+#### 6. Communication: {#communication}
+As part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.
 
 The workflow used in NASCENT-Peru is based on the methodology used in
 <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a><br>
 
 
+## Workshop Locations
+```{r}
+#| echo: false
+
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=-77.043, lat=-12.038, popup="Lima, National Workshop")%>%
+  addMarkers(lng=-69.189, lat=-12.594, popup="Puerto Maldonado, Regional Workshop")%>%
+  addMarkers(lng=-77.529, lat=-9.526, popup="Huaraz, Regional Workshop")%>%
+  addMarkers(lng=-76.370, lat=-6.485, popup="Tarapoto, Regional Workshop")
+```
 
 ## Timeline
 

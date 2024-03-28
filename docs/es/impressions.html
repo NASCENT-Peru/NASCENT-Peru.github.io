@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.3.450">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>NASCENT-PERU - Impresiones</title>
 <style>
@@ -30,13 +30,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
@@ -45,7 +39,6 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "resultado adicional en este documento",
     "search-more-matches-text": "resultados adicionales en este documento",
     "search-clear-button-title": "Borrar",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar",
     "search-label": "Buscar"
@@ -61,8 +54,7 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 18,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
@@ -79,38 +71,13 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  </script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+  </script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 </head>
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="./index.html">
@@ -123,32 +90,32 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
 <div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://nascent-peru.github.io/impressions.html" id="language-link-en">English</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://nascent-peru.github.io//impressions.html" id="language-link-en">English</a></li></ul>
 </div>
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item">
-    <a class="nav-link" href="./project.html"> 
-<span class="menu-text">Proyecto</span></a>
+    <a class="nav-link" href="./project.html" rel="" target="">
+ <span class="menu-text">Proyecto</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./impressions.html" aria-current="page"> 
-<span class="menu-text">Impresiones</span></a>
+    <a class="nav-link active" href="./impressions.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Impresiones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./glossary.html"> 
-<span class="menu-text">Glosario</span></a>
+    <a class="nav-link" href="./glossary.html" rel="" target="">
+ <span class="menu-text">Glosario</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-info" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-info" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Info</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-info">
 <li>
-    <a class="dropdown-item" href="./team.html">
+    <a class="dropdown-item" href="./team.html" rel="" target="">
  <span class="dropdown-text">Equipo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./funding.html">
+    <a class="dropdown-item" href="./funding.html" rel="" target="">
  <span class="dropdown-text">Financiación</span></a>
   </li>  
     </ul>
@@ -156,24 +123,24 @@ window.Quarto = {
 </ul>
 <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/blenback/NASCENT-Peru"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/blenback/NASCENT-Peru" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
-<span class="menu-text"></span></a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/"> <i class="bi bi-mortarboard" role="img">
+    <a class="nav-link" href="https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/" rel="" target=""><i class="bi bi-mortarboard" role="img">
 </i> 
-<span class="menu-text"></span></a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:bblack@ethz.ch"> <i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:bblack@ethz.ch" rel="" target=""><i class="bi bi-envelope" role="img" aria-label="email">
 </i> 
-<span class="menu-text"></span></a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+<div class="quarto-navbar-tools">
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
@@ -194,12 +161,11 @@ window.Quarto = {
   </div>
   
 
-
 </header><p>Los talleres participativos con las partes interesadas constituyen la base para el desarrollo de las narrativas positivas para la naturaleza en las que se basan los escenarios modelados. A continuación, se presentan impresiones de los diversos talleres realizados en Perú.</p>
 <section id="panorama" class="level2"><h2 class="anchored" data-anchor-id="panorama">Panorama</h2>
 <div id="listing-Workshops" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1711365201338" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1711357017689" data-listing-reading-time-sort="1">
 <a href="./about/ETHZ/Adrienne.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -212,7 +178,7 @@ Prof. Dr. Adrienne Grêt-Regamey
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1711357017709" data-listing-reading-time-sort="1">
 <a href="./about/ETHZ/loic.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -225,7 +191,7 @@ Loïc Pellissier
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1711357017714" data-listing-reading-time-sort="1">
 <a href="./about/UGA/Ignacio.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -238,7 +204,7 @@ Dr. Ignacio Palomo
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1711357017718" data-listing-reading-time-sort="1">
 <a href="./about/UL/antoine.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -251,7 +217,7 @@ Prof. Dr. Antoine Guisan
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1711357017722" data-listing-reading-time-sort="1">
 <a href="./about/WAN/Armando.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -264,7 +230,7 @@ Armando Valdés-Velásquez
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1711357017726" data-listing-reading-time-sort="1">
 <a href="./about/WAN/Edouard.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -277,7 +243,7 @@ Prof. Dr. Edouard Davin
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1711357017696" data-listing-reading-time-sort="1">
 <a href="./about/ETHZ/Ben.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -290,7 +256,7 @@ Benjamin Black
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1711357017730" data-listing-reading-time-sort="1">
 <a href="./about/WAN/Jan.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -303,7 +269,7 @@ Dr. Jan Göpel
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1711357017734" data-listing-reading-time-sort="1">
 <a href="./about/WAN/Miguel.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -316,7 +282,7 @@ Miguel Saravia
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1711357017700" data-listing-reading-time-sort="1">
 <a href="./about/ETHZ/Chenyu.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -329,7 +295,7 @@ Chenyu Shen
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1711357017706" data-listing-reading-time-sort="1">
 <a href="./about/ETHZ/Manuel.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -342,19 +308,7 @@ Manuel Kurmann
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-listing-file-modified-sort="1711365181848" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
-<a href="./about/funding.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="about%5Cfinances.png" style="height: 225px;" class="thumbnail-image card-img"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Funding
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="12" data-listing-file-modified-sort="1711365201621" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="g-col-1" data-index="11" data-listing-file-modified-sort="1711458598112" data-listing-reading-time-sort="1">
 <a href="./funding.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top"><img src="about%5Cfinances.png" style="height: 225px;" class="thumbnail-image card-img"></p>
@@ -366,19 +320,7 @@ Financiación
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-listing-file-modified-sort="1711365201621" data-listing-reading-time-sort="3" data-listing-word-count-sort="521">
-<a href="./glossary/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="glossary%5Cglossary%5Cdummybiodiversity.png" style="height: 225px;" class="thumbnail-image card-img"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Glossary
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="14" data-listing-file-modified-sort="1711365201621" data-listing-reading-time-sort="4" data-listing-word-count-sort="636">
+<div class="g-col-1" data-index="12" data-listing-file-modified-sort="1711525800811" data-listing-reading-time-sort="4">
 <a href="./glossary.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top"><img src="glossary%5Cdummybiodiversity.png" style="height: 225px;" class="thumbnail-image card-img"></p>
@@ -390,19 +332,7 @@ Glosario
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="15" data-listing-file-modified-sort="1711365181897" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
-<a href="./impressions/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<div class="listing-item-img-placeholder card-img-top" style="height: 225px;"> </div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Stakeholder Workshop Impressions
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="16" data-listing-file-modified-sort="1711365201636" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
+<div class="g-col-1" data-index="13" data-listing-file-modified-sort="1711525210180" data-listing-reading-time-sort="1">
 <a href="./index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top"><img src="img%5CNASCENT_logo_horizontal_upscayl.png" style="height: 225px;" class="thumbnail-image card-img"></p>
@@ -414,22 +344,10 @@ Escenarios positivos para la naturaleza en las medioambientales de Perú
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="17" data-listing-file-modified-sort="1711365201668" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
-<a href="./project/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="project%5Cproject%5Cworkflow_NASCENT_Peru.png" style="height: 225px;" class="thumbnail-image card-img"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Project
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="18" data-listing-file-modified-sort="1711365201636" data-listing-reading-time-sort="2" data-listing-word-count-sort="293">
+<div class="g-col-1" data-index="14" data-listing-file-modified-sort="1711471176848" data-listing-reading-time-sort="4">
 <a href="./project.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="project\Worklfow_Nascent_es.png" style="height: 225px;" class="thumbnail-image card-img"></p>
+<p class="card-img-top"><img src="project%5CWorklfow_Nascent_es.png" style="height: 225px;" class="thumbnail-image card-img"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Proyecto
@@ -438,10 +356,10 @@ Proyecto
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="19" data-listing-file-modified-sort="1711365201668" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+<div class="g-col-1" data-index="15" data-listing-file-modified-sort="1711458598340" data-listing-reading-time-sort="1">
 <a href="./team.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="about\ETHZ\Adrienne.jpg" style="height: 225px;" class="thumbnail-image card-img"></p>
+<p class="card-img-top"><img src="about%5CETHZ%5CAdrienne.jpg" style="height: 225px;" class="thumbnail-image card-img"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Equipo
@@ -454,7 +372,6 @@ Equipo
 <div class="listing-no-matching d-none">
 No hay resultados
 </div>
-<nav id="Workshops-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
 </div>
 
 
@@ -538,9 +455,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -550,17 +468,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -573,125 +482,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -735,7 +525,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -761,32 +550,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -847,7 +610,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-
 
 
 
