@@ -1,6 +1,8 @@
 ---
 title: "Impressions"
+subtitle: "News and updates from the project as they happen"
 toc: false
+#title-block-banner: "#f6f8fa"
 listing:
     contents: "impressions/*.qmd"
     type: grid
@@ -13,7 +15,7 @@ listing:
     categories: true
 ---
 
-Here we will share news and updates from the project as they happen. A newsletter subscription option is coming soon!  
+A newsletter subscription option is coming soon!  
 
 
 

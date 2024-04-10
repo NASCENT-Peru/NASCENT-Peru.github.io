@@ -1,5 +1,6 @@
 ---
 title: "Team"
+#title-block-banner: "#f6f8fa"
 #pagetitle: "About | NASCENT-PERU"
 toc: false
 listing:

@@ -1,5 +1,6 @@
 ---
 title: Project
+subtitle: "Details of the projects research method"
 ---
 
 The graphic below shows the steps of the NASCENT-Peru project workflow for creating and simulating normative, nature-positive scenarios for future landscape development in Peru. Click on each step to learn more about it. 
@@ -51,13 +52,13 @@ window.onresize = updateMapCoords;
 </script>
 
 
-## Workshops: {#workshops}
+### Workshops: {#workshops}
 
 The project's participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.
 
 
 
-### Workshop Locations
+#### Workshop Locations
 ```{r}
 #| echo: false
 #| warning: false

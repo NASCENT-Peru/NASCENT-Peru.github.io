@@ -1,5 +1,7 @@
 ---
 title: Glossary
+subtitle: "Definitions of key terms and concepts used in the project"
+#title-block-banner: "#f6f8fa"
 format:
   html:
     margin-left: 0.5em
@@ -9,9 +11,7 @@ format:
     toc-depth: 3
 ---
 
-Here we provide definitions for key terms and concepts used in the project.
-
-## Biodiversity {#Biodiversity}
+### Biodiversity {#Biodiversity}
 ```{=html}
 <img src="glossary/dummybiodiversity.png" class = "glossimg", 'blank');"/>
 <text>
@@ -23,7 +23,7 @@ Source: <a href="https://doi.org/10.1016/j.cosust.2014.11.002">Diaz et al., 2015
 
 ```
 
-## Ecosystem Services (ES) {#ES}
+### Ecosystem Services (ES) {#ES}
 ```{=html}
 <img src="glossary/dummyES.png" class = "glossimg", 'blank');"/>
 <text>
@@ -34,7 +34,7 @@ Source: <a href="https://www.ipbes.net/glossary-tag/ecosystem-service">IPBES cor
 </text>
 ```
 
-## Land Use Land Cover (LULC) {#LULC}
+### Land Use Land Cover (LULC) {#LULC}
 ```{=html}
 <img src="glossary/dummyLULCC.png" class = "glossimg", 'blank');"/>
 <text>
@@ -57,7 +57,7 @@ Land Cover">Milenium Ecosystem Assessement, 2005
 </text>
 ```
 
-## Nature's Contribution to People (NCP) {#NCP}
+### Nature's Contribution to People (NCP) {#NCP}
 ```{=html}
 <img src="glossary/NCP.png" class = "glossimg", 'blank');"/>
 <text>
@@ -68,7 +68,7 @@ Source: <a href="https://doi.org/10.5281/zenodo.5101125">Pörtner et al., 2021</
 </text>
 ```
 
-## Nature Futures Framework (NFF) {#NFF}
+### Nature Futures Framework (NFF) {#NFF}
 ```{=html}
 <img src="glossary/naturefutureframework.png" class = "glossimg", object-fit: contain" onclick="window.open('https://www.ipbes.net/scenarios-models', 'blank');"/>
 <text>
@@ -79,7 +79,7 @@ Source: <a href="https://doi.org/10.5281/zenodo.8171339">IPBES, 2023</a>
 </text>
 ```
 
-## Normative Scenarios {#NScenarios}
+### Normative Scenarios {#NScenarios}
 ```{=html}
 <img src="glossary/Normative.png" class = "glossimg", 'blank');"/>
 <text>
@@ -90,7 +90,7 @@ Source: <a href="https://www.ipbes.net/glossary-tag/scenarios">IPBES core glossa
 </text>
 ```
 
-## Scenarios {#Scenarios}
+### Scenarios {#Scenarios}
 ```{=html}
 <img src="glossary/Scenario.png" class = "glossimg", 'blank');"/>
 <text>
