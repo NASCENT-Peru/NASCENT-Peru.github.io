@@ -9,6 +9,8 @@ format:
     toc-depth: 3
 ---
 
+Here we provide definitions for key terms and concepts used in the project.
+
 ## Biodiversity {#Biodiversity}
 ```{=html}
 <img src="glossary/dummybiodiversity.png" class = "glossimg", 'blank');"/>

@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nascent-peru.github.io/team.html</loc>
-    <lastmod>2024-03-27T08:11:32.270Z</lastmod>
+    <lastmod>2024-03-25T11:13:21.668Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/index.html</loc>
-    <lastmod>2024-03-28T09:47:28.114Z</lastmod>
+    <lastmod>2024-03-28T09:51:38.000Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/glossary.html</loc>
-    <lastmod>2024-03-27T08:11:28.525Z</lastmod>
+    <lastmod>2024-04-10T09:23:02.677Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/about/WAN/Miguel.html</loc>
@@ -62,10 +62,50 @@
   </url>
   <url>
     <loc>https://nascent-peru.github.io/impressions.html</loc>
-    <lastmod>2024-03-27T08:11:29.400Z</lastmod>
+    <lastmod>2024-04-10T09:20:52.203Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/project.html</loc>
-    <lastmod>2024-03-28T09:50:51.989Z</lastmod>
+    <lastmod>2024-04-10T09:21:13.426Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/team.es.html</loc>
+    <lastmod>2024-03-25T11:13:21.668Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/project/index.html</loc>
+    <lastmod>2024-03-28T08:31:55.455Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/index.es.html</loc>
+    <lastmod>2024-03-28T08:32:04.160Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/index.html</loc>
+    <lastmod>2024-03-28T08:31:55.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/glossary/index.html</loc>
+    <lastmod>2024-03-28T08:31:55.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/funding.es.html</loc>
+    <lastmod>2024-03-25T11:13:21.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/glossary.es.html</loc>
+    <lastmod>2024-03-28T08:32:04.158Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions.es.html</loc>
+    <lastmod>2024-03-25T12:08:50.457Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/project.es.html</loc>
+    <lastmod>2024-03-28T08:32:04.166Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/Scenario_workshops_2024.html</loc>
+    <lastmod>2024-04-10T09:38:01.872Z</lastmod>
   </url>
 </urlset>
