@@ -3,6 +3,7 @@ title: "Prof. Dr. Edouard Davin"
 sortby: "1"
 image: Edouard.jpg
 toc: false
+comments: false
 
 about:
   id: person-profile

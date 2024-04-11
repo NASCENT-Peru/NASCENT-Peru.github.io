@@ -1,23 +1,22 @@
 ---
 title: "Impressions"
+subtitle: "News and updates from the project as they happen"
 toc: false
+comments: false
+#title-block-banner: "#f6f8fa"
 listing:
-  - id: Workshops
-    contents: "Workshops/*.qmd"
+    contents: "*_blog.qmd"
     type: grid
-    #image: "ETHZ/*.jpg"
-    image-height: 225px
+    #image-height: 225px
     grid-columns: 3
     fields: [image, title]
     grid-item-align: center
     sort: sortby
+    feed: true
+    categories: true
 ---
 
+A newsletter subscription option is coming soon!  
 
-The participatory stakeholder workshops form the basis for the development of the nature-positive narratives on which the modeled scenarios are based. Impressions from the various workshops in Peru are presented below.
 
-## Overview
-
-:::{#Workshops}
-:::
 

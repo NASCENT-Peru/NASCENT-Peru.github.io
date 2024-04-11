@@ -1,12 +1,14 @@
 ---
 title: "Team"
+#title-block-banner: "#f6f8fa"
 #pagetitle: "About | NASCENT-PERU"
 toc: false
+comments: false
+
 listing:
   - id: ETHZ
     contents: "about/ETHZ/*.qmd"
     type: grid
-    #image: "ETHZ/*.jpg"
     image-height: 225px
     grid-columns: 3
     fields: [image, title]
@@ -47,23 +49,53 @@ listing:
 ---
 
 
-## ETH Zurich
-
+```{=html}
+<div style="display: flex; align-items: flex-start; gap: 10px;"> 
+    <div style="flex-grow: 1;">
+        <h2>ETH Zürich</h2>
+    </div>
+    <img src="about/ETHZ.png" style="max-width: 50%; height: auto;" alt="ETH Zurich">
+</div>
+```
 :::{#ETHZ}
 :::
 
-## Wyss Academy for Nature
+```{=html}
+<p></p>
+<div style="display: flex; align-items: flex-start; gap: 10px;"> 
+    <div style="flex-grow: 1;">
+        <h2>Wyss Academy for Nature</h2>
+    </div>
+    <img src="about/WAN.png" style="max-width: 50%; height: auto;" alt="Wyss Academy for Nature">
+</div>
+```
 
 :::{#WAN}
 :::
 
-## Université de Lausanne
+```{=html}
+<p></p>
+<div style="display: flex; align-items: flex-start; gap: 10px;"> 
+    <div style="flex-grow: 1;">
+        <h2>Université de Lausanne</h2>
+    </div>
+    <img src="about/UNIL.png" style="max-width: 50%; height: auto;" alt="Université de Lausanne">
+</div>
+```
 
 :::{#UL}
 :::
 
-## Université Grenoble Alpes
 
+```{=html}
+<p></p>
+<div style="display: flex; align-items: flex-start; gap: 10px;"> 
+    <div style="flex-grow: 1;">
+        <h2>Université Grenoble Alpes</h2>
+    </div>
+    <img src="about/UGA.jpg" style="max-width: 50%; height: auto;" alt="Université Grenoble Alpes">
+</div>
+```
 :::{#UGA}
 :::
 

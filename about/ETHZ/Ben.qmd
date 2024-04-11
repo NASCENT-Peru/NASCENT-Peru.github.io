@@ -4,6 +4,7 @@ sortby: "2"
 subtitle: "PhD Student"
 image: Ben.jpg
 toc: false
+comments: false
 
 about:
   id: person-profile

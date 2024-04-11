@@ -1,39 +1,44 @@
 ---
 title: Glossary
+subtitle: "Definitions of key terms and concepts used in the project"
+#title-block-banner: "#f6f8fa"
+comments: false
+format:
+  html:
+    margin-left: 0.5em
+    toc: true
+    toc-title: Contents
+    toc-location: left
+    toc-depth: 3
 ---
-
+### Biodiversity {#Biodiversity}
 ```{=html}
-<details>
-<summary>Biodiversity</summary>
-<img src="glossary/dummybiodiversity.png" class = "glossimg", 'blank');"/>
-<text>
-<p></p>
-The variability among living organisms from all sources including terrestrial, marine and other aquatic ecosystems and the ecological complexes of which they are a part. This includes variation in genetic, phenotypic, phylogenetic, and functional attributes, as well as changes in abundance and distribution over time and space within and among species, biological communities and ecosystems.
-<p></p>
-Source: <a href="https://doi.org/10.1016/j.cosust.2014.11.002">Diaz et al., 2015</a>
-</text>
-</details>
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex-grow: 1; margin-right: 30px;"> 
+        <p style="text-align: justify;">The variability among living organisms from all sources including terrestrial, marine and other aquatic ecosystems and the ecological complexes of which they are a part. This includes variation in genetic, phenotypic, phylogenetic, and functional attributes, as well as changes in abundance and distribution over time and space within and among species, biological communities and ecosystems.</p>
+        <p>Source: <a href="https://doi.org/10.1016/j.cosust.2014.11.002">Diaz et al., 2015</a></p>
+    </div>
+    <img src="glossary/dummybiodiversity.png" class="glossimg" style="max-width: 50%; height: auto;" alt="Biodiversity">
+</div>
 ```
 
+
+### Ecosystem Services (ES) {#ES}
 ```{=html}
-<details>
-<summary>Ecosystem Services (ES)</summary>
-<img src="glossary/dummyES.png" class = "glossimg", 'blank');"/>
-<text>
-<p></p>
-The benefits people obtain from ecosystems. In the Millennium Ecosystem Assessment, ecosystem services can be divided into supporting, regulating, provisioning and cultural. This classification, however, is superseded in IPBES assessments by the system used under “Nature’s contributions to people”. This is because IPBES recognizes that many services fit into more than one of the four categories. For example, food is both a provisioning service and also, emphatically, a cultural service, in many cultures.
-<p></p>
-Source: <a href="https://www.ipbes.net/glossary-tag/ecosystem-service">IPBES core glossary, 2021</a>
-</text>
-</details>
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex-grow: 1; margin-right: 30px;"> 
+        <p style="text-align: justify;">The benefits people obtain from ecosystems. In the Millennium Ecosystem Assessment, ecosystem services can be divided into supporting, regulating, provisioning and cultural. This classification, however, is superseded in IPBES assessments by the system used under “Nature’s contributions to people”. This is because IPBES recognizes that many services fit into more than one of the four categories. For example, food is both a provisioning service and also, emphatically, a cultural service, in many cultures.</p>
+        <p>Source: <a href="https://www.ipbes.net/glossary-tag/ecosystem-service">IPBES core glossary, 2021</a></p>
+    </div>
+    <img src="glossary/dummyES.png" class="glossimg" style="max-width: 50%; height: auto;" alt="Ecosystem Services">
+</div>
 ```
 
+### Land Use Land Cover (LULC) {#LULC}
 ```{=html}
-<details>
-<summary>Land Use Land Cover (LULC)</summary>
-<img src="glossary/dummyLULCC.png" class = "glossimg", 'blank');"/>
-<text>
-<p></p>
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex-grow: 1; margin-right: 30px;"> 
+        <p style="text-align: justify;">
 <h4>Land Use</h4>
 
 The human use of a specific area for a certain purpose (such as residential, agriculture, recreation, industrial, etc.). Influenced by, but not synonymous with, land cover. Land-use change refers to a change in the use or management of land by humans, which may lead to a change in land cover.
@@ -43,68 +48,54 @@ The human use of a specific area for a certain purpose (such as residential, agr
 
 The physical coverage of land, usually expressed in terms
 of vegetation cover or lack of it. Related to, but not synonymous
-with, land use.
-<p></p>
-Source: <a href="https://www.millenniumassessment.org/documents/document.776.aspx.pdf
-Land Cover">Milenium Ecosystem Assessement, 2005
-</a>
-
-</text>
-</details>
+with, land use.</p>
+        <p>Source: <a href="https://www.millenniumassessment.org/documents/document.776.aspx.pdf">Milenium Ecosystem Assessement, 2005</a></p>
+    </div>
+    <p></p>
+    <img src="glossary/dummyLULC.png" class="glossimg" style="max-width: auto; height: 90%;" alt="Land Use Land Cover">
+</div>
 ```
 
+### Nature's Contribution to People (NCP) {#NCP}
 ```{=html}
-<details>
-<summary>Nature's Contribution to People (NCP)</summary>
-<img src="glossary/NCP.png" class = "glossimg", 'blank');"/>
-<text>
-<p></p>
-Nature's contributions to people (NCP) are all the contributions, both positive and negative, of living nature (i.e. diversity of organisms, ecosystems, and their associated ecological and evolutionary processes) to the quality of life of people. Beneficial contributions from nature include such things as food provision, water purification, flood control, and artistic inspiration, whereas detrimental contributions include disease transmission and predation that damages people or their assets. Many NCP may be perceived as benefits or detriments depending on the cultural, temporal or spatial context.
-<p></p>
-Source: <a href="https://doi.org/10.5281/zenodo.5101125">Pörtner et al., 2021</a>
-</text>
-</details>
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex-grow: 1; margin-right: 30px;"> 
+        <p style="text-align: justify;">Nature's contributions to people (NCP) are all the contributions, both positive and negative, of living nature (i.e. diversity of organisms, ecosystems, and their associated ecological and evolutionary processes) to the quality of life of people. Beneficial contributions from nature include such things as food provision, water purification, flood control, and artistic inspiration, whereas detrimental contributions include disease transmission and predation that damages people or their assets. Many NCP may be perceived as benefits or detriments depending on the cultural, temporal or spatial context.</p>
+        <p>Source: <a href="https://www.ipbes.net/glossary-tag/ecosystem-service">Pörtner et al., 2021</a></p>
+    </div>
+    <img src="glossary/NCP.png" class="glossimg" style="max-width: 50%; height: auto;" alt="Nature's Contribution to People">
+</div>
 ```
 
-
+### Nature Futures Framework (NFF) {#NFF}
 ```{=html}
-<details>
-<summary>Nature Futures Framework (NFF)</summary>
-<img src="glossary/naturefutureframework.png" class = "glossimg", object-fit: contain" onclick="window.open('https://www.ipbes.net/scenarios-models', 'blank');"/>
-<text>
-<p></p>
-A heuristic that captures diverse, positive values of human-nature relationships along three types of specific value perspectives on nature: intrinsic (also known as ‘nature for nature’), instrumental (‘nature for society’), and relational (‘nature as culture/one with nature’) values. These values of nature are not mutually exclusive and intricately intertwined by nature. In the context of Western science, these positive values can be located in a triangular space whose tips represent the three types of value perspectives on nature.
-<p></p>
-Source: <a href="https://doi.org/10.5281/zenodo.8171339">IPBES, 2023</a>
-</text>
-</details>
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex-grow: 1; margin-right: 30px;"> 
+        <p style="text-align: justify;">A heuristic that captures diverse, positive values of human-nature relationships along three types of specific value perspectives on nature: intrinsic (also known as ‘nature for nature’), instrumental (‘nature for society’), and relational (‘nature as culture/one with nature’) values. These values of nature are not mutually exclusive and intricately intertwined by nature. In the context of Western science, these positive values can be located in a triangular space whose tips represent the three types of value perspectives on nature.</p>
+        <p>Source: <a href="https://doi.org/10.5281/zenodo.8171339">IPBES, 2023</a></p>
+    </div>
+    <img src="glossary/naturefutureframework_adj.png" class="glossimg" style="max-width: 50%; height: 75%;" alt="Nature Futures Framework">
+</div>
 ```
 
-
+### Normative Scenarios {#NScenarios}
 ```{=html}
-<details>
-<summary>Normative Scenarios</summary>
-<img src="glossary/Normative.png" class = "glossimg", 'blank');"/>
-<text>
-<p></p>
-Target-seeking scenarios (also known as “goal-seeking scenarios” or “normative scenarios”) are scenarios that start with the definition of a clear objective, or a set of objectives, specified either in terms of achievable targets, or as an objective function to be optimized, and then identify different pathways to achieving this outcome (e.g. through backcasting).
-<p></p>
-Source: <a href="https://www.ipbes.net/glossary-tag/scenarios">IPBES core glossary, 2021</a>
-</text>
-</details>
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex-grow: 1; margin-right: 30px;"> 
+        <p style="text-align: justify;">Target-seeking scenarios (also known as “goal-seeking scenarios” or “normative scenarios”) are scenarios that start with the definition of a clear objective, or a set of objectives, specified either in terms of achievable targets, or as an objective function to be optimized, and then identify different pathways to achieving this outcome (e.g. through backcasting).</p>
+        <p>Source: <a href="https://www.ipbes.net/glossary-tag/scenarios">IPBES core glossary, 2021</a></p>
+    </div>
+    <img src="glossary/Normative.png" class="glossimg" style="max-width: 50%; height: auto;" alt="Normative Scenarios">
+</div>
 ```
 
+### Scenarios {#Scenarios}
 ```{=html}
-<details>
-<summary>Scenarios</summary>
-<img src="glossary/Scenario.png" class = "glossimg", 'blank');"/>
-<text>
-<p></p>
-Representations of possible futures for one or more components of a system, particularly for drivers of change in nature and nature’s benefits, including alternative policy or management options.
-<p></p>
-Source: <a href="https://doi.org/10.5281/zenodo.3237429">IPBES, 2018</a>
-</text>
-</details>
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex-grow: 1; margin-right: 30px;"> 
+        <p style="text-align: justify;">Representations of possible futures for one or more components of a system, particularly for drivers of change in nature and nature’s benefits, including alternative policy or management options.</p>
+        <p>Source: <a href="https://doi.org/10.5281/zenodo.3237429">IPBES, 2018</a></p>
+    </div>
+    <img src="glossary/Scenario.png" class="glossimg" style="max-width: 50%; height: auto;" alt="Scenarios">
+</div>
 ```
-
-

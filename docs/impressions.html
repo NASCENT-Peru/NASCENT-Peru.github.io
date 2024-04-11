@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 }</script><script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Workshops .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -55,11 +55,11 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Workshops'] = new List('listing-Workshops', options);
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  </script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  </script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="alternate" type="application/rss+xml" title="NASCENT-PERU" href="impressions.xml">
 </head>
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
 <div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="C:/Users/mankurma/Documents/SwissRE_Peru/Github/NASCENT-Peru.github.io/docs/es/impressions.html" id="language-link-es">Español</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://nascent-peru.github.io/es/impressions.html" id="language-link-es">Español</a></li></ul>
 </div>
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item">
@@ -145,10 +145,21 @@ ul.task-list li input[type="checkbox"] {
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5>
+<div class="quarto-listing-category category-default">
+<div class="category" data-category="">All <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="Scenario creation">Scenario creation <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="Workshops">Workshops <span class="quarto-category-count">(1)</span>
+</div>
+</div>
+</div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">Impressions</h1>
+<p class="subtitle lead">News and updates from the project as they happen</p>
 </div>
 
 
@@ -161,20 +172,31 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-</header><p>The participatory stakeholder workshops form the basis for the development of the nature-positive narratives on which the modeled scenarios are based. Impressions from the various workshops in Peru are presented below.</p>
-<section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<div id="listing-Workshops" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
+</header><p>A newsletter subscription option is coming soon!</p>
 
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Workshops,Scenario creation" data-listing-file-modified-sort="1712764280775" data-listing-reading-time-sort="14">
+<a href="./Scenario_workshops_2024_blog.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img src="./impressions/workshop_locations_impression.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Upcoming scenario creation workshops May-June 2024
+</h5>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-
-
-
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");

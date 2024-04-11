@@ -4,6 +4,7 @@ sortby: "3"
 subtitle: "Scientific Assistant"
 image: Chenyu.jpg
 toc: false
+comments: false
 
 about:
   id: person-profile

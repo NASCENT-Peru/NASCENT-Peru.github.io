@@ -3,6 +3,7 @@ title: "Dr. Jan Göpel"
 sortby: "2"
 image: JanGoepel.jpg
 toc: false
+comments: false
 
 about:
   id: person-profile

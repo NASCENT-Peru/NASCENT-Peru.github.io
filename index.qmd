@@ -1,20 +1,21 @@
 ---
+comments: false
 about:
   template: jolla
   id: about-block
   image: "img/NASCENT_logo_horizontal_upscayl.png"
   image-shape: rectangle
   image-width: "100%"
-  links:
-    - icon: github
-      text: Github
-      href: https://github.com/blenback/NASCENT-Peru
-    - icon: mortarboard-fill
-      text: PLUS ETHZ
-      href: https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/
-    - icon: envelope
-      text: Email
-      href: "mailto:bblack@ethz.ch"
+  # links:
+  #   - icon: github
+  #     text: Github
+  #     href: https://github.com/blenback/NASCENT-Peru
+  #   - icon: mortarboard-fill
+  #     text: PLUS ETHZ
+  #     href: https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/
+  #   - icon: envelope
+  #     text: Email
+  #     href: "mailto:bblack@ethz.ch"
 ---
 
 ::: {#about-block}
@@ -22,7 +23,7 @@ about:
 
 # NAture-positive SCenarios for ENvironmental Transitions: Peru
 
-The NASCENT-PERU project is centered around developing normative, nature positive scenarios for future landscape development in Peru and assessing their impacts on land use and land cover (LULC), biodiversity, and ecosystem services (BES) from 2020 to 2060. The scenarios will be developed through an inclusive participatory process with a cross-section of Peruvian stakeholders, employing the IPBES Nature Futures Framework to encourage a shift beyond typical exploratory trends such as ‘Business as Usual’ to envisage future landscapes that meet the needs of society, support cultural values and preserve nature. Building upon the approach of the ValPar.CH project, quantitative simulation modelling along with economic analysis will be leveraged to identify trade-offs and synergies in BES outcomes, to inform an ongoing dialogue regarding the desirability and feasibility of the different scenario goals.
+The NASCENT-PERU project is centered around developing [normative](glossary.qmd#NScenarios), nature positive [scenarios](glossary.qmd#NScenarios) for future landscape development in Peru and assessing their impacts on [land use and land cover (LULC)](glossary.qmd#LULC), [biodiversity](glossary.qmd#Biodiversity), and [ecosystem services](glossary.qmd#ES) (BES) from 2020 to 2060. The [scenarios](glossary.qmd#Scenarios) will be developed through an inclusive participatory process with a cross-section of Peruvian stakeholders, employing the IPBES [Nature Futures Framework (NFF)](glossary.qmd#NFF) to encourage a shift beyond typical exploratory trends such as ‘Business as Usual’ to envisage future landscapes that meet the needs of society, support cultural values and preserve nature. Building upon the approach of the <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a> project, quantitative simulation modelling along with economic analysis will be leveraged to identify trade-offs and synergies in BES outcomes, to inform an ongoing dialogue regarding the desirability and feasibility of the different scenario goals.
 
 
 

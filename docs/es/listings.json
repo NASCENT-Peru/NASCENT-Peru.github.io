@@ -5,6 +5,7 @@
       "/about/ETHZ/Adrienne.html",
       "/about/ETHZ/loic.html",
       "/about/ETHZ/Ben.html",
+      "/about/ETHZ/Paula.html",
       "/about/ETHZ/Chenyu.html",
       "/about/ETHZ/Manuel.html",
       "/about/WAN/Armando.html",
@@ -17,6 +18,8 @@
   },
   {
     "listing": "/impressions.html",
-    "items": []
+    "items": [
+      "/Scenario_workshops_2024_blog.html"
+    ]
   }
 ]
