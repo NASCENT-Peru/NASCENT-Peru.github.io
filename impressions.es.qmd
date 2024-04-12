@@ -4,7 +4,8 @@ subtitle: "Noticias y actualizaciones del proyecto a medida que se producen"
 toc: false
 comments: false
 listing:
-    contents: "*_blog.es.qmd"
+    contents: 
+    - "*_blog.qmd"
     type: grid
     #image-height: 225px
     grid-columns: 3

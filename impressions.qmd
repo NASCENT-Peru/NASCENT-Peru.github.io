@@ -5,7 +5,8 @@ toc: false
 comments: false
 #title-block-banner: "#f6f8fa"
 listing:
-    contents: "*_blog.qmd"
+    contents: 
+    - Scenario_workshops_2024_blog.qmd
     type: grid
     #image-height: 225px
     grid-columns: 3
