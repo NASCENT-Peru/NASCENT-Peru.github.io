@@ -5,7 +5,7 @@ toc: false
 comments: false
 listing:
     contents: 
-    - "*_blog.qmd"
+    - "Scenario_workshops_2024_blog.es.qmd"
     type: grid
     #image-height: 225px
     grid-columns: 3
