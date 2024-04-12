@@ -21,5 +21,28 @@
     "items": [
       "/Scenario_workshops_2024_blog.html"
     ]
+  },
+  {
+    "listing": "/team.es.html",
+    "items": [
+      "/about/ETHZ/Adrienne.html",
+      "/about/ETHZ/loic.html",
+      "/about/ETHZ/Ben.html",
+      "/about/ETHZ/Paula.html",
+      "/about/ETHZ/Chenyu.html",
+      "/about/ETHZ/Manuel.html",
+      "/about/WAN/Armando.html",
+      "/about/WAN/Edouard.html",
+      "/about/WAN/Jan.html",
+      "/about/WAN/Miguel.html",
+      "/about/UL/antoine.html",
+      "/about/UGA/Ignacio.html"
+    ]
+  },
+  {
+    "listing": "/impressions.es.html",
+    "items": [
+      "/Scenario_workshops_2024_blog.html"
+    ]
   }
 ]

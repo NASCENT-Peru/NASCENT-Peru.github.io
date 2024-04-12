@@ -165,6 +165,125 @@
     "href": "Scenario_workshops_2024_blog.html",
     "title": "Upcoming scenario creation workshops May-June 2024",
     "section": "",
-    "text": "We are excited to announce that we will hold the 1st workshops as part of the participatory scenario creation process in May and June 2024!\nThe aim of these workshops is to produce visions of what are the desirable characteristics of the future landscape of Peru in 2060 from the perspective of a diverse group of participants. The results of the workshops will feed into the development of the scenarios describing the changes needed to arrive at the desired landscapes. Ypou can find more information on our approach on the project page.\nWe will start with 1 national workshop in Lima followed by regional workshops in four locations shown on the interactive map below."
+    "text": "We are excited to announce that we will hold the 1st workshops as part of the participatory scenario creation process in May and June 2024!\nThe aim of these workshops is to produce visions of what are the desirable characteristics of the future landscape of Peru in 2060 from the perspective of a diverse group of participants. The results of the workshops will feed into the development of the scenarios describing the changes needed to arrive at the desired landscapes. You can find more information on our approach on the project page.\nWe will start with 1 national workshop in Lima followed by regional workshops in four locations shown on the interactive map below."
+  },
+  {
+    "objectID": "team.es.html",
+    "href": "team.es.html",
+    "title": "Equipo",
+    "section": "",
+    "text": "ETH Zürich\n    \n    \n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Adrienne Grêt-Regamey\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoïc Pellissier\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenjamin Black\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaula Mayer\n\n\n\n\n\n\n\n\n\n\n\n\n\nChenyu Shen\n\n\n\n\n\n\n\n\n\n\n\n\n\nManuel Kurmann\n\n\n\n\n\n\n\nNo matching items\n\n\n\n \n    \n        Wyss Academy for Nature\n    \n    \n\n\n\n\n\n\n\n\n\n\n\nArmando Valdés-Velásquez\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Edouard Davin\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Jan Göpel\n\n\n\n\n\n\n\n\n\n\n\n\n\nMiguel Saravia\n\n\n\n\n\n\n\nNo matching items\n\n\n\n \n    \n        Université de Lausanne\n    \n    \n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Antoine Guisan\n\n\n\n\n\n\n\nNo matching items\n\n\n\n \n    \n        Université Grenoble Alpes\n    \n    \n\n\n\n\n\n\n\n\n\n\n\nDr. Ignacio Palomo\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "project.es.html",
+    "href": "project.es.html",
+    "title": "Proyecto",
+    "section": "",
+    "text": "El proceso para desarrollar escenarios normativos y positivos para la naturaleza, orientados al futuro desarrollo del paisaje en Perú, junto con la evaluación de sus efectos en el uso y cobertura de la tierra (LULC), la biodiversidad y los servicios ecosistémicos (BES), se realiza en seis etapas.\n\nEl proceso participativo del proyecto incluye una serie de talleres, tanto nacionales como regionales, que reúnen a partes interesadas y expertos. El objetivo es identificar en colaboración los aspectos deseables e indeseables del futuro cambio paisajístico.\n\nAdemás de los talleres, se realiza una encuesta en línea. A partir de la información obtenida en los talleres y la encuesta, se crean escenarios exploratorios y normativos. Los escenarios exploratorios consisten en escenarios negativos y en que todo sigue igual, mientras que los escenarios normativos consisten en escenarios positivos para la naturaleza.\n\nLas tasas de cambio del uso y la ocupación del suelo (LULCC) se determinan para cada escenario cuantificando las tendencias de los factores socioeconómicos, biofísicos y climáticos.\n\nDurante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) y la distribución de especies para cada escenario, teniendo en cuenta el futuro Uso y Cubierta del Suelo (LULC) como uno de los factores de entrada.\n\nLas características económicas de cada escenario se cuantifican en función del uso y la ocupación del suelo (LULC) y de los servicios ecosistémicos (ES).\n\nComo parte de la metodología del proyecto, se presentarán resultados provisionales para refinar los escenarios. Los resultados finales y los conjuntos de datos se pondrán a disposición del público, contribuyendo así a la base de conocimientos para futuros proyectos.\nEl procedimiento utilizado en NASCENT-Perú se basa en la metodología utilizada en ValPar.CH"
+  },
+  {
+    "objectID": "project.es.html#flujo-de-trabajo",
+    "href": "project.es.html#flujo-de-trabajo",
+    "title": "Proyecto",
+    "section": "",
+    "text": "El proceso para desarrollar escenarios normativos y positivos para la naturaleza, orientados al futuro desarrollo del paisaje en Perú, junto con la evaluación de sus efectos en el uso y cobertura de la tierra (LULC), la biodiversidad y los servicios ecosistémicos (BES), se realiza en seis etapas.\n\nEl proceso participativo del proyecto incluye una serie de talleres, tanto nacionales como regionales, que reúnen a partes interesadas y expertos. El objetivo es identificar en colaboración los aspectos deseables e indeseables del futuro cambio paisajístico.\n\nAdemás de los talleres, se realiza una encuesta en línea. A partir de la información obtenida en los talleres y la encuesta, se crean escenarios exploratorios y normativos. Los escenarios exploratorios consisten en escenarios negativos y en que todo sigue igual, mientras que los escenarios normativos consisten en escenarios positivos para la naturaleza.\n\nLas tasas de cambio del uso y la ocupación del suelo (LULCC) se determinan para cada escenario cuantificando las tendencias de los factores socioeconómicos, biofísicos y climáticos.\n\nDurante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) y la distribución de especies para cada escenario, teniendo en cuenta el futuro Uso y Cubierta del Suelo (LULC) como uno de los factores de entrada.\n\nLas características económicas de cada escenario se cuantifican en función del uso y la ocupación del suelo (LULC) y de los servicios ecosistémicos (ES).\n\nComo parte de la metodología del proyecto, se presentarán resultados provisionales para refinar los escenarios. Los resultados finales y los conjuntos de datos se pondrán a disposición del público, contribuyendo así a la base de conocimientos para futuros proyectos.\nEl procedimiento utilizado en NASCENT-Perú se basa en la metodología utilizada en ValPar.CH"
+  },
+  {
+    "objectID": "project.es.html#lugares-de-los-talleres",
+    "href": "project.es.html#lugares-de-los-talleres",
+    "title": "Proyecto",
+    "section": "Lugares de los talleres",
+    "text": "Lugares de los talleres\n\n\nWarning: package 'leaflet' was built under R version 4.2.3"
+  },
+  {
+    "objectID": "project.es.html#calendario",
+    "href": "project.es.html#calendario",
+    "title": "Proyecto",
+    "section": "Calendario",
+    "text": "Calendario"
+  },
+  {
+    "objectID": "index.es.html",
+    "href": "index.es.html",
+    "title": "Escenarios positivos para la naturaleza en las medioambientales de Perú",
+    "section": "",
+    "text": "Github\n  \n  \n    \n     PLUS ETHZ\n  \n  \n    \n     Email\n  \n\n\n\n\nEscenarios positivos para la naturaleza en las medioambientales de Perú\nEl proyecto NASCENT-PERU se centra en el desarrollo de escenarios normativos, positivos para la naturaleza, para el futuro desarrollo del paisaje en Perú y la evaluación de sus impactos sobre el uso del suelo y la ocupación del suelo (LULC), la biodiversidad y los servicios ecosistémicos (BES) de 2020 a 2060. Los escenarios se desarrollarán mediante un proceso participativo inclusivo con una muestra representativa de las partes interesadas peruanas. Se utilizará el Marco de Futuros de la Naturaleza (NFF) de IPBES para prever paisajes futuros que satisfagan las necesidades de la sociedad, apoyen los valores culturales y preserven la naturaleza, alejándose de las tendencias exploratorias típicas como “Business as Usual”. Basándose en el enfoque del proyecto ValPar.CH, se utilizarán modelos de simulación cuantitativa junto con análisis económicos para identificar compensaciones y sinergias en los resultados de la iniciativa BES, con el fin de alimentar un diálogo continuo sobre la conveniencia y viabilidad de los diferentes objetivos hipotéticos."
+  },
+  {
+    "objectID": "glossary.es.html",
+    "href": "glossary.es.html",
+    "title": "Glosario",
+    "section": "",
+    "text": "La variabilidad entre organismos vivos de todas las fuentes, incluidos los ecosistemas terrestres, marinos y otros ecosistemas acuáticos y los complejos ecológicos de los que forman parte. Esto incluye la variación en los atributos genéticos, fenotípicos, filogenéticos y funcionales, así como los cambios en la abundancia y la distribución a lo largo del tiempo y el espacio dentro de las especies, las comunidades biológicas y los ecosistemas y entre ellos.\n\nSource: Diaz et al., 2015"
+  },
+  {
+    "objectID": "glossary.es.html#Biodiversity",
+    "href": "glossary.es.html#Biodiversity",
+    "title": "Glosario",
+    "section": "",
+    "text": "La variabilidad entre organismos vivos de todas las fuentes, incluidos los ecosistemas terrestres, marinos y otros ecosistemas acuáticos y los complejos ecológicos de los que forman parte. Esto incluye la variación en los atributos genéticos, fenotípicos, filogenéticos y funcionales, así como los cambios en la abundancia y la distribución a lo largo del tiempo y el espacio dentro de las especies, las comunidades biológicas y los ecosistemas y entre ellos.\n\nSource: Diaz et al., 2015"
+  },
+  {
+    "objectID": "glossary.es.html#Scenarios",
+    "href": "glossary.es.html#Scenarios",
+    "title": "Glosario",
+    "section": "Escenarios",
+    "text": "Escenarios\n\n\n\nRepresentaciones de futuros posibles para uno o varios componentes de un sistema, en particular para los motores del cambio en la naturaleza y los beneficios de la naturaleza, incluidas las opciones políticas o de gestión alternativas.\n\nSource: IPBES, 2018"
+  },
+  {
+    "objectID": "glossary.es.html#NScenarios",
+    "href": "glossary.es.html#NScenarios",
+    "title": "Glosario",
+    "section": "Escenarios Normativos",
+    "text": "Escenarios Normativos\n\n\n\nLos escenarios de búsqueda de objetivos (también conocidos como \"escenarios de búsqueda de metas\" o \"escenarios normativos\") son escenarios que comienzan con la definición de un objetivo claro, o un conjunto de objetivos, especificados en términos de metas alcanzables, o como una función objetivo que debe optimizarse, y luego identifican diferentes vías para lograr este resultado (por ejemplo, mediante backcasting).\n\nSource: IPBES core glossary, 2021"
+  },
+  {
+    "objectID": "glossary.es.html#NCP",
+    "href": "glossary.es.html#NCP",
+    "title": "Glosario",
+    "section": "Las Contribuciones de la Naturaleza a las Personas (NCP)",
+    "text": "Las Contribuciones de la Naturaleza a las Personas (NCP)\n\n\n\nLas contribuciones de la naturaleza a las personas (NPC) son todas las contribuciones, tanto positivas como negativas, de la naturaleza viva (es decir, la diversidad de organismos, ecosistemas y sus procesos ecológicos y evolutivos asociados) a la calidad de vida de las personas. Entre las contribuciones beneficiosas de la naturaleza se incluyen el suministro de alimentos, la purificación del agua, el control de las inundaciones y la inspiración artística, mientras que entre las contribuciones perjudiciales se incluyen la transmisión de enfermedades y la depredación que daña a las personas o sus bienes. Muchos PNC pueden percibirse como beneficios o perjuicios en función del contexto cultural, temporal o espacial.\n\nSource: Pörtner et al., 2021"
+  },
+  {
+    "objectID": "glossary.es.html#NFF",
+    "href": "glossary.es.html#NFF",
+    "title": "Glosario",
+    "section": "Marco de Futuros de la Naturaleza (NFF)",
+    "text": "Marco de Futuros de la Naturaleza (NFF)\n\n\n\nUna heurística que capta diversos valores positivos de las relaciones entre los seres humanos y la naturaleza a lo largo de tres tipos de perspectivas de valores específicos sobre la naturaleza: valores intrínsecos (también conocidos como \"la naturaleza por la naturaleza\"), instrumentales (\"la naturaleza para la sociedad\") y relacionales (\"la naturaleza como cultura/uno con la naturaleza\"). Estos valores de la naturaleza no se excluyen mutuamente y están intrínsecamente entrelazados. En el contexto de la ciencia occidental, estos valores positivos pueden situarse en un espacio triangular cuyas puntas representan los tres tipos de perspectivas de valor de la naturaleza.\n\nSource: IPBES, 2023"
+  },
+  {
+    "objectID": "glossary.es.html#LULC",
+    "href": "glossary.es.html#LULC",
+    "title": "Glosario",
+    "section": "Uso y Ocupación del Suelo (LULC)",
+    "text": "Uso y Ocupación del Suelo (LULC)\n\n\n\nUso del Suelo\n\nEl uso humano de un área específica para un propósito específico (como residencial, agrícola, recreativo, industrial, etc.). Influido por la cobertura del suelo, pero no sinónimo de ella. El cambio en el uso de la tierra se refiere a un cambio en el uso o la gestión de la tierra por parte de los seres humanos, que puede dar lugar a un cambio en la cobertura del suelo.\n\n\nOcupación del Suelo\n\nLa cobertura física de la tierra, normalmente expresada en términos de cobertura vegetal o falta de ella. Relacionado con, pero no sinónimo de uso del suelo.\n\n\nSource: Milenium Ecosystem Assessement, 2005"
+  },
+  {
+    "objectID": "glossary.es.html#ES",
+    "href": "glossary.es.html#ES",
+    "title": "Glosario",
+    "section": "Servicios Ecosistémicos (ES)",
+    "text": "Servicios Ecosistémicos (ES)\n\n\n\nLos beneficios que las personas obtienen de los ecosistemas. En la Evaluación de los Ecosistemas del Milenio, los servicios de los ecosistemas pueden dividirse en de apoyo, de regulación, de aprovisionamiento y culturales. Esta clasificación, sin embargo, es sustituida en las evaluaciones de IPBES por el sistema utilizado en \"Contribuciones de la naturaleza a las personas\". Esto se debe a que IPBES reconoce que muchos servicios encajan en más de una de las cuatro categorías. Por ejemplo, la alimentación es un servicio de aprovisionamiento y, en muchas culturas, un servicio cultural.\n\nSource: IPBES core glossary, 2021"
+  },
+  {
+    "objectID": "funding.es.html",
+    "href": "funding.es.html",
+    "title": "Financiación",
+    "section": "",
+    "text": "El proyecto se financia como parte del reto de modelización de escenarios de biodiversidad y servicios ecosistémicos financiado por Swiss Re Foundation, Swiss Re Institute, Swiss Re Corporate Solutions, EY, WWF y AXA Research Fund."
+  },
+  {
+    "objectID": "impressions.es.html",
+    "href": "impressions.es.html",
+    "title": "Impresiones",
+    "section": "",
+    "text": "Upcoming scenario creation workshops May-June 2024\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Scenario_workshops_2024_blog.es.html",
+    "href": "Scenario_workshops_2024_blog.es.html",
+    "title": "Próximos talleres de creación de escenarios mayo-junio de 2024",
+    "section": "",
+    "text": "Nos complace anunciar que celebraremos los primeros talleres como parte del proceso participativo de creación de escenarios en mayo y junio de 2024.\nEl objetivo de estos talleres es producir visiones de cuáles son las características deseables del futuro paisaje de Perú en 2060 desde la perspectiva de un grupo diverso de participantes. Los resultados de los talleres alimentarán el desarrollo de los escenarios que describen los cambios necesarios para llegar a los paisajes deseados. Puede encontrar más información sobre nuestro enfoque en la página del proyecto.\nComenzaremos con un taller nacional en Lima, seguido de talleres regionales en cuatro lugares que se muestran en el mapa interactivo de abajo."
   }
 ]
