@@ -2,6 +2,7 @@
 title: "Impresiones"
 subtitle: "Noticias y actualizaciones del proyecto a medida que se producen"
 toc: false
+comments: false
 listing:
     contents: "*_blog.es.qmd"
     type: grid

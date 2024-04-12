@@ -2,6 +2,7 @@
 title: "Impressions"
 subtitle: "News and updates from the project as they happen"
 toc: false
+comments: false
 #title-block-banner: "#f6f8fa"
 listing:
     contents: "*_blog.qmd"

@@ -2,6 +2,7 @@
 title: Glossary
 subtitle: "Definitions of key terms and concepts used in the project"
 #title-block-banner: "#f6f8fa"
+comments: false
 format:
   html:
     margin-left: 0.5em

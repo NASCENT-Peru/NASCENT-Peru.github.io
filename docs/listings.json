@@ -17,6 +17,12 @@
     ]
   },
   {
+    "listing": "/impressions.es.html",
+    "items": [
+      "/Scenario_workshops_2024_blog.es.html"
+    ]
+  },
+  {
     "listing": "/impressions.html",
     "items": [
       "/Scenario_workshops_2024_blog.html"
@@ -37,12 +43,6 @@
       "/about/WAN/Miguel.html",
       "/about/UL/antoine.html",
       "/about/UGA/Ignacio.html"
-    ]
-  },
-  {
-    "listing": "/impressions.es.html",
-    "items": [
-      "/Scenario_workshops_2024_blog.es.html"
     ]
   }
 ]

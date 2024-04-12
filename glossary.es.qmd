@@ -1,5 +1,6 @@
 ---
 title: Glosario
+comments: false
 format:
   html:
     margin-left: 0.5em
