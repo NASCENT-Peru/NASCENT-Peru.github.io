@@ -1,25 +1,19 @@
 ---
 title: "Impresiones"
+subtitle: "Noticias y actualizaciones del proyecto a medida que se producen"
 toc: false
 listing:
-  - id: Workshops
-    #contents: "Workshops/*.qmd"
+    contents: "*_blog.es.qmd"
     type: grid
-    #image: "ETHZ/*.jpg"
-    image-height: 225px
+    #image-height: 225px
     grid-columns: 3
     fields: [image, title]
     grid-item-align: center
     sort: sortby
+    feed: true
+    categories: true
 ---
 
 
-
-Los talleres participativos con las partes interesadas constituyen la base para el desarrollo de las narrativas positivas para la naturaleza en las que se basan los escenarios modelados. A continuación, se presentan impresiones de los diversos talleres realizados en Perú.
-
-## Panorama
-
-:::{#Workshops}
-:::
 
 

@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Workshops .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -78,13 +78,12 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 18,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Workshops'] = new List('listing-Workshops', options);
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -128,9 +127,9 @@ window.Quarto = {
 };
 </script>
 
-</head>
+<link rel="alternate" type="application/rss+xml" title="NASCENT-PERU" href="impressions.es.xml" data-external="1"></head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -205,13 +204,15 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Creación de Escenarios">Creación de Escenarios <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Talleres">Talleres <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Impresiones</h1>
+<p class="subtitle lead">Noticias y actualizaciones del proyecto a medida que se producen</p>
 </div>
 
 
@@ -228,340 +229,21 @@ window.Quarto = {
 </header>
 
 
-<p>Los talleres participativos con las partes interesadas constituyen la base para el desarrollo de las narrativas positivas para la naturaleza en las que se basan los escenarios modelados. A continuación, se presentan impresiones de los diversos talleres realizados en Perú.</p>
-<section id="panorama" class="level2">
-<h2 class="anchored" data-anchor-id="panorama">Panorama</h2>
-<div id="listing-Workshops" class="quarto-listing quarto-listing-container-grid">
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1711365201338" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/ETHZ/Adrienne.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="Talleres,Creación de Escenarios" data-listing-file-modified-sort="1712913198755" data-listing-reading-time-sort="14" data-listing-word-count-sort="2707">
+<a href="./Scenario_workshops_2024_blog.es.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/ETHZ/Adrienne.jpg" class="thumbnail-image card-img" style="height: 225px;">
+<img src="./impressions/workshop_locations_impression.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Prof.&nbsp;Dr.&nbsp;Adrienne Grêt-Regamey
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/ETHZ/loic.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/ETHZ/loic.jpeg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Loïc Pellissier
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/UGA/Ignacio.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/UGA/Ignacio.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dr.&nbsp;Ignacio Palomo
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/UL/antoine.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/UL/antoine.jpeg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Prof.&nbsp;Dr.&nbsp;Antoine Guisan
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/WAN/Armando.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/WAN/Armando.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Armando Valdés-Velásquez
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/WAN/Edouard.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/WAN/Edouard.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Prof.&nbsp;Dr.&nbsp;Edouard Davin
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/ETHZ/Ben.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/ETHZ/Ben.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Benjamin Black
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/WAN/Jan.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/WAN/JanGoepel.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dr.&nbsp;Jan Göpel
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/WAN/Miguel.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/WAN/miguel.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Miguel Saravia
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/ETHZ/Chenyu.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/ETHZ/Chenyu.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Chenyu Shen
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1711365201354" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/ETHZ/Manuel.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/ETHZ/Manuel.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Manuel Kurmann
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="11" data-listing-file-modified-sort="1711614715141" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
-<a href="./about/funding.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="about\finances.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Funding
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="12" data-listing-file-modified-sort="1711365201621" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
-<a href="./funding.es.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="about\finances.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Financiación
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="13" data-listing-file-modified-sort="1711365201621" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
-<a href="./funding.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="about\finances.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Funding
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="14" data-listing-file-modified-sort="1711614715407" data-listing-reading-time-sort="3" data-listing-word-count-sort="521">
-<a href="./glossary/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="glossary\glossary\dummybiodiversity.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Glossary
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="15" data-listing-file-modified-sort="1711614724158" data-listing-reading-time-sort="4" data-listing-word-count-sort="658">
-<a href="./glossary.es.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="glossary\dummybiodiversity.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Glosario
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="16" data-listing-file-modified-sort="1711614724159" data-listing-reading-time-sort="3" data-listing-word-count-sort="533">
-<a href="./glossary.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img src="glossary\dummybiodiversity.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Glossary
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="17" data-listing-file-modified-sort="1711614715447" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
-<a href="./impressions/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<div class="listing-item-img-placeholder card-img-top" style="height: 225px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Stakeholder Workshop Impressions
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="18" data-listing-file-modified-sort="1711368428908" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
-<a href="./impressions.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="about\ETHZ\Adrienne.jpg" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Impressions
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="19" data-listing-file-modified-sort="1711614724160" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
-<a href="./index.es.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="img\NASCENT_logo_horizontal_upscayl.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Escenarios positivos para la naturaleza en las medioambientales de Perú
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="20" data-listing-file-modified-sort="1711619498000" data-listing-reading-time-sort="1" data-listing-word-count-sort="133">
-<a href="./index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="img\NASCENT_logo_horizontal_upscayl.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-NAture-positive SCenarios for ENvironmental Transitions: Peru
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="21" data-listing-file-modified-sort="1711614715455" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
-<a href="./project/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="project\project\workflow_NASCENT_Peru.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Project
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="22" data-listing-file-modified-sort="1711614724166" data-listing-reading-time-sort="4" data-listing-word-count-sort="683">
-<a href="./project.es.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="project\Worklfow_Nascent_es.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Proyecto
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="23" data-listing-file-modified-sort="1712734046127" data-listing-reading-time-sort="4" data-listing-word-count-sort="634">
-<a href="./project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="project\workflow_NASCENT_Peru.png" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Project
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="24" data-listing-file-modified-sort="1711365201668" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
-<a href="./team.es.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="about\ETHZ\Adrienne.jpg" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Equipo
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="25" data-listing-file-modified-sort="1711365201668" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
-<a href="./team.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top"><img data-src="about\ETHZ\Adrienne.jpg" style="height: 225px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Team
+Próximos talleres de creación de escenarios mayo-junio de 2024
 </h5>
 </div>
 </div>
@@ -571,16 +253,7 @@ Team
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="Workshops-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div>
-
-
-
-</section>
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -967,6 +640,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="NASCENT-Peru/NASCENT-Peru.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
