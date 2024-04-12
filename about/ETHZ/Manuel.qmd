@@ -3,6 +3,8 @@ title: "Manuel Kurmann"
 sortby: "3"
 image: Manuel.jpg
 toc: false
+comments: false
+
 #resources: 
   #- "girard_cv.pdf"
 about:

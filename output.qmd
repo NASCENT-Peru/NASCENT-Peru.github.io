@@ -1,0 +1,64 @@
+---
+title: Output
+comments: false
+format:
+  html:
+    margin-left: 0.5em
+    toc: true
+    toc-title: Contents
+    toc-location: left
+    toc-depth: 3
+    include-in-header:
+      - text: |
+          <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-core.min.js"></script>
+          <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-venn.min.js"></script>
+          <script src="https://cdn.anychart.com/releases/8.9.0/themes/pastel.min.js"></script>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+---
+
+## Scenarios {#scen}
+
+```{=html}
+<div id="container", class="chart-container" style="width: 100%; height: 600px;"></div>
+```
+
+<script>
+  anychart.onDocumentReady(function () {
+    // create bar chart
+    var chart = anychart.venn(getData());
+
+    //set chart stroke
+    chart.stroke('2 #fff');
+
+    //set labels settings
+    chart.labels(false);
+
+    //set font color for hover intersections labels
+    chart.intersections().hovered().fill('black 0.15');
+
+    //set legend settings
+    var legend = chart.legend(false);
+        
+
+    chart.container('container');
+  
+    
+    //initiate chart drawing
+    chart.draw();
+
+    function getData() {
+        return [
+      {x: 'A', name: 'STAKEHOLDERS', value: 100, stroke: 'none',fontSize:3, label: {enabled: true, fontColor: '#81A8C9', fontSize: 6}}, 
+      {x: 'B', name: 'ACTORS', value: 45, label: {enabled: true, fontColor: '#3B77B5', fontSize: 6, offsetY:-160, offsetX:-200}}, 
+      {x: 'C', name: 'TECHNICAL EXPERTS', value: 45, label: {enabled: true, fontColor: '#A3725D', fontSize: 6, offsetY:-115, offsetX:170}}, 
+      {x: 'D', name: 'FIELD EXPERTS', value: 20, label: {enabled: true, fontColor: '#868D70', fontSize: 6, offsetY:-90, offsetX:0}}, 
+      {x: ['A', 'B'], name: 'ACTORS', value: 90}, 
+      {x: ['A', 'C'], name: 'TECHNICAL EXPERTS \n Academia', value: 90, text:'Academia', label: {enabled: true, text: 'Academia',format: "{%text}",fontColor: '#A3725D', fontSize: 6, offsetY:0, offsetX:40}}, 
+      {x: ['B', 'C'], name: 'Government \n Officials \n \n Private Sector', value: 10,label: {enabled:true,format: "{%name}",fontColor:"#805954", offsetX:-11, fontSize: 6}},
+      {x: ['B', 'D'], name: 'FIELD EXPERTS \n Practitioners',text:'Practitioners', value: 60,label: {enabled:true,format: "{%text}", fontColor:"#868D70",fontSize:6}},
+      {x: ['B','C','D'], name: 'NGOs \n CBOs', value: 10,label: {enabled:true,format: "{%name}", fontColor: "#A67E3C", fontSize: 6, offsetX:20}},
+      ];
+    }
+});
+</script>
+

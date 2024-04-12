@@ -4,6 +4,7 @@ sortby: "1"
 subtitle: "Professor"
 image: Armando.jpg
 toc: false
+comments: false
 
 about:
   id: person-profile

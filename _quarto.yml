@@ -3,6 +3,8 @@ project:
   output-dir: docs
   execute-dir: project
 
+
+
 website:
   site-url: "https://nascent-peru.github.io/"
   repo-url: "https://github.com/NASCENT-Peru/NASCENT-Peru.github.io"
@@ -22,6 +24,7 @@ website:
       - project.qmd
       - impressions.qmd
       - glossary.qmd
+      #- output.qmd
       - menu:
               - team.qmd
               - funding.qmd

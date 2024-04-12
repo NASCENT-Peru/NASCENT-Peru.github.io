@@ -1,4 +1,5 @@
 ---
+comments: false
 about:
   template: jolla
   id: about-block

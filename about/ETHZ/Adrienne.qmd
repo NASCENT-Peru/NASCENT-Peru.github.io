@@ -3,6 +3,7 @@ title: "Prof. Dr. Adrienne Grêt-Regamey"
 sortby: "1"
 image: Adrienne.jpg
 toc: false
+comments: false
 
 about:
   id: person-profile
