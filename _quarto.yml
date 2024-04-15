@@ -3,8 +3,6 @@ project:
   output-dir: docs
   execute-dir: project
 
-
-
 website:
   site-url: "https://nascent-peru.github.io/"
   repo-url: "https://github.com/NASCENT-Peru/NASCENT-Peru.github.io"
@@ -35,6 +33,12 @@ website:
     right:
       - icon: github
         href: https://github.com/blenback/NASCENT-Peru
+      - icon: linkedin
+        href: https://www.linkedin.com/company/nascent-peru
+      - icon: facebook
+        href: https://www.facebook.com/profile.php?id=61557948733975
+      - text: "{{< iconify simple-icons zenodo size = Large >}}"
+        href: https://zenodo.org/communities/nascent-peru
       - icon: mortarboard
         href: https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/
       - icon: envelope
