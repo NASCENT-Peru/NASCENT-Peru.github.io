@@ -1,7 +1,8 @@
 ---
 title: "Paula Mayer"
-sortby: "2"
+sortby: "3"
 subtitle: "PhD Student"
+author: "Colaborador científico"
 image: Paula.jpg
 toc: false
 comments: false

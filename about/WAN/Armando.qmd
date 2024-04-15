@@ -1,7 +1,8 @@
 ---
-title: "Armando Valdés-Velásquez"
+title: "Prof. Dr. Armando Valdés-Velásquez"
 sortby: "1"
-subtitle: "Professor"
+subtitle: "Scientific Collaborator"
+author: "Colaborador científico"
 image: Armando.jpg
 toc: false
 comments: false

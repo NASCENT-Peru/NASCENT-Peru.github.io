@@ -2,6 +2,8 @@
 title: "Manuel Kurmann"
 sortby: "3"
 image: Manuel.jpg
+subtitle: "Research Assistant"
+author: "Asistente de investigación"
 toc: false
 comments: false
 

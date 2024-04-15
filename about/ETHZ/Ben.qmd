@@ -1,7 +1,8 @@
 ---
 title: "Benjamin Black"
-sortby: "2"
-subtitle: "PhD Student"
+subtitle: "Project Director and Lead researcher"
+author: "Director del proyecto e investigador principal"
+sortby: "1"
 image: Ben.jpg
 toc: false
 comments: false
@@ -12,12 +13,12 @@ about:
   links:
     - icon: link
       text: website
-      href: https://plus.ethz.ch/chair/people/person-detail.MjgyMjA5.TGlzdC8xMjQyLDE0MzMyMTIxNTg=.html
+      href: https://blenback.github.io/
 ---
 
-```{=html}
-<meta http-equiv="Refresh" content="0; url='https://plus.ethz.ch/chair/people/person-detail.MjgyMjA5.TGlzdC8xMjQyLDE0MzMyMTIxNTg=.html'" />
-```
+<!-- ```{=html} -->
+<!-- <meta http-equiv="Refresh" content="0; url='https://blenback.github.io/'" /> -->
+<!-- ``` -->
 
 :::{#person-profile}
 :::

@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -311,15 +311,13 @@ window.Quarto = {
 </header>
 
 
-<div style="display: flex; align-items: flex-start; gap: 10px;"> 
-    <div style="flex-grow: 1;">
-        <h2 class="anchored">ETH Zürich</h2>
-    </div>
-    <img src="about/ETHZ.png" style="max-width: 50%; height: auto;" alt="ETH Zurich">
-</div>
+<p>The NASCENT-PERU team is an interdiscplinary collaboration between researchers from <a href="https://ethz.ch/de.html">ETH Zurich</a>, the <a href="https://www.wyssacademy.org/project-south-america">Wyss Academy for Nature</a>, the <a href="https://www.unil.ch/ecospat/home.html">Université de Lausanne</a>, and the <a href="https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp">Université Grenoble Alpes</a>. Click on each team members profile for further information.</p>
+<h2 class="anchored">
+<a href="https://ethz.ch/de.html"><img src="about/ETHZ.png" style="max-width: 50%; height: auto;" alt="ETH Zurich"></a>
+</h2>
 <div id="listing-ETHZ" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1712913198755" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174241300" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/ETHZ/Adrienne.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -329,25 +327,16 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 Prof.&nbsp;Dr.&nbsp;Adrienne Grêt-Regamey
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Investigador principal
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1712913198755" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/ETHZ/loic.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/ETHZ/loic.jpeg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Loïc Pellissier
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1712913198755" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1713174719188" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
 <a href="./about/ETHZ/Ben.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -357,25 +346,35 @@ Loïc Pellissier
 <h5 class="no-anchor card-title listing-title">
 Benjamin Black
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Director del proyecto e investigador principal
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1712913198755" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/ETHZ/Paula.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1713174493931" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<a href="./about/ETHZ/loic.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/ETHZ/Paula.jpg" class="thumbnail-image card-img" style="height: 225px;">
+<img src="./about/ETHZ/loic.jpeg" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Paula Mayer
+Prof.&nbsp;Dr.&nbsp;Loïc Pellissier
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Colaborador científico
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1712913198755" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1713174371196" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/ETHZ/Chenyu.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -385,11 +384,16 @@ Paula Mayer
 <h5 class="no-anchor card-title listing-title">
 Chenyu Shen
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Asistente de investigación
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1712913198755" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1713174497887" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/ETHZ/Manuel.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -399,6 +403,30 @@ Chenyu Shen
 <h5 class="no-anchor card-title listing-title">
 Manuel Kurmann
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Asistente de investigación
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1713174462517" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<a href="./about/ETHZ/Paula.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img src="./about/ETHZ/Paula.jpg" class="thumbnail-image card-img" style="height: 225px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Paula Mayer
+</h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Colaborador científico
+</div>
+</div>
 </div>
 </div>
 </a>
@@ -408,16 +436,12 @@ Manuel Kurmann
 No matching items
 </div>
 </div>
-<p></p>
-<div style="display: flex; align-items: flex-start; gap: 10px;"> 
-    <div style="flex-grow: 1;">
-        <h2 class="anchored">Wyss Academy for Nature</h2>
-    </div>
-    <img src="about/WAN.png" style="max-width: 50%; height: auto;" alt="Wyss Academy for Nature">
-</div>
+<h2 class="anchored">
+<a href="https://www.wyssacademy.org/project-south-america"><img src="about/WAN.png" style="max-width: 50%; height: auto;" alt="Wyss Academy for Nature"></a>
+</h2>
 <div id="listing-WAN" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1712913198771" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174565143" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/WAN/Armando.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -425,13 +449,18 @@ No matching items
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Armando Valdés-Velásquez
+Prof.&nbsp;Dr.&nbsp;Armando Valdés-Velásquez
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Colaborador científico
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1712913198771" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1713174563053" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/WAN/Edouard.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -441,11 +470,16 @@ Armando Valdés-Velásquez
 <h5 class="no-anchor card-title listing-title">
 Prof.&nbsp;Dr.&nbsp;Edouard Davin
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Colaborador científico
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1712913198771" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1713174561189" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/WAN/Jan.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -455,11 +489,16 @@ Prof.&nbsp;Dr.&nbsp;Edouard Davin
 <h5 class="no-anchor card-title listing-title">
 Dr.&nbsp;Jan Göpel
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Colaborador científico
+</div>
+</div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1712913198771" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1713174553710" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/WAN/Miguel.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -469,6 +508,11 @@ Dr.&nbsp;Jan Göpel
 <h5 class="no-anchor card-title listing-title">
 Miguel Saravia
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Colaborador científico
+</div>
+</div>
 </div>
 </div>
 </a>
@@ -478,16 +522,12 @@ Miguel Saravia
 No matching items
 </div>
 </div>
-<p></p>
-<div style="display: flex; align-items: flex-start; gap: 10px;"> 
-    <div style="flex-grow: 1;">
-        <h2 class="anchored">Université de Lausanne</h2>
-    </div>
-    <img src="about/UNIL.png" style="max-width: 50%; height: auto;" alt="Université de Lausanne">
-</div>
+<h2 class="anchored">
+<a href="https://www.unil.ch/ecospat/home.html"><img src="about/UNIL.png" style="max-width: 50%; height: auto;" alt="Université de Lausanne"></a>
+</h2>
 <div id="listing-UL" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1712913198771" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174559150" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/UL/antoine.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -497,6 +537,11 @@ No matching items
 <h5 class="no-anchor card-title listing-title">
 Prof.&nbsp;Dr.&nbsp;Antoine Guisan
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Colaborador científico
+</div>
+</div>
 </div>
 </div>
 </a>
@@ -506,16 +551,12 @@ Prof.&nbsp;Dr.&nbsp;Antoine Guisan
 No matching items
 </div>
 </div>
-<p></p>
-<div style="display: flex; align-items: flex-start; gap: 10px;"> 
-    <div style="flex-grow: 1;">
-        <h2 class="anchored">Université Grenoble Alpes</h2>
-    </div>
-    <img src="about/UGA.jpg" style="max-width: 50%; height: auto;" alt="Université Grenoble Alpes">
-</div>
+<h2 class="anchored">
+<a href="https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp"><img src="about/UGA.jpg" style="max-width: 50%; height: auto;" alt="Université Grenoble Alpes"></a>
+</h2>
 <div id="listing-UGA" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1712913198771" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174557757" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/UGA/Ignacio.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -525,6 +566,11 @@ No matching items
 <h5 class="no-anchor card-title listing-title">
 Dr.&nbsp;Ignacio Palomo
 </h5>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Colaborador científico
+</div>
+</div>
 </div>
 </div>
 </a>

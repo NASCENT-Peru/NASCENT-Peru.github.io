@@ -10,7 +10,7 @@ listing:
     #image: "ETHZ/*.jpg"
     image-height: 225px
     grid-columns: 3
-    fields: [image, title]
+    fields: [image, title, author]
     grid-item-align: center
     sort: sortby
     field-display-names: 
@@ -21,7 +21,7 @@ listing:
     image-height: 225px
     grid-columns: 3
     sort: sortby
-    fields: [image, title]
+    fields: [image, title, author]
     field-display-names: 
       started: "Started"
     grid-item-align: center
@@ -30,7 +30,7 @@ listing:
     type: grid
     image-height: 225px
     grid-columns: 3
-    fields: [image, title]
+    fields: [image, title, author]
     grid-item-align: center
     sort: sortby
     field-display-names: 
@@ -40,7 +40,7 @@ listing:
     type: grid
     image-height: 225px
     grid-columns: 3
-    fields: [image, title]
+    fields: [image, title, author]
     grid-item-align: center
     sort: sortby
     field-display-names: 
@@ -48,53 +48,30 @@ listing:
 ---
 
 
+El equipo NASCENT-PERU es una colaboración interdisciplinar entre investigadores de la [ETH Zurich](https://ethz.ch/de.html), la [Wyss Academy for Nature](https://www.wyssacademy.org/project-south-america), la [Université de Lausanne](https://www.unil.ch/ecospat/home.html) y la [Université Grenoble Alpes](https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp). Haga clic en el perfil de cada miembro del equipo para obtener más información.
 
-```{=html}
-<div style="display: flex; align-items: flex-start; gap: 10px;"> 
-    <div style="flex-grow: 1;">
-        <h2>ETH Zürich</h2>
-    </div>
-    <img src="about/ETHZ.png" style="max-width: 50%; height: auto;" alt="ETH Zurich">
-</div>
-```
+
+<h2><a href="https://ethz.ch/de.html"><img src="about/ETHZ.png" style="max-width: 50%; height: auto;" alt="ETH Zurich"></a></h2>
+
 :::{#ETHZ}
 :::
 
-```{=html}
-<p></p>
-<div style="display: flex; align-items: flex-start; gap: 10px;"> 
-    <div style="flex-grow: 1;">
-        <h2>Wyss Academy for Nature</h2>
-    </div>
-    <img src="about/WAN.png" style="max-width: 50%; height: auto;" alt="Wyss Academy for Nature">
-</div>
-```
+
+<h2><a href="https://www.wyssacademy.org/project-south-america"><img src="about/WAN.png" style="max-width: 50%; height: auto;" alt="Wyss Academy for Nature"></a></h2>
 
 :::{#WAN}
 :::
 
-```{=html}
-<p></p>
-<div style="display: flex; align-items: flex-start; gap: 10px;"> 
-    <div style="flex-grow: 1;">
-        <h2>Université de Lausanne</h2>
-    </div>
-    <img src="about/UNIL.png" style="max-width: 50%; height: auto;" alt="Université de Lausanne">
-</div>
-```
+
+
+
+<h2><a href="https://www.unil.ch/ecospat/home.html"><img src="about/UNIL.png" style="max-width: 50%; height: auto;" alt="Université de Lausanne"></a></h2>
 
 :::{#UL}
 :::
 
 
-```{=html}
-<p></p>
-<div style="display: flex; align-items: flex-start; gap: 10px;"> 
-    <div style="flex-grow: 1;">
-        <h2>Université Grenoble Alpes</h2>
-    </div>
-    <img src="about/UGA.jpg" style="max-width: 50%; height: auto;" alt="Université Grenoble Alpes">
-</div>
-```
+<h2><a href="https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp"><img src="about/UGA.jpg" style="max-width: 50%; height: auto;" alt="Université Grenoble Alpes"></a></h2>
+
 :::{#UGA}
 :::
