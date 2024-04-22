@@ -2,6 +2,8 @@
 title: "Prof. Dr. Antoine Guisan"
 sortby: "1"
 image: antoine.jpeg
+subtitle: "Scientific Collaborator"
+author: "Colaborador científico"
 toc: false
 comments: false
 

@@ -1,5 +1,7 @@
 ---
 title: "Dr. Jan Göpel"
+subtitle: "Scientific Collaborator"
+author: "Colaborador científico"
 sortby: "2"
 image: JanGoepel.jpg
 toc: false

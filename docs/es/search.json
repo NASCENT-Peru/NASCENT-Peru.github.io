@@ -4,42 +4,126 @@
     "href": "team.html",
     "title": "Equipo",
     "section": "",
-    "text": "No hay resultados"
+    "text": "El equipo NASCENT-PERU es una colaboración interdisciplinar entre investigadores de la ETH Zurich, la Wyss Academy for Nature, la Université de Lausanne y la Université Grenoble Alpes. Haga clic en el perfil de cada miembro del equipo para obtener más información.\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Adrienne Grêt-Regamey\n\n\n\nInvestigador principal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenjamin Black\n\n\n\nDirector del proyecto e investigador principal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Loïc Pellissier\n\n\n\nColaborador científico\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChenyu Shen\n\n\n\nAsistente de investigación\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nManuel Kurmann\n\n\n\nAsistente de investigación\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaula Mayer\n\n\n\nColaborador científico\n\n\n\n\n\n\n\n\nNo hay resultados\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Armando Valdés-Velásquez\n\n\n\nColaborador científico\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Edouard Davin\n\n\n\nColaborador científico\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Jan Göpel\n\n\n\nColaborador científico\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMiguel Saravia\n\n\n\nColaborador científico\n\n\n\n\n\n\n\n\nNo hay resultados\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Antoine Guisan\n\n\n\nColaborador científico\n\n\n\n\n\n\n\n\nNo hay resultados\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Ignacio Palomo\n\n\n\nColaborador científico\n\n\n\n\n\n\n\n\nNo hay resultados"
   },
   {
-    "objectID": "team.html#eth-zurich",
-    "href": "team.html#eth-zurich",
-    "title": "Equipo",
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Proyecto",
     "section": "",
-    "text": "No hay resultados"
+    "text": "El siguiente gráfico muestra los pasos del flujo de trabajo del proyecto NASCENT-Peru para crear y simular escenarios normativos, positivos para la naturaleza, para el futuro desarrollo del paisaje en Perú. Haga clic en cada paso para obtener más información."
   },
   {
-    "objectID": "team.html#wyss-academy-for-nature",
-    "href": "team.html#wyss-academy-for-nature",
-    "title": "Equipo",
-    "section": "Wyss Academy for Nature",
-    "text": "Wyss Academy for Nature\n\n\n\n\n\n\n\n\n\n\nArmando Valdés-Velásquez\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Edouard Davin\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Jan Göpel\n\n\n\n\n\n\n\n\n\n\n\n\n\nMiguel Saravia\n\n\n\n\n\n\n\nNo hay resultados"
+    "objectID": "project.html#narratives",
+    "href": "project.html#narratives",
+    "title": "Proyecto",
+    "section": "Narrativas:",
+    "text": "Narrativas:\nAdemás de los talleres, se realiza una encuesta en línea. A partir de la información obtenida en los talleres y la encuesta, se crean escenarios exploratorios y normativos. Los escenarios exploratorios consisten en escenarios negativos y en que todo sigue igual, mientras que los escenarios normativos consisten en escenarios positivos para la naturaleza."
   },
   {
-    "objectID": "team.html#université-de-lausanne",
-    "href": "team.html#université-de-lausanne",
-    "title": "Equipo",
-    "section": "Université de Lausanne",
-    "text": "Université de Lausanne\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Antoine Guisan\n\n\n\n\n\n\n\nNo hay resultados"
+    "objectID": "project.html#quantification",
+    "href": "project.html#quantification",
+    "title": "Proyecto",
+    "section": "Cuantificación:",
+    "text": "Cuantificación:\nLas tasas de cambio del uso y la ocupación del suelo (LULCC) se determinan para cada escenario cuantificando las tendencias de los factores socioeconómicos, biofísicos y climáticos."
   },
   {
-    "objectID": "team.html#université-grenoble-alpes",
-    "href": "team.html#université-grenoble-alpes",
-    "title": "Equipo",
-    "section": "Université Grenoble Alpes",
-    "text": "Université Grenoble Alpes\n\n\n\n\n\n\n\n\n\n\nDr. Ignacio Palomo\n\n\n\n\n\n\n\nNo hay resultados"
+    "objectID": "project.html#simulations",
+    "href": "project.html#simulations",
+    "title": "Proyecto",
+    "section": "Simulaciones:",
+    "text": "Simulaciones:\nDurante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) y la distribución de especies para cada escenario, teniendo en cuenta el futuro Uso y ocupación del Suelo (LULC) como uno de los factores de entrada."
+  },
+  {
+    "objectID": "project.html#economic-analysis",
+    "href": "project.html#economic-analysis",
+    "title": "Proyecto",
+    "section": "Análisis Económico:",
+    "text": "Análisis Económico:\nLas características económicas de cada escenario se cuantifican en función del uso y la ocupación del suelo (LULC) y de los servicios ecosistémicos (ES)."
+  },
+  {
+    "objectID": "project.html#communication",
+    "href": "project.html#communication",
+    "title": "Proyecto",
+    "section": "Comunicación:",
+    "text": "Comunicación:\nComo parte de la metodología del proyecto, se presentarán resultados provisionales para refinar los escenarios. Los resultados finales y los conjuntos de datos se pondrán a disposición del público, contribuyendo así a la base de conocimientos para futuros proyectos.\nEl procedimiento utilizado en NASCENT-Perú se basa en la metodología utilizada en ValPar.CH"
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/project/index.html",
+    "href": "NASCENT-Peru.github.io/website_template/project/index.html",
+    "title": "Project",
+    "section": "",
+    "text": "Creating nature-positive narratives as a foundation for scenarios to simulate effects on Land Use and Land Cover (LULC), and Biodiversity and Ecosystem Services (BES) involves a multi-step process that integrates ecological, social, and economic perspectives. This process aims to envision and assess the outcomes of various land use strategies and practices on ecosystems and human well-being. The workflow can be summarized in the following steps:\n\nWorkshops: These are collaborative sessions that bring together stakeholders, including scientists, policymakers, community representatives, and industry leaders. The goal is to share knowledge, identify priorities, and brainstorm potential future scenarios that enhance biodiversity and ecosystem services while also meeting human needs.\nNarratives: Based on insights gathered during the workshops, narratives are developed to describe plausible future scenarios. These stories incorporate socio-economic trends, technological advancements, policy changes, and ecological principles. They serve as qualitative descriptions of potential paths that society might take to achieve nature-positive outcomes.\nQuantification: The qualitative narratives are translated into quantitative parameters that can be analyzed. This involves assigning values to variables related to land use, biodiversity, ecosystem services, and other relevant factors. This step is crucial for preparing the scenarios for computer-based simulations.\nSimulations: Utilizing various modeling tools, the quantified scenarios are simulated to predict the impacts of different land use and management strategies on LULC and BES. These simulations help in understanding the potential changes to ecosystems and their services under different future scenarios, providing a scientific basis for decision-making.\nEconomic Analysis: This step involves evaluating the economic implications of the simulated scenarios. It includes assessing the costs and benefits of different land management practices, considering not just market goods but also the value of ecosystem services. The analysis helps to highlight the economic viability of adopting nature-positive practices.\nCommunication: The final step involves disseminating the findings from the simulations and economic analyses to a broader audience. This includes creating reports, policy briefs, and engaging in public outreach to inform stakeholders, policymakers, and the general public about the benefits of adopting nature-positive land use strategies. Effective communication is key to driving policy changes and encouraging practices that support biodiversity and ecosystem services.\n\nThis workflow facilitates a comprehensive understanding of the complex interactions between human activities, land use, biodiversity, and ecosystem services. It provides a structured approach to envisioning and evaluating the outcomes of adopting more sustainable and nature-positive practices, with the ultimate goal of enhancing human well-being and preserving the planet’s biological diversity.\nValPar.CH"
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/project/index.html#workflow",
+    "href": "NASCENT-Peru.github.io/website_template/project/index.html#workflow",
+    "title": "Project",
+    "section": "",
+    "text": "Creating nature-positive narratives as a foundation for scenarios to simulate effects on Land Use and Land Cover (LULC), and Biodiversity and Ecosystem Services (BES) involves a multi-step process that integrates ecological, social, and economic perspectives. This process aims to envision and assess the outcomes of various land use strategies and practices on ecosystems and human well-being. The workflow can be summarized in the following steps:\n\nWorkshops: These are collaborative sessions that bring together stakeholders, including scientists, policymakers, community representatives, and industry leaders. The goal is to share knowledge, identify priorities, and brainstorm potential future scenarios that enhance biodiversity and ecosystem services while also meeting human needs.\nNarratives: Based on insights gathered during the workshops, narratives are developed to describe plausible future scenarios. These stories incorporate socio-economic trends, technological advancements, policy changes, and ecological principles. They serve as qualitative descriptions of potential paths that society might take to achieve nature-positive outcomes.\nQuantification: The qualitative narratives are translated into quantitative parameters that can be analyzed. This involves assigning values to variables related to land use, biodiversity, ecosystem services, and other relevant factors. This step is crucial for preparing the scenarios for computer-based simulations.\nSimulations: Utilizing various modeling tools, the quantified scenarios are simulated to predict the impacts of different land use and management strategies on LULC and BES. These simulations help in understanding the potential changes to ecosystems and their services under different future scenarios, providing a scientific basis for decision-making.\nEconomic Analysis: This step involves evaluating the economic implications of the simulated scenarios. It includes assessing the costs and benefits of different land management practices, considering not just market goods but also the value of ecosystem services. The analysis helps to highlight the economic viability of adopting nature-positive practices.\nCommunication: The final step involves disseminating the findings from the simulations and economic analyses to a broader audience. This includes creating reports, policy briefs, and engaging in public outreach to inform stakeholders, policymakers, and the general public about the benefits of adopting nature-positive land use strategies. Effective communication is key to driving policy changes and encouraging practices that support biodiversity and ecosystem services.\n\nThis workflow facilitates a comprehensive understanding of the complex interactions between human activities, land use, biodiversity, and ecosystem services. It provides a structured approach to envisioning and evaluating the outcomes of adopting more sustainable and nature-positive practices, with the ultimate goal of enhancing human well-being and preserving the planet’s biological diversity.\nValPar.CH"
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/project/index.html#timeline",
+    "href": "NASCENT-Peru.github.io/website_template/project/index.html#timeline",
+    "title": "Project",
+    "section": "Timeline",
+    "text": "Timeline"
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/impressions/index.html",
+    "href": "NASCENT-Peru.github.io/website_template/impressions/index.html",
+    "title": "Stakeholder Workshop Impressions",
+    "section": "",
+    "text": "The participatory stakeholder workshops form the basis for the development of the nature-positive narratives on which the modeled scenarios are based. Impressions from the various workshops in Peru are presented below."
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/impressions/index.html#national-workshop-lima",
+    "href": "NASCENT-Peru.github.io/website_template/impressions/index.html#national-workshop-lima",
+    "title": "Stakeholder Workshop Impressions",
+    "section": "National Workshop Lima",
+    "text": "National Workshop Lima"
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/impressions/index.html#regional-workshop-puerto-maldonado",
+    "href": "NASCENT-Peru.github.io/website_template/impressions/index.html#regional-workshop-puerto-maldonado",
+    "title": "Stakeholder Workshop Impressions",
+    "section": "Regional Workshop Puerto Maldonado",
+    "text": "Regional Workshop Puerto Maldonado"
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/about/index.html",
+    "href": "NASCENT-Peru.github.io/website_template/about/index.html",
+    "title": "About NASCENT-Peru",
+    "section": "",
+    "text": "Prof. Dr. Adrienne Grêt-Regamey\n    \n    \n    \n    Prof. Dr. Loïc Pellissier\n    \n        \n    \n    Benjamin Black\n    \n        \n    \n    Chenyu Shen\n    \n    \n        \n    \n    Manuel Kurmann\n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Edouard Davin\n\n\n\nProf. Dr. Armando Valdés-Velásquez\n\n\n\nDr. Jan Göpel\n\n\n\nMiguel Saravia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Antoine Guisan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Ignacio Palomo"
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/about/index.html#team",
+    "href": "NASCENT-Peru.github.io/website_template/about/index.html#team",
+    "title": "About NASCENT-Peru",
+    "section": "",
+    "text": "Prof. Dr. Adrienne Grêt-Regamey\n    \n    \n    \n    Prof. Dr. Loïc Pellissier\n    \n        \n    \n    Benjamin Black\n    \n        \n    \n    Chenyu Shen\n    \n    \n        \n    \n    Manuel Kurmann\n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Edouard Davin\n\n\n\nProf. Dr. Armando Valdés-Velásquez\n\n\n\nDr. Jan Göpel\n\n\n\nMiguel Saravia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Antoine Guisan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Ignacio Palomo"
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/about/index.html#finances",
+    "href": "NASCENT-Peru.github.io/website_template/about/index.html#finances",
+    "title": "About NASCENT-Peru",
+    "section": "Finances",
+    "text": "Finances\nThe project is funded as part of the Biodiversity and Ecosystem Services Scenario modelling challenge financed by the Swiss Re Foundation, Swiss Re Institute,Swiss Re Corporate Solutions, EY, WWF and the AXA Research Fund."
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/about/index.html#contact",
+    "href": "NASCENT-Peru.github.io/website_template/about/index.html#contact",
+    "title": "About NASCENT-Peru",
+    "section": "Contact",
+    "text": "Contact\nBenjamin Black, ETH Zurich, PLUS"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Escenarios positivos para la naturaleza en las medioambientales de Perú",
     "section": "",
-    "text": "Github\n  \n  \n    \n     PLUS ETHZ\n  \n  \n    \n     Email\n  \n\n\n\n\nEscenarios positivos para la naturaleza en las medioambientales de Perú\nEl proyecto NASCENT-PERU se centra en el desarrollo de escenarios normativos, positivos para la naturaleza, para el futuro desarrollo del paisaje en Perú y la evaluación de sus impactos sobre el uso del suelo y la ocupación del suelo (LULC), la biodiversidad y los servicios ecosistémicos (BES) de 2020 a 2060. Los escenarios se desarrollarán mediante un proceso participativo inclusivo con una muestra representativa de las partes interesadas peruanas. Se utilizará el Marco de Futuros de la Naturaleza (NFF) de IPBES para prever paisajes futuros que satisfagan las necesidades de la sociedad, apoyen los valores culturales y preserven la naturaleza, alejándose de las tendencias exploratorias típicas como “Business as Usual”. Basándose en el enfoque del proyecto ValPar.CH, se utilizarán modelos de simulación cuantitativa junto con análisis económicos para identificar compensaciones y sinergias en los resultados de la iniciativa BES, con el fin de alimentar un diálogo continuo sobre la conveniencia y viabilidad de los diferentes objetivos hipotéticos."
+    "text": "Github\n  \n  \n    \n     PLUS ETHZ\n  \n  \n    \n     Email\n  \n\n\n\n\nEscenarios positivos para la naturaleza en las medioambientales de Perú\nEl proyecto NASCENT-PERU se centra en el desarrollo de escenarios normativos, positivos para la naturaleza, para el futuro desarrollo de los paisajes en Perú y la evaluación de sus impactos sobre el uso del suelo y la ocupación del suelo (LULC), la biodiversidad y los servicios ecosistémicos (BES) de 2020 a 2060. Los escenarios se desarrollarán mediante un proceso participativo inclusivo con una muestra representativa de las partes interesadas peruanas. Se utilizará el Marco de Futuros de la Naturaleza (NFF) de IPBES para prever paisajes futuros que satisfagan las necesidades de la sociedad, apoyen los valores culturales y preserven la naturaleza, alejándose de las tendencias exploratorias típicas como “Business as Usual”. Basándose en el enfoque del proyecto ValPar.CH, se utilizarán modelos de simulación cuantitativa junto con análisis económicos para identificar compensaciones y sinergias en los resultados de la iniciativa BES, con el fin de alimentar un diálogo continuo sobre la conveniencia y viabilidad de los diferentes objetivos hipotéticos."
   },
   {
     "objectID": "glossary.html",
@@ -119,23 +203,16 @@
     "text": "website"
   },
   {
-    "objectID": "about/ETHZ/Manuel.html",
-    "href": "about/ETHZ/Manuel.html",
-    "title": "Manuel Kurmann",
+    "objectID": "about/ETHZ/Paula.html",
+    "href": "about/ETHZ/Paula.html",
+    "title": "Paula Mayer",
     "section": "",
     "text": "website"
   },
   {
-    "objectID": "about/ETHZ/Chenyu.html",
-    "href": "about/ETHZ/Chenyu.html",
-    "title": "Chenyu Shen",
-    "section": "",
-    "text": "website"
-  },
-  {
-    "objectID": "about/ETHZ/Adrienne.html",
-    "href": "about/ETHZ/Adrienne.html",
-    "title": "Prof. Dr. Adrienne Grêt-Regamey",
+    "objectID": "about/ETHZ/loic.html",
+    "href": "about/ETHZ/loic.html",
+    "title": "Prof. Dr. Loïc Pellissier",
     "section": "",
     "text": "website"
   },
@@ -147,9 +224,23 @@
     "text": "website"
   },
   {
-    "objectID": "about/ETHZ/loic.html",
-    "href": "about/ETHZ/loic.html",
-    "title": "Loïc Pellissier",
+    "objectID": "about/ETHZ/Adrienne.html",
+    "href": "about/ETHZ/Adrienne.html",
+    "title": "Prof. Dr. Adrienne Grêt-Regamey",
+    "section": "",
+    "text": "website"
+  },
+  {
+    "objectID": "about/ETHZ/Chenyu.html",
+    "href": "about/ETHZ/Chenyu.html",
+    "title": "Chenyu Shen",
+    "section": "",
+    "text": "website"
+  },
+  {
+    "objectID": "about/ETHZ/Manuel.html",
+    "href": "about/ETHZ/Manuel.html",
+    "title": "Manuel Kurmann",
     "section": "",
     "text": "website"
   },
@@ -163,7 +254,7 @@
   {
     "objectID": "about/WAN/Armando.html",
     "href": "about/WAN/Armando.html",
-    "title": "Armando Valdés-Velásquez",
+    "title": "Prof. Dr. Armando Valdés-Velásquez",
     "section": "",
     "text": "website"
   },
@@ -186,41 +277,48 @@
     "href": "impressions.html",
     "title": "Impresiones",
     "section": "",
-    "text": "Los talleres participativos con las partes interesadas constituyen la base para el desarrollo de las narrativas positivas para la naturaleza en las que se basan los escenarios modelados. A continuación, se presentan impresiones de los diversos talleres realizados en Perú."
+    "text": "Próximos talleres de creación de escenarios mayo-junio de 2024\n\n\n\n\n\n\n\nNo hay resultados"
   },
   {
-    "objectID": "impressions.html#panorama",
-    "href": "impressions.html#panorama",
-    "title": "Impresiones",
-    "section": "Panorama",
-    "text": "Panorama\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Adrienne Grêt-Regamey\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoïc Pellissier\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Ignacio Palomo\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Antoine Guisan\n\n\n\n\n\n\n\n\n\n\n\n\n\nArmando Valdés-Velásquez\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Dr. Edouard Davin\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenjamin Black\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Jan Göpel\n\n\n\n\n\n\n\n\n\n\n\n\n\nMiguel Saravia\n\n\n\n\n\n\n\n\n\n\n\n\n\nChenyu Shen\n\n\n\n\n\n\n\n\n\n\n\n\n\nManuel Kurmann\n\n\n\n\n\n\n\n\n\n\n\nFinanciación\n\n\n\n\n\n\n\n\n\n\n\nGlosario\n\n\n\n\n\n\n\n\n\n\n\nEscenarios positivos para la naturaleza en las medioambientales de Perú\n\n\n\n\n\n\n\n\n\n\n\nProyecto\n\n\n\n\n\n\n\n\n\n\n\nEquipo\n\n\n\n\n\n\n\nNo hay resultados"
-  },
-  {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "Proyecto",
+    "objectID": "NASCENT-Peru.github.io/website_template/404.html",
+    "href": "NASCENT-Peru.github.io/website_template/404.html",
+    "title": "404",
     "section": "",
-    "text": "El proceso para desarrollar escenarios normativos y positivos para la naturaleza, orientados al futuro desarrollo del paisaje en Perú, junto con la evaluación de sus efectos en el uso y cobertura de la tierra (LULC), la biodiversidad y los servicios ecosistémicos (BES), se realiza en seis etapas.\n\n\nEl proceso participativo del proyecto incluye una serie de talleres, tanto nacionales como regionales, que reúnen a partes interesadas y expertos. El objetivo es identificar en colaboración los aspectos deseables e indeseables del futuro cambio paisajístico.\n\n\n\nAdemás de los talleres, se realiza una encuesta en línea. A partir de la información obtenida en los talleres y la encuesta, se crean escenarios exploratorios y normativos. Los escenarios exploratorios consisten en escenarios negativos y en que todo sigue igual, mientras que los escenarios normativos consisten en escenarios positivos para la naturaleza.\n\n\n\nLas tasas de cambio del uso y la ocupación del suelo (LULCC) se determinan para cada escenario cuantificando las tendencias de los factores socioeconómicos, biofísicos y climáticos.\n\n\n\nDurante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) y la distribución de especies para cada escenario, teniendo en cuenta el futuro Uso y Cubierta del Suelo (LULC) como uno de los factores de entrada.\n\n\n\nLas características económicas de cada escenario se cuantifican en función del uso y la ocupación del suelo (LULC) y de los servicios ecosistémicos (ES).\n\n\n\nComo parte de la metodología del proyecto, se presentarán resultados provisionales para refinar los escenarios. Los resultados finales y los conjuntos de datos se pondrán a disposición del público, contribuyendo así a la base de conocimientos para futuros proyectos.\nEl procedimiento utilizado en NASCENT-Perú se basa en la metodología utilizada en ValPar.CH"
+    "text": "Page not found, sorry! Try the search or navigate back to the base website."
   },
   {
-    "objectID": "project.html#flujo-de-trabajo",
-    "href": "project.html#flujo-de-trabajo",
-    "title": "Proyecto",
+    "objectID": "NASCENT-Peru.github.io/website_template/glossary/index.html",
+    "href": "NASCENT-Peru.github.io/website_template/glossary/index.html",
+    "title": "Glossary",
     "section": "",
-    "text": "El proceso para desarrollar escenarios normativos y positivos para la naturaleza, orientados al futuro desarrollo del paisaje en Perú, junto con la evaluación de sus efectos en el uso y cobertura de la tierra (LULC), la biodiversidad y los servicios ecosistémicos (BES), se realiza en seis etapas.\n\n\nEl proceso participativo del proyecto incluye una serie de talleres, tanto nacionales como regionales, que reúnen a partes interesadas y expertos. El objetivo es identificar en colaboración los aspectos deseables e indeseables del futuro cambio paisajístico.\n\n\n\nAdemás de los talleres, se realiza una encuesta en línea. A partir de la información obtenida en los talleres y la encuesta, se crean escenarios exploratorios y normativos. Los escenarios exploratorios consisten en escenarios negativos y en que todo sigue igual, mientras que los escenarios normativos consisten en escenarios positivos para la naturaleza.\n\n\n\nLas tasas de cambio del uso y la ocupación del suelo (LULCC) se determinan para cada escenario cuantificando las tendencias de los factores socioeconómicos, biofísicos y climáticos.\n\n\n\nDurante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) y la distribución de especies para cada escenario, teniendo en cuenta el futuro Uso y Cubierta del Suelo (LULC) como uno de los factores de entrada.\n\n\n\nLas características económicas de cada escenario se cuantifican en función del uso y la ocupación del suelo (LULC) y de los servicios ecosistémicos (ES).\n\n\n\nComo parte de la metodología del proyecto, se presentarán resultados provisionales para refinar los escenarios. Los resultados finales y los conjuntos de datos se pondrán a disposición del público, contribuyendo así a la base de conocimientos para futuros proyectos.\nEl procedimiento utilizado en NASCENT-Perú se basa en la metodología utilizada en ValPar.CH"
+    "text": "(dummy text from ChatGPT) Biodiversity and Ecosystem Services (BES) encompass the variety of life on Earth (biodiversity) and the benefits that ecosystems provide to humanity (ecosystem services). These services include provisioning services like food and water; regulating services that affect climate, floods, and disease; supporting services such as soil formation and nutrient cycling; and cultural services like recreational, spiritual, and cultural benefits. BES are crucial for human well-being, as they contribute to health, livelihoods, and enjoyment of life. The preservation of biodiversity is fundamental for maintaining the balance and resilience of ecosystems, which in turn ensures the continued provision of vital services that support societal economic and social development, health, and quality of life."
   },
   {
-    "objectID": "project.html#lugares-de-los-talleres",
-    "href": "project.html#lugares-de-los-talleres",
-    "title": "Proyecto",
-    "section": "Lugares de los talleres",
-    "text": "Lugares de los talleres"
+    "objectID": "NASCENT-Peru.github.io/website_template/glossary/index.html#bes",
+    "href": "NASCENT-Peru.github.io/website_template/glossary/index.html#bes",
+    "title": "Glossary",
+    "section": "",
+    "text": "(dummy text from ChatGPT) Biodiversity and Ecosystem Services (BES) encompass the variety of life on Earth (biodiversity) and the benefits that ecosystems provide to humanity (ecosystem services). These services include provisioning services like food and water; regulating services that affect climate, floods, and disease; supporting services such as soil formation and nutrient cycling; and cultural services like recreational, spiritual, and cultural benefits. BES are crucial for human well-being, as they contribute to health, livelihoods, and enjoyment of life. The preservation of biodiversity is fundamental for maintaining the balance and resilience of ecosystems, which in turn ensures the continued provision of vital services that support societal economic and social development, health, and quality of life."
   },
   {
-    "objectID": "project.html#calendario",
-    "href": "project.html#calendario",
-    "title": "Proyecto",
-    "section": "Calendario",
-    "text": "Calendario"
+    "objectID": "NASCENT-Peru.github.io/website_template/glossary/index.html#lulc",
+    "href": "NASCENT-Peru.github.io/website_template/glossary/index.html#lulc",
+    "title": "Glossary",
+    "section": "LULC",
+    "text": "LULC\n\n(dummy text from ChatGPT) Land Use and Land Cover (LULC) refers to the physical and biological cover over the earth’s surface, including water, vegetation, bare soil, and artificial structures, influenced by human activities and natural processes. The way land is used and covered can significantly influence biodiversity and ecosystems, as well as the services they provide, such as air and water purification, climate regulation, and soil fertility. Changes in LULC can lead to habitat loss, fragmentation, and degradation, negatively impacting biodiversity by reducing the number of species and altering ecosystem functions. Conversely, sustainable land use practices can support biodiversity conservation and enhance the resilience and productivity of ecosystems, thus maintaining and improving the services they provide to humans."
+  },
+  {
+    "objectID": "NASCENT-Peru.github.io/website_template/index.html",
+    "href": "NASCENT-Peru.github.io/website_template/index.html",
+    "title": "NAture-positive SCenarios for ENvironmental Transitions: Peru",
+    "section": "",
+    "text": "Github\n  \n  \n    \n     PLUS ETHZ\n  \n  \n    \n     Email\n  \n\n\n\n\nNAture-positive SCenarios for ENvironmental Transitions: Peru\nThe NASCENT-PERU project is centered around developing normative, nature positive scenarios for future landscape development in Peru and assessing their impacts on land use and land cover (LULC), biodiversity, and ecosystem services (BES) from 2020 to 2060. The scenarios will be developed through an inclusive participatory process with a cross-section of Peruvian stakeholders, employing the IPBES Nature Futures Framework to encourage a shift beyond typical exploratory trends such as ‘Business as Usual’ to envisage future landscapes that meet the needs of society, support cultural values and preserve nature. Building upon the approach of the ValPar.CH project, quantitative simulation modelling along with economic analysis will be leveraged to identify trade-offs and synergies in BES outcomes, to inform an ongoing dialogue regarding the desirability and feasibility of the different scenario goals."
+  },
+  {
+    "objectID": "Scenario_workshops_2024_blog.html",
+    "href": "Scenario_workshops_2024_blog.html",
+    "title": "Próximos talleres de creación de escenarios mayo-junio de 2024",
+    "section": "",
+    "text": "Nos complace anunciar que celebraremos los primeros talleres como parte del proceso participativo de creación de escenarios en mayo y junio de 2024.\nEl objetivo de estos talleres es producir visiones de cuáles son las características deseables del futuro paisaje de Perú en 2060 desde la perspectiva de un grupo diverso de participantes. Los resultados de los talleres alimentarán el desarrollo de los escenarios que describen los cambios necesarios para llegar a los paisajes deseados. Puede encontrar más información sobre nuestro enfoque en la página del proyecto.\nComenzaremos con un taller nacional en Lima, seguido de talleres regionales en cuatro lugares que se muestran en el mapa interactivo de abajo."
   }
 ]

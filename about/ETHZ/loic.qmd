@@ -1,7 +1,8 @@
 ---
-title: "Loïc Pellissier"
-sortby: "1"
-subtitle: "Professor"
+title: "Prof. Dr. Loïc Pellissier"
+sortby: "2"
+author: "Colaborador científico"
+subtitle: "Scientific Collaborator"
 image: loic.jpeg
 toc: false
 comments: false

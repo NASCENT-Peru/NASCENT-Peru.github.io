@@ -3,10 +3,11 @@
     "listing": "/team.html",
     "items": [
       "/about/ETHZ/Adrienne.html",
-      "/about/ETHZ/loic.html",
       "/about/ETHZ/Ben.html",
+      "/about/ETHZ/loic.html",
       "/about/ETHZ/Chenyu.html",
       "/about/ETHZ/Manuel.html",
+      "/about/ETHZ/Paula.html",
       "/about/WAN/Armando.html",
       "/about/WAN/Edouard.html",
       "/about/WAN/Jan.html",
@@ -18,22 +19,7 @@
   {
     "listing": "/impressions.html",
     "items": [
-      "/about/ETHZ/Adrienne.html",
-      "/about/ETHZ/loic.html",
-      "/about/UGA/Ignacio.html",
-      "/about/UL/antoine.html",
-      "/about/WAN/Armando.html",
-      "/about/WAN/Edouard.html",
-      "/about/ETHZ/Ben.html",
-      "/about/WAN/Jan.html",
-      "/about/WAN/Miguel.html",
-      "/about/ETHZ/Chenyu.html",
-      "/about/ETHZ/Manuel.html",
-      "/funding.html",
-      "/glossary.html",
-      "/index.html",
-      "/project.html",
-      "/team.html"
+      "/Scenario_workshops_2024_blog.html"
     ]
   }
 ]

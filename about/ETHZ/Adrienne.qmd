@@ -1,5 +1,7 @@
 ---
 title: "Prof. Dr. Adrienne Grêt-Regamey"
+subtitle: "Principal Investigator"
+author: "Investigador principal"
 sortby: "1"
 image: Adrienne.jpg
 toc: false
@@ -8,6 +10,7 @@ comments: false
 about:
   id: person-profile
   template: jolla
+  image-shape: round
   links:
     - icon: link
       text: website
