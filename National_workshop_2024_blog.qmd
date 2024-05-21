@@ -1,0 +1,32 @@
+---
+title: "National workshop in Lima"
+categories : 
+    - Workshops
+    - Scenario creation
+    - Participatory
+    - Lima
+image: "impressions/Taller_Nacional-112.jpg"
+lightbox: true
+---
+
+Last Friday, 10 May, we welcomed various stakeholders to the CIP for our national workshop. A short presentation of the project was followed by lively discussions on the identification of drivers that will define the future landscapes in Peru. Keep an eye on our website where we will share a detailed summary of the outputs soon. 
+
+We would like to thank the International Potato Center (CIP) and the Wyss Academy for Nature for their hospitality and all participants for their interesting inputs. We are excited for the four upcoming regional workshops, where we will define diverse visions for desirable future landscapes.
+
+
+Below are some photos from the day
+
+::: {layout-nrow=2}
+![](impressions/Taller_Nacional-87.jpg){group="my-gallery"}
+
+![](impressions/Taller_Nacional-17.jpg){group="my-gallery"}
+
+![](impressions/Taller_Nacional-52.jpg){group="my-gallery"}
+
+![](impressions/Taller_Nacional-112.jpg){group="my-gallery"}
+:::
+
+
+
+
+

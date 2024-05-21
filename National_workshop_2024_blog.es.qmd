@@ -1,0 +1,31 @@
+---
+title: "Taller nacional en Lima"
+categories : 
+    - Talleres
+    - Creación de Escenarios
+    - Lima
+    - Taller Nacional
+image: "impressions/Taller_Nacional-112.jpg"
+lightbox: true
+---
+
+El pasado viernes, 10 de mayo, dimos la bienvenida a varias partes interesadas en el CIP para nuestro taller nacional. Tras una breve presentación del proyecto, se entablaron animados debates sobre la identificación de los impulsores que definirán los futuros paisajes de Perú. Estén atentos a nuestra página web, donde pronto compartiremos un resumen detallado de los resultados.  
+
+ Queremos dar las gracias al CIP y a la Academia Wyss para la Naturaleza por su hospitalidad y a todos los participantes por sus interesantes aportaciones. Estamos muy ilusionados con los cuatro próximos talleres regionales, en los que definiremos diversas visiones de paisajes futuros deseables. 
+
+
+A continuación figuran algunas fotos del acto
+
+::: {layout-nrow=2}
+![](impressions/Taller_Nacional-87.jpg){group="my-gallery"}
+
+![](impressions/Taller_Nacional-17.jpg){group="my-gallery"}
+
+![](impressions/Taller_Nacional-52.jpg){group="my-gallery"}
+
+![](impressions/Taller_Nacional-112.jpg){group="my-gallery"}
+:::
+
+
+
+
