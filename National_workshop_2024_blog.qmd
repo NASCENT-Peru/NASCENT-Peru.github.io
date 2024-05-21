@@ -14,7 +14,7 @@ Last Friday, 10 May, we welcomed various stakeholders to the CIP for our nationa
 We would like to thank the International Potato Center (CIP) and the Wyss Academy for Nature for their hospitality and all participants for their interesting inputs. We are excited for the four upcoming regional workshops, where we will define diverse visions for desirable future landscapes.
 
 
-Below are some photos from the day
+Here are some photos from the day and below you can see the presentation that was shown. Look out for a post sharing some insights into the results soon!
 
 ::: {layout-nrow=2}
 ![](impressions/Taller_Nacional-87.jpg){group="my-gallery"}
@@ -26,7 +26,12 @@ Below are some photos from the day
 ![](impressions/Taller_Nacional-112.jpg){group="my-gallery"}
 :::
 
-
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe width="600" height="400" src="impressions/National_workshop_pres.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
 
 
 
