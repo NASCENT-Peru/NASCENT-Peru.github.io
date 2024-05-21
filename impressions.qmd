@@ -7,6 +7,7 @@ comments: false
 listing:
     contents: 
     - "Scenario_workshops_2024_blog.qmd"
+    - "National_workshop_2024_blog.qmd"
     type: grid
     #image-height: 225px
     grid-columns: 3
