@@ -8,8 +8,9 @@ listing:
     contents: 
     - "Scenario_workshops_2024_blog.qmd"
     - "National_workshop_2024_blog.qmd"
+    - "Piura_workshop_2024_blog.qmd"
     type: grid
-    #image-height: 225px
+    image-height: 225px
     grid-columns: 3
     fields: [image, title]
     grid-item-align: center
