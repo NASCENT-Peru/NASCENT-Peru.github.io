@@ -24,11 +24,11 @@ Aquí hay algunas fotos del taller y abajo puede acceder a la presentación que 
 
 ![](impressions/Huaraz_2.jpg){group="my-gallery"}
 
-
 ![](impressions/Huaraz_4.jpeg){group="my-gallery"}
-![](impressions/Huaraz_5.jpeg){group="my-gallery"}
-![](impressions/Huaraz_1.jpg){group="my-gallery"}
 
+![](impressions/Huaraz_5.jpeg){group="my-gallery"}
+
+![](impressions/Huaraz_1.jpg){group="my-gallery"}
 
 ![](impressions/Huaraz_group.jpeg){group="my-gallery"}
 :::
