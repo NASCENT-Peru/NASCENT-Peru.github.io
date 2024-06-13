@@ -11,6 +11,7 @@ listing:
     - "Piura_workshop_2024_blog.qmd"
     - "PtMd_workshop_2024_blog.qmd"
     - "Huaraz_workshop_2024_blog.qmd"
+    - "Tarapoto_workshop_2024_blog.qmd"
     type: grid
     image-height: 225px
     grid-columns: 3
