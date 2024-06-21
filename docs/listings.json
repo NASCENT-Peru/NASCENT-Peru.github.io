@@ -1,5 +1,17 @@
 [
   {
+    "listing": "/impressions.html",
+    "items": [
+      "/Scenario_workshops_2024_blog.html",
+      "/National_workshop_2024_blog.html",
+      "/Piura_workshop_2024_blog.html",
+      "/PtMd_workshop_2024_blog.html",
+      "/Huaraz_workshop_2024_blog.html",
+      "/Tarapoto_workshop_2024_blog.html",
+      "/WBF_2024_blog.html"
+    ]
+  },
+  {
     "listing": "/team.html",
     "items": [
       "/about/ETHZ/Adrienne.html",
@@ -14,17 +26,6 @@
       "/about/WAN/Miguel.html",
       "/about/UL/antoine.html",
       "/about/UGA/Ignacio.html"
-    ]
-  },
-  {
-    "listing": "/impressions.html",
-    "items": [
-      "/Scenario_workshops_2024_blog.html",
-      "/National_workshop_2024_blog.html",
-      "/Piura_workshop_2024_blog.html",
-      "/PtMd_workshop_2024_blog.html",
-      "/Huaraz_workshop_2024_blog.html",
-      "/Tarapoto_workshop_2024_blog.html"
     ]
   }
 ]
