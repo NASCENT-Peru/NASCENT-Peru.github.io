@@ -7,6 +7,7 @@ categories :
     - Lima
 image: "impressions/Taller_Nacional-112.jpg"
 lightbox: true
+date: 2024/05/13
 ---
 
 Last Friday, 10 May, we welcomed various stakeholders to the CIP for our national workshop. A short presentation of the project was followed by lively discussions on the identification of drivers that will define the future landscapes in Peru. Keep an eye on our website where we will share a detailed summary of the outputs soon. 

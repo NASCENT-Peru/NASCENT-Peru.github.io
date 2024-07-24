@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.554">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>NASCENT-PERU - Taller regional en Piura</title>
 <style>
@@ -158,6 +158,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">20 de mayo de 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -166,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header><p>El lunes 20 de mayo celebramos el primero de los talleres regionales de construcción de escenarios en la <a href="https://www.udep.edu.pe/en/">Universidad de Piura (UDEP)</a>, en la norteña ciudad peruana de Piura. Asistieron representantes del gobierno regional, ONG y organizaciones comunitarias, empresas locales y el mundo académico. El taller se centró en explorar cuáles serían las características deseables para los paisajes de la costa norte de Perú en 2060. Para enmarcar este debate adaptamos el enfoque de visión propuesto por Bill Sharpe, <a href="https://www.h3uni.org/tutorial/three-horizons/">el Marco de los 3 Horizontes</a>.</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><a href="impressions/3_horizons_es.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Adaptación NASCENT-Perú del Marco de los 3 Horizontes"><img src="impressions/3_horizons_es.png" class="img-fluid figure-img" alt="Adaptación NASCENT-Perú del Marco de los 3 Horizontes"></a></p>
+<figure class="figure page-columns page-full"><p><a href="impressions/3_horizons_es.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Adaptación NASCENT-Perú del Marco de los 3 Horizontes"><img src="impressions/3_horizons_es.png" class="img-fluid figure-img" alt="Adaptación NASCENT-Perú del Marco de los 3 Horizontes"></a></p>
 <figcaption class="margin-caption">Adaptación NASCENT-Perú del Marco de los 3 Horizontes</figcaption></figure>
 </div>
 <p>En primer lugar, se pidió a los participantes que crearan una caracterización de los paisajes actuales de su región bajo 3 temas: características, contribuciones y valores del paisaje. A continuación, hicieron lo mismo con los paisajes que les gustaría ver en 2060. Por último, para acortar distancias, les pedimos que debatieran cuáles de los impulsores del cambio paisajístico de nuestro taller nacional les ayudarían o dificultarían la consecución de su futuro deseado, así como otras acciones importantes necesarias. Pronto publicaremos un artículo con información detallada sobre los resultados. Queremos dar las gracias a la UDEP por permitirnos celebrar el taller en su campus, y especialmente a Raúl Eduardo Olivares, Edsmilda Martínez Hidalgo y Daniela Zavala por su ayuda en la organización. Por supuesto, el taller no habría sido posible sin nuestros fantásticos participantes, por lo que nos gustaría agradecerles de nuevo su tiempo y energía. Próxima parada: Puerto Maldonado para nuestro taller del 28 de mayo. Aquí tienes algunas fotos de la jornada y más abajo puedes acceder a la presentación que se mostró.</p>
@@ -280,6 +286,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/nascent-peru\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -314,7 +338,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -590,7 +618,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script><script src="https://utteranc.es/client.js" repo="NASCENT-Peru/NASCENT-Peru.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -9,6 +9,7 @@ categories :
     - Future visions
 image: "impressions/Huaraz_group.jpeg"
 lightbox: true
+date: 2024-06-05
 ---
 
 Yesterday we held the 4th of our regional scenario creation workshops in the city of Huaraz, capital of the Ancash region. Situated in the Callejón de Huaylas valley at more than 3,000 meters above sea level, we choose Huaraz in order to bring a perspective on what might be desirable future changes in mountainous landscapes in Peru. 

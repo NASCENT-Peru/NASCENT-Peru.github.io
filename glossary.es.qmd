@@ -1,5 +1,6 @@
 ---
 title: Glosario
+title-block-banner: "#f6f8fa"
 comments: false
 format:
   html:

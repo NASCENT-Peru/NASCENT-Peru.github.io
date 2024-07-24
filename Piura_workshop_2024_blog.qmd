@@ -9,6 +9,7 @@ categories :
     - Future visions
 image: "impressions/Piura_group.jpg"
 lightbox: true
+date: 2024-05-20
 ---
 
 On Monday 20th May, we hosted the 1st of regional scenario creation workshops at the [Univerisdad De Piura (UDEP)](https://www.udep.edu.pe/en/) in the city of Piura in Northern Peru. In attendance were a selection of stakeholders from the regional government, NGOs and community organisations, local businesses and academia. 

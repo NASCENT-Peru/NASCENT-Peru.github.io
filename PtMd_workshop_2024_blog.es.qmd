@@ -7,6 +7,7 @@ categories :
     - Taller Regional
 image: "impressions/Puerto_1.jpg"
 lightbox: true
+date: 2024-05-29
 ---
 
 El 28 de mayo continuamos nuestra serie de talleres regionales de creación de escenarios en la ciudad de Puerto Maldonado, en la región amazónica de Madre de Dios.  

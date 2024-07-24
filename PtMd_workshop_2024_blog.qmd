@@ -9,6 +9,7 @@ categories :
     - Future visions
 image: "impressions/Puerto_1.jpg"
 lightbox: true
+date: 2024-05-29
 ---
 
 On May 28th we continued our series of regional scenario creation workshops  in the city of Puerto Maldonado in the Madre de Dios region of the Amazon.  

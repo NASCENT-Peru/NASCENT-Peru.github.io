@@ -1,0 +1,24 @@
+---
+title: "New Research Interns"
+categories : 
+    - Team
+    - Scenario creation
+date: 2024/07/24
+image: "impressions/Emily_Sara.jpg"
+lightbox: true
+---
+
+We are pleased to announce that we have two new additions to our NASCENT team. [Sára Balogh](about/ETHZ/Sara.qmd) and [Emily Wallis](about/ETHZ/Emily.qmd), who have both recently graduated from the MSc program in Environmental Sciences and Policy at Central European University, will join us as research interns for the summer. Both Sara and Emily have experience in participatory research and qualitative data analysis and will help us translate the information from our scenario creation workshops into different narratives of future landscape development.  
+
+We are very grateful to have them on board and look forward to their contributions to the project. Welcome, Sára and Emily!
+
+::: {layout-ncol=2}
+![](about/ETHZ/Sara.jpg){group="my-gallery"}
+
+![](about/ETHZ/Emily.jpg){group="my-gallery"}
+:::
+
+
+
+
+

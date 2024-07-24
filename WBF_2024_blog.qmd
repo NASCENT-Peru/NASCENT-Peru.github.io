@@ -6,7 +6,7 @@ categories :
     - Future visions
 event: World Biodiversity Forum 2024
 location: Davos, Switzerland
-date: "2024-01-16"
+date: 2024/06/16
 image: "impressions/WBF_present_2.jpg"
 lightbox: true
 ---

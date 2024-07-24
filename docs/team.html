@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.554">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>NASCENT-PERU - Team</title>
 <style>
@@ -162,6 +162,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-alumni .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-alumni'] = new List('listing-alumni', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script><style>
 
       .quarto-title-block .quarto-title-banner {
@@ -303,12 +331,12 @@ window.Quarto = {
 <a href="https://ethz.ch/de.html"><img src="about/ETHZ.png" style="max-width: 50%; height: auto;" alt="ETH Zurich"></a>
 </h2>
 <div id="listing-ETHZ" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174241300" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174241000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/ETHZ/Adrienne.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/ETHZ/Adrienne.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/ETHZ/Adrienne.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Prof. Dr. Adrienne Grêt-Regamey
@@ -320,11 +348,11 @@ Principal Investigator
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1713174719188" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1713174719000" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
 <a href="./about/ETHZ/Ben.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/ETHZ/Ben.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/ETHZ/Ben.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Benjamin Black
@@ -336,11 +364,11 @@ Project Director and Lead researcher
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1713174493931" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1713174493000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/ETHZ/loic.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/ETHZ/loic.jpeg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/ETHZ/loic.jpeg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Prof. Dr. Loïc Pellissier
@@ -352,27 +380,11 @@ Scientific Collaborator
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1713174371196" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./about/ETHZ/Chenyu.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img src="./about/ETHZ/Chenyu.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Chenyu Shen
-</h5>
-<div class="card-subtitle listing-subtitle">
-Research Assistant
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1713174497887" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1713174497000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/ETHZ/Manuel.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/ETHZ/Manuel.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/ETHZ/Manuel.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Manuel Kurmann
@@ -384,17 +396,49 @@ Research Assistant
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1713174462517" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1713174462000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/ETHZ/Paula.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/ETHZ/Paula.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/ETHZ/Paula.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Paula Mayer
 </h5>
 <div class="card-subtitle listing-subtitle">
 PhD Student
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1721804219700" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<a href="./about/ETHZ/Sara.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img src="./about/ETHZ/Sara.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sára Balogh
+</h5>
+<div class="card-subtitle listing-subtitle">
+Research Intern
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1721806164304" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
+<a href="./about/ETHZ/Emily.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img src="./about/ETHZ/Emily.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Emily Wallis
+</h5>
+<div class="card-subtitle listing-subtitle">
+Research Intern
 </div>
 </div>
 </div>
@@ -409,12 +453,12 @@ No matching items
 <a href="https://www.wyssacademy.org/project-south-america"><img src="about/WAN.png" style="max-width: 50%; height: auto;" alt="Wyss Academy for Nature"></a>
 </h2>
 <div id="listing-WAN" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174565143" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174565000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/WAN/Armando.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/WAN/Armando.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/WAN/Armando.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Prof. Dr. Armando Valdés-Velásquez
@@ -426,11 +470,11 @@ Scientific Collaborator
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1713174563053" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1713174563000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/WAN/Edouard.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/WAN/Edouard.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/WAN/Edouard.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Prof. Dr. Edouard Davin
@@ -442,11 +486,11 @@ Scientific Collaborator
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1713174561189" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1713174561000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/WAN/Jan.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/WAN/JanGoepel.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/WAN/JanGoepel.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Dr. Jan Göpel
@@ -458,11 +502,11 @@ Scientific Collaborator
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1713174553710" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1713174553000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/WAN/Miguel.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/WAN/miguel.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/WAN/miguel.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Miguel Saravia
@@ -483,12 +527,12 @@ No matching items
 <a href="https://www.unil.ch/ecospat/home.html"><img src="about/UNIL.png" style="max-width: 50%; height: auto;" alt="Université de Lausanne"></a>
 </h2>
 <div id="listing-UL" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174559150" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174559000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/UL/antoine.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/UL/antoine.jpeg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/UL/antoine.jpeg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Prof. Dr. Antoine Guisan
@@ -509,12 +553,12 @@ No matching items
 <a href="https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp"><img src="about/UGA.jpg" style="max-width: 50%; height: auto;" alt="Université Grenoble Alpes"></a>
 </h2>
 <div id="listing-UGA" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174557757" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174557000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./about/UGA/Ignacio.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img src="./about/UGA/Ignacio.jpg" class="thumbnail-image card-img" style="height: 225px;"></p>
+<img src="./about/UGA/Ignacio.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Dr. Ignacio Palomo
@@ -531,11 +575,34 @@ Scientific Collaborator
 No matching items
 </div>
 </div>
+<section id="alumni" class="level2"><h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
+<div id="listing-alumni" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1713174371000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<a href="./about/alumni/Chenyu.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img src="./about/alumni/Chenyu.jpg" class="thumbnail-image card-img" style="height: 325px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Chenyu Shen
+</h5>
+<div class="card-subtitle listing-subtitle">
+Research Assistant
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
 
-
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -614,6 +681,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/nascent-peru\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -648,7 +733,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

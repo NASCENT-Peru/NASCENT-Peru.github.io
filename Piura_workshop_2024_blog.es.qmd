@@ -7,6 +7,7 @@ categories :
     - Taller Regional
 image: "impressions/Piura_group.jpg"
 lightbox: true
+date: 2024-05-20
 ---
 
 El lunes 20 de mayo celebramos el primero de los talleres regionales de construcción de escenarios en la [Universidad de Piura (UDEP)](https://www.udep.edu.pe/en/), en la norteña ciudad peruana de Piura. Asistieron representantes del gobierno regional, ONG y organizaciones comunitarias, empresas locales y el mundo académico.

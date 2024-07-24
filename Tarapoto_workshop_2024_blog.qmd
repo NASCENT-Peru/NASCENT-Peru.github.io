@@ -8,7 +8,8 @@ categories :
     - Regional
     - Future visions
 image: "impressions/Tarapoto_group.jpg"
-lightbox: true 
+lightbox: true
+date: 2024-06-11
 ---
 
 The 11th of June marked the end of our series of regional scenario creation workshops with a last stop in Tarapoto. We were hosted by [Universidad Peruana Unión](https://upeu.edu.pe/#) who also kindly invited us to present our project at an event celebrating the anniversary of their faculty of engineering and architecture the previous day. This was a special opportunity for us to be able to engage with students and to spread the word about the importance of nature positive visions for the future.   

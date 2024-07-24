@@ -2,6 +2,7 @@
 title: Project
 subtitle: "Details of the projects research method"
 comments: false
+title-block-banner: "#f6f8fa"
 ---
 
 The graphic below shows the steps of the NASCENT-Peru project workflow for creating and simulating normative, nature-positive scenarios for future landscape development in Peru. Click on each step to learn more about it. 

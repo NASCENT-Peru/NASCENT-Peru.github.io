@@ -6,7 +6,8 @@ categories :
     - Taller Regional
     - Tarapoto
 image: "impressions/Tarapoto_group.jpg"
-lightbox: true 
+lightbox: true
+date: 2024-06-11
 ---
 
 Ayer concluyó nuestra serie de talleres regionales de creación de escenarios con una última parada en Tarapoto. Nos acogió la Universidad Peruana Unión (https://upeu.edu.pe/#), que también nos invitó amablemente a presentar nuestro proyecto en un acto de celebración del aniversario de su facultad de ingeniería y arquitectura el día anterior. Fue una oportunidad especial para relacionarnos con los estudiantes y difundir la importancia de las visiones positivas de la naturaleza para el futuro.   

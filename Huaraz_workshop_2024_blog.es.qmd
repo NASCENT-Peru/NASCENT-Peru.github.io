@@ -7,6 +7,7 @@ categories :
     - Huaraz
 image: "impressions/Huaraz_group.jpeg"
 lightbox: true
+date: 2024-06-05
 ---
 
 Ayer celebramos el 4º de nuestros talleres regionales de creación de escenarios en la ciudad de Huaraz, capital de la región de Ancash. Situada en el valle del Callejón de Huaylas, a más de 3.000 metros sobre el nivel del mar, elegimos Huaraz para aportar una perspectiva sobre lo que podrían ser cambios futuros deseables en los paisajes montañosos de Perú. 

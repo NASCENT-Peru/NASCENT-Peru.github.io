@@ -3,6 +3,7 @@ title: "Impresiones"
 subtitle: "Noticias y actualizaciones del proyecto a medida que se producen"
 toc: false
 comments: false
+title-block-banner: "#f6f8fa"
 listing:
     contents: 
     - "Scenario_workshops_2024_blog.qmd"
@@ -12,14 +13,23 @@ listing:
     - "Huaraz_workshop_2024_blog.qmd"
     - "Tarapoto_workshop_2024_blog.qmd"
     - "WBF_2024_blog.qmd"
-    type: grid
+    - "Sara_Emily_blog.qmd"
+    type: default
     image-height: 225px
     grid-columns: 3
-    fields: [image, title]
+    fields: [image, title, date, categories]
     grid-item-align: center
-    sort: sortby
+    sort: "date desc"
     feed: true
     categories: true
+format:
+  html:
+    page-layout: article
+    grid:
+      sidebar-width: 200px
+      body-width: 1300px
+      margin-width: 150px
+      gutter-width: 1.5rem
 ---
 
 
