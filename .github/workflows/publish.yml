@@ -33,7 +33,7 @@ jobs:
             any::babelquarto
             
       - name: Render website with Babelquarto
-        run: Rscript -e 'babelquarto::render_website()'
+      - run: Rscript -e 'babelquarto::render_website()'
 
       - name: Publish
         uses: quarto-dev/quarto-actions/publish@v2
