@@ -83,4 +83,7 @@ babelquarto:
 title-es: NASCENT-PERU
 lang: en
 
+execute:
+  freeze: auto
+
 
