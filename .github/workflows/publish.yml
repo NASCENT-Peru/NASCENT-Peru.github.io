@@ -29,6 +29,7 @@ jobs:
             any::rmarkdown
             any::leaflet
             any::tidyverse
+            any::mapview
             github::quarto-dev/quarto-r
             github::ropensci-review-tools/babelquarto
       - name: Render website with Babelquarto
