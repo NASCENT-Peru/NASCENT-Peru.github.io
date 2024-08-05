@@ -29,6 +29,7 @@ jobs:
             any::rmarkdown
             any::leaflet
             any::tidyverse
+            github::quarto-dev/quarto-r
             github::ropensci-review-tools/babelquarto
       - name: Render website with Babelquarto
         run: Rscript -e 'babelquarto::render_website()'
