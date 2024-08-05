@@ -9,8 +9,8 @@
 <link>https://nascent-peru.github.io/impressions.html</link>
 <atom:link href="https://nascent-peru.github.io/impressions.xml" rel="self" type="application/rss+xml"/>
 <description>NAture-positive SCenarios for ENvironmental Transitions: Peru</description>
-<generator>quarto-1.4.554</generator>
-<lastBuildDate>Tue, 23 Jul 2024 22:00:00 GMT</lastBuildDate>
+<generator>quarto-1.5.56</generator>
+<lastBuildDate>Wed, 24 Jul 2024 00:00:00 GMT</lastBuildDate>
 <item>
   <title>New Research Interns</title>
   <link>https://nascent-peru.github.io/Sara_Emily_blog.html</link>
@@ -41,7 +41,7 @@
   <category>Team</category>
   <category>Scenario creation</category>
   <guid>https://nascent-peru.github.io/Sara_Emily_blog.html</guid>
-  <pubDate>Tue, 23 Jul 2024 22:00:00 GMT</pubDate>
+  <pubDate>Wed, 24 Jul 2024 00:00:00 GMT</pubDate>
   <media:content url="https://nascent-peru.github.io/impressions/Emily_Sara.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -86,7 +86,7 @@
   <category>Conference</category>
   <category>Future visions</category>
   <guid>https://nascent-peru.github.io/WBF_2024_blog.html</guid>
-  <pubDate>Sat, 15 Jun 2024 22:00:00 GMT</pubDate>
+  <pubDate>Sun, 16 Jun 2024 00:00:00 GMT</pubDate>
   <media:content url="https://nascent-peru.github.io/impressions/WBF_present_2.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -147,7 +147,7 @@
   <category>Regional</category>
   <category>Future visions</category>
   <guid>https://nascent-peru.github.io/Tarapoto_workshop_2024_blog.html</guid>
-  <pubDate>Mon, 10 Jun 2024 22:00:00 GMT</pubDate>
+  <pubDate>Tue, 11 Jun 2024 00:00:00 GMT</pubDate>
   <media:content url="https://nascent-peru.github.io/impressions/Tarapoto_group.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -204,7 +204,7 @@
   <category>Regional</category>
   <category>Future visions</category>
   <guid>https://nascent-peru.github.io/Huaraz_workshop_2024_blog.html</guid>
-  <pubDate>Tue, 04 Jun 2024 22:00:00 GMT</pubDate>
+  <pubDate>Wed, 05 Jun 2024 00:00:00 GMT</pubDate>
   <media:content url="https://nascent-peru.github.io/impressions/Huaraz_group.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -256,7 +256,7 @@
   <category>Regional</category>
   <category>Future visions</category>
   <guid>https://nascent-peru.github.io/PtMd_workshop_2024_blog.html</guid>
-  <pubDate>Tue, 28 May 2024 22:00:00 GMT</pubDate>
+  <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
   <media:content url="https://nascent-peru.github.io/impressions/Puerto_1.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -271,7 +271,7 @@
 <p>Here the focus of the workshop was on exploring what would be desirable characteristics for the landscape of coastal Northern Peru in 2060. To frame this discussion we adapted the future visioning approach, proposed by Bill Sharpe, the <a href="https://www.h3uni.org/tutorial/three-horizons/">3 horizons Framework</a>.</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p><a href="impressions/3_horizons_eng.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="NASCENT-Peru adaptation of the 3 Horizons Framework"><img src="https://nascent-peru.github.io/impressions/3_horizons_eng.png" class="img-fluid figure-img" alt="NASCENT-Peru adaptation of the 3 Horizons Framework"></a></p>
+<p><a href="impressions/3_horizons_eng.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="NASCENT-Peru adaptation of the 3 Horizons Framework"><img src="https://nascent-peru.github.io/impressions/3_horizons_eng.png" class="img-fluid figure-img" alt="NASCENT-Peru adaptation of the 3 Horizons Framework"></a></p>
 <figcaption class="margin-caption">NASCENT-Peru adaptation of the 3 Horizons Framework</figcaption>
 </figure>
 </div>
@@ -305,7 +305,6 @@
 
 
 
-
  ]]></description>
   <category>Workshops</category>
   <category>Scenario creation</category>
@@ -314,7 +313,7 @@
   <category>Regional</category>
   <category>Future visions</category>
   <guid>https://nascent-peru.github.io/Piura_workshop_2024_blog.html</guid>
-  <pubDate>Sun, 19 May 2024 22:00:00 GMT</pubDate>
+  <pubDate>Mon, 20 May 2024 00:00:00 GMT</pubDate>
   <media:content url="https://nascent-peru.github.io/impressions/Piura_group.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -361,13 +360,18 @@
   <category>Participatory</category>
   <category>Lima</category>
   <guid>https://nascent-peru.github.io/National_workshop_2024_blog.html</guid>
-  <pubDate>Sun, 12 May 2024 22:00:00 GMT</pubDate>
+  <pubDate>Mon, 13 May 2024 00:00:00 GMT</pubDate>
   <media:content url="https://nascent-peru.github.io/impressions/Taller_Nacional-112.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Upcoming scenario creation workshops May-June 2024</title>
   <link>https://nascent-peru.github.io/Scenario_workshops_2024_blog.html</link>
-  <description><![CDATA[ <p>We are excited to announce that we will hold the 1st workshops as part of the participatory scenario creation process in May and June 2024!</p>
+  <description><![CDATA[ 
+
+
+
+
+<p>We are excited to announce that we will hold the 1st workshops as part of the participatory scenario creation process in May and June 2024!</p>
 <p>The aim of these workshops is to produce visions of what are the desirable characteristics of the future landscape of Peru in 2060 from the perspective of a diverse group of participants. The results of the workshops will feed into the development of the scenarios describing the changes needed to arrive at the desired landscapes. You can find more information on our approach on the <a href="./project.html#workshops">project</a> page.</p>
 <p>We will start with 1 national workshop in Lima followed by regional workshops in four locations shown on the interactive map below.</p>
 <div class="cell">
@@ -383,7 +387,7 @@
   <category>Workshops</category>
   <category>Scenario creation</category>
   <guid>https://nascent-peru.github.io/Scenario_workshops_2024_blog.html</guid>
-  <pubDate>Sun, 31 Mar 2024 22:00:00 GMT</pubDate>
+  <pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate>
   <media:content url="https://nascent-peru.github.io/impressions/workshop_locations_impression.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 </channel>
