@@ -32,4 +32,4 @@ Some important points:
 
 We very much value the time and contributions of all participants and as such we would include your names in a list of contributors to the project on both the project website and in all reports produced. If you do not wish for your name to be included in this list there is an option to specify this within the app.
 
-[[**Click here to start the survey**]{.underline}](https://nascent-peru.shinyapps.io/nff-coding/)
+### [[**Click here to start the survey**]{.underline}](https://nascent-peru.shinyapps.io/nff-coding/)

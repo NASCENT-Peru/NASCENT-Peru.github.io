@@ -8,9 +8,9 @@ En mayo y junio de 2024 realizamos una serie de [5 talleres en Perú](Scenario_w
 
 Tras los talleres, hemos recopilado todas las contribuciones relativas a las características del paisaje futuro en forma de afirmaciones separadas y nuestro siguiente paso es organizarlas en grupos. Estos grupos constituirán la base de las descripciones de los escenarios futuros que desarrollaremos.
 
-Para agrupar las declaraciones, estamos utilizando el [Nature Futures Framework (NFF)](https://www.naturefuturesframework.org/) desarrollado por la [Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)](https://www.ipbes.net/). El Nature Futures Framework recoge diversos valores de las relaciones entre los seres humanos y la naturaleza según tres perspectivas diferentes, que se representan como ejes distintos en una disposición triangular: Valores intrínsecos («la naturaleza por la naturaleza»), valores instrumentales («la naturaleza para la sociedad») y valores relacionales («la naturaleza como cultura/uno con la naturaleza»).
+Para agrupar las declaraciones, estamos utilizando el [Nature Futures Framework (NFF)](https://www.naturefuturesframework.org/) desarrollado por la [Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)](https://www.ipbes.net/). El Nature Futures Framework recoge diversos valores de las relaciones entre los seres humanos y la naturaleza según tres perspectivas diferentes, que se representan como ejes distintos en una disposición triangular: Valores intrínsecos ('la naturaleza por la naturaleza'), valores instrumentales ('la naturaleza para la sociedad') y valores relacionales ('la naturaleza como cultura/uno con la naturaleza').
 
-Marco de Futuros de la Naturaleza\](img/NFF_ES.png)
+[Nature Futures Framework](img/NFF_ES.png)
 
 Es importante destacar que las afirmaciones que describen las características de los paisajes futuros deseados no tienen por qué ajustarse a una única perspectiva de valor (eje del NFF), y que en realidad pueden representar múltiples valores. Por ejemplo, la afirmación «un cambio hacia el turismo sostenible» puede percibirse como una muestra de respeto y, por tanto, de valoración intrínseca del paisaje natural, pero también como una valoración de los beneficios que el paisaje tiene para la sociedad, en este caso el potencial del turismo como actividad económica. Por supuesto, la percepción de estos valores es subjetiva y por eso nos gustaría tener diferentes perspectivas de varias personas en cuanto a la colocación de las declaraciones dentro del FNF.
 
@@ -32,4 +32,4 @@ Algunos puntos importantes:
 
 Valoramos mucho el tiempo y las contribuciones de todos los participantes y, por ello, incluiremos sus nombres en una lista de colaboradores del proyecto tanto en el sitio web del proyecto como en todos los informes elaborados. Si no desea que su nombre se incluya en esta lista, tiene la opción de especificarlo en la aplicación.
 
-[[**Haga clic aquí para iniciar la encuesta**]{.underline}](https://nascent-peru.shinyapps.io/nff-coding/)
+### [[**Haga clic aquí para iniciar la encuesta**]{.underline}](https://nascent-peru.shinyapps.io/nff-coding/)
