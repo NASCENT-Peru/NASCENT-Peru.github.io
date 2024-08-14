@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<link rel="alternate" hreflang="en" href="/NFF_coding_instructions.html" />
+<link rel="alternate" hreflang="es" href="/es/NFF_coding_instructions.es.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.56">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="author" content="Interna de investigación">
-<title>Emily Wallis – NASCENT-PERU</title>
+<title>Scenario content coding instructions – NASCENT-PERU</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,12 +21,12 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../site_libs/clipboard/clipboard.min.js"></script><script src="../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../site_libs/quarto-search/fuse.min.js"></script><script src="../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
+<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -39,51 +40,56 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Sin resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
-}</script>
+}</script><style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #f6f8fa;
+      }
+</style>
 </head>
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo"></a>
-    <a class="navbar-brand" href="../../index.html">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo"></a>
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">NASCENT-PERU</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Buscar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
 <div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="/es/about/ETHZ/Emily.html" id="language-link-en">English</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="/es/NFF_coding_instructions.html" id="language-link-es">Español</a></li></ul>
 </div>
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item">
-    <a class="nav-link" href="../../project.html"> 
-<span class="menu-text">Proyecto</span></a>
+    <a class="nav-link" href="./project.html"> 
+<span class="menu-text">Project</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../impressions.html"> 
-<span class="menu-text">Impresiones</span></a>
+    <a class="nav-link" href="./impressions.html"> 
+<span class="menu-text">Impressions</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../glossary.html"> 
-<span class="menu-text">Glosario</span></a>
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossary</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-info" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -91,12 +97,12 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-info">
 <li>
-    <a class="dropdown-item" href="../../team.html">
- <span class="dropdown-text">Equipo</span></a>
+    <a class="dropdown-item" href="./team.html">
+ <span class="dropdown-text">Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../funding.html">
- <span class="dropdown-text">Financiación</span></a>
+    <a class="dropdown-item" href="./funding.html">
+ <span class="dropdown-text">Funding</span></a>
   </li>  
     </ul>
 </li>
@@ -136,35 +142,50 @@ ul.task-list li input[type="checkbox"] {
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Scenario content coding instructions</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><div class="quarto-about-jolla">
-  <img src="Emily.jpg" class="about-image
-  round " style="height: 15em; width: 15em;"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Emily Wallis</h1>
-<p class="subtitle lead">Research Intern</p>
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content"><p>In May and June 2024 we undertook a series of <a href="./Scenario_workshops_2024_blog.html">5 workshops in Peru</a>. In these workshops we discussed the current state and future development of landscapes with participants from various backgrounds. In the first part of each workshop, participants were asked to characterize the current landscape in their region from their perspective. Following this, participants discussed and presented characteristics of what would be, in their opinion, a desirable future landscape for their region in the year 2060. Finally, participants identified the drivers (i.e. forces and processes of change) that would either facilitate or hinder the transition from the current landscape to their desired future landscape.</p>
+<p>Following the workshops, we have collated all the distinct contributions regarding characteristics of the future landscape as seperate statements and our next step is to organise these into groups. These groups of statements will then form the basis of the future scenario narratives we will develop.</p>
+<p>To group the statements, we are utilising the <a href="https://www.naturefuturesframework.org/">Nature Futures Framework (NFF)</a> developed by the <a href="https://www.ipbes.net/">Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)</a>. The Nature Futures Framework captures diverse values of human-nature relationships according to three different perspectives, which are represented as different axes in a triangular arrangement: Intrinsic values (‘nature for nature’), instrumental values (‘nature for society’), and relational values (‘nature as culture/one with nature’).</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full"><p><img src="img/NFF.png" class="img-fluid figure-img"></p>
+<figcaption class="margin-caption">Nature Futures Framework</figcaption></figure>
 </div>
-<div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Autor/a</div>
-    <div class="quarto-title-meta-contents">
-             <p>Interna de investigación </p>
-          </div>
-  </div>
-  </div>
-</header><div id="person-profile">
-<p>Emily is an MSc graduate in Environmental Sciences and Policy with a research interest in disaster risk management, climate change, environmental justice, the value of local knowledge, and participatory methods.</p>
-</div>  
-</div>
+<p>Importantly, the statements describing characteristics of the desired future landscapes do not have to be aligned to a single value perspective (axis of the NFF), and they may actually represent multiple values. For example, the statement ‘a shift towards sustainable tourism’ can be perceived to show a respect for, and hence intrinsic valuing of, the natural landscape but also a valuing of the benefits that the landscape has for society, in this the potential for tourism as an economic activity. Of course, the perception of these values is subjective and this is why we would like to have different perspectives from a number of people regarding placing the statements within the NFF.</p>
+<p>To facilitate this, we have created a survey, in the form of an interactive app. The app will present you with 82 distinct statements regarding characteristics of a desirable future landscape in Peru in 2060 and you will be able to place a point for each statement within the triangular space of the NFF representing your opinion on how the statements reflects the three value perspectives. The video below shows how the app works:</p>
+<section id="iframe-of-video" class="level2"><h2 class="anchored" data-anchor-id="iframe-of-video">iframe of video</h2>
+<p>Some important points:</p>
+<ul>
+<li><p>The statements are available in both Spanish and English and some have accompanying explanations where technical terms are used.</p></li>
+<li><p>Some statements may sound very similar to others, but they have deliberately been included as they capture a slightly different idea/concept.</p></li>
+<li><p>After statements have been placed inside the NFF you can hover over the point with your mouse to display the statement, this maybe useful when placing related statements.</p></li>
+<li><p>This exercise should take approximately X minutes to complete</p></li>
+<li><p>After all statements have been placed within the NFF there is a button to submit your answers which will be added directly to confidential google sheet.</p></li>
+</ul>
+<p>We very much value the time and contributions of all participants and as such we would include your names in a list of contributors to the project on both the project website and in all reports produced. If you do not wish for your name to be included in this list there is an option to specify this within the app.</p>
+<p><a href="https://nascent-peru.shinyapps.io/nff-coding/"><u><strong>Click here to start the survey</strong></u></a></p>
 
 
-
-
-
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -184,6 +205,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -200,12 +228,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copiado");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copiado");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
