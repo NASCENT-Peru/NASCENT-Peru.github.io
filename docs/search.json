@@ -425,5 +425,75 @@
     "title": "World Biodiversity Forum 2024",
     "section": "",
     "text": "Esta semana presentamos en el World Biodiversity Forum 2024 de Davos (Suiza) algunos de los primeros resultados de los talleres de creación de escenarios celebrados en mayo y junio.\nEste acto fue una gran oportunidad para dar a conocer el proyecto a investigadores de todo el mundo y destacar la importancia de los escenarios que describen futuros positivos para el desarrollo de los paisajes desde la perspectiva de las partes interesadas locales.\nTambién tuvimos la oportunidad de reunirnos con los equipos de los demás proyectos financiados por SwissRE, que realizan una labor similar en distintas regiones del mundo. Fue inspirador ver la diversidad de enfoques y objetivos que cada proyecto espera alcanzar.\nAquí tienes algunas fotos del evento y más abajo puedes acceder a la presentación (de momento en inglés pero será traducida al español en breve) que se mostró.\nAhora nuestro equipo se tomará un breve descanso para reponer fuerzas de la apretada agenda en Perú, pero muy pronto compartiremos información más detallada sobre los resultados de los diferentes talleres a través de nuestra página web y redes sociales."
+  },
+  {
+    "objectID": "NFF_coding_instructions.html",
+    "href": "NFF_coding_instructions.html",
+    "title": "Scenario content coding instructions",
+    "section": "",
+    "text": "In May and June 2024 we undertook a series of 5 workshops in Peru. In these workshops we discussed the current state and future development of landscapes with participants from various backgrounds. In the first part of each workshop, participants were asked to characterize the current landscape in their region from their perspective. Following this, participants discussed and presented characteristics of what would be, in their opinion, a desirable future landscape for their region in the year 2060. Finally, participants identified the drivers (i.e. forces and processes of change) that would either facilitate or hinder the transition from the current landscape to their desired future landscape.\nFollowing the workshops, we have collated all the distinct contributions regarding characteristics of the future landscape as seperate statements and our next step is to organise these into groups. These groups of statements will then form the basis of the future scenario narratives we will develop.\nTo group the statements, we are utilising the Nature Futures Framework (NFF) developed by the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES). The Nature Futures Framework captures diverse values of human-nature relationships according to three different perspectives, which are represented as different axes in a triangular arrangement: Intrinsic values (‘nature for nature’), instrumental values (‘nature for society’), and relational values (‘nature as culture/one with nature’).\nImportantly, the statements describing characteristics of the desired future landscapes do not have to be aligned to a single value perspective (axis of the NFF), and they may actually represent multiple values. For example, the statement ‘a shift towards sustainable tourism’ can be perceived to show a respect for, and hence intrinsic valuing of, the natural landscape but also a valuing of the benefits that the landscape has for society, in this the potential for tourism as an economic activity. Of course, the perception of these values is subjective and this is why we would like to have different perspectives from a number of people regarding placing the statements within the NFF.\nTo facilitate this, we have created a survey, in the form of an interactive app. The app will present you with 82 distinct statements regarding characteristics of a desirable future landscape in Peru in 2060 and you will be able to place a point for each statement within the triangular space of the NFF representing your opinion on how the statements reflects the three value perspectives. The video below shows how the app works:"
+  },
+  {
+    "objectID": "NFF_coding_instructions.html#iframe-of-video",
+    "href": "NFF_coding_instructions.html#iframe-of-video",
+    "title": "Scenario content coding instructions",
+    "section": "iframe of video",
+    "text": "iframe of video\nSome important points:\n\nThe statements are available in both Spanish and English and some have accompanying explanations where technical terms are used.\nSome statements may sound very similar to others, but they have deliberately been included as they capture a slightly different idea/concept.\nAfter statements have been placed inside the NFF you can hover over the point with your mouse to display the statement, this maybe useful when placing related statements.\nThis exercise should take approximately X minutes to complete\nAfter all statements have been placed within the NFF there is a button to submit your answers which will be added directly to confidential google sheet.\n\nWe very much value the time and contributions of all participants and as such we would include your names in a list of contributors to the project on both the project website and in all reports produced. If you do not wish for your name to be included in this list there is an option to specify this within the app.\nClick here to start the survey"
+  },
+  {
+    "objectID": "NFF_coding.html",
+    "href": "NFF_coding.html",
+    "title": "Project",
+    "section": "",
+    "text": "The graphic below shows the steps of the NASCENT-Peru project workflow for creating and simulating normative, nature-positive scenarios for future landscape development in Peru. Click on each step to learn more about it."
+  },
+  {
+    "objectID": "NFF_coding.html#narratives",
+    "href": "NFF_coding.html#narratives",
+    "title": "Project",
+    "section": "Narratives:",
+    "text": "Narratives:\nIn addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of ‘business as usual’ and negative scenarios, while the normative scenarios consist of nature-positive scenarios."
+  },
+  {
+    "objectID": "NFF_coding.html#quantification",
+    "href": "NFF_coding.html#quantification",
+    "title": "Project",
+    "section": "Quantification:",
+    "text": "Quantification:\nThe rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers."
+  },
+  {
+    "objectID": "NFF_coding.html#simulations",
+    "href": "NFF_coding.html#simulations",
+    "title": "Project",
+    "section": "Simulations:",
+    "text": "Simulations:\nDuring the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors."
+  },
+  {
+    "objectID": "NFF_coding.html#economic-analysis",
+    "href": "NFF_coding.html#economic-analysis",
+    "title": "Project",
+    "section": "Economic Analysis:",
+    "text": "Economic Analysis:\nThe economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES)."
+  },
+  {
+    "objectID": "NFF_coding.html#communication",
+    "href": "NFF_coding.html#communication",
+    "title": "Project",
+    "section": "Communication:",
+    "text": "Communication:\nAs part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.\nThe workflow used in NASCENT-Peru is based on the methodology used in ValPar.CH"
+  },
+  {
+    "objectID": "NFF_coding_instructions.es.html",
+    "href": "NFF_coding_instructions.es.html",
+    "title": "Instrucciones de codificación del contenido del escenario",
+    "section": "",
+    "text": "En mayo y junio de 2024 realizamos una serie de 5 talleres en Perú. En estos talleres debatimos el estado actual y el desarrollo futuro de los paisajes con participantes de diversos ámbitos. En la primera parte de cada taller, se pidió a los participantes que caracterizaran el paisaje actual de su región desde su perspectiva. A continuación, los participantes debatieron y presentaron las características de lo que sería, en su opinión, un paisaje futuro deseable para su región en el año 2060. Por último, los participantes identificaron los motores (es decir, las fuerzas y procesos de cambio) que facilitarían o dificultarían la transición del paisaje actual al paisaje futuro deseado.\nTras los talleres, hemos recopilado todas las contribuciones relativas a las características del paisaje futuro en forma de afirmaciones separadas y nuestro siguiente paso es organizarlas en grupos. Estos grupos constituirán la base de las descripciones de los escenarios futuros que desarrollaremos.\nPara agrupar las declaraciones, estamos utilizando el Nature Futures Framework (NFF) desarrollado por la Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES). El Nature Futures Framework recoge diversos valores de las relaciones entre los seres humanos y la naturaleza según tres perspectivas diferentes, que se representan como ejes distintos en una disposición triangular: Valores intrínsecos («la naturaleza por la naturaleza»), valores instrumentales («la naturaleza para la sociedad») y valores relacionales («la naturaleza como cultura/uno con la naturaleza»).\nMarco de Futuros de la Naturaleza](img/NFF_ES.png)\nEs importante destacar que las afirmaciones que describen las características de los paisajes futuros deseados no tienen por qué ajustarse a una única perspectiva de valor (eje del NFF), y que en realidad pueden representar múltiples valores. Por ejemplo, la afirmación «un cambio hacia el turismo sostenible» puede percibirse como una muestra de respeto y, por tanto, de valoración intrínseca del paisaje natural, pero también como una valoración de los beneficios que el paisaje tiene para la sociedad, en este caso el potencial del turismo como actividad económica. Por supuesto, la percepción de estos valores es subjetiva y por eso nos gustaría tener diferentes perspectivas de varias personas en cuanto a la colocación de las declaraciones dentro del FNF.\nPara facilitarlo, hemos creado una encuesta en forma de aplicación interactiva. La aplicación le presentará 82 enunciados distintos relativos a las características de un paisaje futuro deseable en Perú en 2060 y usted podrá colocar un punto para cada enunciado dentro del espacio triangular del FNF representando su opinión sobre cómo los enunciados reflejan las tres perspectivas de valor. El siguiente vídeo muestra cómo funciona la aplicación:"
+  },
+  {
+    "objectID": "NFF_coding_instructions.es.html#iframe-of-video",
+    "href": "NFF_coding_instructions.es.html#iframe-of-video",
+    "title": "Instrucciones de codificación del contenido del escenario",
+    "section": "iframe of video",
+    "text": "iframe of video\nAlgunos puntos importantes:\n\nLos enunciados están disponibles tanto en español como en inglés y algunos van acompañados de explicaciones cuando se utilizan términos técnicos.\nAlgunas afirmaciones pueden sonar muy similares a otras, pero se han incluido deliberadamente porque captan una idea/concepto ligeramente diferente.\nUna vez colocados los enunciados dentro del FNF, puede pasar el ratón por encima del punto para ver el enunciado, lo que puede resultar útil para colocar enunciados relacionados.\nEste ejercicio le llevará aproximadamente X minutos.\nUna vez colocadas todas las afirmaciones en el NFF, hay un botón para enviar las respuestas, que se añadirán directamente a la hoja confidencial de Google.\n\nValoramos mucho el tiempo y las contribuciones de todos los participantes y, por ello, incluiremos sus nombres en una lista de colaboradores del proyecto tanto en el sitio web del proyecto como en todos los informes elaborados. Si no desea que su nombre se incluya en esta lista, tiene la opción de especificarlo en la aplicación.\nHaga clic aquí para iniciar la encuesta"
   }
 ]

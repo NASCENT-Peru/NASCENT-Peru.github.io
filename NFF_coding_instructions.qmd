@@ -1,0 +1,35 @@
+---
+title: Scenario content coding instructions
+comments: false
+title-block-banner: "#f6f8fa"
+---
+
+In May and June 2024 we undertook a series of [5 workshops in Peru](Scenario_workshops_2024_blog.qmd). In these workshops we discussed the current state and future development of landscapes with participants from various backgrounds. In the first part of each workshop, participants were asked to characterize the current landscape in their region from their perspective. Following this, participants discussed and presented characteristics of what would be, in their opinion, a desirable future landscape for their region in the year 2060. Finally, participants identified the drivers (i.e. forces and processes of change) that would either facilitate or hinder the transition from the current landscape to their desired future landscape.
+
+Following the workshops, we have collated all the distinct contributions regarding characteristics of the future landscape as seperate statements and our next step is to organise these into groups. These groups of statements will then form the basis of the future scenario narratives we will develop.
+
+To group the statements, we are utilising the [Nature Futures Framework (NFF)](https://www.naturefuturesframework.org/) developed by the [Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)](https://www.ipbes.net/). The Nature Futures Framework captures diverse values of human-nature relationships according to three different perspectives, which are represented as different axes in a triangular arrangement: Intrinsic values (‘nature for nature’), instrumental values (‘nature for society’), and relational values (‘nature as culture/one with nature’).
+
+![Nature Futures Framework](img/NFF.png)
+
+Importantly, the statements describing characteristics of the desired future landscapes do not have to be aligned to a single value perspective (axis of the NFF), and they may actually represent multiple values. For example, the statement 'a shift towards sustainable tourism' can be perceived to show a respect for, and hence intrinsic valuing of, the natural landscape but also a valuing of the benefits that the landscape has for society, in this the potential for tourism as an economic activity. Of course, the perception of these values is subjective and this is why we would like to have different perspectives from a number of people regarding placing the statements within the NFF.
+
+To facilitate this, we have created a survey, in the form of an interactive app. The app will present you with 82 distinct statements regarding characteristics of a desirable future landscape in Peru in 2060 and you will be able to place a point for each statement within the triangular space of the NFF representing your opinion on how the statements reflects the three value perspectives. The video below shows how the app works:
+
+## iframe of video
+
+Some important points:
+
+-    The statements are available in both Spanish and English and some have accompanying explanations where technical terms are used.
+
+-    Some statements may sound very similar to others, but they have deliberately been included as they capture a slightly different idea/concept.
+
+-    After statements have been placed inside the NFF you can hover over the point with your mouse to display the statement, this maybe useful when placing related statements.
+
+-    This exercise should take approximately X minutes to complete
+
+-    After all statements have been placed within the NFF there is a button to submit your answers which will be added directly to confidential google sheet.
+
+We very much value the time and contributions of all participants and as such we would include your names in a list of contributors to the project on both the project website and in all reports produced. If you do not wish for your name to be included in this list there is an option to specify this within the app.
+
+[[**Click here to start the survey**]{.underline}](https://nascent-peru.shinyapps.io/nff-coding/)
