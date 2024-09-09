@@ -16,7 +16,8 @@ Es importante destacar que las afirmaciones que describen las características d
 
 Para facilitarlo, hemos creado una encuesta en forma de aplicación interactiva. La aplicación le presentará 82 enunciados distintos relativos a las características de un paisaje futuro deseable en Perú en 2060 y usted podrá colocar un punto para cada enunciado dentro del espacio triangular del FNF representando su opinión sobre cómo los enunciados reflejan las tres perspectivas de valor. El siguiente vídeo muestra cómo funciona la aplicación:
 
-## iframe of video
+<iframe src="https://drive.google.com/file/d/1G6eHW8DulM3ggl6D-3wSVxOr6YjLAWxu/preview" width="640" height="480" allow="autoplay" style="border:1;display:block;margin:auto"></iframe>
+<br>
 
 Algunos puntos importantes:
 

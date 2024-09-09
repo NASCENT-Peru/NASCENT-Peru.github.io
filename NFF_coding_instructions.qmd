@@ -16,7 +16,8 @@ Importantly, the statements describing characteristics of the desired future lan
 
 To facilitate this, we have created a survey, in the form of an interactive app. The app will present you with 82 distinct statements regarding characteristics of a desirable future landscape in Peru in 2060 and you will be able to place a point for each statement within the triangular space of the NFF representing your opinion on how the statements reflects the three value perspectives. The video below shows how the app works:
 
-## iframe of video
+<iframe src="https://drive.google.com/file/d/1e9L2eFRMcuZNED45qT5FHb0V7hkPZaTL/preview" width="700" height="480" allow="autoplay"  style="border:1;display:block;margin:auto"></iframe>
+<br>
 
 Some important points:
 
