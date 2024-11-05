@@ -1,0 +1,46 @@
+---
+title: "Regional workshop in Puerto Maldonado"
+categories : 
+    - Workshops
+    - Scenario creation
+    - Participatory
+    - Puerto Maldonado
+    - Regional
+    - Future visions
+image: "impressions/Puerto_1.jpg"
+lightbox: true
+date: 2024-05-29
+---
+
+On May 28th we continued our series of regional scenario creation workshops  in the city of Puerto Maldonado in the Madre de Dios region of the Amazon.  
+
+The landscape of Madre de Dios is very different from our last stop in Piura so the participants visions for the future were also unique. However it was interesting to see that some characteristics, especially actions to promote positive change were similar. 
+
+We had planned to use several whiteboards to collect all the inputs for the 3 Horizons but we quickly realised that we had so many suggestions that we had to resort to use the wall and parts of the windows instead! This is testament to the energy and enthusiasm from our brilliant participants and we would like to thank them all again for their time. 
+
+This workshop could not have happened without the support from our partner organisation the [Wyss Academy for Natures' South American Hub](https://www.wyssacademy.org/project-south-america), who kindly hosted us at their office. We would especially like to thank Liselot Lange, Alejandro Portillo and Armando Valdés-Velásquez for all their help with the organisation. 
+
+Today we travel to the Ancash region to prepare for the next workshop in Huaraz on June 4th.
+
+Here are some photos from the workshop and below you can access the presentation that was shown. 
+
+::: {layout-nrow=2}
+![](impressions/Puerto_1.jpg){group="my-gallery"}
+
+![](impressions/Puerto_2.jpg){group="my-gallery"}
+
+![](impressions/Puerto_3.jpg){group="my-gallery"}
+![](impressions/Puerto_4.jpg){group="my-gallery"}
+
+![](impressions/Puerto_group.jpg){group="my-gallery"}
+:::
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe width="600" height="400" src="impressions/Regional_workshop_pres_ES_PtMd.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
+
+
+

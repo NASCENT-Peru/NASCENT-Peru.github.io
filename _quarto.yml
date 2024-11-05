@@ -65,6 +65,12 @@ format:
     fig-cap-location: margin
     reference-location: margin
     footnotes-hover: true
+    page-layout: article
+    grid:
+      sidebar-width: 400px
+      body-width: 1100px
+      margin-width: 150px
+      gutter-width: 1.5rem
 
 babelquarto:
   languagecodes:
@@ -76,5 +82,8 @@ babelquarto:
   languages: ['es']
 title-es: NASCENT-PERU
 lang: en
+
+execute:
+  freeze: auto
 
 

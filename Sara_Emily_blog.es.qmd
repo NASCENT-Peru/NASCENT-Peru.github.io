@@ -1,0 +1,24 @@
+---
+title: "Nuevos internos de investigación"
+categories : 
+    - Equipo
+    - Creación de Escenarios
+date: 2024/07/24
+image: "impressions/Emily_Sara.jpg"
+lightbox: true
+---
+
+Nos complace anunciar que tenemos dos nuevas incorporaciones a nuestro equipo NASCENT. [Sára Balogh](about/ETHZ/Sara.qmd) y [Emily Wallis](about/ETHZ/Emily.qmd), ambas recién licenciadas en Ciencias y Políticas Medioambientales por la Universidad Centroeuropea, se unirán a nosotros como becarias de investigación durante el verano. Tanto Sara como Emily tienen experiencia en investigación participativa y análisis cualitativo de datos y nos ayudarán a traducir la información de nuestros talleres de creación de escenarios en diferentes narrativas del futuro desarrollo de los paisajes.  
+
+Estamos muy agradecidos de contar con ellas y esperamos sus aportaciones al proyecto. ¡Bienvenidas, Sára y Emily!
+
+::: {layout-ncol=2}
+![](about/ETHZ/Sara.jpg){group="my-gallery"}
+
+![](about/ETHZ/Emily.jpg){group="my-gallery"}
+:::
+
+
+
+
+

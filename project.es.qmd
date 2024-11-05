@@ -2,6 +2,7 @@
 title: Proyecto
 subtitle: "Detalles del método de investigación del proyecto"
 comments: false
+title-block-banner: "#f6f8fa"
 ---
 
 El siguiente gráfico muestra los pasos del flujo de trabajo del proyecto NASCENT-Peru para crear y simular escenarios normativos, positivos para la naturaleza, para el futuro desarrollo del paisaje en Perú. Haga clic en cada paso para obtener más información.

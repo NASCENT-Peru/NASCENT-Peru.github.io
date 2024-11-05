@@ -1,0 +1,24 @@
+---
+title: "Sára Balogh"
+subtitle: "Research Intern"
+author: "Interna de investigación"
+sortby: "3"
+image: Sara.jpg
+toc: false
+comments: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: LInkedIn
+      href: https://www.linkedin.com/in/sarabalogh/
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://www.linkedin.com/in/sarabalogh/'" />
+```
+
+:::{#person-profile}
+:::

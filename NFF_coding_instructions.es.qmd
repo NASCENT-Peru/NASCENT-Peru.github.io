@@ -1,0 +1,36 @@
+---
+title: Instrucciones de codificación del contenido del escenario
+comments: false
+title-block-banner: "#f6f8fa"
+---
+
+En mayo y junio de 2024 llevaremos a cabo una serie de cinco talleres en Perú [5 talleres en Perú](Scenario_workshops_2024_blog.qmd). En estos talleres debatimos el estado actual y el desarrollo futuro de los paisajes con participantes de diversos ámbitos. Al principio de cada taller, se pidió a los participantes que caracterizaran el paisaje actual de su región desde su perspectiva. A continuación, los participantes debatieron y presentaron las características de lo que, en su opinión, debería ser un paisaje futuro deseable para su región en el año 2060. Por último, los participantes identificaron los motores (es decir, las fuerzas y procesos de cambio) que facilitarían o dificultarían la transición del paisaje actual al paisaje futuro deseado.
+
+Tras los talleres, hemos recopilado todas las contribuciones relativas a las características del paisaje futuro en forma de afirmaciones separadas y nuestro siguiente paso es organizarlas en grupos. Estos grupos constituirán la base de las descripciones de los escenarios futuros que desarrollaremos.
+
+Para agrupar las declaraciones, estamos utilizando el [Nature Futures Framework (NFF)](https://www.naturefuturesframework.org/), desarrollado por la [Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)](https://www.ipbes.net/). El Nature Futures Framework recoge diversos valores de las relaciones entre los seres humanos y la naturaleza según tres perspectivas diferentes, que se representan como ejes distintos en una disposición triangular: valores intrínsecos ('la naturaleza por la naturaleza'), valores instrumentales ('la naturaleza para la sociedad') y valores relacionales ('la naturaleza como cultura/uno con la naturaleza').
+
+[Nature Futures Framework](img/NFF_ES.png)
+
+Es importante destacar que las afirmaciones que describen las características de los paisajes futuros deseados no tienen por qué ajustarse a una única perspectiva de valor (eje del NFF) y, de hecho, pueden representar múltiples valores. Por ejemplo, la afirmación «un cambio hacia el turismo sostenible» puede percibirse como una muestra de respeto y, por tanto, de valoración intrínseca del paisaje natural, pero también como una valoración de los beneficios que el paisaje tiene para la sociedad, en este caso el potencial del turismo como actividad económica. Por supuesto, la percepción de estos valores es subjetiva y por eso nos gustaría conocer la opinión de diferentes personas acerca de la colocación de las declaraciones dentro del NFF.
+
+Para facilitarlo, hemos creado una encuesta en forma de aplicación interactiva. La aplicación le presentará 60 enunciados distintos relativos sobre las características de un paisaje futuro deseable en Perú en 2060 y usted podrá colocar un punto para cada enunciado dentro del espacio triangular del FNF representando su opinión sobre cómo los enunciados reflejan las tres perspectivas de valor. El siguiente vídeo muestra cómo funciona la aplicación:
+
+<iframe src="https://drive.google.com/file/d/1G6eHW8DulM3ggl6D-3wSVxOr6YjLAWxu/preview" width="640" height="480" allow="autoplay" style="border:1;display:block;margin:auto"></iframe>
+<br>
+
+Algunos puntos importantes:
+
+-   Los enunciados están disponibles tanto en español como en inglés y algunos van acompañados de explicaciones cuando se utilizan términos técnicos.
+
+-   Algunas afirmaciones pueden sonar muy similares a otras, pero se han incluido deliberadamente porque captan una idea/concepto ligeramente diferente.
+
+-   Una vez colocados los enunciados en el NFF, puede pasar el ratón por encima del punto para ver el enunciado, lo que puede resultar útil para colocar enunciados relacionados.
+
+-   Este ejercicio le llevará aproximadamente X minutos.
+
+-   Una vez colocadas todas las afirmaciones en el NFF, hay un botón para enviar las respuestas, que se añadirán directamente a la hoja confidencial de Google.
+
+Valoramos mucho el tiempo y las contribuciones de todos los participantes y, por ello, incluiremos sus nombres en una lista de colaboradores del proyecto tanto en el sitio web del proyecto como en todos los informes elaborados. Si no desea que su nombre se incluya en esta lista, tiene la opción de especificarlo en la aplicación.
+
+### [[**Haga clic aquí para iniciar la encuesta**]{.underline}](https://nascent-peru.shinyapps.io/nff-coding/)

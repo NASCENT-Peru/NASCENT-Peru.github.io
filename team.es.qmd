@@ -2,6 +2,7 @@
 title: "Equipo"
 toc: false
 comments: false
+title-block-banner: "#f6f8fa"
 
 listing:
   - id: ETHZ
@@ -9,7 +10,7 @@ listing:
     type: grid
     #image: "ETHZ/*.jpg"
     image-height: 225px
-    grid-columns: 3
+    grid-columns: 4
     fields: [image, title, author]
     grid-item-align: center
     sort: sortby
@@ -19,7 +20,7 @@ listing:
     contents: "about/WAN/*.qmd"
     type: grid
     image-height: 225px
-    grid-columns: 3
+    grid-columns: 4
     sort: sortby
     fields: [image, title, author]
     field-display-names: 
@@ -29,7 +30,7 @@ listing:
     contents: "about/UL/*.qmd"
     type: grid
     image-height: 225px
-    grid-columns: 3
+    grid-columns: 4
     fields: [image, title, author]
     grid-item-align: center
     sort: sortby
@@ -39,7 +40,17 @@ listing:
     contents: "about/UGA/*.qmd"
     type: grid
     image-height: 225px
-    grid-columns: 3
+    grid-columns: 4
+    fields: [image, title, author]
+    grid-item-align: center
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+  - id: alumni
+    contents: "about/alumni/*.qmd"
+    type: grid
+    image-height: 225px
+    grid-columns: 4
     fields: [image, title, author]
     grid-item-align: center
     sort: sortby
@@ -74,4 +85,9 @@ El equipo NASCENT-PERU es una colaboración interdisciplinar entre investigadore
 <h2><a href="https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp"><img src="about/UGA.jpg" style="max-width: 50%; height: auto;" alt="Université Grenoble Alpes"></a></h2>
 
 :::{#UGA}
+:::
+
+## Alumni
+
+:::{#alumni}
 :::

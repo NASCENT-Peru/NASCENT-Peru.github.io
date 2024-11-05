@@ -4,6 +4,7 @@ categories :
     - Talleres
     - Creación de Escenarios
 image: "impressions/workshop_locations_impression.png"
+date: 2024/04/01
 ---
 
 Nos complace anunciar que celebraremos los primeros talleres como parte del proceso participativo de creación de escenarios en mayo y junio de 2024.

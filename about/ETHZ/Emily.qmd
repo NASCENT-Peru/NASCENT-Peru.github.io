@@ -1,0 +1,19 @@
+---
+title: "Emily Wallis"
+subtitle: "Research Intern"
+author: "Interna de investigación"
+sortby: "4"
+image: Emily.jpg
+toc: false
+comments: false
+
+about:
+  id: person-profile
+  template: jolla
+---
+
+
+
+:::{#person-profile}
+Emily is an MSc graduate in Environmental Sciences and Policy with a research interest in disaster risk management, climate change, environmental justice, the value of local knowledge, and participatory methods. 
+:::

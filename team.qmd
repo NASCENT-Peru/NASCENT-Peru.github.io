@@ -10,40 +10,55 @@ listing:
   - id: ETHZ
     contents: "about/ETHZ/*.qmd"
     type: grid
-    image-height: 225px
-    grid-columns: 3
+    image-height: 325px
+    grid-columns: 4
     fields: [image, title, subtitle]
     grid-item-align: center
+    grid-item-border: false
     sort: sortby
     field-display-names: 
       started: "Started"
   - id: WAN
     contents: "about/WAN/*.qmd"
     type: grid
-    image-height: 225px
-    grid-columns: 3
+    image-height: 325px
+    grid-columns: 4
     sort: sortby
     fields: [image, title, subtitle]
     field-display-names: 
       started: "Started"
     grid-item-align: center
+    grid-item-border: false
   - id: UL
     contents: "about/UL/*.qmd"
     type: grid
-    image-height: 225px
-    grid-columns: 3
+    image-height: 325px
+    grid-columns: 4
     fields: [image, title, subtitle]
     grid-item-align: center
+    grid-item-border: false
     sort: sortby
     field-display-names: 
       started: "Started"
   - id: UGA
     contents: "about/UGA/*.qmd"
     type: grid
-    image-height: 225px
-    grid-columns: 3
+    image-height: 325px
+    grid-columns: 4
     fields: [image, title, subtitle]
     grid-item-align: center
+    grid-item-border: false
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+  - id: alumni
+    contents: "about/alumni/*.qmd"
+    type: grid
+    image-height: 325px
+    grid-columns: 4
+    fields: [image, title, subtitle]
+    grid-item-align: center
+    grid-item-border: false
     sort: sortby
     field-display-names: 
       started: "Started"
@@ -76,5 +91,12 @@ The NASCENT-PERU team is an interdiscplinary collaboration between researchers f
 
 :::{#UGA}
 :::
+
+## Alumni
+
+:::{#alumni}
+:::
+
+
 
 
