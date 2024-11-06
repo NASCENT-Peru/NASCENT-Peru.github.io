@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/team.html",
-    "items": []
-  },
-  {
     "listing": "/impressions.html",
     "items": [
       "/Sara_Emily_blog.html",
@@ -15,5 +11,9 @@
       "/National_workshop_2024_blog.html",
       "/Scenario_workshops_2024_blog.html"
     ]
+  },
+  {
+    "listing": "/team.html",
+    "items": []
   }
 ]
