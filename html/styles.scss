@@ -170,3 +170,13 @@ text{
 height: 100%;
 width: 100%;
 }
+
+.bi-globe2 {
+    font-size: 1.6em; /* Increase icon size */
+    vertical-align: middle; /* Align with surrounding text if needed */
+}
+
+/* Optional: hover effect */
+.bi-globe2:hover {
+    color: #45818d; /* Example color on hover */
+}

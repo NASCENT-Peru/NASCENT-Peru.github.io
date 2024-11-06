@@ -1,0 +1,31 @@
+---
+title: "Contribuidores"
+format: html
+---
+
+En nuestro proyecto colaboramos estrechamente con un grupo diverso de partes interesadas de todo Perú. Su inestimable apoyo nos permite elaborar narrativas para el futuro desarrollo paisajístico de Perú. Extendemos nuestro más sincero agradecimiento a:
+
+| Name  | Institution  |
+|--------|--------|
+| Juan Andrés Farroñay Huando | ARBIO Perú |
+| Juan Andrés Farroñay Huando | ARBIO Perú |
+| Wilmer Federico Bermejo Requena | CIPCA |
+| Robinson del Castillo Gonzales | Cima Cordillera Azul |
+| Iris Chunga Rodríguez | Club de Leones San Miguel de Piura |
+| Santiago Palacios Córdova | Consultor Independiente |
+| Raúl Gonzales Alegría | Earth Innovation Institute |
+| Hugo Rodolfo Fernández Otoya | EcoSwell |
+| Alberto Castañeda Barreto | Instituto Nacional de Investigación en Glaciares y Ecosistemas de Montaña |
+| Andrea Bravo Sánchez | Instituto del Bien Común |
+| Jose Eduardo Victorio Gonzales | Instituto del Bien Común |
+| Beatriz Eleadora Roca Ramos | Profesional Independiente |
+| Daycy Noimy Valladares Pérez | Profesional Independiente |
+| Hugo Edgar Carrillo Vargas | Servicio Nacional Forestal y de Fauna Silvestre |
+| Edgar Vicuña | Servicio Nacional de Areas Naturales Protegidas por el Estado |
+| Maria Miyasiro | Servicio Nacional de Areas Naturales Protegidas por el Estado |
+| Beatriz Rosario Alcántara Medrano | Terra Nuova |
+| Ricardo Jesús Jiménez Vílchez | Terra Nuova |
+| Claudia Caro Vera | Universidad Nacional Agraria La Molina |
+| Estela Karem Samamé Zegarra | Universidad Nacional Santiago Antunez de Mayolo |
+| María Vallejos Atalaya | Universidad Peruana Unión, Campus Tarapoto |
+| Manuel Merino Chumacero | Universidad de Piura |
