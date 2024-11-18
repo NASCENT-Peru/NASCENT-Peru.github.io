@@ -1,0 +1,25 @@
+---
+title: "Prof. Dr. Adrienne Grêt-Regamey"
+subtitle: "Principal Investigator"
+author: "Investigador principal"
+sortby: "1"
+image: Adrienne.jpg
+toc: false
+comments: false
+
+about:
+  id: person-profile
+  template: jolla
+  image-shape: round
+  links:
+    - icon: link
+      text: website
+      href: https://irl.ethz.ch/people/person-detail.NTY3OTM=.TGlzdC8xNzM4LC0xMzk1OTgzMDM3.html
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://irl.ethz.ch/people/person-detail.NTY3OTM=.TGlzdC8xNzM4LC0xMzk1OTgzMDM3.html'" />
+```
+
+:::{#person-profile}
+:::

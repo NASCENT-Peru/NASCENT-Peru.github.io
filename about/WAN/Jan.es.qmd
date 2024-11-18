@@ -1,0 +1,24 @@
+---
+title: "Dr. Jan Göpel"
+subtitle: "Scientific Collaborator"
+author: "Colaborador científico"
+sortby: "2"
+image: JanGoepel.jpg
+toc: false
+comments: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://www.wyssacademy.org/team/dr.-jan-g%C3%B6pel?
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://www.wyssacademy.org/team/dr.-jan-g%C3%B6pel?'" />
+```
+
+:::{#person-profile}
+:::
