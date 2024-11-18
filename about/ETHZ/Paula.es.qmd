@@ -1,0 +1,24 @@
+---
+title: "Paula Mayer"
+sortby: "3"
+subtitle: "PhD Student"
+author: "Colaborador científico"
+image: Paula.jpg
+toc: false
+comments: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://plus.ethz.ch/chair/people/person-detail.MjI4OTA0.TGlzdC8xMjQyLDE0MzMyMTIxNTg=.html
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://plus.ethz.ch/chair/people/person-detail.MjI4OTA0.TGlzdC8xMjQyLDE0MzMyMTIxNTg=.html'" />
+```
+
+:::{#person-profile}
+:::

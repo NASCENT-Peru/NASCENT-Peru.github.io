@@ -1,0 +1,24 @@
+---
+title: "Benjamin Black"
+subtitle: "Project Director and Lead researcher"
+author: "Director del proyecto e investigador principal"
+sortby: "1"
+image: Ben.jpg
+toc: false
+comments: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://blenback.github.io/
+---
+
+<!-- ```{=html} -->
+<!-- <meta http-equiv="Refresh" content="0; url='https://blenback.github.io/'" /> -->
+<!-- ``` -->
+
+:::{#person-profile}
+:::

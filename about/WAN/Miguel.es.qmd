@@ -1,0 +1,24 @@
+---
+title: "Miguel Saravia"
+sortby: "2"
+image: miguel.jpg
+subtitle: "Scientific Collaborator"
+author: "Colaborador científico"
+toc: false
+comments: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://www.wyssacademy.org/team/miguel-saravia?
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://www.wyssacademy.org/team/miguel-saravia?'" />
+```
+
+:::{#person-profile}
+:::

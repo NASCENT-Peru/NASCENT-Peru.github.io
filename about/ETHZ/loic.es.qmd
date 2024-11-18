@@ -1,0 +1,24 @@
+---
+title: "Prof. Dr. Loïc Pellissier"
+sortby: "2"
+author: "Colaborador científico"
+subtitle: "Scientific Collaborator"
+image: loic.jpeg
+toc: false
+comments: false
+
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://usys.ethz.ch/personen/profil.loic-pellissier.html
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://usys.ethz.ch/personen/profil.loic-pellissier.html'" />
+```
+
+:::{#person-profile}
+:::
