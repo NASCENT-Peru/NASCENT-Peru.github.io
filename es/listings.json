@@ -14,6 +14,21 @@
   },
   {
     "listing": "/team.html",
-    "items": []
+    "items": [
+      "/about/ETHZ/Adrienne.html",
+      "/about/ETHZ/Ben.html",
+      "/about/ETHZ/loic.html",
+      "/about/ETHZ/Manuel.html",
+      "/about/ETHZ/Paula.html",
+      "/about/ETHZ/Sara.html",
+      "/about/ETHZ/Emily.html",
+      "/about/WAN/Armando.html",
+      "/about/WAN/Edouard.html",
+      "/about/WAN/Jan.html",
+      "/about/WAN/Miguel.html",
+      "/about/UL/antoine.html",
+      "/about/UGA/Ignacio.html",
+      "/about/alumni/Chenyu.html"
+    ]
   }
 ]
