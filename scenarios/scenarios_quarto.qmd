@@ -1,0 +1,56 @@
+---
+title: "Scenarios"
+title-block-banner: "#f6f8fa"
+format: 
+  html:
+    css: styles.css
+    body-classes: info
+    page-layout: custom
+    grid:
+      sidebar-width: 10px
+      margin-width: 10px
+      gutter-width: 1.5rem
+include-in-header:
+  text: |
+    <script type="text/javascript" src="js/jquery.3.6.1.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey"></script>
+    <script src="js/app.js"></script>
+    <script src="js/characteristics.js"></script>
+    <script src="js/bar-graph-percent-change.js"></script>
+    <script src="js/sankey.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+---
+
+:::::: {#scenarios}
+```{=html}
+<header class="auto" name="a">
+<h2><span class="s">NAT</span><span class="l">Nature for Nature</span></h2>
+<h3>(Focus on Intrinsic Value)</h3>
+</header>
+```
+
+::::: {.auto name="a"}
+:::{.lead}
+**Nature for Nature** emphasizes the protection and promotion of biodiversity. This scenario...\
+...
+:::
+:::::
+
+::: {.auto name="b"}
+### CUL
+
+#### Nature as Culture
+
+(Focus on Relational Value)
+:::
+
+::: {.auto name="c"}
+### SOC
+
+#### Nature for Society
+
+(Focus on Utilitarian Value)
+:::
+::::::

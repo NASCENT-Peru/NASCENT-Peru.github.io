@@ -1,0 +1,48 @@
+---
+title: "Regional workshop in Tarapoto"
+categories : 
+    - Workshops
+    - Scenario creation
+    - Participatory
+    - Tarapoto
+    - Regional
+    - Future visions
+image: "../img/Tarapoto_group.jpg"
+lightbox: true
+date: 2024-06-11
+---
+
+The 11th of June marked the end of our series of regional scenario creation workshops with a last stop in Tarapoto. We were hosted by [Universidad Peruana Unión](https://upeu.edu.pe/#) who also kindly invited us to present our project at an event celebrating the anniversary of their faculty of engineering and architecture the previous day. This was a special opportunity for us to be able to engage with students and to spread the word about the importance of nature positive visions for the future.   
+
+In this regard the participants in our workshop provided some insightful and thought-provoking ideas for their visions of a sustainable future landscape. A prominent example was the need to expand publicly accessible recreation spaces for fostering a positive relationship with nature in the next generation. We would like to once again thank everyone who generously contributed with their time and expertise! 
+
+Now that we have gathered perspectives from four different regions in Peru the next step will be to bring all of these ideas together into different scenario narratives of future landscape development. This will take some time, however, we will share some first results from the national and regional workshops through our website and social media channels in the coming weeks!
+
+::: {layout-nrow=2}
+![](../img/Tarapoto_1.jpg){group="my-gallery"}
+
+![](../img/Tarapoto_2.jpg){group="my-gallery"}
+
+![](../img/Tarapoto_3.jpg){group="my-gallery"}
+
+![](../img/Tarapoto_5.jpg){group="my-gallery"}
+
+![](../img/Tarapoto_6.jpg){group="my-gallery"}
+
+![](../img/Tarapoto_group.jpg){group="my-gallery"}
+
+![](../img/Tarapoto_pres_3.jpg){group="my-gallery"}
+
+![](../img/Tarapoto_pres_4.jpg){group="my-gallery"}
+
+:::
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe width="600" height="400" src="../media/Regional_workshop_pres_ES_Tarapoto.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
+
+
+

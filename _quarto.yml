@@ -2,7 +2,6 @@ project:
   type: website
   output-dir: docs
   execute-dir: project
-
 website:
   site-url: "https://nascent-peru.github.io/"
   repo-url: "https://github.com/NASCENT-Peru/NASCENT-Peru.github.io"
@@ -19,14 +18,14 @@ website:
 
      # your sub-pages
     left:
-      - project.qmd
-      - impressions.qmd
-      - glossary.qmd
+      - project/project.qmd
+      - impressions/impressions.qmd
+      - glossary/glossary.qmd
       #- output.qmd
       - menu:
-              - team.qmd
-              - funding.qmd
-              - contributers.qmd
+              - about/team.qmd
+              - about/funding.qmd
+              - about/contributers.qmd
         text: "Info"
 
 

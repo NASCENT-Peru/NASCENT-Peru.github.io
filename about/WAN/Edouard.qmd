@@ -1,7 +1,7 @@
 ---
 title: "Prof. Dr. Edouard Davin"
 sortby: "1"
-image: Edouard.jpg
+image: ../img/Edouard.jpg
 subtitle: "Scientific Collaborator"
 author: "Colaborador científico"
 toc: false

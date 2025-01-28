@@ -3,7 +3,7 @@ title: "Emily Wallis"
 subtitle: "Research Intern"
 author: "Interna de investigación"
 sortby: "4"
-image: Emily.jpg
+image: ../img/Emily.jpg
 toc: false
 comments: false
 

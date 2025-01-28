@@ -3,7 +3,7 @@ title: "Sára Balogh"
 subtitle: "Research Intern"
 author: "Interna de investigación"
 sortby: "3"
-image: Sara.jpg
+image: ../img/Sara.jpg
 toc: false
 comments: false
 

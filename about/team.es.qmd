@@ -1,0 +1,98 @@
+---
+title: "Equipo"
+toc: false
+comments: false
+title-block-banner: "#f6f8fa"
+
+listing:
+  - id: ETHZ
+    contents: "ETHZ/*.qmd"
+    type: grid
+    #image: "ETHZ/*.jpg"
+    image-height: 325px
+    grid-columns: 4
+    fields: [image, title, author]
+    grid-item-align: center
+    grid-item-border: false
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+  - id: WAN
+    contents: "WAN/*.qmd"
+    type: grid
+    image-height: 325px
+    grid-columns: 4
+    sort: sortby
+    fields: [image, title, author]
+    field-display-names: 
+      started: "Started"
+    grid-item-align: center
+    grid-item-border: false
+  - id: UL
+    contents: "UL/*.qmd"
+    type: grid
+    image-height: 325px
+    grid-columns: 4
+    fields: [image, title, author]
+    grid-item-align: center
+    grid-item-border: false
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+  - id: UGA
+    contents: "UGA/*.qmd"
+    type: grid
+    image-height: 325px
+    grid-columns: 4
+    fields: [image, title, author]
+    grid-item-align: center
+    grid-item-border: false
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+  - id: alumni
+    contents: "alumni/*.qmd"
+    type: grid
+    image-height: 325px
+    grid-columns: 4
+    fields: [image, title, author]
+    grid-item-align: center
+    grid-item-border: false
+    sort: sortby
+    field-display-names: 
+      started: "Started"
+---
+
+
+El equipo NASCENT-PERU es una colaboración interdisciplinar entre investigadores de la [ETH Zurich](https://ethz.ch/de.html), la [Wyss Academy for Nature](https://www.wyssacademy.org/project-south-america), la [Université de Lausanne](https://www.unil.ch/ecospat/home.html) y la [Université Grenoble Alpes](https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp). Haga clic en el perfil de cada miembro del equipo para obtener más información.
+
+
+<h2><a href="https://ethz.ch/de.html"><img src="../img/ETHZ.png" style="max-width: 50%; height: auto;" alt="ETH Zurich"></a></h2>
+
+:::{#ETHZ}
+:::
+
+
+<h2><a href="https://www.wyssacademy.org/project-south-america"><img src="../img/WAN.png" style="max-width: 50%; height: auto;" alt="Wyss Academy for Nature"></a></h2>
+
+:::{#WAN}
+:::
+
+
+
+
+<h2><a href="https://www.unil.ch/ecospat/home.html"><img src="../img/UNIL.png" style="max-width: 50%; height: auto;" alt="Université de Lausanne"></a></h2>
+
+:::{#UL}
+:::
+
+
+<h2><a href="https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp"><img src="../img/UGA.jpg" style="max-width: 50%; height: auto;" alt="Université Grenoble Alpes"></a></h2>
+
+:::{#UGA}
+:::
+
+## Alumni
+
+:::{#alumni}
+:::

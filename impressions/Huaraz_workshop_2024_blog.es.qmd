@@ -1,0 +1,45 @@
+---
+title: "Taller regional en Huaraz"
+categories : 
+    - Talleres
+    - Creación de Escenarios
+    - Taller Regional
+    - Huaraz
+image: "../img/Huaraz_group.jpeg"
+lightbox: true
+date: 2024-06-05
+---
+
+Ayer celebramos el 4º de nuestros talleres regionales de creación de escenarios en la ciudad de Huaraz, capital de la región de Ancash. Situada en el valle del Callejón de Huaylas, a más de 3.000 metros sobre el nivel del mar, elegimos Huaraz para aportar una perspectiva sobre lo que podrían ser cambios futuros deseables en los paisajes montañosos de Perú. 
+
+Antes del taller, exploramos la región durante varios días y vimos de primera mano hasta qué punto los glaciares ya están desapareciendo. Al mismo tiempo, también vimos algunos ejemplos inspiradores de cómo los productores agrícolas pueden aprovechar las condiciones climáticas de los valles de montaña para producir una amplia gama de cultivos.  
+
+Como se puede ver en la foto de abajo, tuvimos un lleno total, con participantes de diferentes edades y procedencias, desde estudiantes y agricultores hasta guías de montaña y miembros del gobierno regional. Al igual que en los demás talleres regionales, utilizamos los marcos de los 3 horizontes para guiar a los participantes en la reflexión desde los paisajes actuales hacia el futuro, y al final de la sesión recibimos algunas aportaciones que invitaban a la reflexión. En particular, que el taller había sido un buen formato para reunir a diferentes actores y que era importante establecer un medio de comunicación para que los participantes continuaran el diálogo en torno a impulsar un cambio positivo en la región en el futuro.  
+
+Nuestro último taller de 2024 se celebrará en Tarapoto, en la región de San Martín, el 11 de junio.
+
+Aquí hay algunas fotos del taller y abajo puede acceder a la presentación que se mostró. 
+
+::: {layout-nrow=2}
+![](../img/Huaraz_3.jpeg){group="my-gallery"}
+
+![](../img/Huaraz_2.jpg){group="my-gallery"}
+
+![](../img/Huaraz_4.jpeg){group="my-gallery"}
+
+![](../img/Huaraz_5.jpeg){group="my-gallery"}
+
+![](../img/Huaraz_1.jpg){group="my-gallery"}
+
+![](../img/Huaraz_group.jpeg){group="my-gallery"}
+:::
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe width="600" height="400" src="../media/Regional_workshop_pres_ES_Huaraz.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
+
+
+

@@ -3,7 +3,7 @@ title: "Benjamin Black"
 subtitle: "Project Director and Lead researcher"
 author: "Director del proyecto e investigador principal"
 sortby: "1"
-image: Ben.jpg
+image: ../img/Ben.jpg
 toc: false
 comments: false
 

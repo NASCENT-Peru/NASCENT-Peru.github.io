@@ -1,7 +1,7 @@
 ---
 title: "Dr. Ignacio Palomo"
 sortby: "1"
-image: Ignacio.jpg
+image: ../img/Ignacio.jpg
 subtitle: "Scientific Collaborator"
 author: "Colaborador científico"
 toc: false

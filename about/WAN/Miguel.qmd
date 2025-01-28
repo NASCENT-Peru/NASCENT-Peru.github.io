@@ -1,7 +1,7 @@
 ---
 title: "Miguel Saravia"
 sortby: "2"
-image: miguel.jpg
+image: ../img/miguel.jpg
 subtitle: "Scientific Collaborator"
 author: "Colaborador científico"
 toc: false

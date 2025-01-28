@@ -3,7 +3,7 @@ title: "Prof. Dr. Armando Valdés-Velásquez"
 sortby: "1"
 subtitle: "Scientific Collaborator"
 author: "Colaborador científico"
-image: Armando.jpg
+image: ../img/Armando.jpg
 toc: false
 comments: false
 

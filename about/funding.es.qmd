@@ -1,0 +1,9 @@
+---
+title: Financiación
+comments: false
+---
+
+El proyecto se financia como parte del reto de modelización de escenarios de biodiversidad y servicios ecosistémicos financiado por <a href="https://www.swissrefoundation.org/">Swiss Re Foundation</a>, <a href="https://www.swissre.com/institute/">Swiss Re Institute</a>, <a href="https://corporatesolutions.swissre.com/">Swiss Re Corporate Solutions</a>, <a href="https://www.ey.com/de_ch">EY</a>, <a href="https://www.wwf.ch/de">WWF</a> y <a href="https://axa-research.org/">AXA Research Fund</a>.
+
+
+<img src="../img/finances.png" style="height: 100%; width: 100%;"/>

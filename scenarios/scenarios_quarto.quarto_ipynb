@@ -1,0 +1,73 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Scenarios\"\n",
+        "title-block-banner: \"#f6f8fa\"\n",
+        "format: \n",
+        "  html:\n",
+        "    css: styles.css\n",
+        "    body-classes: info\n",
+        "    page-layout: custom\n",
+        "    grid:\n",
+        "      sidebar-width: 10px\n",
+        "      margin-width: 10px\n",
+        "      gutter-width: 1.5rem\n",
+        "include-in-header:\n",
+        "  text: |\n",
+        "    <script type=\"text/javascript\" src=\"js/jquery.3.6.1.js\"></script>\n",
+        "    <script src=\"js/map.js\"></script>\n",
+        "    <script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n",
+        "    <script src=\"https://cdn.jsdelivr.net/npm/chartjs-chart-sankey\"></script>\n",
+        "    <script src=\"js/app.js\"></script>\n",
+        "    <script src=\"js/characteristics.js\"></script>\n",
+        "    <script src=\"js/bar-graph-percent-change.js\"></script>\n",
+        "    <script src=\"js/sankey.js\"></script>\n",
+        "    <meta name=\"viewport\" content=\"width=device-width, minimum-scale=1.0, maximum-scale=1.0\" />\n",
+        "---\n",
+        "\n",
+        "\n",
+        ":::::: {#scenarios}\n",
+        "\n",
+        "\n",
+        "```{html}\n",
+        "<header class=\"auto\" name=\"a\">\n",
+        "<h2><span class=\"s\">NAT</span><span class=\"l\">Nature for Nature</span></h2>\n",
+        "<h3>(Focus on Intrinsic Value)</h3>\n",
+        "</header>\n",
+        "```\n",
+        "\n",
+        "\n",
+        "::: {.auto name=\"b\"}\n",
+        "### CUL\n",
+        "\n",
+        "#### Nature as Culture\n",
+        "\n",
+        "(Focus on Relational Value)\n",
+        ":::\n",
+        "\n",
+        "::: {.auto name=\"c\"}\n",
+        "### SOC\n",
+        "\n",
+        "#### Nature for Society\n",
+        "\n",
+        "(Focus on Utilitarian Value)\n",
+        ":::\n",
+        "::::::"
+      ],
+      "id": "0a84e86c"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

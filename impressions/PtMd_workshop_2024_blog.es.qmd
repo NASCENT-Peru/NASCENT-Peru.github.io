@@ -1,0 +1,44 @@
+---
+title: "Taller regional en Puerto Maldonado"
+categories : 
+    - Talleres
+    - Creación de Escenarios
+    - Puerto Maldonado
+    - Taller Regional
+image: "../img/Puerto_1.jpg"
+lightbox: true
+date: 2024-05-29
+---
+
+El 28 de mayo continuamos nuestra serie de talleres regionales de creación de escenarios en la ciudad de Puerto Maldonado, en la región amazónica de Madre de Dios.  
+
+Los paisajes de Madre de Dios son muy diferentes de los de nuestra última parada en Piura, por lo que las visiones de futuro de los participantes también eran únicas. Sin embargo, fue interesante ver que algunas características, especialmente las acciones para promover un cambio positivo, eran similares. 
+
+Habíamos planeado utilizar varias pizarras blancas para recoger todas las aportaciones para los 3 Horizontes, pero rápidamente nos dimos cuenta de que teníamos tantas sugerencias que tuvimos que recurrir a utilizar la pared y partes de las ventanas en su lugar. Esto es testimonio de la energía y el entusiasmo de nuestros brillantes participantes y nos gustaría darles las gracias de nuevo por su tiempo. 
+
+Este taller no habría sido posible sin el apoyo de nuestra organización asociada, the [Wyss Academy for Natures' South American Hub](https://www.wyssacademy.org/project-south-america), que amablemente nos acogió en sus oficinas. Queremos agradecer especialmente a Liselot Lange, Alejandro Portillo y Armando Valdés-Velásquez toda su ayuda en la organización. 
+
+Hoy viajamos a la región de Ancash para preparar el próximo taller en Huaraz el 4 de junio.
+
+Aquí les dejamos algunas fotos del taller y abajo pueden acceder a la presentación que se mostró. 
+
+::: {layout-nrow=2}
+![](../img/Puerto_1.jpg){group="my-gallery"}
+
+![](../img/Puerto_2.jpg){group="my-gallery"}
+
+![](../img/Puerto_3.jpg){group="my-gallery"}
+![](../img/Puerto_4.jpg){group="my-gallery"}
+
+![](../img/Puerto_group.jpg){group="my-gallery"}
+:::
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe width="600" height="400" src="../media/Regional_workshop_pres_ES_PtMd.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
+
+
+
