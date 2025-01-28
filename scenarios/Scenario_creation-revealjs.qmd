@@ -158,7 +158,7 @@ Table of statements under each scenario used as the basis for narratives, expand
     -   Internal and between scenario consistency
     -   Model operationalisation
     -   Mining
-
+-   **Armando**: 
 
 # Next steps
 ## Next steps
