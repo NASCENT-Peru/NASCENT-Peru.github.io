@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;500&display=swap');
+
+html, body {
+	min-height: 100vh;
+	margin: 0;
+}
+
+#scenarios {
+  margin: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: auto;
+}
+
+#scenarios header {
+	color: #fff;
+	background-color: #8cbc5f;
+	position: sticky;
+	top: 0px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	z-index: 100;
+	padding-bottom: 15px;
+}
+
+#scenarios header.closed {
+	background: #bcbcbc;
+}
+
+/*
+section, header {
+	padding: 10px 30px;
+}
+*/
+#scenarios section {
+	border-bottom: solid 1px #e0e0e0;
+}
+
+#scenarios header>*, section>* {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#scenarios header.open>*, section.open>* {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+/*
+section .s * {
+	max-width: 150px;
+}
+*/
+#scenarios section {
+	box-shadow: 0px 0px 0px 1px #e7e7e7;
+}
+
+/*
+header.open, section.open{
+ width: 600px;
+}
+*/
+#scenarios section.open .l {
+	display: inherit;
+}
+
+#scenarios header.closed h3 {
+	display: none;
+}
+
+#scenarios header.closed span.s {
+	display: inline;
+}
+
+#scenarios header.closed span.l {
+	display: none;
+}
+
+#scenarios header.open span.s {
+	display: none;
+}
+
+#scenarios header.open span.l {
+	display: inline;
+}
+
+#scenarios section.open .s {
+	display: none;
+}
+
+#scenarios section.closed .l, section.closed .a {
+	display: none;
+}
+
+#scenarios section.closed .s {
+	display: inherit;
+}
+
+#scenarios section.closed {
+	background: #f7f7f7;
+	color: #666;
+}
+
+* {
+}
+
+#scenarios h2, h2 span {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+#scenarios header h3 {
+	font-weight: normal;
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+#scenarios section:not(.open) h3 {
+	display: none
+}
+
+.lead, .copy {
+	max-width: 700px;
+}
+
+.copy, .questions p {
+	font-size: 15px;
+	letter-spacing: 0.01em;
+	line-height: 1.3em;
+}
+
+.auto .copy, .closed .copy {
+	display: none;
+}
+
+.closed .lead {
+	display: none;
+}
+
+.full {
+	grid-column: 1/-1;
+	padding: 1%;
+	background-color: #e0e9d5;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.full p {
+	margin-bottom: 5px;
+}
+
+.full .copy {
+	margin: 0;
+}
+
+
+
+.full p {
+	max-width: 800px;
+}
+
+textarea {
+	padding: 4px 8px;
+	width: calc(100% - 16px);
+	margin: 12px 0px 12px;
+	border-radius: 5px;
+	border: solid 1px #999;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type='text'], input[type='email'] {
+	padding: 4px 8px;
+	border-radius: 5px;
+	border: solid 1px #999;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+	margin-bottom: 5px;
+	width: 300px;
+}
+
+button {
+	font-size: 1.1em;
+	border: none;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	padding: 10px 16px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+button#info {
+	background-color: #71ad42;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	padding: 0;
+	display: block;
+}
+
+button.submit {
+	background-color: #f68e64;
+	font-size: 1.2em;
+	padding: 15px 36px;
+	border-radius: 8px;
+}
+
+/*
+nav {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 18px;
+	border-top-left-radius: 14px;
+	box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+	grid-column: 1/-1;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 18px;
+}
+
+nav span {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+nav h1, nav, nav a {
+	font-size: 18px;
+	margin: 5px 0px;
+}
+
+nav a {
+	color: #71ad42;
+	text-decoration: none;
+}
+
+nav img {
+	width: 25px;
+	margin-right: 10px;
+}
+*/
+
+canvas, .map-container, .container {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/************************ Map *********************/
+.map-container {
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.closed .map-container {
+	background-color: #f7f7f7;
+}
+
+.open .map-container {
+	background-size: 0;
+	height: 400px;
+	box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2);
+	background-color: #eeeded;
+}
+
+.map {
+	position: absolute;
+	cursor: crosshair;
+	height: 100%;
+}
+
+.closed .map, .auto .map {
+	display: none;
+}
+
+.map {
+	image-rendering: optimizeSpeed;
+	/* STOP SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;
+	/* Firefox                        */
+	image-rendering: -o-crisp-edges;
+	/* Opera                          */
+	image-rendering: -webkit-optimize-contrast;
+	/* Chrome (and eventually Safari) */
+	image-rendering: pixelated;
+	/* Universal support since 2021   */
+	image-rendering: optimize-contrast;
+	/* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;
+	/* IE8+                           */
+
+}
+
+.color-picker-tooltip {
+	/*display: none;*/
+	font-weight: normal;
+	position: absolute;
+	z-index: 10;
+	padding: .1rem .2rem;
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.8);
+	/* Geben sie hier ihren gewünschten Stil für den tooltip */
+}
+
+.auto button, .auto .landuse {
+	display: none;
+}
+
+.button_year button, .buttons_regions button {
+	padding: 3px 8px;
+	border-radius: 3px;
+	color: #666;
+}
+
+.button_year button.active, .buttons_regions button.active {
+	background-color: #8cbc5f;
+	color: #fff;
+}
+
+.landuse {
+	margin-top: 20px;
+	column-count: 3;
+	max-width: 530px;
+	margin-bottom: 15px;
+}
+
+.auto .landuse {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.closed .landusechange {
+	display: none;
+}
+
+.landusechange {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+	cursor: pointer;
+	padding: 2px 3px;
+	border-radius: 3px;
+}
+
+.auto .landusechange {
+	padding: 2px 2px;
+}
+
+.landusechange span {
+}
+
+.auto .landusechange span {
+	display: none;
+}
+
+.landusechange.active .color {
+	/*
+	color: #fff;
+	background-color: #454545;
+	*/
+	box-shadow: 0px 0px 0px 3px;
+}
+
+.buttons_regions {
+	margin-top: 20px;
+}
+
+.color {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.zoom {
+	margin: 2%;
+	position: relative;
+}
+
+.zoom button {
+	padding: 0;
+	width: 25px;
+	height: 25px;
+	margin-right: 7px;
+	font-family: ui-sans-serif;
+	cursor: pointer;
+}
+
+.sankey {
+	margin-bottom: 40px;
+}
+
+.characteristics {
+	list-style-type: none;
+	padding: 0;
+}
+
+.characteristics li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.characteristics li span, .characteristics li span a {
+	color: #000;
+}
+
+.characteristics li>span {
+	margin-left: 10px;
+}
+
+.characteristics span.value {
+	font-weight: 700;
+}
+
+.characteristics img {
+	width: 40px;
+	opacity: 0.6;
+}
+
+.characteristics .item {
+	display: none;
+}
+
+.open .characteristics .item {
+	display: inherit;
+}
+
+.closed .characteristics {
+	display: none;
+}
+
+/****************** INFOBOX ********************/
+
+.info #scenarios, .submit #scenarios {
+	position: fixed;
+}
+
+.modal {
+	background-color: rgb(93 93 93 / 60%);
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	display: none;
+	min-height: 100vh;
+}
+
+.infobox {
+	position: relative;
+	margin: 0 auto;
+	background: #fff;
+	max-width: 900px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.infobox>div {
+	margin: 5%;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+.infobox img {
+	width: 60%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.info #modal_info, .submit #modal_submit {
+	display: inherit;
+}
+
+
+.close {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	font-size: 50px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button#start {
+	background-color: #71ad42;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 15px 36px;
+	border-radius: 8px;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: #777777;
+}
+
+.infobox a {
+	color: #71ad42;
+}
+
+#info_language {
+	text-align: right;
+}
+
+#main_language {
+	margin-right: 15px;
+}
+
+.language {
+	color: #71ad42;
+}
+
+.language a {
+	color: #999;
+}
+
+.language, .language a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*****************************************************/
+
+
+
+@media (min-width: 1201px) {
+	.l {
+		display: inherit;
+	}
+
+	.s {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.l {
+		display: none;
+	}
+
+	.s {
+		display: inherit;
+	}
+
+	#scenarios header h3 {
+		display: none;
+	}
+}

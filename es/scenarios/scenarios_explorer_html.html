@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<link rel="alternate" hreflang="en" href="https://nascent-peru.github.io/scenarios/scenarios_explorer_html.html" />
+<link rel="alternate" hreflang="es" href="https://nascent-peru.github.io/es/scenarios/scenarios_explorer.es.html.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Scenarios – NASCENT-PERU</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-82da0e8bb9cf8b13f2dd2432b710028e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script><style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #f6f8fa;
+      }
+</style>
+<script type="text/javascript" src="js/jquery.3.6.1.js"></script><script src="js/map.js"></script><script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey"></script><script src="js/app.js"></script><script src="js/characteristics.js"></script><script src="js/bar-graph-percent-change.js"></script><script src="js/sankey.js"></script><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="nav-fixed info fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo"></a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">NASCENT-PERU</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item"><div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://nascent-peru.github.io/scenarios/scenarios_explorer_html.html" id="language-link-en">English</a></li></ul>
+</div></li>
+<li class="nav-item">
+    <a class="nav-link" href="../project/project.html"> 
+<span class="menu-text">Proyecto</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../impressions/impressions.html"> 
+<span class="menu-text">Impresiones</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../glossary/glossary.html"> 
+<span class="menu-text">Glosario</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-info" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Info</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-info">
+<li>
+    <a class="dropdown-item" href="../about/team.html">
+ <span class="dropdown-text">Equipo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/funding.html">
+ <span class="dropdown-text">Financiación</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/contributers.html">
+ <span class="dropdown-text">Contribuidores</span></a>
+  </li>  
+    </ul>
+</li>
+</ul>
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/blenback/NASCENT-Peru"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/nascent-peru"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.facebook.com/profile.php?id=61557948733975"> <i class="bi bi-facebook" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://zenodo.org/communities/nascent-peru"> 
+<span class="menu-text"><iconify-icon inline="" icon="simple-icons:zenodo" style="font-size: 1.5em;" aria-label="Icon zenodo from simple-icons Iconify.design set." title="Icon zenodo from simple-icons Iconify.design set."></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/"> <i class="bi bi-mortarboard" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:bblack@ethz.ch"> <i class="bi bi-envelope" role="img" aria-label="email">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+</div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title-banner">
+    <div class="quarto-title column-body">
+      <h1 class="title">Scenarios</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+<!-- main -->
+
+
+
+
+
+<div id="scenarios">
+<header class="auto" name="a"><h2>
+<span class="s">NAT</span><span class="l">Nature for Nature</span>
+</h2>
+<h3>(Focus on Intrinsic Value)</h3>
+</header><header class="auto" name="b"><h2>
+<span class="s">CUL</span><span class="l">Nature as Culture</span>
+</h2>
+<h3>(Focus on Relational Value)</h3>
+</header><header class="auto" name="c"><h2>
+<span class="s">SOC</span><span class="l">Nature for Society</span>
+</h2>
+<h3>(Focus on Utilitarian Value)</h3>
+</header><header class="auto" name="d"><h2>
+<span class="s">BAU</span><span class="l">Business as Usual</span>
+</h2>
+</header><header class="auto" name="e"><h2>
+<span class="s">UG</span><span class="l">Uncontrolled Growth</span>
+</h2>
+</header><!-- DESCRIPTION --><section class="auto" name="a"><p class="lead"><b>Nature for Nature</b> emphasizes the protection and promotion of biodiversity. This
+scenario
+characterizes that in certain areas for biodiversity promotion, humans are denied access. There is a
+societal consensus that biodiversity needs its space to thrive, as people value nature for its intrinsic
+values.</p>
+<p class="copy">This scenario assumes that human society globally follows sustainable pathways (SSP1) and
+climate action is effective (RCP 2.6). The Swiss population grows slightly to reach 9.5 million in 2060
+and the economy strives for a system beyond growth. The principle of sufficiency applies to both
+generation and consumption, resulting in a sharp drop in energy demand compared to 2020. Energy supply
+is relying on highly efficient renewable energy plants in a few locations. Recreational areas near urban
+and peri-urban areas are managed to avoid disturbing biodiversity hotspots (e.g., by closing river or
+forest areas), while existing tourism areas (e.g., ski resorts) are transformed into sustainably managed
+ecotourism areas (e.g., opportunities for guided wildlife viewing). While settlements in remote rural
+areas are abandoned, small towns in mountain areas are preserved with spatial constraints on urban
+development. Nationwide, there is no further urban sprawl compared to today. Both agricultural and
+forestry policies focus on promoting biodiversity. Soil-independent production using hydroponic farming
+methods takes place in industrial areas, while soil-dependent agriculture in rural areas is strongly
+connected to biodiversity measures: direct agricultural payments are linked to landscape quality and
+ecological connectivity, as are subsidies for land set aside for the development of habitats for
+sensitive species. EI has high priority on the political agenda and is coordinated among sectors with a
+strong focus on promoting biodiversity. An EI sectoral plan defines the EI through spatial planning and
+cantons are actively promoting EI planning and implementation while coordinating with the federal level.
+Protected areas will be expanded to cover 30% of Switzerland's land area by 2060, and their management
+will be site-specific according to IUCN categories Ia or IV. Species and habitats important for
+biodiversity, ecosystem processes and functions will be prioritized in the selection of new protected
+area sites. </p>
+</section><section class="auto" name="b"><p class="lead"><b>Nature as Culture</b> sets the priority on integrating communities into land management.
+It assumes
+a multifunctional land management with strong focus on community engagement and regional development.
+Biodiversity and nature’s contributions to people are highly respected, and the development of a
+regional EI is ingrained in human culture. </p>
+<p class="copy">This scenario assumes that humanity follows sustainable pathways (SSP1) and climate forcing
+is very limited (RCP2.6). In 2060, the Swiss population will have grown slightly to 9.5 million, and the
+Swiss economy will have shifted towards a regionalized model beyond growth with short market chains.
+Compared to 2020, there is a slight decrease in energy demand. Energy supply is decentralized, with
+greater efficiency and savings sought at local and regional levels. Recreational areas near urban and
+peri-urban areas are managed to avoid disturbing biodiversity hotspots (e.g., by closing river or forest
+areas), while existing tourism areas (e.g., ski resorts) are transformed into sustainably managed
+ecotourism areas that convey regional values (e.g., opportunities to participate in agricultural
+projects). In mountain areas, villages continue to exist, and in general more people will move to rural
+settlements surrounded by extensively managed agricultural areas. However, nationwide urban sprawl is
+limited to current levels. Agricultural policy focuses on promoting both biodiversity and community
+engagement: direct payments are linked to landscape quality and ecological connectivity, as are
+subsidies for further subsidies for involving local communities in the land management. EI has high
+priority on the political agenda and is coordinated among sectors to promote biodiversity and immaterial
+NCPs. An EI sectoral plan defines the EI through spatial planning and cantons are actively promoting EI
+planning and implementation while coordinating with the federal level. By 2060, protected areas will be
+expanded to cover 25% of Switzerland's land area, and their management will be site-specific according
+to IUCN categories V or VI. Species and landscape elements that are important for local communities and
+cultural heritage are given priority when selecting sites for new protected areas.</p>
+</section><section class="auto" name="c"><p class="lead"><b>Nature for Society</b> focuses on the sustainable supply of NCPs to the Swiss
+population. It assumes
+a strong division of the landscape: Housing, agricultural production, biodiversity protection,
+recreation, energy production are spatially separated. This has implications for the planning of rural
+and urban areas, with most people living in large, green cities. Society highly values NCPs for their
+instrumental values, i.e. the provision of material (e.g., timber, crops), regulatory (e.g., flood
+control), and immaterial (e.g., recreation) assets. </p>
+<p class="copy">Global development on a mid-range climate warming path (RCP4.5) and socio-economic
+development at business-as-usual (SSP2) form the basic assumptions of this scenario. In Switzerland, the
+population grows to 10.5 million people and the economy is characterized by green growth and efficient
+technological innovations. Urban and peri-urban areas are growing rapidly. Small towns with spatial
+restrictions on settlement development are emerging in mountainous areas, while settlements in remote
+rural areas are increasingly being abandoned. Overall, the extent of urban sprawl remains at current
+levels. Energy demand increases slightly compared to 2020 and is met by high-efficiency renewable energy
+facilities in designated areas. Recreational areas near urban and peri-urban areas are selected to be
+highly attractive (e.g., forests for mountain biking, lakes for water sports), while existing tourism
+areas (e.g., high-altitude ski resorts) are sustainably strengthened and new ecotourism areas are
+established. Agricultural policy focuses on promoting production on the most suitable soils through
+yield-based direct payments and further subsidies for the acquisition of new technologies. Forestry
+policy increasingly focuses on the recreational function of forests, while maintaining their other
+functions. EI has high priority on the political agenda and is coordinated among sectors to provide a
+diversity of NCPs. An EI sectoral plan defines the EI through spatial planning and cantons are actively
+promoting EI planning and implementation while coordinating with the federal level. By 2060, protected
+areas will be expanded to cover 17% of Switzerland's land area, with site selection focused on
+ecosystems important to biodiversity and Switzerland's NCP needs, and site-specific management according
+to IUCN categories II or IV. </p>
+</section><section class="auto" name="d"><p class="lead"><b>Business as usual</b> assumes the continuing trends of the last decades: The broader
+society
+continues to have a distorted view of the biodiversity crisis lacking comprehension of its reality in
+Switzerland. Since EI is not an issue in Swiss society, people follow their current value patterns by
+valuing nature for providing NCPs but without understanding the underlying social-ecological feedbacks.
+</p>
+<p class="copy">The scenario assumes a mid-range climate warming path (RCP4.5) and socio-economic
+development at business-as-usual (SSP2). In Switzerland, the population grows to 10.5 million people and
+the economy is characterized by green growth. Agricultural policy focuses on promoting production with
+integrated biodiversity measures through direct payments linked to landscape quality and ecological
+connectivity. Recreational areas near urban and peri-urban areas are selected to ensure high
+attractiveness (e.g., forests for mountain biking, lakes for water sports activities), while existing
+tourism areas (e.g., high-altitude ski resorts) continue to be supported to maximize their use. Urban
+and peri-urban areas are growing moderately, while more and more remote rural settlements are being
+abandoned. Overall, the extent of urban sprawl remains at current levels. Some cantons actively promote
+EI planning and implementation, but coordination with the federal level is poor. Until 2060, coverage of
+protected areas will remain the same as the present day. Protected area management will proceed under
+current strategies, i.e. mostly under IUCN categories II or IV.</p>
+</section><section class="auto" name="e"><p class="lead"><b>Uncontrolled Growth</b> follows trends of drivers identified as hindering for EI
+development:
+There is a general mentality of disinterest in the biodiversity crisis and a lack of cross-sectoral and
+cross-cantonal cooperation, while at the same time agricultural practices that are detrimental to
+biodiversity are increasing and urban sprawl is growing. </p>
+<p class="copy">In the face of global crises, Switzerland is striving for domestic agricultural production
+to ensure food security for the population. Globally, SSP3 and RCP8.5 are assumed, leading to
+significantly warmer conditions and more frequent extreme events in Switzerland than in any of the other
+four scenarios. Urban and peri-urban areas are growing moderately, with industrial areas developing in
+an uncoordinated manner. In rural areas, building is increasingly taking place outside the construction
+zone. Energy demand has increased sharply compared to 2020 in the absence of an overarching spatial
+strategy for energy supply. Recreation areas near urban and peri-urban areas are selected in a way that
+ensure close attractivities (e.g., forests for mountain biking, lakes for water sport activities) while
+existing tourism areas (e.g., high-altitude ski resorts) are continued to be supported to maximize their
+use. Agricultural policy strongly promotes production, with direct payments linked to yield numbers,
+while forestry policy focuses on timber production and hazard protection. EI is not on the political
+agenda of the federal government, which means that EI is not planned at all nationwide, let alone
+implemented. In 2060, some of the protected areas that exist today will continue to be managed under
+IUCN Category II, while others will exist only on maps.</p>
+</section><!-- CHARACTERISTICS (Content comes from characteristics.js)--><section class="auto" name="a"><h3>Characteristics</h3>
+<ul class="characteristics"></ul></section><section class="auto" name="b"><h3>Characteristics</h3>
+<ul class="characteristics"></ul></section><section class="auto" name="c"><h3>Characteristics</h3>
+<ul class="characteristics"></ul></section><section class="auto" name="d"><h3>Characteristics</h3>
+<ul class="characteristics"></ul></section><section class="auto" name="e"><h3>Characteristics</h3>
+<ul class="characteristics"></ul></section><!-- BAR CHART --><section class="auto" name="a"><h3>Percentage difference of each LULC in 2060 relative to 2020</h3>
+<canvas class="chart bar" id="myChart1"></canvas></section><section class="auto" name="b"><h3>Percentage difference of each LULC in 2060 relative to 2020</h3>
+<canvas class="chart bar" id="myChart2"></canvas></section><section class="auto" name="c"><h3>Percentage difference of each LULC in 2060 relative to 2020</h3>
+<canvas class="chart bar" id="myChart3"></canvas></section><section class="auto" name="d"><h3>Percentage difference of each LULC in 2060 relative to 2020</h3>
+<canvas class="chart bar" id="myChart4"></canvas></section><section class="auto" name="e"><h3>Percentage difference of each LULC in 2060 relative to 2020</h3>
+<canvas class="chart bar" id="myChart5"></canvas></section><!-- MAP --><section class="auto" name="a"><h3>LULC and protected areas for 2020 and 2060</h3>
+<div class="map-container" style="background-image:url(img/maps/base.gif)">
+<canvas class="map"></canvas>
+</div>
+<div class="button_year l">
+<button class="base active">2020</button>
+<button class="model" name="2060">2060</button>
+<button class="change">Change</button>
+<button class="pa">Protected</button>
+</div>
+<div class="landuse">
+</div>
+</section><section class="auto" name="b"><h3>LULC and protected areas for 2020 and 2060</h3>
+<div class="map-container" style="background-image:url(img/maps/base.gif)">
+<canvas class="map" id="map_b"></canvas>
+</div>
+<div class="button_year l">
+<button class="base active">2020</button>
+<button class="model" name="2060">2060</button>
+<button class="change">Change</button>
+<button class="pa">Protected</button>
+</div>
+<div class="landuse">
+</div>
+</section><section class="auto" name="c"><h3>LULC and protected areas for 2020 and 2060</h3>
+<div class="map-container" style="background-image:url(img/maps/base.gif)">
+<canvas class="map" id="map_c"></canvas>
+</div>
+<div class="button_year l">
+<button class="base active">2020</button>
+<button class="model" name="2060">2060</button>
+<button class="change">Change</button>
+<button class="pa">Protected</button>
+</div>
+<div class="landuse">
+</div>
+
+</section><section class="auto" name="d"><h3>LULC and protected areas for 2020 and 2060</h3>
+<div class="map-container" style="background-image:url(img/maps/base.gif)">
+<canvas class="map" id="map_d"></canvas>
+</div>
+<div class="button_year l">
+<button class="base active">2020</button>
+<button class="model" name="2060">2060</button>
+<button class="change">Change</button>
+<button class="pa">Protected</button>
+</div>
+<div class="landuse">
+</div>
+
+</section><section class="auto" name="e"><h3>LULC and protected areas for 2020 and 2060</h3>
+<div class="map-container" style="background-image:url(img/maps/base.gif)">
+<canvas class="map" id="map_e"></canvas>
+</div>
+<div class="button_year l">
+<button class="base active">2020</button>
+<button class="model" name="2060">2060</button>
+<button class="change">Change</button>
+<button class="pa">Protected</button>
+</div>
+<div class="landuse">
+</div>
+
+</section><!-- SANKEY DIAGRAM --><section class="auto" name="a"><h3>LULC transformations between 2020 and 2060</h3>
+<canvas class="chart sankey" id="mySankey1"></canvas></section><section class="auto" name="b"><h3>LULC transformations between 2020 and 2060</h3>
+<canvas class="chart sankey" id="mySankey2"></canvas></section><section class="auto" name="c"><h3>LULC transformations between 2020 and 2060</h3>
+<canvas class="chart sankey" id="mySankey3"></canvas></section><section class="auto" name="d"><h3>LULC transformations between 2020 and 2060</h3>
+<canvas class="chart sankey" id="mySankey4"></canvas></section><section class="auto" name="e"><h3>LULC transformations between 2020 and 2060</h3>
+<canvas class="chart sankey" id="mySankey5"></canvas></section><footer></footer>
+</div>
+<!--
+<nav>
+<div id="main_language" class="language">EN | <a href="index-de">DE</a></div>
+<button id="info">i</button>
+<button class="submit" id="submit">Submit</button>
+</nav>-->
+<div class="color-picker-tooltip"></div>
+<!--
+</div>
+<div class="modal" id="modal_info">
+<div class="infobox">
+<div>
+<div id="info_language" class="language">EN | <a href="index-de.html">DE</a></div>
+<h3>Welcome to our interactive platform presenting land use and land cover change simulations under
+different scenarios framing the development of Ecological Infrastructure (EI) until 2060 in
+Switzerland.</h3>
+<p>
+Through a participatory process involving stakeholders and experts, we co-designed five integrated,
+multi-scale scenarios framing the development of Ecological Infrastructure (EI) until 2060 in
+Switzerland. We developed three normative scenarios (EI for nature, EI for society, EI as culture)
+that aim at encapsulating desirable visions for the landscape and the EI by the year 2060, alongside
+two exploratory scenarios tracking current trends (Business as usual) and hindering trends for EI
+(Growth and extinction), respectively. For more information on the participatory development of the
+scenarios, see this <a href="https://link.springer.com/article/10.1007/s11625-023-01380-7"
+target="_blank">article</a> published on this topic.
+</p>
+
+
+<p>In a second phase, we operationalized these scenarios into quantitative inputs for a land use-land
+cover (LULC) change model using a combination of existing projections of future drivers (e.g. the
+Swiss population and economic growth scenarios, as well as climate change predictions) as well as
+routines to affect changes in spatial trends based on the scenario assumptions. The detailed
+methodology is the subject of an upcoming article.</p>
+<p>When viewed at the extent of the total land area of Switzerland, the changes between 2020 and 2060
+under each scenario may appear minimal and difficult to observe. For this reason, we have supplied
+several visualisations of the results which we would like to briefly explain below.</p>
+<hr>
+<p>The five scenarios are presented in a tabular view, with the columns corresponding to the separate
+scenarios and the rows contain different types of information and results. You can either stay in
+the general overview of all 5 scenarios, click on a single column to enlarge the respective
+scenario, or click on a second column to focus on two scenarios simultaneously. If you click again
+in the green header, you will return to the general overview of all five scenarios.</p>
+
+<p>In the first row we briefly summarize the narrative of the scenario with the subsequent row below
+highlighting some key characteristics (e.g. correspondence to global climate change scenarios). If
+you click on the headings (underlined) of the individual characteristics, you will be provided with
+more information on the data and assumptions used.</p>
+
+<hr>
+<p>Below the information rows, we present a bar chart showing the percentage difference in the area of
+each LULC class in 2060 relative to 2020. If you swipe over the bars, more detailed information will
+be displayed. The LULC classes we have modelled are aggregate classes based on the 72 classes of the
+<a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/raum-umwelt/erhebungen/area.html"
+target="_blank">Swiss
+area
+statistics</a>, if you are interested on exact details of the aggregation scheme it is presented
+in this <a href="https://www.sciencedirect.com/science/article/pii/S1364815222002742"
+target="_blank">article</a>.
+</p>
+<p><img src="img/example-bar-chart.png"></p>
+<hr>
+<p>Below this, you have the option to interactively browse the maps of LULC for Switzerland in 2020
+(current data) and 2060 (simulated), feel free to pan and zoom to areas you are familiar with or are
+interested in.</p>
+<p>You can also press the "Change" button to the right which shows a map highlighting the differences
+between 2060 and 2020 by selecting individual LULC classes (red indicates a decrease in area, green
+an increase). Given that the expansion of Protected Areas (PAs) was a strong focus of the normative
+scenarios we have also included a map of the existing PAs in Switzerland (including Ramsar sites,
+the Swiss National Park, Unesco Biosphere Reserves, Unesco Cultural Sites, Unesco Natural Sites,
+ProNatura reserves, Emerald sites, cantonal PAs, biodiversity promotion areas of quality II) as well
+as the hypothetical new PAs that were implemented within the LULC change model as an influence on
+the spatial locations of change. These maps for 2060 differ under each normative scenario and can be
+viewed using the button “Protected”.</p>
+<p><img src="img/example-map.png"></p>
+<hr>
+<p>Notice how simultaneously with your click on a LULC class in the map, the Sankey diagram in the row
+below changes. In this diagram you can see the relative areas of each LULC class that transitioned
+into other classes between 2020 and 2060.Of course this obscures some intermediate conversions in
+the time steps in between, but it is nonetheless useful to give an overall view of the transitions
+between classes.</p>
+<p><img src="img/example-sankey.png"></p>
+<hr>
+
+<h3>Enjoy exploring possible futures for Swiss land use!</h3>
+
+<button id="start">Start</button>
+
+</div>
+</div>
+<div class="close">×</div>
+</div>
+-->
+
+
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/nascent-peru\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body>
+</html>
