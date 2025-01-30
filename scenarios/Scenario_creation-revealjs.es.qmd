@@ -1,0 +1,200 @@
+---
+title: "Scenario narrative feedback"
+# author:
+#   - name: Ben Black
+#     orcid: 0000-0002-8113-2114
+#     email: bblack@ethz.ch
+#     affiliations: "Planning of Landscape and Urban Systems (PLUS), ETH Zurich"
+#   - name: Manuel Kurmann
+#     email: 
+date: last-modified
+format: NASCENT-revealjs
+---
+
+## Itinerary
+
+-   Overview of scenario creation process
+-   Discuss feedback on narratives
+-   Next steps
+
+# Scenario creation process
+
+## Scenario creation process
+
+### Workshops
+
+![](../img/workshop_goals_map.png){fig-align="center" width="1000"}
+
+## Scenario creation process
+
+### Summarising content
+
+-   Translated all content
+-   Extracted statements regarding desirable landscape characteristics
+-   Arranged in table and aggregated where appropriate
+-   **60 unique statements**
+
+## Scenario creation process
+
+### Content coding
+
+IPBES Nature Futures Framework as basis of the orientations of the scenarios
+
+![](../img/NFF.png){fig-align="center" width="700"}
+
+## Scenario creation process
+
+### Content coding
+
+Created an online survey where participants could allocate the statements regarding future landscape characteristics to the different axes of the NFF
+
+![](../img/NFF_app.png){fig-align="center" width="800"}
+
+## Scenario creation process
+
+### Clustering coded content
+
+::: {style="font-size: 80%;"}
+-   6 survey participants
+-   360 data points (individuals anwsers for each statement)
+-   Performed k-means clustering on individual data points as well as statement means
+-   Identification of optimal number of clusters using silhouette scores
+-   **3 clusters**
+:::
+
+::: {.columns .v-center-container}
+![](../img/final_clustering_ternary_360_statements.png){width="400"} ![](../img/final_clustering_ternary.png){width="400"}
+:::
+
+## Scenario creation process
+
+### Clustering coded content
+
+Fuzzy clustering to highlight disagreements between participants
+
+![](../img/mean_membership_degrees_barplot.png){fig-align="center" width="800"}
+
+## Scenario creation process
+
+### Clustering coded content
+
+Reviewed every statement individually, discussed discrepancies and made final allocation to one or more clusters.
+
+![](../img/review_agreement.png){fig-align="center" width="700"}
+
+## Scenario creation process
+
+### Clustering coded content
+
+Reviewed every statement individually, discussed discrepancies and made final allocation to one or more clusters.
+
+![](../img/review_disagreement.png){fig-align="center" width="700"}
+
+## Scenario creation process
+
+### Clustering coded content
+
+**Result**: All 60 statements assigned to one or multiple clusters
+
+![](../img/final_clustered_results.png){fig-align="center" width="800"}
+
+## Scenario creation process
+
+### Driver development trends
+
+![](../img/Driver_importance_bubble_ENG.svg){fig-align="center" width="1200"}
+
+## Scenario creation process
+### Driver development trends
+
+::::{.columns}
+:::{.column style="font-size: 80%;"}
+Conducted literature review for information of future development of drivers:
+
+-    Academic publications
+
+-   Gray literature
+
+-   CEPLAN reports and 'Observatorio Nacional de Prospectiva'
+
+-   Existing quantification of SSP variables
+:::
+
+:::{.column}
+![](../img/SSP_explorer.png){fig-align="center" width="600"}
+:::
+::::
+
+## Scenario creation process
+### Driver development trends
+
+::: {style="font-size: 80%;"}
+-    Statements of trends in drivers under each scenario in accordance with desired future characteristics
+-    Addition of other trends such as Protected Area Expansion
+-    Explorative BAU scenario devised in juxtaposition to others
+:::
+
+
+![](../img/driver_description.png){fig-align="center" width="1000"}
+
+## Scenario creation process
+### Narratives
+
+Table of statements under each scenario used as the basis for narratives, expanded with additional references and explanatory footnotes
+
+
+
+![](../img/scenario_wordclouds.png){fig-align="center" width="1000"}
+
+
+
+# Feedback
+## Feedback
+
+-   **General**: Alignment with SSP-RCPs
+-   **Merel**: What Protected Areas included
+-   **Jan**: 
+    -   Diversity of scenarios
+    -   Internal and between scenario consistency
+    -   Model operationalisation
+    -   Mining
+-   **Armando**:
+    -   Water management in all scenarios
+    -   Paragraph on Indigenous communities
+    
+
+# Next steps
+## Next steps
+
+-   Integrate your feedback in narratives
+-   Finalise sections on regional dynamics
+-   Share narratives via project website (English and Spanish)
+-   Quantification: Online guided expert activity to gather LULC change rates
+
+## LULC change rate activity
+
+-   Online guided survey, 1-1 with participant and team member
+-   Participants go through statements from scenario narratives and provide impact on rates of change of aggregated LULC classes
+
+![](../img/LULC_app_overview.png){fig-align="center" width="1000"}
+
+## LULC change rate activity
+
+They are shown extrapolated historical rates as a reference and as their answers are entered scenario rates are adjusted in real time
+
+![](../img/LULC_app_scenarios.png){fig-align="center" width="1000"}
+
+## LULC change rate activity
+
+Option to add regional specific trends
+
+![](../img/LULC_app_regions.png){fig-align="center" width="1000"}
+
+## LULC change rate activity
+
+-   To reduce the number of statements each participant has to go through we want to split them according to their percieved influence on specifc LULC classes. i.e. not all statements relevant for all classes
+-   Participants should be experts in one domain e.g. forestry and hence well-informed to assess impact of trend in this domain
+
+:::{style="text-align: center;"}
+**We need your help in finding expert participants**
+:::
