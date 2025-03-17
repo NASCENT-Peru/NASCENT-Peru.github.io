@@ -22,17 +22,17 @@ Aquí tienes algunas fotos del evento y más abajo puedes acceder a la presentac
 Ahora nuestro equipo se tomará un breve descanso para reponer fuerzas de la apretada agenda en Perú, pero muy pronto compartiremos información más detallada sobre los resultados de los diferentes talleres a través de nuestra página web y redes sociales.
 
 ::: {layout-nrow=2}
-![](../img/WBF_present.jpg){group="my-gallery"}
+![](/img/WBF_present.jpg){group="my-gallery"}
 
-![](../img/WBF_group.jpg){group="my-gallery"}
+![](/img/WBF_group.jpg){group="my-gallery"}
 
-![](../img/WBF_meeting.jpg){group="my-gallery"}
+![](/img/WBF_meeting.jpg){group="my-gallery"}
 
 :::
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="../media/WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="/media/WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

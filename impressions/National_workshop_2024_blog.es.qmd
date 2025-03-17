@@ -5,7 +5,7 @@ categories :
     - Creación de Escenarios
     - Lima
     - Taller Nacional
-image: "/img/Taller_Nacional-112.jpg"
+image: " /img/Taller_Nacional-112.jpg"
 lightbox: true
 date: 2024/05/13
 ---
@@ -18,18 +18,18 @@ El pasado viernes, 10 de mayo, dimos la bienvenida a varias partes interesadas e
 Aquí tienes algunas fotos del acto y más abajo puedes ver la presentación que se hizo. Pronto publicaremos un artículo sobre los resultados.
 
 ::: {layout-nrow=2}
-![](../img/Taller_Nacional-87.jpg){group="my-gallery"}
+![](/img/Taller_Nacional-87.jpg){group="my-gallery"}
 
-![](../img/Taller_Nacional-17.jpg){group="my-gallery"}
+![](/img/Taller_Nacional-17.jpg){group="my-gallery"}
 
-![](../img/Taller_Nacional-52.jpg){group="my-gallery"}
+![](/img/Taller_Nacional-52.jpg){group="my-gallery"}
 
-![](../img/Taller_Nacional-112.jpg){group="my-gallery"}
+![](/img/Taller_Nacional-112.jpg){group="my-gallery"}
 :::
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="../media/National_workshop_pres.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="/media/National_workshop_pres.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

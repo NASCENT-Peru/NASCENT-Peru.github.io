@@ -18,18 +18,18 @@ We would like to thank the International Potato Center (CIP) and the Wyss Academ
 Here are some photos from the day and below you can see the presentation that was shown. Look out for a post sharing some insights into the results soon!
 
 ::: {layout-nrow=2}
-![](../img/Taller_Nacional-87.jpg){group="my-gallery"}
+![](/img/Taller_Nacional-87.jpg){group="my-gallery"}
 
-![](../img/Taller_Nacional-17.jpg){group="my-gallery"}
+![](/img/Taller_Nacional-17.jpg){group="my-gallery"}
 
-![](../img/Taller_Nacional-52.jpg){group="my-gallery"}
+![](/img/Taller_Nacional-52.jpg){group="my-gallery"}
 
-![](../img/Taller_Nacional-112.jpg){group="my-gallery"}
+![](/img/Taller_Nacional-112.jpg){group="my-gallery"}
 :::
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="../media/National_workshop_pres.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="/media/National_workshop_pres.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

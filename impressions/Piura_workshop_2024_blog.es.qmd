@@ -13,25 +13,25 @@ date: 2024-05-20
 El lunes 20 de mayo celebramos el primero de los talleres regionales de construcción de escenarios en la [Universidad de Piura (UDEP)](https://www.udep.edu.pe/en/), en la norteña ciudad peruana de Piura. Asistieron representantes del gobierno regional, ONG y organizaciones comunitarias, empresas locales y el mundo académico.
 El taller se centró en explorar cuáles serían las características deseables para los paisajes de la costa norte de Perú en 2060. Para enmarcar este debate adaptamos el enfoque de visión propuesto por Bill Sharpe, [el Marco de los 3 Horizontes](https://www.h3uni.org/tutorial/three-horizons/).
 
-![Adaptación NASCENT-Perú del Marco de los 3 Horizontes](../img/3_horizons_es.png)
+![Adaptación NASCENT-Perú del Marco de los 3 Horizontes](/img/3_horizons_es.png)
 
 En primer lugar, se pidió a los participantes que crearan una caracterización de los paisajes actuales de su región bajo 3 temas: características, contribuciones y valores del paisaje. A continuación, hicieron lo mismo con los paisajes que les gustaría ver en 2060. Por último, para acortar distancias, les pedimos que debatieran cuáles de los impulsores del cambio paisajístico de nuestro taller nacional les ayudarían o dificultarían la consecución de su futuro deseado, así como otras acciones importantes necesarias. Pronto publicaremos un artículo con información detallada sobre los resultados.
 Queremos dar las gracias a la UDEP por permitirnos celebrar el taller en su campus, y especialmente a Raúl Eduardo Olivares, Edsmilda Martínez Hidalgo y Daniela Zavala por su ayuda en la organización. Por supuesto, el taller no habría sido posible sin nuestros fantásticos participantes, por lo que nos gustaría agradecerles de nuevo su tiempo y energía. Próxima parada: Puerto Maldonado para nuestro taller del 28 de mayo.
 Aquí tienes algunas fotos de la jornada y más abajo puedes acceder a la presentación que se mostró.
 
 ::: {layout-nrow=2}
-![](../img/Piura_1.jpg){group="my-gallery"}
+![](/img/Piura_1.jpg){group="my-gallery"}
 
-![](../img/Piura_2.jpg){group="my-gallery"}
+![](/img/Piura_2.jpg){group="my-gallery"}
 
-![](../img/Piura_3.jpg){group="my-gallery"}
+![](/img/Piura_3.jpg){group="my-gallery"}
 
-![](../img/Piura_group.jpg){group="my-gallery"}
+![](/img/Piura_group.jpg){group="my-gallery"}
 :::
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="../media/Regional_workshop_pres_ES.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="/media/Regional_workshop_pres_ES.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

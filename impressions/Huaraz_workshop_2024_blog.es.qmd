@@ -21,22 +21,22 @@ Nuestro último taller de 2024 se celebrará en Tarapoto, en la región de San M
 Aquí hay algunas fotos del taller y abajo puede acceder a la presentación que se mostró. 
 
 ::: {layout-nrow=2}
-![](../img/Huaraz_3.jpeg){group="my-gallery"}
+![](/img/Huaraz_3.jpeg){group="my-gallery"}
 
-![](../img/Huaraz_2.jpg){group="my-gallery"}
+![](/img/Huaraz_2.jpg){group="my-gallery"}
 
-![](../img/Huaraz_4.jpeg){group="my-gallery"}
+![](/img/Huaraz_4.jpeg){group="my-gallery"}
 
-![](../img/Huaraz_5.jpeg){group="my-gallery"}
+![](/img/Huaraz_5.jpeg){group="my-gallery"}
 
-![](../img/Huaraz_1.jpg){group="my-gallery"}
+![](/img/Huaraz_1.jpg){group="my-gallery"}
 
-![](../img/Huaraz_group.jpeg){group="my-gallery"}
+![](/img/Huaraz_group.jpeg){group="my-gallery"}
 :::
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="../media/Regional_workshop_pres_ES_Huaraz.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="/media/Regional_workshop_pres_ES_Huaraz.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```
