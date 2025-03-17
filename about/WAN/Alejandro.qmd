@@ -1,0 +1,26 @@
+---
+title: "Alejandro Portillo"
+sortby: "3"
+image: /img/Alejandro.jpg
+subtitle: "Research Assistant"
+author: "Asistente de investigación"
+toc: false
+comments: false
+
+#resources: 
+  #- "girard_cv.pdf"
+about:
+  id: person-profile
+  template: jolla
+  links:
+    - icon: link
+      text: website
+      href: https://www.wyssacademy.org/team/alejandro-portillo
+---
+
+```{=html}
+<meta http-equiv="Refresh" content="0; url='https://www.wyssacademy.org/team/alejandro-portillo'" />
+```
+
+:::{#person-profile}
+:::

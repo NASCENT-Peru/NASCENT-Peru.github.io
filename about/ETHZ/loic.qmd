@@ -3,7 +3,7 @@ title: "Prof. Dr. Loïc Pellissier"
 sortby: "2"
 author: "Colaborador científico"
 subtitle: "Scientific Collaborator"
-image: ../img/loic.jpeg
+image: /img/loic.jpeg
 toc: false
 comments: false
 

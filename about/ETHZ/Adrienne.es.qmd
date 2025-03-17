@@ -3,7 +3,7 @@ title: "Prof. Dr. Adrienne Grêt-Regamey"
 subtitle: "Principal Investigator"
 author: "Investigador principal"
 sortby: "1"
-image: ../img/Adrienne.jpg
+image: /img/Adrienne.jpg
 toc: false
 comments: false
 
