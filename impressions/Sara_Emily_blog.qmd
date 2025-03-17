@@ -13,9 +13,9 @@ We are pleased to announce that we have two new additions to our NASCENT team. [
 We are very grateful to have them on board and look forward to their contributions to the project. Welcome, Sára and Emily!
 
 ::: {layout-ncol=2}
-![](/img/Sara.jpg){group="my-gallery"}
+![](../img/Sara.jpg){group="my-gallery"}
 
-![](/img/Emily.jpg){group="my-gallery"}
+![](../img/Emily.jpg){group="my-gallery"}
 :::
 
 

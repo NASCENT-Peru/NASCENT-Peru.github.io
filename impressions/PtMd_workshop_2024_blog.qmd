@@ -25,14 +25,14 @@ Today we travel to the Ancash region to prepare for the next workshop in Huaraz 
 Here are some photos from the workshop and below you can access the presentation that was shown. 
 
 ::: {layout-nrow=2}
-![](/img/Puerto_1.jpg){group="my-gallery"}
+![](../img/Puerto_1.jpg){group="my-gallery"}
 
-![](/img/Puerto_2.jpg){group="my-gallery"}
+![](../img/Puerto_2.jpg){group="my-gallery"}
 
-![](/img/Puerto_3.jpg){group="my-gallery"}
-![](/img/Puerto_4.jpg){group="my-gallery"}
+![](../img/Puerto_3.jpg){group="my-gallery"}
+![](../img/Puerto_4.jpg){group="my-gallery"}
 
-![](/img/Puerto_group.jpg){group="my-gallery"}
+![](../img/Puerto_group.jpg){group="my-gallery"}
 :::
 
 ```{=html}

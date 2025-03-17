@@ -23,17 +23,17 @@ Our last workshop of 2024 will be held in Tarapoto in the San Martín region on 
 Here are some photos from the workshop and below you can access the presentation that was shown. 
 
 ::: {layout-nrow=2}
-![](/img/Huaraz_3.jpeg){group="my-gallery"}
+![](../img/Huaraz_3.jpeg){group="my-gallery"}
 
-![](/img/Huaraz_2.jpg){group="my-gallery"}
+![](../img/Huaraz_2.jpg){group="my-gallery"}
 
-![](/img/Huaraz_4.jpeg){group="my-gallery"}
+![](../img/Huaraz_4.jpeg){group="my-gallery"}
 
-![](/img/Huaraz_5.jpeg){group="my-gallery"}
+![](../img/Huaraz_5.jpeg){group="my-gallery"}
 
-![](/img/Huaraz_1.jpg){group="my-gallery"}
+![](../img/Huaraz_1.jpg){group="my-gallery"}
 
-![](/img/Huaraz_group.jpeg){group="my-gallery"}
+![](../img/Huaraz_group.jpeg){group="my-gallery"}
 :::
 
 ```{=html}

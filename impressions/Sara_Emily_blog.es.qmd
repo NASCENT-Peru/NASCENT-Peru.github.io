@@ -13,9 +13,9 @@ Nos complace anunciar que tenemos dos nuevas incorporaciones a nuestro equipo NA
 Estamos muy agradecidos de contar con ellas y esperamos sus aportaciones al proyecto. ¡Bienvenidas, Sára y Emily!
 
 ::: {layout-ncol=2}
-![](/img/Sara.jpg){group="my-gallery"}
+![](../img/Sara.jpg){group="my-gallery"}
 
-![](/img/Emily.jpg){group="my-gallery"}
+![](../img/Emily.jpg){group="my-gallery"}
 :::
 
 

@@ -23,14 +23,14 @@ Hoy viajamos a la región de Ancash para preparar el próximo taller en Huaraz e
 Aquí les dejamos algunas fotos del taller y abajo pueden acceder a la presentación que se mostró. 
 
 ::: {layout-nrow=2}
-![](/img/Puerto_1.jpg){group="my-gallery"}
+![](../img/Puerto_1.jpg){group="my-gallery"}
 
-![](/img/Puerto_2.jpg){group="my-gallery"}
+![](../img/Puerto_2.jpg){group="my-gallery"}
 
-![](/img/Puerto_3.jpg){group="my-gallery"}
-![](/img/Puerto_4.jpg){group="my-gallery"}
+![](../img/Puerto_3.jpg){group="my-gallery"}
+![](../img/Puerto_4.jpg){group="my-gallery"}
 
-![](/img/Puerto_group.jpg){group="my-gallery"}
+![](../img/Puerto_group.jpg){group="my-gallery"}
 :::
 
 ```{=html}

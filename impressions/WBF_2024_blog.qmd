@@ -22,11 +22,11 @@ Here are some photos from the event and below you can access the presentation (c
 Now our team will take a short break to recharge from the busy schedule in Peru but we will be sharing more detailed insights into the results of the different workshops via our website and Social media very soon!
 
 ::: {layout-nrow=2}
-![](/img/WBF_present.jpg){group="my-gallery"}
+![](../img/WBF_present.jpg){group="my-gallery"}
 
-![](/img/WBF_group.jpg){group="my-gallery"}
+![](../img/WBF_group.jpg){group="my-gallery"}
 
-![](/img/WBF_meeting.jpg){group="my-gallery"}
+![](../img/WBF_meeting.jpg){group="my-gallery"}
 
 :::
 

@@ -16,7 +16,7 @@ On Monday 20th May, we hosted the 1st of regional scenario creation workshops at
 
 Here the focus of the workshop was on exploring what would be desirable characteristics for the landscape of coastal Northern Peru in 2060. To frame this discussion we adapted the future visioning approach, proposed by Bill Sharpe, the [3 horizons Framework](https://www.h3uni.org/tutorial/three-horizons/).  
 
-![NASCENT-Peru adaptation of the 3 Horizons Framework](/img/3_horizons_eng.png)
+![NASCENT-Peru adaptation of the 3 Horizons Framework](../img/3_horizons_eng.png)
 
 First participants were asked to create a characterization of the current landscape in their region under 3 themes: Landscape features, contributions and values. Then they did the same for the landscape they would like to see in 2060. Finally to bridge the gap we asked them to discuss which of the drivers of landscape change from our national workshop will either help or hinder reaching the desired future as well as other important actions needed. Look out for a post sharing some detailed insights into the results soon.
 
@@ -25,13 +25,13 @@ We would like to thank the UDEP for kindly allowing us to host the workshop on t
 Here are some photos from the day and below you can access the presentation that was shown. 
 
 ::: {layout-nrow=2}
-![](/img/Piura_1.jpg){group="my-gallery"}
+![](../img/Piura_1.jpg){group="my-gallery"}
 
-![](/img/Piura_2.jpg){group="my-gallery"}
+![](../img/Piura_2.jpg){group="my-gallery"}
 
-![](/img/Piura_3.jpg){group="my-gallery"}
+![](../img/Piura_3.jpg){group="my-gallery"}
 
-![](/img/Piura_group.jpg){group="my-gallery"}
+![](../img/Piura_group.jpg){group="my-gallery"}
 :::
 
 ```{=html}

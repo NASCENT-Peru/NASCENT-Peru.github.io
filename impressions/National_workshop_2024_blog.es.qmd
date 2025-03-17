@@ -18,13 +18,13 @@ El pasado viernes, 10 de mayo, dimos la bienvenida a varias partes interesadas e
 Aquí tienes algunas fotos del acto y más abajo puedes ver la presentación que se hizo. Pronto publicaremos un artículo sobre los resultados.
 
 ::: {layout-nrow=2}
-![](/img/Taller_Nacional-87.jpg){group="my-gallery"}
+![](../img/Taller_Nacional-87.jpg){group="my-gallery"}
 
-![](/img/Taller_Nacional-17.jpg){group="my-gallery"}
+![](../img/Taller_Nacional-17.jpg){group="my-gallery"}
 
-![](/img/Taller_Nacional-52.jpg){group="my-gallery"}
+![](../img/Taller_Nacional-52.jpg){group="my-gallery"}
 
-![](/img/Taller_Nacional-112.jpg){group="my-gallery"}
+![](../img/Taller_Nacional-112.jpg){group="my-gallery"}
 :::
 
 ```{=html}
