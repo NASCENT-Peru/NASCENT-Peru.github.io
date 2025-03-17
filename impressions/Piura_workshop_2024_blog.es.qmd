@@ -5,7 +5,7 @@ categories :
     - Creación de Escenarios
     - Piura
     - Taller Regional
-image: "/img/Piura_group.jpg"
+image: "/img/Piura_group.JPG"
 lightbox: true
 date: 2024-05-20
 ---
@@ -20,13 +20,13 @@ Queremos dar las gracias a la UDEP por permitirnos celebrar el taller en su camp
 Aquí tienes algunas fotos de la jornada y más abajo puedes acceder a la presentación que se mostró.
 
 ::: {layout-nrow=2}
-![](../img/Piura_1.jpg){group="my-gallery"}
+![](/img/Piura_1.JPG){group="my-gallery"}
 
-![](../img/Piura_2.jpg){group="my-gallery"}
+![](/img/Piura_2.JPG){group="my-gallery"}
 
-![](../img/Piura_3.jpg){group="my-gallery"}
+![](/img/Piura_3.JPG){group="my-gallery"}
 
-![](../img/Piura_group.jpg){group="my-gallery"}
+![](/img/Piura_group.JPG){group="my-gallery"}
 :::
 
 ```{=html}

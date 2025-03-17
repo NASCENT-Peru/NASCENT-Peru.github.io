@@ -7,7 +7,7 @@ categories :
     - Puerto Maldonado
     - Regional
     - Future visions
-image: "/img/Puerto_1.jpg"
+image: "/img/Puerto_1.JPG"
 lightbox: true
 date: 2024-05-29
 ---
@@ -25,14 +25,14 @@ Today we travel to the Ancash region to prepare for the next workshop in Huaraz 
 Here are some photos from the workshop and below you can access the presentation that was shown. 
 
 ::: {layout-nrow=2}
-![](../img/Puerto_1.jpg){group="my-gallery"}
+![](../img/Puerto_1.JPG){group="my-gallery"}
 
-![](../img/Puerto_2.jpg){group="my-gallery"}
+![](../img/Puerto_2.JPG){group="my-gallery"}
 
 ![](../img/Puerto_3.jpg){group="my-gallery"}
 ![](../img/Puerto_4.jpg){group="my-gallery"}
 
-![](../img/Puerto_group.jpg){group="my-gallery"}
+![](../img/Puerto_group.JPG){group="my-gallery"}
 :::
 
 ```{=html}
