@@ -39,7 +39,7 @@ Now that we have gathered perspectives from four different regions in Peru the n
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="/media/Regional_workshop_pres_ES_Tarapoto.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="Regional_workshop_pres_ES_Tarapoto.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

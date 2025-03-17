@@ -31,7 +31,7 @@ Aquí tienes algunas fotos de la jornada y más abajo puedes acceder a la presen
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="/media/Regional_workshop_pres_ES.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="Regional_workshop_pres_ES.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

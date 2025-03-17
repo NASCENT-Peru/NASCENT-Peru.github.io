@@ -32,7 +32,7 @@ Now our team will take a short break to recharge from the busy schedule in Peru 
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="/media/WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

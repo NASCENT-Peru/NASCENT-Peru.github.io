@@ -29,7 +29,7 @@ Here are some photos from the day and below you can see the presentation that wa
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="/media/National_workshop_pres.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="National_workshop_pres.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

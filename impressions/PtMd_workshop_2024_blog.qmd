@@ -37,7 +37,7 @@ Here are some photos from the workshop and below you can access the presentation
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="/media/Regional_workshop_pres_ES_PtMd.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="Regional_workshop_pres_ES_PtMd.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

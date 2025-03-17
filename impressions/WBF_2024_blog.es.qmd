@@ -32,7 +32,7 @@ Ahora nuestro equipo se tomará un breve descanso para reponer fuerzas de la apr
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe width="600" height="400" src="/media/WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe width="600" height="400" src="WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```
