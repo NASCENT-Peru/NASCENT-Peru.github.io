@@ -35,6 +35,36 @@ Source: <a href="https://www.ipbes.net/glossary-tag/ecosystem-service">IPBES cor
 </text>
 ```
 
+### IUCN Category Ia
+```{=html}
+<text>
+<p></p>
+Category Ia areas are strictly protected to conserve biodiversity and geological features with minimal human impact. These reserves aim to preserve ecosystems in their natural state, free from modern human interference, serving as critical reference sites for scientific research and monitoring. Access is highly restricted to prevent disturbance, ensuring that ecological processes remain intact. Unlike wilderness areas (Ib), Ia areas are typically smaller and more rigorously controlled, excluding settlements and most human activities. They prioritize maintaining self-sustaining ecosystems without ongoing management, distinguishing them from Category IV or V areas that require active intervention.
+<p></p>
+Source: <a href="https://portals.iucn.org/library/sites/library/files/documents/PAG-021.pdf">IUCN Guidelines, 2013</a>
+</text>
+```
+
+### IUCN Category Ib
+```{=html}
+<text>
+<p></p>
+Category Ib protects vast, unmodified landscapes where natural processes dominate, and human influence is minimal. These areas retain their wild character, free from permanent infrastructure, and allow limited self-reliant visitation (e.g., hiking). Indigenous communities may practice low-impact traditional lifestyles. Unlike Category Ia, Ib areas are larger and tolerate some human presence, while differing from Category II by excluding mass tourism infrastructure. Their role includes conserving large-scale ecosystems, evolutionary processes, and providing solitude, making them vital for climate resilience and species migration.
+<p></p>
+Source: <a href="https://portals.iucn.org/library/sites/library/files/documents/PAG-021.pdf">IUCN Guidelines, 2013</a>
+</text>
+```
+
+### IUCN Category VI
+```{=html}
+<text>
+<p></p>
+Category VI conserves ecosystems through sustainable natural resource use, often in large, predominantly natural areas. Low-intensity, non-industrial activities (e.g., traditional fishing, agroforestry) are permitted if compatible with conservation. Unlike Category V’s cultural landscapes, VI areas prioritize biodiversity in near-natural settings while supporting local livelihoods. They may include zones of stricter protection (e.g., Ia cores) and are critical in regions where conservation depends on integrating human needs with ecological resilience.
+<p></p>
+Source: <a href="https://portals.iucn.org/library/sites/library/files/documents/PAG-021.pdf">IUCN Guidelines, 2013</a>
+</text>
+```
+
 ### Land Use Land Cover (LULC) {#LULC}
 ```{=html}
 <img src="../img/dummyLULCC.png" class = "glossimg", 'blank');"/>
@@ -55,6 +85,16 @@ Source: <a href="https://www.millenniumassessment.org/documents/document.776.asp
 Land Cover">Milenium Ecosystem Assessement, 2005
 </a>
 
+</text>
+```
+
+### Modification of the Forest and Wildlife Law (Law No. 31973, 2023)
+```{=html}
+<text>
+<p></p>
+In late 2023, the Peruvian Congress approved Law No. 31973, which amends key provisions of the 2011 Forest and Wildlife Law. The modifications specifically alter Articles 29 and 33, suspending the mandate that forest zoning is required for granting enabling titles for permanent production forests. In addition, the law shifts the responsibility for approving forest zoning from the Ministry of the Environment (MINAM) to the Ministry of Agrarian Development and Irrigation (MIDAGRI). This change has generated strong opposition from Indigenous organizations, civil society, and environmental experts, who argue that it may lead to increased deforestation, undermine ecosystem functions and biodiversity, and disregard the rights of Indigenous peoples. Critics warn that the reform could not only promote impunity and weaken environmental governance, but also hinder Peru’s ability to meet its international climate change commitments. Notably, the law does not take effect automatically as it still requires additional regulations.
+<p></p>
+Source: <a href="https://forestpolicy.org/risk-tool/country/peru">World Resources Institute, 2024</a>
 </text>
 ```
 
@@ -90,6 +130,17 @@ Target-seeking scenarios (also known as “goal-seeking scenarios” or “norma
 Source: <a href="https://www.ipbes.net/glossary-tag/scenarios">IPBES core glossary, 2021</a>
 </text>
 ```
+
+### REDD+ Project
+```{=html}
+<text>
+<p></p>
+REDD+ (short for “Reducing Emissions from Deforestation and Forest Degradation”) is an international climate initiative designed to curb forest-based greenhouse gas emissions in developing countries. It offers incentives—often through carbon markets or other payment schemes—to protect or sustainably manage forests, rather than cutting them down. By doing so, REDD+ can help maintain biodiversity, since preserving a wide range of species and ecosystems typically goes hand in hand with keeping forests intact. However, as actors in Peru’s REDD+ process have noted, simply focusing on carbon storage won’t guarantee healthy habitats if social, economic, and governance issues aren’t addressed. For instance, unclear land rights can spark conflicts, and local communities may not see fair benefits unless safeguards are in place. When well designed, though, REDD+ can channel funds into conservation areas, bolster sustainable livelihoods, and foster cooperation among government agencies, indigenous peoples, NGOs, and private companies. Done right, it’s a chance to tackle both climate change and biodiversity loss together.
+<p></p>
+Source: <a href="https://doi.org/10.1007/s10531-013-0477-5">Entenmann & Schmitt, 2013</a>
+</text>
+```
+
 
 ### Scenarios {#Scenarios}
 ```{=html}

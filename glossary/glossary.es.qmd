@@ -11,7 +11,7 @@ format:
     toc-depth: 3
 ---
 
-## Biodiversidad {#Biodiversity}
+### Biodiversidad {#Biodiversity}
 ```{=html}
 <img src="../img/dummybiodiversity.png" class = "glossimg", 'blank');"/>
 <text>
@@ -22,7 +22,7 @@ Source: <a href="https://doi.org/10.1016/j.cosust.2014.11.002">Diaz et al., 2015
 </text>
 ```
 
-## Escenarios {#Scenarios}
+### Escenarios {#Scenarios}
 ```{=html}
 <img src="../img/Scenario.png" class = "glossimg", 'blank');"/>
 <text>
@@ -33,7 +33,7 @@ Source: <a href="https://doi.org/10.5281/zenodo.3237429">IPBES, 2018</a>
 </text>
 ```
 
-## Escenarios Normativos {#NScenarios}
+### Escenarios Normativos {#NScenarios}
 ```{=html}
 <img src="../img/Normative_es.png" class = "glossimg", 'blank');"/>
 <text>
@@ -44,7 +44,37 @@ Source: <a href="https://www.ipbes.net/glossary-tag/scenarios">IPBES core glossa
 </text>
 ```
 
-## Las Contribuciones de la Naturaleza a las Personas (NCP) {#NCP}
+### IUCN Categoría Ia
+```{=html}
+<text>
+<p></p>
+Las zonas de categoría Ia están estrictamente protegidas para conservar la biodiversidad y las características geológicas con un impacto humano mínimo. El objetivo de estas reservas es preservar los ecosistemas en su estado natural, libres de interferencias humanas modernas, sirviendo como lugares de referencia críticos para la investigación científica y el seguimiento. El acceso está muy restringido para evitar perturbaciones y garantizar que los procesos ecológicos permanezcan intactos. A diferencia de los espacios naturales (Ib), los espacios Ia suelen ser más pequeños y estar más rigurosamente controlados, excluyendo los asentamientos y la mayoría de las actividades humanas. Dan prioridad al mantenimiento de ecosistemas autosuficientes sin una gestión continua, lo que las distingue de las áreas de categoría IV o V, que requieren una intervención activa.
+<p></p>
+Source: <a href="https://portals.iucn.org/library/sites/library/files/documents/PAG-021.pdf">Directrices de la IUCN, 2013</a>
+</text>
+```
+
+### IUCN Categoría Ib
+```{=html}
+<text>
+<p></p>
+La categoría Ib protege vastos paisajes no modificados en los que dominan los procesos naturales y la influencia humana es mínima. Estas zonas conservan su carácter salvaje, libres de infraestructuras permanentes, y permiten una visita autónoma limitada (por ejemplo, senderismo). Las comunidades indígenas pueden practicar estilos de vida tradicionales de bajo impacto. A diferencia de la Categoría Ia, las áreas Ib son más extensas y toleran cierta presencia humana, aunque se diferencian de la Categoría II en que excluyen las infraestructuras de turismo de masas. Su función incluye la conservación de ecosistemas a gran escala, procesos evolutivos y soledad, lo que las hace vitales para la resiliencia climática y la migración de especies.
+<p></p>
+Source: <a href="https://portals.iucn.org/library/sites/library/files/documents/PAG-021.pdf">Directrices de la IUCN, 2013</a>
+</text>
+```
+
+### IUCN Categoría VI
+```{=html}
+<text>
+<p></p>
+La categoría VI conserva los ecosistemas mediante el uso sostenible de los recursos naturales, a menudo en grandes áreas predominantemente naturales. Se permiten actividades no industriales de baja intensidad (por ejemplo, pesca tradicional, agrosilvicultura) si son compatibles con la conservación. A diferencia de los paisajes culturales de la Categoría V, las áreas VI dan prioridad a la biodiversidad en entornos casi naturales, al tiempo que apoyan los medios de subsistencia locales. Pueden incluir zonas de protección más estricta (por ejemplo, núcleos Ia) y son fundamentales en regiones donde la conservación depende de la integración de las necesidades humanas con la resiliencia ecológica.
+<p></p>
+Source: <a href="https://portals.iucn.org/library/sites/library/files/documents/PAG-021.pdf">Directrices de la IUCN, 2013</a>
+</text>
+```
+
+### Las Contribuciones de la Naturaleza a las Personas (NCP) {#NCP}
 ```{=html}
 <img src="../img/NCP.png" class = "glossimg", 'blank');"/>
 <text>
@@ -55,7 +85,7 @@ Source: <a href="https://doi.org/10.5281/zenodo.5101125">Pörtner et al., 2021</
 </text>
 ```
 
-## Marco de Futuros de la Naturaleza (NFF) {#NFF}
+### Marco de Futuros de la Naturaleza (NFF) {#NFF}
 ```{=html}
 <img src="../img/naturefutureframework_es.png" class = "glossimg", object-fit: contain" onclick="window.open('https://www.ipbes.net/scenarios-models', 'blank');"/>
 <text>
@@ -66,7 +96,27 @@ Source: <a href="https://doi.org/10.5281/zenodo.8171339">IPBES, 2023</a>
 </text>
 ```
 
-## Uso y Ocupación del Suelo (LULC) {#LULC}
+### Modificación de la Ley Forestal y de Fauna Silvestre (Ley No. 31973, 2023)
+```{=html}
+<text>
+<p></p>
+A finales de 2023, el Congreso peruano aprobó la Ley n.º 31973, que modifica disposiciones clave de la Ley Forestal y de Fauna Silvestre de 2011. Las modificaciones alteran específicamente los artículos 29 y 33, suspendiendo el mandato de que la zonificación forestal es necesaria para otorgar títulos habilitantes para bosques de producción permanente. Además, la ley traslada la responsabilidad de aprobar la zonificación forestal del Ministerio del Ambiente (MINAM) al Ministerio de Desarrollo Agrario y Riego (MIDAGRI). Este cambio ha generado una fuerte oposición por parte de organizaciones indígenas, la sociedad civil y expertos en medio ambiente, que sostienen que puede provocar un aumento de la deforestación, socavar las funciones de los ecosistemas y la biodiversidad, e ignorar los derechos de los pueblos indígenas. Los críticos advierten de que la reforma no sólo podría fomentar la impunidad y debilitar la gobernanza ambiental, sino también obstaculizar la capacidad de Perú para cumplir sus compromisos internacionales en materia de cambio climático. Cabe destacar que la ley no entra en vigor automáticamente, ya que aún requiere reglamentos adicionales.
+<p></p>
+Source: <a href="https://forestpolicy.org/risk-tool/country/peru">World Resources Institute, 2024</a>
+</text>
+```
+
+### Proyecto REDD+
+```{=html}
+<text>
+<p></p>
+REDD+ (abreviatura de «Reducción de Emisiones por Deforestación y Degradación Forestal») es una iniciativa climática internacional diseñada para frenar las emisiones de gases de efecto invernadero procedentes de los bosques en los países en desarrollo. Ofrece incentivos -a menudo a través de mercados de carbono u otros sistemas de pago- para proteger o gestionar de forma sostenible los bosques, en lugar de talarlos. De este modo, REDD+ puede ayudar a mantener la biodiversidad, ya que la conservación de una amplia gama de especies y ecosistemas suele ir de la mano del mantenimiento intacto de los bosques. Sin embargo, como han señalado los participantes en el proceso REDD+ de Perú, centrarse simplemente en el almacenamiento de carbono no garantiza hábitats sanos si no se abordan los problemas sociales, económicos y de gobernanza. Por ejemplo, la falta de claridad en los derechos sobre la tierra puede desencadenar conflictos, y las comunidades locales pueden no obtener beneficios justos a menos que se establezcan salvaguardias. Sin embargo, si se diseña bien, REDD+ puede canalizar fondos hacia zonas de conservación, impulsar medios de vida sostenibles y fomentar la cooperación entre organismos gubernamentales, pueblos indígenas, ONG y empresas privadas. Si se hace bien, es una oportunidad para afrontar juntos el cambio climático y la pérdida de biodiversidad.
+<p></p>
+Source: <a href="https://doi.org/10.1007/s10531-013-0477-5">Entenmann & Schmitt, 2013</a>
+</text>
+```
+
+### Uso y Ocupación del Suelo (LULC) {#LULC}
 ```{=html}
 <img src="../img/dummyLULCC.png" class = "glossimg", 'blank');"/>
 <text>
@@ -88,7 +138,7 @@ Land Cover">Milenium Ecosystem Assessement, 2005
 </text>
 ```
 
-## Servicios Ecosistémicos (ES) {#ES}
+### Servicios Ecosistémicos (ES) {#ES}
 ```{=html}
 <img src="../img/dummyES.png" class = "glossimg", 'blank');"/>
 <text>
