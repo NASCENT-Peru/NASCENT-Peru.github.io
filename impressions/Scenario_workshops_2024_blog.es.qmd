@@ -3,7 +3,7 @@ title: "Próximos talleres de creación de escenarios mayo-junio de 2024"
 categories : 
     - Talleres
     - Creación de Escenarios
-image: "../img/workshop_locations_impression.png"
+image: "/img/workshop_locations_impression.png"
 date: 2024/04/01
 ---
 

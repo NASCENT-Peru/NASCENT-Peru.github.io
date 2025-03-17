@@ -5,7 +5,7 @@ categories :
     - Creación de Escenarios
     - Piura
     - Taller Regional
-image: "../img/Piura_group.jpg"
+image: "/img/Piura_group.jpg"
 lightbox: true
 date: 2024-05-20
 ---

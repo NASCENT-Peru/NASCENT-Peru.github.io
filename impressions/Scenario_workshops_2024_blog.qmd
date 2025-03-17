@@ -4,7 +4,7 @@ categories :
     - Workshops
     - Scenario creation
 date: 2024/04/01
-image: "../img/workshop_locations_impression.png"
+image: "/img/workshop_locations_impression.png"
 abstract: "We are excited to announce that we will hold the 1st workshops as part of the participatory scenario creation process in May and June 2024! The aim of these workshops is to produce visions of what are the desirable characteristics of the future landscape of Peru in 2060 from the perspective of a diverse group of participants. The results of the workshops will feed into the development of the scenarios describing the changes needed to arrive at the desired landscapes."
 ---
 

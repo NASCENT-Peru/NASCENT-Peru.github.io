@@ -5,7 +5,7 @@ categories :
     - Creación de Escenarios
     - Puerto Maldonado
     - Taller Regional
-image: "../img/Puerto_1.jpg"
+image: "/img/Puerto_1.jpg"
 lightbox: true
 date: 2024-05-29
 ---

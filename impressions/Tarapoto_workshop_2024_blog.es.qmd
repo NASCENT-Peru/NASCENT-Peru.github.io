@@ -5,7 +5,7 @@ categories :
     - Creación de Escenarios
     - Taller Regional
     - Tarapoto
-image: "../img/Tarapoto_group.jpg"
+image: "/img/Tarapoto_group.jpg"
 lightbox: true
 date: 2024-06-11
 ---

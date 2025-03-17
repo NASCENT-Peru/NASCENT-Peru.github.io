@@ -4,7 +4,7 @@ categories :
     - Equipo
     - Creación de Escenarios
 date: 2024/07/24
-image: "../img/Emily_Sara.jpg"
+image: "/img/Emily_Sara.jpg"
 lightbox: true
 ---
 

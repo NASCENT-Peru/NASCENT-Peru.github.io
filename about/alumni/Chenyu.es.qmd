@@ -3,7 +3,7 @@ title: "Chenyu Shen"
 sortby: "3"
 subtitle: "Research Assistant"
 author: "Asistente de investigación"
-image: ../img/Chenyu.jpg
+image: /img/Chenyu.jpg
 toc: false
 comments: false
 

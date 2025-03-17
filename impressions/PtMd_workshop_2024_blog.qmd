@@ -7,7 +7,7 @@ categories :
     - Puerto Maldonado
     - Regional
     - Future visions
-image: "../img/Puerto_1.jpg"
+image: "/img/Puerto_1.jpg"
 lightbox: true
 date: 2024-05-29
 ---

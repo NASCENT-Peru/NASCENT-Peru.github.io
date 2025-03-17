@@ -5,7 +5,7 @@ categories :
     - Creación de Escenarios
     - Taller Regional
     - Huaraz
-image: "../img/Huaraz_group.jpeg"
+image: "/img/Huaraz_group.jpeg"
 lightbox: true
 date: 2024-06-05
 ---

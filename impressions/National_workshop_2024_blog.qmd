@@ -5,7 +5,7 @@ categories :
     - Scenario creation
     - Participatory
     - Lima
-image: "../img/Taller_Nacional-112.jpg"
+image: "/img/Taller_Nacional-112.jpg"
 lightbox: true
 date: 2024/05/13
 ---

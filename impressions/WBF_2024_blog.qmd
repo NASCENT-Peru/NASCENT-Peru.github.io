@@ -7,7 +7,7 @@ categories :
 event: World Biodiversity Forum 2024
 location: Davos, Switzerland
 date: 2024/06/16
-image: "../img/WBF_present_2.jpg"
+image: "/img/WBF_present_2.jpg"
 lightbox: true
 ---
 
