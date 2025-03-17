@@ -25,13 +25,13 @@ We would like to thank the UDEP for kindly allowing us to host the workshop on t
 Here are some photos from the day and below you can access the presentation that was shown. 
 
 ::: {layout-nrow=2}
-![](/img/Piura_1.JPG){group="my-gallery"}
+![](../img/Piura_1.JPG){group="my-gallery"}
 
-![](/img/Piura_2.JPG){group="my-gallery"}
+![](../img/Piura_2.JPG){group="my-gallery"}
 
-![](/img/Piura_3.JPG){group="my-gallery"}
+![](../img/Piura_3.JPG){group="my-gallery"}
 
-![](/img/Piura_group.JPG){group="my-gallery"}
+![](../img/Piura_group.JPG){group="my-gallery"}
 :::
 
 ```{=html}

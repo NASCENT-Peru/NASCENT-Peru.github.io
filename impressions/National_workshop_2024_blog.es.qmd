@@ -5,7 +5,7 @@ categories :
     - Creación de Escenarios
     - Lima
     - Taller Nacional
-image: " /img/Taller_Nacional-112.jpg"
+image: "/img/Taller_Nacional-112.jpg"
 lightbox: true
 date: 2024/05/13
 ---
