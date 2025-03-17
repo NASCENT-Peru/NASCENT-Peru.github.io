@@ -1,139 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nascent-peru.github.io/output.html</loc>
-    <lastmod>2025-02-25T15:13:35.811Z</lastmod>
-  </url>
-  <url>
     <loc>https://nascent-peru.github.io/project/project.html</loc>
-    <lastmod>2025-02-25T15:13:35.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/UGA/Ignacio.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/ETHZ/Paula.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/ETHZ/Ben.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/ETHZ/Sara.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/ETHZ/Adrienne.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/WAN/Jan.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/WAN/Armando.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/alumni/Chenyu.html</loc>
-    <lastmod>2025-02-25T15:13:35.533Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/index.html</loc>
-    <lastmod>2025-02-25T15:13:35.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/impressions/Piura_workshop_2024_blog.html</loc>
-    <lastmod>2025-02-25T15:13:35.793Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/impressions/National_workshop_2024_blog.html</loc>
-    <lastmod>2025-02-25T15:13:35.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/impressions/Scenario_workshops_2024_blog.html</loc>
-    <lastmod>2025-02-25T15:13:35.809Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/impressions/Tarapoto_workshop_2024_blog.html</loc>
-    <lastmod>2025-02-25T15:13:35.809Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/glossary/glossary.html</loc>
-    <lastmod>2025-02-25T15:13:35.632Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/scenarios/scenarios_explorer_html.html</loc>
-    <lastmod>2025-02-25T15:13:35.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/scenarios/Scenario_creation-revealjs.html</loc>
-    <lastmod>2025-02-25T15:13:35.811Z</lastmod>
+    <lastmod>2025-03-17T12:24:29.005Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/scenarios/scenarios_explorer_quarto.html</loc>
-    <lastmod>2025-02-25T15:13:35.812Z</lastmod>
+    <lastmod>2025-03-17T12:24:29.006Z</lastmod>
   </url>
   <url>
-    <loc>https://nascent-peru.github.io/impressions/Sara_Emily_blog.html</loc>
-    <lastmod>2025-02-25T15:13:35.809Z</lastmod>
+    <loc>https://nascent-peru.github.io/scenarios/scenarios_explorer_html.html</loc>
+    <lastmod>2025-03-17T12:24:29.006Z</lastmod>
   </url>
   <url>
-    <loc>https://nascent-peru.github.io/impressions/impressions.html</loc>
-    <lastmod>2025-02-25T15:13:35.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/impressions/PtMd_workshop_2024_blog.html</loc>
-    <lastmod>2025-02-25T15:13:35.793Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/impressions/Huaraz_workshop_2024_blog.html</loc>
-    <lastmod>2025-02-25T15:13:35.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/impressions/WBF_2024_blog.html</loc>
-    <lastmod>2025-02-25T15:13:35.809Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/UL/antoine.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/contributers.html</loc>
-    <lastmod>2025-02-25T15:13:35.533Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/WAN/Edouard.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/WAN/Miguel.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
+    <loc>https://nascent-peru.github.io/glossary/glossary.html</loc>
+    <lastmod>2025-03-17T12:24:28.826Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/about/ETHZ/Emily.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/ETHZ/loic.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
+    <lastmod>2025-03-17T12:24:28.720Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/about/ETHZ/Manuel.html</loc>
-    <lastmod>2025-02-25T15:13:35.532Z</lastmod>
+    <lastmod>2025-03-17T12:24:28.720Z</lastmod>
   </url>
   <url>
-    <loc>https://nascent-peru.github.io/about/team.html</loc>
-    <lastmod>2025-02-25T15:13:35.533Z</lastmod>
+    <loc>https://nascent-peru.github.io/about/ETHZ/Adrienne.html</loc>
+    <lastmod>2025-03-17T12:24:28.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/ETHZ/Sara.html</loc>
+    <lastmod>2025-03-17T12:24:28.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/WAN/Alejandro.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/WAN/Jan.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/contributers.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/alumni/Chenyu.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/about/funding.html</loc>
-    <lastmod>2025-02-25T15:13:35.533Z</lastmod>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/Tarapoto_workshop_2024_blog.html</loc>
+    <lastmod>2025-03-17T12:24:29.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/Huaraz_workshop_2024_blog.html</loc>
+    <lastmod>2025-03-17T12:24:28.983Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/impressions.html</loc>
+    <lastmod>2025-03-17T12:24:29.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/PtMd_workshop_2024_blog.html</loc>
+    <lastmod>2025-03-17T12:24:28.987Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/National_workshop_2024_blog.html</loc>
+    <lastmod>2025-03-17T12:24:28.983Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/Piura_workshop_2024_blog.html</loc>
+    <lastmod>2025-03-17T12:24:28.987Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/Sara_Emily_blog.html</loc>
+    <lastmod>2025-03-17T12:24:29.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/WBF_2024_blog.html</loc>
+    <lastmod>2025-03-17T12:24:29.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/impressions/Scenario_workshops_2024_blog.html</loc>
+    <lastmod>2025-03-17T12:24:29.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/index.html</loc>
+    <lastmod>2025-03-17T12:24:29.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/UGA/Ignacio.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/team.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/WAN/Armando.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/WAN/Edouard.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/WAN/Miguel.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/ETHZ/Paula.html</loc>
+    <lastmod>2025-03-17T12:24:28.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/ETHZ/loic.html</loc>
+    <lastmod>2025-03-17T12:24:28.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/ETHZ/Ben.html</loc>
+    <lastmod>2025-03-17T12:24:28.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/UL/antoine.html</loc>
+    <lastmod>2025-03-17T12:24:28.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/output.html</loc>
+    <lastmod>2025-03-17T12:24:29.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/scenarios/Scenario_creation-revealjs.html</loc>
+    <lastmod>2025-03-17T12:24:29.005Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/NFF_coding/NFF_coding_instructions.html</loc>
-    <lastmod>2025-02-25T15:13:35.524Z</lastmod>
+    <lastmod>2025-03-17T12:24:28.713Z</lastmod>
   </url>
 </urlset>
