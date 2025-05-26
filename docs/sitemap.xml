@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nascent-peru.github.io/scenarios/society.html</loc>
-    <lastmod>2025-05-26T09:30:43.954Z</lastmod>
+    <loc>https://nascent-peru.github.io/scenarios/test_map.html</loc>
+    <lastmod>2025-05-26T09:27:30.427Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/scenarios/society.es.html</loc>
+    <lastmod>2025-05-26T10:20:27.076Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/scenarios/Scenario_creation-revealjs.es.html</loc>
@@ -18,11 +22,19 @@
   </url>
   <url>
     <loc>https://nascent-peru.github.io/scenarios/scenarios.html</loc>
-    <lastmod>2025-05-26T09:15:12.752Z</lastmod>
+    <lastmod>2025-05-26T10:16:13.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/scenarios/nature.html</loc>
+    <lastmod>2025-05-26T10:06:56.490Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/scenarios/culture.html</loc>
-    <lastmod>2025-05-26T09:30:31.946Z</lastmod>
+    <lastmod>2025-05-26T10:09:09.587Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/scenarios/bau.html</loc>
+    <lastmod>2025-05-26T10:18:04.672Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/project/project.html</loc>
@@ -78,7 +90,7 @@
   </url>
   <url>
     <loc>https://nascent-peru.github.io/glossary/glossary.html</loc>
-    <lastmod>2025-01-24T12:38:42.520Z</lastmod>
+    <lastmod>2025-05-23T13:22:34.876Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/about/WAN/Miguel.html</loc>
@@ -95,6 +107,10 @@
   <url>
     <loc>https://nascent-peru.github.io/about/WAN/Armando.html</loc>
     <lastmod>2025-05-23T13:22:34.872Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/about/WAN/Alejandro.html</loc>
+    <lastmod>2025-05-23T13:22:34.871Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/about/UL/antoine.html</loc>
@@ -201,6 +217,10 @@
     <lastmod>2025-05-23T13:22:34.868Z</lastmod>
   </url>
   <url>
+    <loc>https://nascent-peru.github.io/about/WAN/Alejandro.es.html</loc>
+    <lastmod>2025-05-23T13:22:34.870Z</lastmod>
+  </url>
+  <url>
     <loc>https://nascent-peru.github.io/about/WAN/Armando.es.html</loc>
     <lastmod>2025-05-23T13:22:34.872Z</lastmod>
   </url>
@@ -273,12 +293,20 @@
     <lastmod>2025-01-24T12:39:46.506Z</lastmod>
   </url>
   <url>
-    <loc>https://nascent-peru.github.io/scenarios/bau.html</loc>
-    <lastmod>2025-05-26T09:30:51.142Z</lastmod>
+    <loc>https://nascent-peru.github.io/scenarios/bau.es.html</loc>
+    <lastmod>2025-05-26T10:20:34.113Z</lastmod>
   </url>
   <url>
-    <loc>https://nascent-peru.github.io/scenarios/nature.html</loc>
-    <lastmod>2025-05-26T09:30:38.132Z</lastmod>
+    <loc>https://nascent-peru.github.io/scenarios/culture.es.html</loc>
+    <lastmod>2025-05-26T10:20:11.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/scenarios/nature.es.html</loc>
+    <lastmod>2025-05-26T10:20:20.001Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nascent-peru.github.io/scenarios/scenarios.es.html</loc>
+    <lastmod>2025-05-26T10:16:37.948Z</lastmod>
   </url>
   <url>
     <loc>https://nascent-peru.github.io/scenarios/scenarios_explorer_html.es.html</loc>
@@ -297,15 +325,7 @@
     <lastmod>2025-01-28T13:26:57.886Z</lastmod>
   </url>
   <url>
-    <loc>https://nascent-peru.github.io/about/WAN/Alejandro.es.html</loc>
-    <lastmod>2025-05-23T13:22:34.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/about/WAN/Alejandro.html</loc>
-    <lastmod>2025-05-23T13:22:34.871Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nascent-peru.github.io/scenarios/test_map.html</loc>
-    <lastmod>2025-05-26T09:27:30.427Z</lastmod>
+    <loc>https://nascent-peru.github.io/scenarios/society.html</loc>
+    <lastmod>2025-05-26T10:08:10.939Z</lastmod>
   </url>
 </urlset>

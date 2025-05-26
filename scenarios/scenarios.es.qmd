@@ -92,46 +92,74 @@ header-includes:
     
     const popoverMap = {
     climate: {
-      content: "Details about climate change impacts."
+      content: 'IPCC climate change <a href="https://en.wikipedia.org/wiki/Representative_Concentration_Pathway" target="_blank" rel="noopener noreferrer">Representative Concentration Pathway</a>.'
     },
     population: {
       content: "Population projected growth to 2060."
     },
     economy: {
-      content: "GDP per capita forecast to 2060."
+      content: "GDP per capita projected to 2060 (converted to USD using purchasing power parity (PPP) in 2017), "
     },
     value: {
-      content: "Societal values: intrinsic, instrumental, etc."
+      content: 'Societal values: intrinsic, instrumental, etc., according to the <a href="https://www.naturefuturesframework.org/" target="_blank" rel="noopener noreferrer">IPBES-NFF</a>.' 
     },
     protected: {
-      content: "National conservation goals and protected land."
+      content: "% of national land covered by conservation areas"
     }
     };
 
     document.addEventListener("DOMContentLoaded", function () {
     const elems = document.querySelectorAll(".popover-key");
+
     elems.forEach(el => {
-      const key = el.dataset.popoverKey;
-      const info = popoverMap[key];
-      if (info) {
-      el.setAttribute("data-bs-toggle", "popover");
-      el.setAttribute("data-bs-trigger", "hover");
-      el.setAttribute("data-bs-placement", "top");
-      el.removeAttribute("title", info.title);
-      el.setAttribute("data-bs-content", info.content);
-      new bootstrap.Popover(el);
+    const key = el.dataset.popoverKey;
+    const info = popoverMap[key];
+    if (!info) return;
+
+    const popover = new bootstrap.Popover(el, {
+      content: info.content,
+      html: true,
+      trigger: 'manual',
+      placement: 'top',
+      sanitize: false // allow your HTML links safely
+    });
+
+    let hideTimeout;
+
+    function clearHideTimeout() {
+      if (hideTimeout) {
+        clearTimeout(hideTimeout);
+        hideTimeout = null;
+      }
     }
+
+    el.addEventListener('mouseenter', () => {
+      clearHideTimeout();
+      popover.show();
     });
-    
-      // === NEW CODE: prevent clicks inside maps from toggling columns ===
-    const mapContainers = document.querySelectorAll('.leaflet-container');
-    mapContainers.forEach(mapEl => {
-    mapEl.addEventListener('click', function(event) {
-      event.stopPropagation();
+
+    el.addEventListener('mouseleave', () => {
+      hideTimeout = setTimeout(() => {
+        popover.hide();
+      }, 400); // increased delay to 400ms
     });
-    mapEl.addEventListener('touchstart', function(event) {
-      event.stopPropagation();
-    });
+
+    // Use event delegation to handle mouseenter/mouseleave on the popover element
+    document.body.addEventListener('mouseenter', e => {
+      const pop = document.querySelector('.popover');
+      if (pop && pop.contains(e.target)) {
+        clearHideTimeout();
+      }
+    }, true);
+
+    document.body.addEventListener('mouseleave', e => {
+      const pop = document.querySelector('.popover');
+      if (pop && pop.contains(e.target)) {
+        hideTimeout = setTimeout(() => {
+          popover.hide();
+        }, 400); // same delay on leaving popover
+      }
+    }, true);
     });
     });
     </script>
