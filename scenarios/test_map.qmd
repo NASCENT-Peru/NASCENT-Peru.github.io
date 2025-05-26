@@ -1,0 +1,171 @@
+---
+title: "Scenarios"
+title-block-banner: "#f6f8fa"
+format: 
+  html:
+    page-layout: custom
+    grid:
+      sidebar-width: 10px
+      margin-width: 10px
+      gutter-width: 1.5rem
+popover-glossary:
+  path: glossary.yml
+execute:
+  echo: false
+header-includes:
+  - |
+    <script>
+    function syncRowHeights() {
+      const rowTypes = ["intro", "characteristics", "themes", "visual", "narrative", "lulc"];
+      const columns = document.querySelectorAll('.expandable-columns .column');
+      const anyExpanded = Array.from(columns).some(col => col.classList.contains('expanded'));
+
+      if (anyExpanded) {
+        rowTypes.forEach(type => {
+          const rows = document.querySelectorAll(`.row.${type}`);
+          rows.forEach(row => row.style.height = 'auto');
+        });
+        return;
+      }
+
+      rowTypes.forEach(type => {
+        const rows = document.querySelectorAll(`.row.${type}`);
+        let maxHeight = 0;
+        rows.forEach(row => {
+          row.style.height = 'auto';
+          const h = row.offsetHeight;
+          if (h > maxHeight) maxHeight = h;
+        });
+        rows.forEach(row => {
+          row.style.height = maxHeight + "px";
+        });
+      });
+    }
+
+    function setMapInteractivity(map, enabled) {
+      if (enabled) {
+        map.dragging.enable();
+        map.scrollWheelZoom.enable();
+        map.touchZoom.enable();
+        map.doubleClickZoom.enable();
+        map.keyboard.enable();
+      } else {
+        map.dragging.disable();
+        map.scrollWheelZoom.disable();
+        map.touchZoom.disable();
+        map.doubleClickZoom.disable();
+        map.keyboard.disable();
+      }
+    }
+
+    function toggleExpand(el) {
+      el.classList.toggle('expanded');
+      const columns = document.querySelectorAll('.expandable-columns .column');
+      const anyExpanded = Array.from(columns).some(col => col.classList.contains('expanded'));
+
+      columns.forEach(col => {
+        col.classList.remove('dimmed');
+        if (anyExpanded && !col.classList.contains('expanded')) {
+          col.classList.add('dimmed');
+        }
+      });
+
+      // Only do map visibility toggling if maps have been initialized
+      if (Array.isArray(window.syncedMaps)) {
+        window.syncedMaps.forEach(map => {
+          const mapContainer = map.getContainer();
+          const parentColumn = mapContainer.closest('.column');
+          const leafletDiv = mapContainer.closest('.map-leaflet');
+          const placeholder = leafletDiv?.previousElementSibling;
+
+      if (parentColumn && parentColumn.classList.contains('expanded')) {
+      setMapInteractivity(map, true);
+      if (leafletDiv) leafletDiv.style.display = 'block';
+      if (placeholder) placeholder.style.display = 'none';
+
+      // Force Leaflet to render after becoming visible
+      setTimeout(() => {
+      map.invalidateSize();
+      }, 100);
+    } else {
+    setMapInteractivity(map, false);
+    if (leafletDiv) leafletDiv.style.display = 'none';
+    if (placeholder) placeholder.style.display = 'block';
+    }
+
+        });
+      }
+
+      const instructionNote = document.getElementById('instruction-note');
+      const instructionText = document.getElementById('instruction-text');
+      if (instructionNote) instructionNote.style.display = anyExpanded ? 'none' : 'block';
+      if (instructionText) instructionText.style.display = anyExpanded ? 'none' : 'block';
+
+      requestAnimationFrame(() => {
+        setTimeout(syncRowHeights, 50);
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      syncRowHeights();
+
+      // Defensive init of map interactivity
+      if (Array.isArray(window.syncedMaps)) {
+        window.syncedMaps.forEach(map => {
+          setMapInteractivity(map, false);
+          const mapContainer = map.getContainer();
+          const leafletDiv = mapContainer.closest('.map-leaflet');
+          const placeholder = leafletDiv?.previousElementSibling;
+          if (leafletDiv) leafletDiv.style.display = 'none';
+          if (placeholder) placeholder.style.display = 'block';
+        });
+      }
+
+      // Prevent map clicks from toggling columns
+      const mapContainers = document.querySelectorAll('.leaflet-container');
+      mapContainers.forEach(mapEl => {
+        mapEl.addEventListener('click', event => event.stopPropagation());
+        mapEl.addEventListener('touchstart', event => event.stopPropagation());
+      });
+    });
+    </script>
+
+---
+
+::: {#instruction-text style="font-size: 1.25em; font-weight: 400; text-align: center;"}
+We present three normative scenarios (**Nature for Nature**, **Nature for Society**, and **Nature as Culture**) and one exploratory scenario (**Business as Usual**) of future landscape change in Peru. The normative scenarios are intended to encapsulate descriptions of collectively desired characteristics of future landscapes across different regions in the country. On the other hand, the exploratory scenario is intended to reflect a probable future landscape change based on current trends to serve as a point of comparison to the socially desirable scenarios.
+:::
+
+::: {#instruction-note .instruction-note}
+Click on the columns to expand the content. You can click multiple columns to compare scenarios.
+:::
+
+::::::: expandable-columns
+::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/nature.qmd >}}
+:::
+
+::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/culture.qmd >}}
+:::
+
+::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/society.qmd >}}
+:::
+
+::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/bau.qmd >}}
+:::
+:::::::
+
+<details>
+<summary><strong>References</strong></summary>
+
+::: {#refs}
+:::
+</details>
+
+
+
+
+

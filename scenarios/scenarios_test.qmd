@@ -1,0 +1,94 @@
+---
+title: "Scenarios"
+title-block-banner: "#f6f8fa"
+format: 
+  html:
+    page-layout: custom
+    grid:
+      sidebar-width: 10px
+      margin-width: 10px
+      gutter-width: 1.5rem
+popover-glossary:
+  path: glossary.yml
+header-includes:
+  - |
+    <script>
+    function syncRowHeights() {
+    const rowTypes = ["intro", "characteristics", "themes"]; // Extend if needed
+    const columns = document.querySelectorAll('.expandable-columns .column');
+    const anyExpanded = Array.from(columns).some(col => col.classList.contains('expanded'));
+
+    // If a column is expanded, reset all row heights
+    if (anyExpanded) {
+      rowTypes.forEach(type => {
+        const rows = document.querySelectorAll(`.row.${type}`);
+        rows.forEach(row => row.style.height = 'auto');
+      });
+      return;
+    }
+
+    // Otherwise, standardize row heights across columns
+    rowTypes.forEach(type => {
+      const rows = document.querySelectorAll(`.row.${type}`);
+      let maxHeight = 0;
+  
+      // First pass: measure max height
+      rows.forEach(row => {
+        row.style.height = 'auto'; // Reset
+        const h = row.offsetHeight;
+        if (h > maxHeight) maxHeight = h;
+      });
+
+      // Second pass: apply max height
+      rows.forEach(row => {
+        row.style.height = maxHeight + "px";
+      });
+    });
+    }
+
+    function toggleExpand(el) {
+    el.classList.toggle('expanded');
+
+    const columns = document.querySelectorAll('.expandable-columns .column');
+    const anyExpanded = Array.from(columns).some(col => col.classList.contains('expanded'));
+
+    columns.forEach(col => {
+      col.classList.remove('dimmed');
+      if (anyExpanded && !col.classList.contains('expanded')) {
+        col.classList.add('dimmed');
+      }
+    });
+
+    // Let the layout settle, then update row heights
+    requestAnimationFrame(() => {
+      setTimeout(syncRowHeights, 50);
+    });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+    syncRowHeights();
+    });
+    </script>
+---
+
+
+
+We present three normative scenarios (**Nature for Nature**, **Nature for Society**, and **Nature as Culture**) and one exploratory scenario (**Business as Usual**) of future landscape change in Peru. The normative scenarios are intended to encapsulate descriptions of collectively desired characteristics of future landscapes across different regions in the country. On the other hand, the exploratory scenario is intended to reflect a probable future landscape change based on current trends to serve as a point of comparison to the socially desirable scenarios.
+
+::::::: expandable-columns
+::::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/nature.qmd >}}
+:::::
+
+::::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/society.qmd >}}
+:::::
+
+::::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/culture.qmd >}}
+::::
+
+::::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/bau.qmd >}}
+:::::
+:::::::

@@ -1,0 +1,175 @@
+---
+title: "Scenarios"
+title-block-banner: "#f6f8fa"
+format: 
+  html:
+    page-layout: custom
+    grid:
+      sidebar-width: 10px
+      margin-width: 10px
+      gutter-width: 1.5rem
+popover-glossary:
+  path: glossary.yml
+execute:
+  echo: false
+header-includes:
+  - |
+    <script>
+    function syncRowHeights() {
+    const rowTypes = ["intro", "characteristics", "themes", "visual", "narrative", "lulc"]; // Extend if needed
+    const columns = document.querySelectorAll('.expandable-columns .column');
+    const anyExpanded = Array.from(columns).some(col => col.classList.contains('expanded'));
+
+    // If a column is expanded, reset all row heights
+    if (anyExpanded) {
+      rowTypes.forEach(type => {
+        const rows = document.querySelectorAll(`.row.${type}`);
+        rows.forEach(row => row.style.height = 'auto');
+      });
+      return;
+    }
+
+    // Otherwise, standardize row heights across columns
+    rowTypes.forEach(type => {
+      const rows = document.querySelectorAll(`.row.${type}`);
+      let maxHeight = 0;
+  
+      // First pass: measure max height
+      rows.forEach(row => {
+        row.style.height = 'auto'; // Reset
+        const h = row.offsetHeight;
+        if (h > maxHeight) maxHeight = h;
+      });
+
+      // Second pass: apply max height
+      rows.forEach(row => {
+        row.style.height = maxHeight + "px";
+      });
+    });
+    }
+
+    function toggleExpand(el) {
+    el.classList.toggle('expanded');
+
+    const columns = document.querySelectorAll('.expandable-columns .column');
+    const anyExpanded = Array.from(columns).some(col => col.classList.contains('expanded'));
+
+    columns.forEach(col => {
+      col.classList.remove('dimmed');
+      if (anyExpanded && !col.classList.contains('expanded')) {
+        col.classList.add('dimmed');
+      }
+    });
+    
+      // Hide/show instruction note
+    // Hide/show instruction note and text
+    const instructionNote = document.getElementById('instruction-note');
+    const instructionText = document.getElementById('instruction-text');
+
+    if (instructionNote) {
+    instructionNote.style.display = anyExpanded ? 'none' : 'block';
+    }
+    if (instructionText) {
+    instructionText.style.display = anyExpanded ? 'none' : 'block';
+    }
+
+    // Let the layout settle, then update row heights
+    requestAnimationFrame(() => {
+      setTimeout(syncRowHeights, 50);
+    });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+    syncRowHeights();
+    });
+    
+    document.addEventListener('DOMContentLoaded', function () {
+    const popoverTriggerList =       [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
+    });
+    });
+    
+    const popoverMap = {
+    climate: {
+      content: "Details about climate change impacts."
+    },
+    population: {
+      content: "Population projected growth to 2060."
+    },
+    economy: {
+      content: "GDP per capita forecast to 2060."
+    },
+    value: {
+      content: "Societal values: intrinsic, instrumental, etc."
+    },
+    protected: {
+      content: "National conservation goals and protected land."
+    }
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const elems = document.querySelectorAll(".popover-key");
+    elems.forEach(el => {
+      const key = el.dataset.popoverKey;
+      const info = popoverMap[key];
+      if (info) {
+      el.setAttribute("data-bs-toggle", "popover");
+      el.setAttribute("data-bs-trigger", "hover");
+      el.setAttribute("data-bs-placement", "top");
+      el.removeAttribute("title", info.title);
+      el.setAttribute("data-bs-content", info.content);
+      new bootstrap.Popover(el);
+    }
+    });
+    
+      // === NEW CODE: prevent clicks inside maps from toggling columns ===
+    const mapContainers = document.querySelectorAll('.leaflet-container');
+    mapContainers.forEach(mapEl => {
+    mapEl.addEventListener('click', function(event) {
+      event.stopPropagation();
+    });
+    mapEl.addEventListener('touchstart', function(event) {
+      event.stopPropagation();
+    });
+    });
+    });
+    </script>
+---
+
+::: {#instruction-text style="font-size: 1.25em; font-weight: 400; text-align: center;"}
+We present three normative scenarios (**Nature for Nature**, **Nature for Society**, and **Nature as Culture**) and one exploratory scenario (**Business as Usual**) of future landscape change in Peru. The normative scenarios are intended to encapsulate descriptions of collectively desired characteristics of future landscapes across different regions in the country. On the other hand, the exploratory scenario is intended to reflect a probable future landscape change based on current trends to serve as a point of comparison to the socially desirable scenarios.
+:::
+
+::: {#instruction-note .instruction-note}
+Click on the columns to expand the content. You can click multiple columns to compare scenarios.
+:::
+
+::::::: expandable-columns
+::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/nature.qmd >}}
+:::
+
+::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/culture.qmd >}}
+:::
+
+::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/society.qmd >}}
+:::
+
+::: {.column onclick="toggleExpand(this)"}
+{{< include ../scenarios/bau.qmd >}}
+:::
+:::::::
+
+<details>
+<summary><strong>References</strong></summary>
+
+::: {#refs}
+:::
+</details>
+
+
+
+

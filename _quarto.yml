@@ -19,9 +19,9 @@ website:
      # your sub-pages
     left:
       - project/project.qmd
+      - scenarios/scenarios.qmd
       - impressions/impressions.qmd
       - glossary/glossary.qmd
-      #- output.qmd
       - menu:
               - about/team.qmd
               - about/funding.qmd
@@ -49,12 +49,13 @@ website:
 preview:
   port: 22222
   browser: true
-  watch-inputs: true
+  watch-inputs: false
   navigate: true
 
 
 format:
   html:
+    css: "styles.css"
     fontsize: 1.1em
     theme:
       - cosmo
@@ -71,6 +72,9 @@ format:
       body-width: 1100px
       margin-width: 150px
       gutter-width: 1.5rem
+popover-glossary:
+  path: glossary.yml
+csl: vancouver.csl
 
 babelquarto:
   languagecodes:

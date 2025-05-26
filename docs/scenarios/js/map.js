@@ -3,9 +3,9 @@ $(document).ready(function () {
 
 	$('.map-container').append('<div class="zoom l"><button class="out" data-zoomstep=0.8>-</button><button class="in" data-zoomstep=1.2>+</button></div>');
 	/***************************************************** */
-	
 
-	const scenarioID = ['a', 'b', 'c', 'd', 'e'];
+
+	const scenarioID = ['a', 'b', 'c', 'd'];
 	//var pa= false;
 	var pa=false;
 	var year='2020';
@@ -22,7 +22,7 @@ $(document).ready(function () {
   gif.onload = function () {
     canvas.width = 2700//gif.width;
 	  canvas.height = 1725//gif.height;
-	  
+
 
 	  if (pa != false) {
 		var protected = new Image();
@@ -33,24 +33,24 @@ $(document).ready(function () {
 			ctx.drawImage(protected, 0, 0);
 			 ctx.globalAlpha = 1;
 		};
-		//Pfad zu Protected Areas setzen	
-		//protected.src='img/maps/base-pa.gif';
+		//Pfad zu Protected Areas setzen
+		//protected.src='../img/maps/base-pa.gif';
 		//var protectedPath=gifSrc
-		//protected.src='img/maps/'+scenarioNames[value]+'-pa-2060.gif';
+		//protected.src='../img/maps/'+scenarioNames[value]+'-pa-2060.gif';
 		protected.src = gifSrc.replace('.gif', '-pa.gif');
 	  } else {
 		ctx.drawImage(gif, 0, 0);
 	  }
-	  
+
   };
 
-	//Pfad zum Gif setzen	
-	gif.src = gifSrc; 
-	
+	//Pfad zum Gif setzen
+	gif.src = gifSrc;
+
 	}
 
 	$(scenarioID).each(function (index,value) {
-		drawGifToCanvas(value, 'img/maps/base.gif');
+		drawGifToCanvas(value, '../img/maps/base.gif');
 	})
   /***************************************************** */
     //var map = $(".open .map");
@@ -58,13 +58,13 @@ $(document).ready(function () {
     var scaleFactor = 1.03;
     var dragMode = false;
 	var mapObj, mapPosX, mapPosY, mouseX, mouseY;
-	 
+
 	 $(document).on("mousedown", ".open .map", function (e) {
 		e.preventDefault();
 		dragMode = true;
-  
+
 		 mapObj = $(this);
-		
+
 		mapPosX = parseFloat(mapObj.css("left")) || 0;
 		mapPosY = parseFloat(mapObj.css("top")) || 0;
 		mouseX = e.pageX;
@@ -77,7 +77,7 @@ $('.map').on('mousemove', function(event) {
 	var colorPickerTooltip = $('.color-picker-tooltip');
 
   var rect = mapObj[0].getBoundingClientRect();
-  
+
   // Berücksichtige den Canvas Offset
   var x = event.clientX - rect.left;
   var y = event.clientY - rect.top;
@@ -97,7 +97,7 @@ $('.map').on('mousemove', function(event) {
     // Hole Pixel-Daten an den angepassten Koordinaten x und y
     var ctx = mapObj[0].getContext("2d");
     var pixelData = ctx.getImageData(x, y, 1, 1).data;
-	
+
 	var color =
         '#' +
         pixelData[0].toString(16).padStart(2, '0') +
@@ -110,14 +110,14 @@ $('.map').on('mousemove', function(event) {
 
 		var landUseName = landUseID ? landUse[landUseID]['name_'+language]: undefined;
 
-	
+
 		if (landUseName == undefined) {
 			colorPickerTooltip.hide();
 		} else {
 			colorPickerTooltip.show();
 			colorPickerTooltip.text(landUseName);
 		}
-	
+
 	/*
 	if (landUse[color] == undefined) {
 		colorPickerTooltip.hide();
@@ -132,19 +132,19 @@ $('.map').on('mousemove', function(event) {
         event.pageX +
         parseFloat($('body').scrollLeft()) +
         'px',
-          
+
 	  top:
           event.pageY +
           parseFloat($('body').scrollTop()) -
           parseInt(colorPickerTooltip.outerHeight()) -20+ // Damit distanziert sich unser text vom Mousecursor damit man besser sehen kann was unten liegt.
            'px'
-        
-	  
+
+
    });
 
 
 });
-	
+
 	$('.map').on('mouseout', function (event) {
 		$('.color-picker-tooltip').hide();
 	})
@@ -175,10 +175,10 @@ $('.map').on('mousemove', function(event) {
 
 
 	$(document).on("mouseup", function (e) {
-		
+
       dragMode = false;
 	});
-	
+
 
 	/***************************** YEAR BUTTONS **********************/
 
@@ -189,10 +189,10 @@ $('.map').on('mousemove', function(event) {
 		$('.base').removeClass('active');
 		$('.change').removeClass('active');
 		$('.model').addClass('active');
-		
+
 		$(scenarioID).each(function (index,value) {
-			drawGifToCanvas(value, 'img/maps/' + scenarioNames[value] + '-' + myYear + '.gif');
-			$('section[name='+value+'] .map-container').css('background-image','url(img/maps/'+scenarioNames[value]+'-'+myYear + '.gif)');
+			drawGifToCanvas(value, '../img/maps/' + scenarioNames[value] + '-' + myYear + '.gif');
+			$('section[name='+value+'] .map-container').css('background-image','url(../img/maps/'+scenarioNames[value]+'-'+myYear + '.gif)');
 
 		})
 		currentLandUse = undefined;
@@ -207,8 +207,8 @@ $('.map').on('mousemove', function(event) {
 			$('.landusechange[name="urban"]').addClass('active');
 			currentLandUse = 'urban';
 			$(scenarioID).each(function (index, value) {
-				drawGifToCanvas(value, 'img/maps/' + scenarioNames[value] + '-' + currentLandUse + '.gif');
-				$('section[name=' + value + '] .map-container').css('background-image', 'url(img/maps/' + scenarioNames[value] + '-' + currentLandUse + '.gif)');
+				drawGifToCanvas(value, '../img/maps/' + scenarioNames[value] + '-' + currentLandUse + '.gif');
+				$('section[name=' + value + '] .map-container').css('background-image', 'url(../img/maps/' + scenarioNames[value] + '-' + currentLandUse + '.gif)');
 
 			})
 			drawSankeyCharts();
@@ -227,19 +227,19 @@ $('.map').on('mousemove', function(event) {
 			$('button.model').addClass('active');
 			$('button.base').removeClass('active');
 		}
-		
+
 
 		$(scenarioID).each(function (index,value) {
 			$(scenarioID).each(function (index, value) {
-				
+
 				if (year == '2020') {
-					drawGifToCanvas(value, 'img/maps/base.gif');
-					$('section[name='+value+'] .map-container').css('background-image','url(img/maps/base.gif)');
+					drawGifToCanvas(value, '../img/maps/base.gif');
+					$('section[name='+value+'] .map-container').css('background-image','url(../img/maps/base.gif)');
 				} else {
-					drawGifToCanvas(value, 'img/maps/' + scenarioNames[value] + '-' + year + '.gif');
-					$('section[name='+value+'] .map-container').css('background-image','url(img/maps/'+scenarioNames[value]+'-'+year + '.gif)');
+					drawGifToCanvas(value, '../img/maps/' + scenarioNames[value] + '-' + year + '.gif');
+					$('section[name='+value+'] .map-container').css('background-image','url(../img/maps/'+scenarioNames[value]+'-'+year + '.gif)');
 				}
-				
+
 			})
 		})
 		currentLandUse = undefined;
@@ -263,14 +263,14 @@ $('.map').on('mousemove', function(event) {
 		$('.button_year button').removeClass('active');
 		$('button.change').addClass('active');
 		$('.landusechange').removeClass('active');
-		
+
 		let myLandUse = $(this).attr('name');
 		currentLandUse = myLandUse;
 		$('.landusechange[name="'+myLandUse+'"]').addClass('active');
-		
+
 		$(scenarioID).each(function (index,value) {
-			drawGifToCanvas(value, 'img/maps/'+scenarioNames[value]+'-'+myLandUse + '.gif');
-			$('section[name='+value+'] .map-container').css('background-image','url(img/maps/'+scenarioNames[value]+'-'+myLandUse + '.gif)');
+			drawGifToCanvas(value, '../img/maps/'+scenarioNames[value]+'-'+myLandUse + '.gif');
+			$('section[name='+value+'] .map-container').css('background-image','url(../img/maps/'+scenarioNames[value]+'-'+myLandUse + '.gif)');
 		})
 		drawSankeyCharts();
 	})
@@ -295,15 +295,15 @@ $('.map').on('mousemove', function(event) {
 				$('button.model').addClass('active');
 			}
 		}
-		
+
 		$(scenarioID).each(function (index,value) {
 			$(scenarioID).each(function (index, value) {
 				if (year == '2020') {
-					drawGifToCanvas(value, 'img/maps/base.gif');
+					drawGifToCanvas(value, '../img/maps/base.gif');
 				} else {
-					drawGifToCanvas(value, 'img/maps/'+scenarioNames[value]+'-'+year+'.gif');
+					drawGifToCanvas(value, '../img/maps/'+scenarioNames[value]+'-'+year+'.gif');
 				}
-				
+
 			})
 		})
 	})

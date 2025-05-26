@@ -5,8 +5,7 @@ const scenarioNames={
 "a":"EI_NAT",
 "b":"EI_CUL",
 "c":"EI_SOC",
-"d":"BAU",
-"e":"GR_EX" 
+"d":"BAU"
 }
 
 const backgroundColors = [
@@ -28,7 +27,7 @@ const landUse = {
 }
 var currentLandUse;
 
-var columnNames = ['a', 'b', 'c', 'd', 'e'];
+var columnNames = ['a', 'b', 'c', 'd'];
 var rowCount = 5; // Anzahl Fragen
 /******************************************************/
 var openSections = [];
@@ -74,28 +73,28 @@ $(window).resize(function () {
 		var container = $(".open .map-container");
 		var map = $(".open .map");
 		var inactiveMap=$(".closed .map, .auto .map");
-	
+
 		var containerCenterX = container.width() / 2;
 		var containerCenterY = container.height() / 2;
-		
+
 		var preZoomMapCenterX = -parseInt(map.css('left')) + containerCenterX;
 		var preZoomMapCenterY = -parseInt(map.css('top')) + containerCenterY;
-		
+
 		mapBaseWidth *= zoomstep; // adjust the base width
 		var mapNewWidth = mapBaseWidth; // you can apply additional scaling here if required
 		var mapNewHeight = mapNewWidth * 0.638;
-	
+
 		map.width(mapNewWidth);
 		map.height(mapNewHeight);
 		//inactiveMap.width(container.width() * zoomFactor);
 		//inactiveMap.height(map.width() * 0.638);
-		
+
 		var postZoomMapCenterX = preZoomMapCenterX * zoomstep;
 		var postZoomMapCenterY = preZoomMapCenterY * zoomstep;
-	
+
 		var mapNewLeft = containerCenterX - postZoomMapCenterX;
 		var mapNewTop = containerCenterY - postZoomMapCenterY;
-	
+
 		map.css({ left: mapNewLeft + 'px', top: mapNewTop + 'px' });
 		inactiveMap.css({left: mapNewLeft + 'px', top: mapNewTop + 'px'});
 	}
@@ -189,7 +188,7 @@ $('body').on('keyup', 'textarea', function () {
             myString += myID + '=' + myValue + '\n';
         }
 	}
-	
+
 	console.log(myString);
 
     // Send data to PHP script using AJAX

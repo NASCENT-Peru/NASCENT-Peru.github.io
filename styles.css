@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;500&display=swap');
+
+section#footnotes {
+  display: none !important;
+}
+
+#quarto-appendix.default {
+    border-top: none !important;
+}
+
+.instruction-note {
+  text-align: center;
+  font-size: 1.7em;     /* Bigger font size */
+  font-weight: 700;     /* Heavier font weight (bold) */
+  margin: 1em 0;
+  padding: 0.5em;
+  color: #333;
+}
+
+.expandable-columns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+}
+
+.expandable-columns .column {
+  flex: 1;  /* Default size for each column */
+  background-color: white;
+  padding: 1em;
+  cursor: pointer;
+  transition: flex 0.3s ease, background-color 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.wordcloud, .img-fluid, .margin-caption, .figure-img, .img {
+  margin-top: 0px !important;
+}
+
+
+.expandable-columns .column:not(:last-child) {
+  border-right: 2px solid #ccc;  /* Vertical line between columns */
+}
+
+/* Styling for expanded columns */
+.expandable-columns .column.expanded {
+  flex: 2;  /* Adjust this value for the desired expansion size */
+  background-color: white;  /* Change to your preferred color */
+  height: auto;
+}
+
+.expandable-columns .column.dimmed {
+  background-color: #ddd; /* Light gray */
+  opacity: 0.6; /* Slight transparency */
+}
+
+.expandable-columns .column.expanded .row {
+  font-size: 1.1em;
+  overflow: visible;
+  transition: height 0.2s ease;
+}
+
+.expandable-columns .column.expanded .row .img-fluid .margin-caption .figure-img .img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.collapsible-text {
+  max-height: 20em;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.3s ease;
+}
+
+.column.expanded .collapsible-text {
+  max-height: none;
+}
+
+.collapsible-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2em;
+  background: linear-gradient(to bottom, transparent, white); /* match background */
+  pointer-events: none;
+}
+
+.column.expanded .collapsible-text::after {
+  display: none;
+}
+
+
+
+
+html, body {
+	min-height: 100vh;
+	margin: 0;
+}
+/* Target the title inside each column (assumes it's an h2) */
+/*.expandable-columns .column h2 {
+/*  background-color: #45818d;  /* Blue background for the title */
+/*  color: white;  /* White text color */
+/*  padding: 30px;  /* Padding around the text */
+/*  margin: -1em -1em 10px -1em;  /* To extend the background and remove default margins */
+/*  border-radius: 5px;  /* Optional: rounded corners */
+/*} */
+
+/* .image-heading {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+} */
+
+
+

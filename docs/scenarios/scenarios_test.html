@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Scenarios – NASCENT-PERU</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a61840c82f41742ef6c3c1fa87d99573.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #f6f8fa;
+      }
+</style>
+<script>
+function syncRowHeights() {
+const rowTypes = ["intro", "characteristics", "themes"]; // Extend if needed
+const columns = document.querySelectorAll('.expandable-columns .column');
+const anyExpanded = Array.from(columns).some(col => col.classList.contains('expanded'));
+
+// If a column is expanded, reset all row heights
+if (anyExpanded) {
+  rowTypes.forEach(type => {
+    const rows = document.querySelectorAll(`.row.${type}`);
+    rows.forEach(row => row.style.height = 'auto');
+  });
+  return;
+}
+
+// Otherwise, standardize row heights across columns
+rowTypes.forEach(type => {
+  const rows = document.querySelectorAll(`.row.${type}`);
+  let maxHeight = 0;
+
+  // First pass: measure max height
+  rows.forEach(row => {
+    row.style.height = 'auto'; // Reset
+    const h = row.offsetHeight;
+    if (h > maxHeight) maxHeight = h;
+  });
+
+  // Second pass: apply max height
+  rows.forEach(row => {
+    row.style.height = maxHeight + "px";
+  });
+});
+}
+
+function toggleExpand(el) {
+el.classList.toggle('expanded');
+
+const columns = document.querySelectorAll('.expandable-columns .column');
+const anyExpanded = Array.from(columns).some(col => col.classList.contains('expanded'));
+
+columns.forEach(col => {
+  col.classList.remove('dimmed');
+  if (anyExpanded && !col.classList.contains('expanded')) {
+    col.classList.add('dimmed');
+  }
+});
+
+// Let the layout settle, then update row heights
+requestAnimationFrame(() => {
+  setTimeout(syncRowHeights, 50);
+});
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+syncRowHeights();
+});
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">NASCENT-PERU</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../project/project.html"> 
+<span class="menu-text">Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../impressions/impressions.html"> 
+<span class="menu-text">Impressions</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../glossary/glossary.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-info" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Info</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-info">    
+        <li>
+    <a class="dropdown-item" href="../about/team.html">
+ <span class="dropdown-text">Team</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/funding.html">
+ <span class="dropdown-text">Funding</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/contributers.html">
+ <span class="dropdown-text">Contributers</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/blenback/NASCENT-Peru"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/nascent-peru"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.facebook.com/profile.php?id=61557948733975"> <i class="bi bi-facebook" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://zenodo.org/communities/nascent-peru"> 
+<span class="menu-text"><iconify-icon inline="" icon="simple-icons:zenodo" style="font-size: 1.5em;" aria-label="Icon zenodo from simple-icons Iconify.design set." title="Icon zenodo from simple-icons Iconify.design set."></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://plus.ethz.ch/research/forschungsprojekte/NASCENT-PERU.html/"> <i class="bi bi-mortarboard" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:bblack@ethz.ch"> <i class="bi bi-envelope" role="img" aria-label="email">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default">
+  <div class="quarto-title-banner">
+    <div class="quarto-title column-body">
+      <h1 class="title">Scenarios</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+<!-- main -->
+
+
+
+
+
+<p>We present three normative scenarios (<strong>Nature for Nature</strong>, <strong>Nature for Society</strong>, and <strong>Nature as Culture</strong>) and one exploratory scenario (<strong>Business as Usual</strong>) of future landscape change in Peru. The normative scenarios are intended to encapsulate descriptions of collectively desired characteristics of future landscapes across different regions in the country. On the other hand, the exploratory scenario is intended to reflect a probable future landscape change based on current trends to serve as a point of comparison to the socially desirable scenarios.</p>
+<div class="expandable-columns">
+<div class="column" onclick="toggleExpand(this)">
+<section id="nature-for-nature" class="level1">
+<h1>Nature for Nature</h1>
+<div class="row intro">
+<p>By 2060, Peru’s landscapes are treated as vital, living entities deserving of protection not merely for their utility to humans but for their inherent worth. This transformation was sparked by a societal shift in the early 21st century, towards recognizing nature’s intrinsic value as a fundamental aspect of ethical living. This vision reshaped economic, social, and environmental governance priorities, aligning them with an ethos of coexistence and respect for life in all its forms.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/scenario_images/nature.jpg" class="margin-caption quarto-figure quarto-figure-center figure-img" style="border-radius: 8px;" height="400"></p>
+</figure>
+</div>
+</div>
+<hr>
+<section id="characteristics" class="level3 row characteristics">
+<h3 data-anchor-id="characteristics">Characteristics</h3>
+<section id="climate-change-rcp-4.5" class="level4">
+<h4 data-anchor-id="climate-change-rcp-4.5"><img src="../img/icons/climate_icon.png" class="img-fluid" style="width:10.0%"> <u>Climate change:</u> <strong>RCP 4.5</strong></h4>
+</section>
+<section id="population-growth-37.21-million-by-2060" class="level4">
+<h4 data-anchor-id="population-growth-37.21-million-by-2060"><img src="../img/icons/population_icon.png" class="img-fluid" style="width:10.0%"> <u>Population growth:</u> <strong>37.21 million by 2060</strong></h4>
+</section>
+<section id="economic-development-gdp-per-capita-1007-billion-usd-by-2060" class="level4">
+<h4 data-anchor-id="economic-development-gdp-per-capita-1007-billion-usd-by-2060"><img src="../img/icons/economy_icon.png" class="img-fluid" style="width:10.0%"> <u>Economic development:</u> <strong>GDP per capita 1007 billion USD by 2060</strong></h4>
+</section>
+<section id="value-perspective-on-nature-mainly-intrinsic" class="level4">
+<h4 data-anchor-id="value-perspective-on-nature-mainly-intrinsic"><img src="../img/icons/value_icon.png" class="img-fluid" style="width:10.0%"> <u>Value perspective on nature:</u> <strong>Mainly Intrinsic</strong></h4>
+</section>
+<section id="protected-areas-proportion-of-peru-under-protection-30-by-2030" class="level4">
+<h4 data-anchor-id="protected-areas-proportion-of-peru-under-protection-30-by-2030"><img src="../img/icons/protected_icon.png" class="img-fluid" style="width:10.0%"><u>Protected areas (proportion of Peru under protection):</u> <strong>30% by 2030</strong></h4>
+</section>
+</section>
+<hr>
+<section id="key-themes" class="level3 row themes">
+<h3 data-anchor-id="key-themes">Key themes</h3>
+<p><img src="..\img/wordclouds/Nature_for_nature.png" class="margin-caption img-fluid"></p>
+</section>
+<hr>
+<section id="narrative" class="level3">
+<h3 data-anchor-id="narrative">Narrative</h3>
+<section id="shifting-values-and-lifestyles" class="level4">
+<h4 data-anchor-id="shifting-values-and-lifestyles"><strong>Shifting Values and Lifestyles</strong></h4>
+<p>Witnessing first-hand the continued degradation of nature and the decline of characteristic species due to climate change and anthropogenic activities inspires a profound shift in societal values. Nature is no longer seen as a resource to be exploited but as a partner in a shared existence. This perspective is enshrined in law, building upon the legal precedent of the recognition of the Marañón river as an entity holding intrinsic rights, including the right to exist and the right to be free of pollution . This concept of rights for nature is propagated through education initiatives to improve widespread environmental awareness among the population.</p>
+<p>In terms of lifestyles changes, the population adopts resource efficient behaviours to reduce the impact on nature. The share of the population living in urban areas reaches 92% by the year 2060 (Samir et al.&nbsp;2024, according to SSP1) with people opting to live in compact settlements that provide better access to services and amenities. There is also a substantial shift in diets towards more plant-based consumption to reduce pressure on ecosystems through livestock production . The recognition of the intrinsic value of nature fosters wider societal inclusivity, which drives progress in reducing economic and social inequality, by, for example, addressing issues such as the disproportionate employment of women in the informal sector (Finn 2017).</p>
+</section>
+</section>
+<section id="changing-economic-priorities" class="level3">
+<h3 data-anchor-id="changing-economic-priorities">Changing economic priorities</h3>
+<p>Economic development shifts towards sustainable activities in secondary urban centres beyond Lima, promoting local, eco-friendly businesses and reducing dependence on resource-intensive industries. This transition enhancing community resilience (Guha and Chakrabarti 2020) and results in increased economic formalisation which generates revenue for greater governmental spending on nature protection as this is recognised as essential for the continuation and growth of the green economy . Overall, there is moderate economic growth, with GDP per capita reaching approximately 1007 billion USD by 2060 (converted to USD using purchasing power parity (PPP) in 2017), as projected under SSP2 (Crespo Cuaresma 2017).</p>
+<p>The agricultural sector adopts techniques that emphasize harmony with nature such as agroforestry and agro-ecological farming (chacras agroecológicas integrales) (Aragón et al.&nbsp;2022; ECLAC 2019). The organic agriculture sector expands with pesticides and synthetic fertilizers are replaced by natural alternatives, ensuring long-term productivity of the soil. However, these changes make agricultural production more extensive, requiring greater land area to meet food production demands. At the same time, the reduction in land utilised for livestock as a response to changing diets, does counteract this trend to an extent. To further reduce environmental impacts agricultural land is situated in closer proximity to urban areas to reduce length of the supply chain and hence minimize wastage.</p>
+<p>Forestry policies are characterised by strict protection and restoration measures (Guariguata and Brancalion 2014). Clearance of natural forests is heavily restricted, and production forests are required to shift towards native species over non-native high yield species. Similarly mining activities are strictly regulated, with no new concessions being granted beyond 2030, however existing operations are allowed to continue (Espin and Perz 2021). However, due to stringent legal environmental requirements, only a limited portion of these concessions are exercised by the holders, minimizing the overall environmental impact. Tourism shifts towards nature-focused activities such as wildlife watching, forest and wetland walks, and marine conservation tours, actively promoting a more sustainable and respectful relationship with nature (Fredman, Wall-Reinius, and Grundén 2012).</p>
+</section>
+<section id="indigenous-communities" class="level3">
+<h3 data-anchor-id="indigenous-communities">Indigenous Communities</h3>
+<p>The wellbeing of Indigenous communities is improved through the strengthening of land rights, increased political representation, and participation in conservation efforts. In this regard, the role of Indigenous communities as environmental stewards is formally recognised in the expansion of protected areas with the inclusion of indigenously managed reserves (Blackman et al.&nbsp;2017). However, stricter land-use regulations do occasionally create tensions where communities seek to maintain traditional agricultural or resource use practices5. In addition, there are targeted policies improve access to healthcare, education, and economic opportunities (Pasquier-Doumer and Risso Brandon 2015).</p>
+</section>
+<section id="governance-planning-and-resource-management" class="level3">
+<h3 data-anchor-id="governance-planning-and-resource-management">Governance, Planning and Resource Management</h3>
+<p>Governance evolves to ensure transparency and effective regulation of activities impacting ecosystems, particularly the strict control of environmental pollution. The primary focus of landscape planning is minimising human impacts on nature. For example, when planning developments authorities must give equal consideration to the impacts on people and nature in accordance with the rights of both. In light of this, the 2023 modification to the Forest and Wildlife law is repealed and responsibility for forest zoning is returned to MINAM. Alongside this, the contracts of existing forest concessions are allowed to expire after their initial 40-year terms. Concession management is then aligned with a nature-first principle such that only operators demonstrating robust ecological stewardship have their concession contracts renewed. Non-renewed concession areas remain under state management and support sustainable activities like low-impact nature-focused tourism or community-led agroforestry.</p>
+<p>Urban areas throughout Peru are better planned for sustainability, with a trend towards overall densification whilst maintaining integrated green spaces. This ensures that there is less arbitrary sealing of natural surfaces (soil) in urban areas (Bauer and Duschinger 2024). The development of transport and communications infrastructure is mindful of the need to minimise ecological impact, with strategic road expansions that avoid sensitive areas to protect natural habitats and biodiversity. Better enforcement of the law prohibits illegal road construction in ecologically valuable areas (Gallice et al., 2019).</p>
+<p>In terms of water resources, the hydrographic network is carefully managed to ensure water courses follow natural dynamics. Initiatives aimed at using water more efficiently help to conserve the water needed for natural ecosystems to thrive (Yang et al., 2016), while governance frameworks enforce strict water conservation measures, preventing over-extraction and pollution of rivers, lakes, and aquifers. Water infrastructure development focuses on nature-based solutions, such as wetland restoration and watershed protection, to enhance water retention and quality (Ferreira et al.&nbsp;2023). Strengthened regulatory oversight reduces illegal water diversion, while community-led water stewardship initiatives empower local actors to participate in sustainable resource management.</p>
+</section>
+<section id="ecological-restoration-and-protection" class="level3">
+<h3 data-anchor-id="ecological-restoration-and-protection">Ecological Restoration and Protection</h3>
+<p>In line with the notion of the need for areas for nature to thrive free from human impacts, there is a strong push to expand conservation areas to cover 30% of the national territory by 2030 with existing conservation areas and their management still persisting. Sites for new conservation areas are chosen on the basis of their value for preserving biodiversity whilst balancing the inclusion of Peru’s diverse eco-regions. These areas typically lie further from settlements to mitigate human-wildlife conflicts. Therefore, they are often designated as government-managed strict protected areas (e.g.&nbsp;National Parks) where human activities inside core areas are strictly managed according to the IUCN category Ia or Ib. However, a proportion of the new conservation areas are also established as indigenous-led biodiversity reserves with defined core and sustainable use areas. Environmental research within conservation areas is directed towards understanding how to maintain and restore biodiversity. In the wider landscape there are large-scale environmental restoration programs with the goal of restoring degraded areas to functioning natural habitats. Additionally, a large effort is made to limit the introduction of non-native species to safeguard endemic biodiversity (Fajardo et al.&nbsp;2023).</p>
+</section>
+</section>
+</div>
+<div class="column" onclick="toggleExpand(this)">
+<section id="nature-for-society" class="level1">
+<h1>Nature for Society</h1>
+<div class="row intro">
+<p>The landscape of Peru in 2060 has been optimised to maintain the provision of key ecosystem services for society. This is achieved through strong cross-sectoral planning and a sustainability transformation driven by the adoption of green technologies and the mainstreaming of the economic valorisation of ecosystem services and biodiversity.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/scenario_images/society.jpg" class="margin-caption quarto-figure quarto-figure-center figure-img" style="border-radius: 8px;" height="400"></p>
+</figure>
+</div>
+</div>
+<hr>
+<section id="characteristics-1" class="level3 row characteristics">
+<h3 data-anchor-id="characteristics-1">Characteristics</h3>
+<section id="climate-change-rcp-4.5-1" class="level4">
+<h4 data-anchor-id="climate-change-rcp-4.5-1"><img src="../img/icons/climate_icon.png" class="img-fluid" style="width:10.0%"> <u>Climate change:</u> <strong>RCP 4.5</strong></h4>
+</section>
+<section id="population-growth-37.21-million-by-2060-1" class="level4">
+<h4 data-anchor-id="population-growth-37.21-million-by-2060-1"><img src="../img/icons/population_icon.png" class="img-fluid" style="width:10.0%"> <u>Population growth:</u> <strong>37.21 million by 2060</strong></h4>
+</section>
+<section id="economic-development-gdp-per-capita-1007-billion-usd-by-2060-1" class="level4">
+<h4 data-anchor-id="economic-development-gdp-per-capita-1007-billion-usd-by-2060-1"><img src="../img/icons/economy_icon.png" class="img-fluid" style="width:10.0%"> <u>Economic development:</u> <strong>GDP per capita 1007 billion USD by 2060</strong></h4>
+</section>
+<section id="value-perspective-on-nature-mainly-intrinsic-1" class="level4">
+<h4 data-anchor-id="value-perspective-on-nature-mainly-intrinsic-1"><img src="../img/icons/value_icon.png" class="img-fluid" style="width:10.0%"> <u>Value perspective on nature:</u> <strong>Mainly Intrinsic</strong></h4>
+</section>
+<section id="protected-areas-proportion-of-peru-under-protection-30-by-2030-1" class="level4">
+<h4 data-anchor-id="protected-areas-proportion-of-peru-under-protection-30-by-2030-1"><img src="../img/icons/protected_icon.png" class="img-fluid" style="width:10.0%"><u>Protected areas (proportion of Peru under protection):</u> <strong>30% by 2030</strong></h4>
+</section>
+</section>
+<hr>
+<section id="key-themes-1" class="level3 row themes">
+<h3 data-anchor-id="key-themes-1">Key themes</h3>
+<p><img src="..\img/wordclouds/Nature_for_society.png" class="margin-caption img-fluid"></p>
+</section>
+<hr>
+<section id="shifting-values-and-lifestyles-1" class="level3">
+<h3 data-anchor-id="shifting-values-and-lifestyles-1">Shifting Values and Lifestyles</h3>
+<p>Witnessing first-hand the continued degradation of nature and the decline of characteristic species due to climate change and anthropogenic activities inspires a profound shift in societal values. Nature is no longer seen as a resource to be exploited but as a partner in a shared existence. This perspective is enshrined in law, building upon the legal precedent of the recognition of the Marañón river as an entity holding intrinsic rights, including the right to exist and the right to be free of pollution . This concept of rights for nature is propagated through education initiatives to improve widespread environmental awareness among the population.</p>
+<p>In terms of lifestyles changes, the population adopts resource efficient behaviours to reduce the impact on nature. The share of the population living in urban areas reaches 92% by the year 2060 (Samir et al.&nbsp;2024, according to SSP1) with people opting to live in compact settlements that provide better access to services and amenities. There is also a substantial shift in diets towards more plant-based consumption to reduce pressure on ecosystems through livestock production . The recognition of the intrinsic value of nature fosters wider societal inclusivity, which drives progress in reducing economic and social inequality, by, for example, addressing issues such as the disproportionate employment of women in the informal sector (Finn 2017).</p>
+</section>
+<section id="changing-economic-priorities-1" class="level3">
+<h3 data-anchor-id="changing-economic-priorities-1">Changing economic priorities</h3>
+<p>Economic development shifts towards sustainable activities in secondary urban centres beyond Lima, promoting local, eco-friendly businesses and reducing dependence on resource-intensive industries. This transition enhancing community resilience (Guha and Chakrabarti 2020) and results in increased economic formalisation which generates revenue for greater governmental spending on nature protection as this is recognised as essential for the continuation and growth of the green economy . Overall, there is moderate economic growth, with GDP per capita reaching approximately 1007 billion USD by 2060 (converted to USD using purchasing power parity (PPP) in 2017), as projected under SSP2 (Crespo Cuaresma 2017).</p>
+<p>The agricultural sector adopts techniques that emphasize harmony with nature such as agroforestry and agro-ecological farming (chacras agroecológicas integrales) (Aragón et al.&nbsp;2022; ECLAC 2019). The organic agriculture sector expands with pesticides and synthetic fertilizers are replaced by natural alternatives, ensuring long-term productivity of the soil. However, these changes make agricultural production more extensive, requiring greater land area to meet food production demands. At the same time, the reduction in land utilised for livestock as a response to changing diets, does counteract this trend to an extent. To further reduce environmental impacts agricultural land is situated in closer proximity to urban areas to reduce length of the supply chain and hence minimize wastage.</p>
+<p>Forestry policies are characterised by strict protection and restoration measures (Guariguata and Brancalion 2014). Clearance of natural forests is heavily restricted, and production forests are required to shift towards native species over non-native high yield species. Similarly mining activities are strictly regulated, with no new concessions being granted beyond 2030, however existing operations are allowed to continue (Espin and Perz 2021). However, due to stringent legal environmental requirements, only a limited portion of these concessions are exercised by the holders, minimizing the overall environmental impact. Tourism shifts towards nature-focused activities such as wildlife watching, forest and wetland walks, and marine conservation tours, actively promoting a more sustainable and respectful relationship with nature (Fredman, Wall-Reinius, and Grundén 2012).</p>
+</section>
+<section id="indigenous-communities-1" class="level3">
+<h3 data-anchor-id="indigenous-communities-1">Indigenous Communities</h3>
+<p>The wellbeing of Indigenous communities is improved through the strengthening of land rights, increased political representation, and participation in conservation efforts. In this regard, the role of Indigenous communities as environmental stewards is formally recognised in the expansion of protected areas with the inclusion of indigenously managed reserves (Blackman et al.&nbsp;2017). However, stricter land-use regulations do occasionally create tensions where communities seek to maintain traditional agricultural or resource use practices5. In addition, there are targeted policies improve access to healthcare, education, and economic opportunities (Pasquier-Doumer and Risso Brandon 2015).</p>
+</section>
+<section id="governance-planning-and-resource-management-1" class="level3">
+<h3 data-anchor-id="governance-planning-and-resource-management-1">Governance, Planning and Resource Management</h3>
+<p>Governance evolves to ensure transparency and effective regulation of activities impacting ecosystems, particularly the strict control of environmental pollution. The primary focus of landscape planning is minimising human impacts on nature. For example, when planning developments authorities must give equal consideration to the impacts on people and nature in accordance with the rights of both. In light of this, the 2023 modification to the Forest and Wildlife law is repealed and responsibility for forest zoning is returned to MINAM. Alongside this, the contracts of existing forest concessions are allowed to expire after their initial 40-year terms. Concession management is then aligned with a nature-first principle such that only operators demonstrating robust ecological stewardship have their concession contracts renewed. Non-renewed concession areas remain under state management and support sustainable activities like low-impact nature-focused tourism or community-led agroforestry.</p>
+<p>Urban areas throughout Peru are better planned for sustainability, with a trend towards overall densification whilst maintaining integrated green spaces. This ensures that there is less arbitrary sealing of natural surfaces (soil) in urban areas (Bauer and Duschinger 2024). The development of transport and communications infrastructure is mindful of the need to minimise ecological impact, with strategic road expansions that avoid sensitive areas to protect natural habitats and biodiversity. Better enforcement of the law prohibits illegal road construction in ecologically valuable areas (Gallice et al., 2019).</p>
+<p>In terms of water resources, the hydrographic network is carefully managed to ensure water courses follow natural dynamics. Initiatives aimed at using water more efficiently help to conserve the water needed for natural ecosystems to thrive (Yang et al., 2016), while governance frameworks enforce strict water conservation measures, preventing over-extraction and pollution of rivers, lakes, and aquifers. Water infrastructure development focuses on nature-based solutions, such as wetland restoration and watershed protection, to enhance water retention and quality (Ferreira et al.&nbsp;2023). Strengthened regulatory oversight reduces illegal water diversion, while community-led water stewardship initiatives empower local actors to participate in sustainable resource management.</p>
+</section>
+<section id="ecological-restoration-and-protection-1" class="level3">
+<h3 data-anchor-id="ecological-restoration-and-protection-1">Ecological Restoration and Protection</h3>
+<p>In line with the notion of the need for areas for nature to thrive free from human impacts, there is a strong push to expand conservation areas to cover 30% of the national territory by 2030 with existing conservation areas and their management still persisting. Sites for new conservation areas are chosen on the basis of their value for preserving biodiversity whilst balancing the inclusion of Peru’s diverse eco-regions. These areas typically lie further from settlements to mitigate human-wildlife conflicts. Therefore, they are often designated as government-managed strict protected areas (e.g.&nbsp;National Parks) where human activities inside core areas are strictly managed according to the IUCN category Ia or Ib. However, a proportion of the new conservation areas are also established as indigenous-led biodiversity reserves with defined core and sustainable use areas. Environmental research within conservation areas is directed towards understanding how to maintain and restore biodiversity. In the wider landscape there are large-scale environmental restoration programs with the goal of restoring degraded areas to functioning natural habitats. Additionally, a large effort is made to limit the introduction of non-native species to safeguard endemic biodiversity (Fajardo et al.&nbsp;2023).</p>
+</section>
+</section>
+</div>
+<div class="column" onclick="toggleExpand(this)">
+<section id="nature-as-culture" class="level1">
+<h1>Nature as Culture</h1>
+<div class="row intro">
+<p>Peru’s landscape in 2060 embodies a commitment to sustainability, cultural preservation, and social equity achieved through community-driven approaches. The principles of ‘Buen Vivir’ guide both economic activities and environmental governance, ensuring that nature and communities thrive in harmony. The country’s diverse eco-regions and characteristic landscapes are not only preserved but celebrated as integral components of national identity.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/scenario_images/culture.jpg" class="margin-caption quarto-figure quarto-figure-center figure-img" style="border-radius: 8px; margin-top: 0px;!important" height="400"></p>
+</figure>
+</div>
+</div>
+<hr>
+<section id="characteristics-2" class="level3 row characteristics">
+<h3 data-anchor-id="characteristics-2">Characteristics</h3>
+<section id="climate-change-rcp-4.5-2" class="level4">
+<h4 data-anchor-id="climate-change-rcp-4.5-2"><img src="../img/icons/climate_icon.png" style="width: 10%;"> <span class="popover-key" data-popover-key="climate"><u>Climate change:</u></span> <strong>RCP 4.5</strong></h4>
+</section>
+<section id="population-growth-37.21-million-by-2060-2" class="level4">
+<h4 data-anchor-id="population-growth-37.21-million-by-2060-2"><img src="../img/icons/population_icon.png" style="width: 10%;"> <u>Population growth:</u> <strong>37.21 million by 2060</strong></h4>
+</section>
+<section id="economic-development-gdp-per-capita-1007-billion-usd-by-2060-2" class="level4">
+<h4 data-anchor-id="economic-development-gdp-per-capita-1007-billion-usd-by-2060-2"><img src="../img/icons/economy_icon.png" style="width: 10%;"> <u>Economic development:</u> <strong>GDP per capita 1007 billion USD by 2060</strong></h4>
+</section>
+<section id="value-perspective-on-nature-mainly-intrinsic-2" class="level4">
+<h4 data-anchor-id="value-perspective-on-nature-mainly-intrinsic-2"><img src="../img/icons/value_icon.png" style="width: 10%;"> <u>Value perspective on nature:</u> <strong>Mainly Intrinsic</strong></h4>
+</section>
+<section id="protected-areas-proportion-of-peru-under-protection-30-by-2030-2" class="level4">
+<h4 data-anchor-id="protected-areas-proportion-of-peru-under-protection-30-by-2030-2"><img src="../img/icons/protected_icon.png" style="width: 10%;"> <u>Protected areas (proportion of Peru under protection):</u> <strong>30% by 2030</strong></h4>
+</section>
+</section>
+<hr>
+<section id="key-themes-2" class="level3 row themes">
+<h3 data-anchor-id="key-themes-2">Key themes</h3>
+<p><img src="../img/wordclouds/Nature_as_culture.png" class="margin-caption img-fluid"></p>
+</section>
+<hr>
+<section id="shifting-in-values-and-lifestyles" class="level3">
+<h3 data-anchor-id="shifting-in-values-and-lifestyles">Shifting in Values and Lifestyles</h3>
+<p>In response to the cultural homogenisation and disconnection from nature resulting from trends of neoliberal globalisation, the philosophy of Buen vivir gains mainstream appeal within Peruvian society (Canaza-Choque, 2021; Chassagne 2019; El Centro Bartolomé de Las Casas 2021). The central tenets of Buen vivir being a focus on wellbeing, sufficiency, collectivism and the harmonious relationship between people and nature (Widenhorn 2013). This prompts a revived societal recognition of the cultural and spiritual importance of Peru’s landscapes, driving broader economic and political change in the management of the environment and natural resources.</p>
+<p>Following the desire of the population to dwell closer to nature the increase in the proportion of the population living in urban areas is relatively small increasing from 78% to 81.5% by 2060 (Samir et al.&nbsp;2024, according to SSP3), resulting in a greater area of lower density settlements. At the same time in line with the spirit of self-sufficiency, individuals make efforts to reduce their consumption and generally live more sustainable lifestyles.</p>
+</section>
+<section id="changing-economic-priorities-2" class="level3">
+<h3 data-anchor-id="changing-economic-priorities-2">Changing economic priorities</h3>
+<p>The current prevailing conception of economic development is redefined in accordance with the principles of Buen Vivir, resulting in a paradigm shift towards sustainable activities, particularly those incorporating traditional and indigenous knowledge, being prioritized over the maximisation of production. This results in GDP per capita, increasing to 812 billion USD by 2060 (converted to USD using purchasing power parity (PPP) in 2017), as projected under SSP3 (Crespo Cuaresma 2017).</p>
+<p>In terms of agriculture, holistic agro-ecological techniques such as agroforestry become widespread and the cultivation of botanical and medicinal plants endemic to Peru is actively promoted, fostering both biodiversity and traditional knowledge preservation. This is achieved through actions such as the continued development of regional strategic, and action, plans on Biotrade, leading to the expansion of the national markets for these goods . In addition, producer organizations play a key role in supporting local farmers and ensuring fair market access. As a result of these trends, there is a moderate expansion of the total area utilized for agriculture. Albeit with the intensity of agricultural activities remaining fairly low, reflecting a strong commitment to cultural values and ecological stewardship. Similarly, the sustainable artisanal fishing sector is promoted and safeguarded, supporting coastal communities.</p>
+<p>Extractive activities such as mining activities, are allowed to continue, however they are now strictly regulated to minimize their ecological footprint. New concessions can be granted, but strict legal requirements keep the actual exploitation of these sites relatively low. Tourism shifts towards nature-based activities that connect visitors with Peruvian culture, such as farmer cooperative visits and traditional craft workshops. This not only supports local economies but reinforces the appreciation of landscapes and traditions. These changes in the economy result in a greater formalising of economic activities, with the subsequent tax revenues re-invested in improving local economies.</p>
+</section>
+<section id="indigenous-communities-2" class="level3">
+<h3 data-anchor-id="indigenous-communities-2">Indigenous Communities</h3>
+<p>Indigenous communities experience strengthened autonomy and cultural resurgence, guided by the principles of Buen Vivir. Traditional ecological knowledge is integrated into governance and economic activities, ensuring sustainable land use and biodiversity conservation. Land tenure security is reinforced through an increase in the granting of outstanding applications for Indigenous land titles until 2060. These titled area are designated as Other effective area-based conservation measures (OECMs) with management responsibility devolved to communities. Community-led water management systems, inspired by ancestral techniques, enhance resilience to climate change (UNESCO 2020).</p>
+</section>
+<section id="governance-planning-and-resource-management-2" class="level3">
+<h3 data-anchor-id="governance-planning-and-resource-management-2">Governance, Planning and Resource Management</h3>
+<p>In the political sphere, the governance of land and natural resources is strengthened through greater devolution of responsibilities to departmental authorities. In addition, there is greater citizen participation in decision-making using multi-stakeholder forums at the national and regional scales, building upon existing successes , as well as incorporating digital innovations (CivicTech) . These processes lead to increased transparency of environmental regulations promoting accountability and public trust in the state. The overarching orientation of landscape management is to prioritize equitable access to, and use of, land to ensure the material needs of the population are met whilst minimising environmental degradation. This is achieved through effective implementation of the ecological and economic zoning plans as well as the strict control of environmental pollution. The 2023 modification to the Forest and Wildlife law is repealed and responsibility for forest zoning is returned to MINAM. The design of policies is supported by an expanded environmental research agenda that seeks to integrate traditional ecological knowledge to foster holistic solutions for sustainability (Yanou et al.&nbsp;2023).</p>
+<p>Rural, and particularly indigenous communities, benefit from secure land tenure through formal titling, empowering them to actively participate in sustainable land management practices (Navarro-Castañeda et al.&nbsp;2021). Whereas urban areas are better planned to integrate green spaces and energy-efficient technologies. The steady implementation of infrastructure projects across the country, particularly communications infrastructure, has significantly reduced socio-economic inequality improving access to education, healthcare, and other basic services (Prieto-Egido, Sanchez-Chaparro, and Urquijo-Reguera 2023). T he transport network specifically is developed to help supporting nature-based tourism without disturbing the integrity of the landscape.</p>
+<p>The management of water resources sees remarkable improvements through devolved community-led systems utilising ancient water technologies (Blancas, Torre-Cuadros, and Carrera 2018; Calzada, Iranzo, and Sanz 2017). Semi-natural reservoirs and channels are revitalized, securing water availability and bio-remediation methods lead to improved water quality across urban and rural areas.</p>
+</section>
+<section id="ecological-restoration-and-protection-2" class="level3">
+<h3 data-anchor-id="ecological-restoration-and-protection-2">Ecological Restoration and Protection</h3>
+<p>Peru achieves its obligations with regard to the KM-GBF target to expand the coverage of protected areas and Other Effective area-based Conservation Measures (OECMs) to 30% of the countries territory by 2030. New OECMs are selected to specifically preserve landscapes characteristic of Peru, with a focus on balancing the representation of diverse eco-regions and sites of cultural heritage. To foster local stewardship, these OECMs are often designated on Indigenous community lands, where management is devolved to communities . Within national protected areas , management focuses on reversing biodiversity loss, especially the protection of culturally significant species, as well as the mitigation of human and wildlife conflict. In tandem with the establishment of new conservation areas, large-scale environmental restoration projects have successfully revived degraded lands, enabling traditional practices such as the harvesting of non-timber forest products to flourish once again.</p>
+</section>
+</section>
+</div>
+<div class="column" onclick="toggleExpand(this)">
+<section id="business-as-usual" class="level1">
+<h1>Business as Usual</h1>
+<div class="row intro">
+<p>The landscape of Peru in 2060 is emblematic of the drive for economic development at the expense of improving environmental sustainability. Agriculture and extractive activities have expanded to dominate large parts of the country exacerbating undesirable land use trends of deforestation and urban sprawl. The impacts of climatic change in terms of water and food security drive migration of the population from the mountainous regions to the coastal and amazonian areas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/scenario_images/bau.jpg" class="margin-caption quarto-figure quarto-figure-center figure-img" style="border-radius: 8px;" height="400"></p>
+</figure>
+</div>
+</div>
+<hr>
+<section id="characteristics-3" class="level3 row characteristics">
+<h3 data-anchor-id="characteristics-3">Characteristics</h3>
+<section id="climate-change-rcp-4.5-3" class="level4">
+<h4 data-anchor-id="climate-change-rcp-4.5-3"><img src="../img/icons/climate_icon.png" class="img-fluid" style="width:10.0%"> <u>Climate change:</u> <strong>RCP 4.5</strong></h4>
+</section>
+<section id="population-growth-37.21-million-by-2060-3" class="level4">
+<h4 data-anchor-id="population-growth-37.21-million-by-2060-3"><img src="../img/icons/population_icon.png" class="img-fluid" style="width:10.0%"> <u>Population growth:</u> <strong>37.21 million by 2060</strong></h4>
+</section>
+<section id="economic-development-gdp-per-capita-1007-billion-usd-by-2060-3" class="level4">
+<h4 data-anchor-id="economic-development-gdp-per-capita-1007-billion-usd-by-2060-3"><img src="../img/icons/economy_icon.png" class="img-fluid" style="width:10.0%"> <u>Economic development:</u> <strong>GDP per capita 1007 billion USD by 2060</strong></h4>
+</section>
+<section id="value-perspective-on-nature-mainly-intrinsic-3" class="level4">
+<h4 data-anchor-id="value-perspective-on-nature-mainly-intrinsic-3"><img src="../img/icons/value_icon.png" class="img-fluid" style="width:10.0%"> <u>Value perspective on nature:</u> <strong>Mainly Intrinsic</strong></h4>
+</section>
+<section id="protected-areas-proportion-of-peru-under-protection-30-by-2030-3" class="level4">
+<h4 data-anchor-id="protected-areas-proportion-of-peru-under-protection-30-by-2030-3"><img src="../img/icons/protected_icon.png" class="img-fluid" style="width:10.0%"><u>Protected areas (proportion of Peru under protection):</u> <strong>30% by 2030</strong></h4>
+</section>
+</section>
+<hr>
+<section id="key-themes-3" class="level3 row themes">
+<h3 data-anchor-id="key-themes-3">Key themes</h3>
+<p><img src="../img/wordclouds/Business_as_usual.png" class="margin-caption img-fluid"></p>
+</section>
+<hr>
+<section id="shifting-values-and-lifestyles-2" class="level3">
+<h3 data-anchor-id="shifting-values-and-lifestyles-2">Shifting Values and Lifestyles</h3>
+<p>Witnessing first-hand the continued degradation of nature and the decline of characteristic species due to climate change and anthropogenic activities inspires a profound shift in societal values. Nature is no longer seen as a resource to be exploited but as a partner in a shared existence. This perspective is enshrined in law, building upon the legal precedent of the recognition of the Marañón river as an entity holding intrinsic rights, including the right to exist and the right to be free of pollution . This concept of rights for nature is propagated through education initiatives to improve widespread environmental awareness among the population.</p>
+<p>In terms of lifestyles changes, the population adopts resource efficient behaviours to reduce the impact on nature. The share of the population living in urban areas reaches 92% by the year 2060 (Samir et al.&nbsp;2024, according to SSP1) with people opting to live in compact settlements that provide better access to services and amenities. There is also a substantial shift in diets towards more plant-based consumption to reduce pressure on ecosystems through livestock production . The recognition of the intrinsic value of nature fosters wider societal inclusivity, which drives progress in reducing economic and social inequality, by, for example, addressing issues such as the disproportionate employment of women in the informal sector (Finn 2017).</p>
+</section>
+<section id="changing-economic-priorities-3" class="level3">
+<h3 data-anchor-id="changing-economic-priorities-3">Changing economic priorities</h3>
+<p>Economic development shifts towards sustainable activities in secondary urban centres beyond Lima, promoting local, eco-friendly businesses and reducing dependence on resource-intensive industries. This transition enhancing community resilience (Guha and Chakrabarti 2020) and results in increased economic formalisation which generates revenue for greater governmental spending on nature protection as this is recognised as essential for the continuation and growth of the green economy . Overall, there is moderate economic growth, with GDP per capita reaching approximately 1007 billion USD by 2060 (converted to USD using purchasing power parity (PPP) in 2017), as projected under SSP2 (Crespo Cuaresma 2017).</p>
+<p>The agricultural sector adopts techniques that emphasize harmony with nature such as agroforestry and agro-ecological farming (chacras agroecológicas integrales) (Aragón et al.&nbsp;2022; ECLAC 2019). The organic agriculture sector expands with pesticides and synthetic fertilizers are replaced by natural alternatives, ensuring long-term productivity of the soil. However, these changes make agricultural production more extensive, requiring greater land area to meet food production demands. At the same time, the reduction in land utilised for livestock as a response to changing diets, does counteract this trend to an extent. To further reduce environmental impacts agricultural land is situated in closer proximity to urban areas to reduce length of the supply chain and hence minimize wastage.</p>
+<p>Forestry policies are characterised by strict protection and restoration measures (Guariguata and Brancalion 2014). Clearance of natural forests is heavily restricted, and production forests are required to shift towards native species over non-native high yield species. Similarly mining activities are strictly regulated, with no new concessions being granted beyond 2030, however existing operations are allowed to continue (Espin and Perz 2021). However, due to stringent legal environmental requirements, only a limited portion of these concessions are exercised by the holders, minimizing the overall environmental impact. Tourism shifts towards nature-focused activities such as wildlife watching, forest and wetland walks, and marine conservation tours, actively promoting a more sustainable and respectful relationship with nature (Fredman, Wall-Reinius, and Grundén 2012).</p>
+</section>
+<section id="indigenous-communities-3" class="level3">
+<h3 data-anchor-id="indigenous-communities-3">Indigenous Communities</h3>
+<p>The wellbeing of Indigenous communities is improved through the strengthening of land rights, increased political representation, and participation in conservation efforts. In this regard, the role of Indigenous communities as environmental stewards is formally recognised in the expansion of protected areas with the inclusion of indigenously managed reserves (Blackman et al.&nbsp;2017). However, stricter land-use regulations do occasionally create tensions where communities seek to maintain traditional agricultural or resource use practices5. In addition, there are targeted policies improve access to healthcare, education, and economic opportunities (Pasquier-Doumer and Risso Brandon 2015).</p>
+</section>
+<section id="governance-planning-and-resource-management-3" class="level3">
+<h3 data-anchor-id="governance-planning-and-resource-management-3">Governance, Planning and Resource Management</h3>
+<p>Governance evolves to ensure transparency and effective regulation of activities impacting ecosystems, particularly the strict control of environmental pollution. The primary focus of landscape planning is minimising human impacts on nature. For example, when planning developments authorities must give equal consideration to the impacts on people and nature in accordance with the rights of both. In light of this, the 2023 modification to the Forest and Wildlife law is repealed and responsibility for forest zoning is returned to MINAM. Alongside this, the contracts of existing forest concessions are allowed to expire after their initial 40-year terms. Concession management is then aligned with a nature-first principle such that only operators demonstrating robust ecological stewardship have their concession contracts renewed. Non-renewed concession areas remain under state management and support sustainable activities like low-impact nature-focused tourism or community-led agroforestry.</p>
+<p>Urban areas throughout Peru are better planned for sustainability, with a trend towards overall densification whilst maintaining integrated green spaces. This ensures that there is less arbitrary sealing of natural surfaces (soil) in urban areas (Bauer and Duschinger 2024). The development of transport and communications infrastructure is mindful of the need to minimise ecological impact, with strategic road expansions that avoid sensitive areas to protect natural habitats and biodiversity. Better enforcement of the law prohibits illegal road construction in ecologically valuable areas (Gallice et al., 2019).</p>
+<p>In terms of water resources, the hydrographic network is carefully managed to ensure water courses follow natural dynamics. Initiatives aimed at using water more efficiently help to conserve the water needed for natural ecosystems to thrive (Yang et al., 2016), while governance frameworks enforce strict water conservation measures, preventing over-extraction and pollution of rivers, lakes, and aquifers. Water infrastructure development focuses on nature-based solutions, such as wetland restoration and watershed protection, to enhance water retention and quality (Ferreira et al.&nbsp;2023). Strengthened regulatory oversight reduces illegal water diversion, while community-led water stewardship initiatives empower local actors to participate in sustainable resource management.</p>
+</section>
+<section id="ecological-restoration-and-protection-3" class="level3">
+<h3 data-anchor-id="ecological-restoration-and-protection-3">Ecological Restoration and Protection</h3>
+<p>In line with the notion of the need for areas for nature to thrive free from human impacts, there is a strong push to expand conservation areas to cover 30% of the national territory by 2030 with existing conservation areas and their management still persisting. Sites for new conservation areas are chosen on the basis of their value for preserving biodiversity whilst balancing the inclusion of Peru’s diverse eco-regions. These areas typically lie further from settlements to mitigate human-wildlife conflicts. Therefore, they are often designated as government-managed strict protected areas (e.g.&nbsp;National Parks) where human activities inside core areas are strictly managed according to the IUCN category Ia or Ib. However, a proportion of the new conservation areas are also established as indigenous-led biodiversity reserves with defined core and sustainable use areas. Environmental research within conservation areas is directed towards understanding how to maintain and restore biodiversity. In the wider landscape there are large-scale environmental restoration programs with the goal of restoring degraded areas to functioning natural habitats. Additionally, a large effort is made to limit the introduction of non-native species to safeguard endemic biodiversity (Fajardo et al.&nbsp;2023).</p>
+</section>
+</section>
+</div>
+</div>
+
+
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/nascent-peru\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

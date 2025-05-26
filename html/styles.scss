@@ -87,7 +87,7 @@ font-size: 1.6em !important;
         padding-bottom: 0.4em;
     }
 
-    // In the default Quarto template, .nav-footer-center has position: absolute 
+    // In the default Quarto template, .nav-footer-center has position: absolute
     // turned on, which makes the div not be a flex item
     // This changes that so that it *is* a flex item
     .nav-footer-center {
@@ -101,7 +101,7 @@ font-size: 1.6em !important;
         }
     }
 
-    // When the screen is medium or smaller, make each footer chunk be 100% width 
+    // When the screen is medium or smaller, make each footer chunk be 100% width
     // and centered; otherwise make them be 33% width and left/right/centerd
     .nav-footer-left,
     .nav-footer-right,
@@ -157,6 +157,8 @@ summary {
 	margin-right: auto;
 	border: 2px solid #e5e4e2;
 }
+
+
 
 body {
   overflow-y: scroll; /* Show vertical scrollbar */
