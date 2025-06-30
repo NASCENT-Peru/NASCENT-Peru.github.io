@@ -2,10 +2,10 @@
 bibliography: references.bib
 ---
 
-# Nature as Culture
+# La naturaleza como cultura
 
 ::: {.row .intro}
-Peru's landscape in 2060 embodies a commitment to sustainability, cultural preservation, and social equity achieved through community-driven approaches. The principles of 'Buen Vivir' guide both economic activities and environmental governance, ensuring that nature and communities thrive in harmony. The country's diverse eco-regions and characteristic landscapes are not only preserved but celebrated as integral components of national identity.
+El paisaje del Perú en 2060 refleja un compromiso con la sostenibilidad, la preservación cultural y la equidad social, alcanzado mediante enfoques impulsados por las comunidades. Los principios del *Buen Vivir* orientan tanto las actividades económicas como la gobernanza ambiental, asegurando que la naturaleza y las comunidades prosperen en armonía. Las diversas ecorregiones y paisajes característicos del país no solo se conservan, sino que se celebran como componentes integrales de la identidad nacional.
 :::
 
 ::: {.row .visual}
@@ -15,52 +15,53 @@ Peru's landscape in 2060 embodies a commitment to sustainability, cultural prese
 ------------------------------------------------------------------------
 
 ::: {.row .characteristics}
-### Characteristics
+### Características
 
 <h4>
   <span class="popover-key" data-popover-key="climate" style="cursor: pointer;">
-    <img src="../img/icons/climate_icon.png" alt="Climate Icon" 
+    <img src="../img/icons/climate_icon.png" alt="Icono de clima" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Climate Change:</span>
+    <span class="text-decoration-underline">Cambio climático:</span>
     <strong> RCP 2.6 </strong>
   </span>
 </h4>
 
 <h4>
   <span class="popover-key" data-popover-key="population" style="cursor: pointer;">
-    <img src="../img/icons/population_icon.png" alt="Population Icon" 
+    <img src="../img/icons/population_icon.png" alt="Icono de población" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Population:</span>
-    <strong> 37.21 million</strong>
+    <span class="text-decoration-underline">Población:</span>
+    <strong> 37.21 millones</strong>
   </span>
 </h4>
 
 <h4>
   <span class="popover-key" data-popover-key="economy" style="cursor: pointer;">
-    <img src="../img/icons/economy_icon.png" alt="Economy Icon" 
+    <img src="../img/icons/economy_icon.png" alt="Icono de economía" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Economic development:</span>
-    <strong> 812 billion USD</strong>
+    <span class="text-decoration-underline">Desarrollo económico:</span>
+    <strong> 812 mil millones USD</strong>
   </span>
 </h4>
 
 <h4>
   <span class="popover-key" data-popover-key="value" style="cursor: pointer;">
-    <img src="../img/icons/value_icon.png" alt="Value Icon" 
+    <img src="../img/icons/value_icon.png" alt="Icono de valores" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Value perspective on nature:</span>
-    <strong> Mainly Relational</strong>
+    <span class="text-decoration-underline">Perspectiva de valor sobre la naturaleza:</span>
+    <strong> Principalmente relacional</strong>
   </span>
 </h4>
 
 <h4>
   <span class="popover-key" data-popover-key="protected" style="cursor: pointer;">
-    <img src="../img/icons/protected_icon.png" alt="Protected Areas Icon" 
+    <img src="../img/icons/protected_icon.png" alt="Icono de áreas protegidas" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Protected areas (proportion of Peru under protection):</span>
-    <strong> 30% by 2030</strong>
+    <span class="text-decoration-underline">Áreas protegidas (proporción del Perú bajo protección):</span>
+    <strong> 30 % para 2030</strong>
   </span>
 </h4>
+
 
 :::
 
@@ -72,37 +73,37 @@ Peru's landscape in 2060 embodies a commitment to sustainability, cultural prese
 
 :::: {.row .narrative}
 ::: collapsible-text
-### Shifting in Values and Lifestyles
+### Cambio de valores y estilos de vida
 
-In response to the cultural homogenisation and disconnection from nature resulting from trends of neoliberal globalisation, the philosophy of *Buen vivir* gains mainstream appeal within Peruvian society[@canaza-choque2021; @chassagne2019; @elcentrobartolomédelascasas2021]. The central tenets of *Buen vivir* being a focus on wellbeing, sufficiency, collectivism and the harmonious relationship between people and nature [@widenhorn2013]. This prompts a revived societal recognition of the cultural and spiritual importance of Peru’s landscapes, driving broader economic and political change in the management of the environment and natural resources.
+Como respuesta a la homogeneización cultural y a la desconexión con la naturaleza derivadas de las tendencias de globalización neoliberal, la filosofía del *Buen Vivir* adquiere un atractivo generalizado en la sociedad peruana [@canaza-choque2021; @chassagne2019; @elcentrobartolomédelascasas2021]. Sus principios centrales—bienestar, suficiencia, colectivismo y la relación armoniosa entre las personas y la naturaleza [ @widenhorn2013] reavivan el reconocimiento social de la importancia cultural y espiritual de los paisajes peruanos, impulsando cambios económicos y políticos más amplios en la gestión del medio ambiente y los recursos naturales.
 
-Following the desire of the population to dwell closer to nature the increase in the proportion of the population living in urban areas is relatively small increasing from 78% to 81.5% by 2060 (@kca, according to SSP3), resulting in a greater area of lower density settlements. At the same time in line with the spirit of self-sufficiency, individuals make efforts to reduce their consumption and generally live more sustainable lifestyles.
+Ante el deseo de la población de vivir más cerca de la naturaleza, el aumento de la proporción de habitantes urbanos es relativamente pequeño: del 78 % al 81.5 % en 2060 (@kca, según SSP3), lo que se traduce en asentamientos más extensos pero de menor densidad. En consonancia con el espíritu de autosuficiencia, las personas se esfuerzan por reducir su consumo y, en general, llevan estilos de vida más sostenibles.
 
-### Changing economic priorities
+### Cambio de prioridades económicas
 
-The current prevailing conception of economic development is redefined in accordance with the principles of *Buen Vivir*, resulting in a paradigm shift towards sustainable activities, particularly those incorporating traditional and indigenous knowledge, being prioritized over the maximisation of production. This results in GDP per capita, increasing to 812 billion USD by 2060 (converted to USD using purchasing power parity (PPP) in 2017), as projected under SSP3 [@crespocuaresma2017].
+La concepción predominante de desarrollo económico se redefine según los principios del *Buen Vivir*. Esto da lugar a un cambio de paradigma. En este nuevo paradigma, se priorizan las actividades sostenibles. Se dan prioridad especialmente a las actividades que integran conocimientos tradicionales e indígenas. Se da prioridad a estas actividades sobre la mera maximización de la producción. Así, el PIB per cápita aumenta a 812 mil millones USD para 2060 (convertido con la paridad de poder adquisitivo de 2017), según lo proyectado en la SSP3 [@crespocuaresma2017].
 
-In terms of agriculture, holistic agro-ecological techniques such as agroforestry become widespread and the cultivation of botanical and medicinal plants endemic to Peru is actively promoted, fostering both biodiversity and traditional knowledge preservation. This is achieved through actions such as the continued development of regional strategic, and action, plans on Biotrade, leading to the expansion of the national markets for these goods[^1]. In addition, producer organizations play a key role in supporting local farmers and ensuring fair market access. As a result of these trends, there is a moderate expansion of the total area utilized for agriculture. Albeit with the intensity of agricultural activities remaining fairly low, reflecting a strong commitment to cultural values and ecological stewardship. Similarly, the sustainable artisanal fishing sector is promoted and safeguarded, supporting coastal communities.
+En agricultura se generalizan técnicas agroecológicas holísticas como la agroforestería, y se fomenta el cultivo de plantas botánicas y medicinales endémicas del Perú, promoviendo tanto la biodiversidad como la preservación del conocimiento tradicional. Esto se impulsa mediante, por ejemplo, la elaboración continua de planes estratégicos y de acción regionales sobre Biocomercio, que expanden los mercados nacionales de estos productos[^1]. Además, las organizaciones de productores desempeñan un papel clave en el apoyo a los agricultores locales y en garantizar un acceso justo al mercado. Como resultado, la superficie agrícola total se expande moderadamente, aunque la intensidad de las labores sigue siendo baja, reflejando un firme compromiso con los valores culturales y el cuidado ecológico. De forma similar, se promueve y protege la pesca artesanal sostenible, respaldando a las comunidades costeras.
 
-Extractive activities such as mining activities, are allowed to continue, however they are now strictly regulated to minimize their ecological footprint. New concessions can be granted, but strict legal requirements keep the actual exploitation of these sites relatively low. Tourism shifts towards nature-based activities that connect visitors with Peruvian culture, such as farmer cooperative visits and traditional craft workshops. This not only supports local economies but reinforces the appreciation of landscapes and traditions. These changes in the economy result in a greater formalising of economic activities, with the subsequent tax revenues re-invested in improving local economies.
+Las actividades extractivas, como la minería, continúan, pero ahora se regulan estrictamente para minimizar su huella ecológica. Se pueden conceder nuevos permisos, pero los requisitos legales mantienen relativamente baja la explotación real de estos sitios. El turismo se orienta hacia actividades basadas en la naturaleza que conectan a los visitantes con la cultura peruana, como las visitas a cooperativas agrícolas y los talleres de artesanía tradicional. Esto no solo apoya las economías locales, sino que refuerza la apreciación de los paisajes y las tradiciones. Estos cambios formalizan más la economía y los ingresos fiscales resultantes se reinvierten en el fortalecimiento de las economías locales.
 
-### Indigenous Communities
+### Comunidades indígenas
 
-Indigenous communities experience strengthened autonomy and cultural resurgence, guided by the principles of *Buen Vivir*. Traditional ecological knowledge is integrated into governance and economic activities, ensuring sustainable land use and biodiversity conservation. Land tenure security is reinforced through an increase in the granting of outstanding applications for Indigenous land titles until 2060. These titled area are designated as Other effective area-based conservation measures (OECMs) with management responsibility devolved to communities. Community-led water management systems, inspired by ancestral techniques, enhance resilience to climate change [@unesco2020].
+Las comunidades indígenas experimentan una mayor autonomía y un resurgimiento cultural, guiados por los principios del *Buen Vivir*. El conocimiento ecológico tradicional se integra en la gobernanza y en las actividades económicas, garantizando un uso sostenible del suelo y la conservación de la biodiversidad. La seguridad de la tenencia de la tierra se refuerza mediante la concesión progresiva de los títulos pendientes hasta 2060. Estas áreas tituladas se clasifican como Otras Medidas Efectivas de Conservación basadas en Áreas (OECM), con la responsabilidad de gestión delegada a las comunidades. Los sistemas comunitarios de gestión del agua, inspirados en técnicas ancestrales, aumentan la resiliencia frente al cambio climático [@unesco2020].
 
-### Governance, Planning and Resource Management
+### Gobernanza, planificación y gestión de recursos
 
-In the political sphere, the governance of land and natural resources is strengthened through greater devolution of responsibilities to departmental authorities. In addition, there is greater citizen participation in decision-making using multi-stakeholder forums at the national and regional scales, building upon existing successes[^2], as well as incorporating digital innovations (CivicTech)[^3]. These processes lead to increased transparency of environmental regulations promoting accountability and public trust in the state. The overarching orientation of landscape management is to prioritize equitable access to, and use of, land to ensure the material needs of the population are met whilst minimising environmental degradation. This is achieved through effective implementation of the ecological and economic zoning plans as well as the strict control of environmental pollution. The 2023 modification to the Forest and Wildlife law[^4] is repealed and responsibility for forest zoning is returned to MINAM. The design of policies is supported by an expanded environmental research agenda that seeks to integrate traditional ecological knowledge to foster holistic solutions for sustainability [@yanou2023].
+En el ámbito político, la gobernanza de la tierra y los recursos naturales se fortalece mediante una mayor descentralización de responsabilidades hacia las autoridades departamentales. Además, la ciudadanía participa más en la toma de decisiones a través de foros de múltiples actores en los ámbitos nacional y regional, aprovechando éxitos existentes[^2] y incorporando innovaciones digitales (CivicTech)[^3]. Estos procesos aumentan la transparencia de la normativa ambiental, fomentando la rendición de cuentas y la confianza pública en el Estado. La gestión del paisaje prioriza el acceso y uso equitativo de la tierra para satisfacer las necesidades materiales de la población, minimizando la degradación ambiental. Ello se logra mediante la aplicación eficaz de los planes de zonificación ecológica y económica y el estricto control de la contaminación. Se deroga la modificación de 2023 a la Ley Forestal y de Fauna Silvestre[^4] y la responsabilidad de la zonificación forestal vuelve al MINAM. El diseño de políticas se apoya en una agenda ampliada de investigación ambiental que integra el conocimiento ecológico tradicional para promover soluciones holísticas a la sostenibilidad [@yanou2023].
 
-Rural, and particularly indigenous communities, benefit from secure land tenure through formal titling, empowering them to actively participate in sustainable land management practices [@navarro-castañeda2021]. Whereas urban areas are better planned to integrate green spaces and energy-efficient technologies. The steady implementation of infrastructure projects across the country, particularly communications infrastructure, has significantly reduced socio-economic inequality improving access to education, healthcare, and other basic services [@prieto-egido2023]. The transport network specifically is developed to help supporting nature-based tourism without disturbing the integrity of the landscape.
+Las comunidades rurales, sobre todo las indígenas, se benefician de la seguridad de la tierra mediante la titulación formal, lo que las faculta a participar activamente en prácticas sostenibles de manejo del suelo [@navarro-castañeda2021]. En las áreas urbanas, la planificación mejora para integrar espacios verdes y tecnologías energéticamente eficientes. La implantación constante de proyectos de infraestructura en todo el país, especialmente en comunicaciones, reduce de forma significativa la desigualdad socioeconómica y mejora el acceso a la educación, la salud y otros servicios básicos [@prieto-egido2023]. La red de transporte se desarrolla específicamente para apoyar el turismo de naturaleza sin afectar la integridad del paisaje.
 
-The management of water resources sees remarkable improvements through devolved community-led systems utilising ancient water technologies [@blancas2018; @calzada2017]. Semi-natural reservoirs and channels are revitalized, securing water availability and bio-remediation methods lead to improved water quality across urban and rural areas.
+La gestión de los recursos hídricos mejora notablemente gracias a sistemas comunitarios descentralizados que emplean tecnologías ancestrales del agua [@blancas2018; @calzada2017]. Se revitalizan reservorios y canales seminaturales para garantizar la disponibilidad de agua, y los métodos de biorremediación mejoran la calidad hídrica tanto en zonas urbanas como rurales.
 
-### Ecological Restoration and Protection
+### Restauración y protección ecológica
 
-Peru achieves its obligations with regard to the KM-GBF target[^5] to expand the coverage of protected areas and Other Effective area-based Conservation Measures (OECMs)[^6] to 30% of the countries territory by 2030. New OECMs are selected to specifically preserve landscapes characteristic of Peru, with a focus on balancing the representation of diverse eco-regions and sites of cultural heritage. To foster local stewardship, these OECMs are often designated on Indigenous community lands, where management is devolved to communities[^7].
+El Perú cumple su compromiso respecto al objetivo 3 del KM-GBF[^5] al ampliar, para 2030, la cobertura de áreas protegidas y OECM al 30 % del territorio nacional[^6]. Las nuevas OECM se seleccionan específicamente para conservar paisajes característicos del país, equilibrando la representación de diversas ecorregiones y sitios de patrimonio cultural. Para fomentar la gestión local, estas OECM suelen designarse en tierras de comunidades indígenas, donde la gestión se delega a las propias comunidades[^7].
 
-Within national protected areas , management focuses on reversing biodiversity loss, especially the protection of culturally significant species, as well as the mitigation of human and wildlife conflict. In tandem with the establishment of new conservation areas, large-scale environmental restoration projects have successfully revived degraded lands, enabling traditional practices such as the harvesting of non-timber forest products to flourish once again.
+En las áreas protegidas nacionales, la gestión se centra en revertir la pérdida de biodiversidad, en particular la protección de especies culturalmente significativas, y en mitigar los conflictos entre personas y fauna silvestre. Paralelamente a la creación de nuevas áreas de conservación, los proyectos de restauración ambiental a gran escala han logrado recuperar tierras degradadas, permitiendo que prácticas tradicionales como la recolección de productos forestales no maderables vuelvan a florecer.
 :::
 ::::
 

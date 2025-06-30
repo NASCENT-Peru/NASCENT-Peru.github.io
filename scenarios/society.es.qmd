@@ -2,10 +2,10 @@
 bibliography: references.bib
 ---
 
-# Nature for Society
+# La naturaleza para la sociedad
 
 ::: {.row .intro}
-The landscape of Peru in 2060 has been optimised to maintain the provision of key ecosystem services for society [@gómez2023]. This is achieved through strong cross-sectoral planning and a sustainability transformation driven by the adoption of green technologies and the mainstreaming of the economic valorisation of ecosystem services and biodiversity.
+El paisaje del Perú en 2060 ha sido optimizado para mantener la provisión de servicios ecosistémicos clave para la sociedad [@gómez2023], esto se logra mediante una planificación intersectorial sólida y una transformación hacia la sostenibilidad impulsada por la adopción de tecnologías verdes y la incorporación generalizada de la valorización económica de los servicios ecosistémicos y la biodiversidad.
 :::
 
 ::: {.row .visual}
@@ -15,52 +15,53 @@ The landscape of Peru in 2060 has been optimised to maintain the provision of ke
 ------------------------------------------------------------------------
 
 ::: {.row .characteristics}
-### Characteristics
+### Características
 
 <h4>
   <span class="popover-key" data-popover-key="climate" style="cursor: pointer;">
-    <img src="../img/icons/climate_icon.png" alt="Climate Icon" 
+    <img src="../img/icons/climate_icon.png" alt="Icono de clima" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Climate Change:</span>
+    <span class="text-decoration-underline">Cambio climático:</span>
     <strong> RCP 2.6 </strong>
   </span>
 </h4>
 
 <h4>
   <span class="popover-key" data-popover-key="population" style="cursor: pointer;">
-    <img src="../img/icons/population_icon.png" alt="Population Icon" 
+    <img src="../img/icons/population_icon.png" alt="Icono de población" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Population:</span>
-    <strong> 37.21 million</strong>
+    <span class="text-decoration-underline">Población:</span>
+    <strong> 37.21 millones</strong>
   </span>
 </h4>
 
 <h4>
   <span class="popover-key" data-popover-key="economy" style="cursor: pointer;">
-    <img src="../img/icons/economy_icon.png" alt="Economy Icon" 
+    <img src="../img/icons/economy_icon.png" alt="Icono de economía" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Economic development:</span>
-    <strong> 1192 billion USD</strong>
+    <span class="text-decoration-underline">Desarrollo económico:</span>
+    <strong> 1192 mil millones USD</strong>
   </span>
 </h4>
 
 <h4>
   <span class="popover-key" data-popover-key="value" style="cursor: pointer;">
-    <img src="../img/icons/value_icon.png" alt="Value Icon" 
+    <img src="../img/icons/value_icon.png" alt="Icono de valores" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Value perspective on nature:</span>
-    <strong> Mainly Instrumental</strong>
+    <span class="text-decoration-underline">Perspectiva de valor sobre la naturaleza:</span>
+    <strong> Principalmente instrumental</strong>
   </span>
 </h4>
 
 <h4>
   <span class="popover-key" data-popover-key="protected" style="cursor: pointer;">
-    <img src="../img/icons/protected_icon.png" alt="Protected Areas Icon" 
+    <img src="../img/icons/protected_icon.png" alt="Icono de áreas protegidas" 
          style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
-    <span class="text-decoration-underline">Protected areas (proportion of Peru under protection):</span>
-    <strong> 30% by 2030</strong>
+    <span class="text-decoration-underline">Áreas protegidas (proporción del Perú bajo protección):</span>
+    <strong> 30 % para 2030</strong>
   </span>
 </h4>
+
 
 :::
 
@@ -72,41 +73,43 @@ The landscape of Peru in 2060 has been optimised to maintain the provision of ke
 
 :::: {.row .narrative}
 ::: collapsible-text
-### Shifting Values and Lifestyles
+### Cambio de valores y estilos de vida
 
-The societal shift that enables the transformation of the landscape is rising GDP levels, leading to increased environmental awareness [@jorgenson2014]. Improved economic conditions allow communities to invest more in sustainable practices and environmental education. This reinforces the recognition of nature’s critical role in supplying vital ecosystem services, fostering a broader sense of environmental stewardship in the population. Through this impetus, the concept of ecosystem services is integrated in the economy, governance and planning [@sitas2014].
+El aumento del PIB impulsa el cambio social que hace posible la transformación del paisaje, pues conduce a una mayor conciencia ambiental [@jorgenson2014]. Las mejores condiciones económicas permiten a las comunidades invertir más en prácticas sostenibles y en educación ambiental. Este contexto refuerza el reconocimiento del papel crítico de la naturaleza en el suministro de servicios ecosistémicos vitales. Gracias a este impulso, el concepto de servicios ecosistémicos se integra en la economía, la gobernanza y la planificación [@sitas2014].
 
-In terms of lifestyle changes, there is a limited reduction in levels of personal consumption, for example reduced meat consumption, however prevailing ideas around what constitutes a high standard of living remain and the prevalence of resource efficiency improving technologies means that this is not a strong focus. Accordingly, economic growth is high, with GDP per capita reaching approximately 1192 billion USD by 2060 (converted to USD using purchasing power parity (PPP) in 2017) [@crespocuaresma2017]. Per capita living space is relatively large, and the trend of rural-urban migration continues such that \~92% of the population live in Urban areas by the year 2060 (@kca: aligned with SSP1). Both of these factors that the contribute to a high level of total expansion in land utilized for human habitation.
 
-### Changing economic priorities
+En cuanto a los estilos de vida, se registra una reducción limitada del consumo personal, por ejemplo, en el consumo de carne. No obstante, las ideas predominantes sobre lo que constituye un alto nivel de vida permanecen y la adopción de tecnologías de eficiencia de recursos evita que esto sea un foco principal. Por ello, el crecimiento económico sigue siendo elevado, con un PIB per cápita que alcanza aproximadamente 1192 mil millones USD para 2060 (convertido a USD usando paridad de poder adquisitivo de 2017) [@crespocuaresma2017]. El espacio vital per cápita es relativamente amplio y la migración rural-urbana continúa de modo que \~92% de la población vive en zonas urbanas para el año 2060 (@kca, alineado con SSP1). Ambos factores contribuyen a la expansión del suelo destinado a la habitación humana.
 
-The economy transitions towards greater sustainability and diversification as the reliance on extractive industries is reduced and service-based sectors expand. One example of this is the expansion of the Payments for Ecosystem Services (PES or *MERESE*) sector. Learning the lessons from the implementation of PES schemes in water management, there is an expansion of schemes to conserve agrobiodiversity, as well the implementation of a high-integrity carbon market[^14][^15].
+### Cambio de prioridades económicas
 
-The growth of the service-sector is decentralized, with large cities other than Lima, becoming more pronounced regional economic hubs[^16]. This perpetuates the existing trend of rural-urban migration although disparities between Lima and other regional hubs are reduced. The development of the service sector leads to increasing formalisation of economic activities with some tax revenues directed to improving the capacity of institutions to engage in proactive environmental planning [@amésquitacubillas2018].
+La economía transita hacia una mayor sostenibilidad y diversificación al reducirse la dependencia de las industrias extractivas y al expandirse los sectores de servicios. Un ejemplo de ello es el crecimiento del sector de Pagos por Servicios Ecosistémicos (PES o *MERESE*). Tras aprender de la aplicación de esquemas de PES en la gestión del agua, se amplían dichos esquemas para conservar la agrobiodiversidad y se implementa un mercado de carbono de alta integridad[^14][^15].
 
-Across all of the primary economic sectors there is an attempt to balance the goal of increased production whilst simultaneously improving sustainability [@lesenfants2024]. The principle means of achieving this is through strong regulatory frameworks and ‘green’ technological solutions to improve efficiency, including the uptake of circular economic principles[^17].
+El crecimiento del sector servicios se descentraliza, con ciudades diferentes a Lima que se consolidan como nuevos centros económicos regionales[^16]. Esto perpetúa la migración rural-urbana, aunque reduce las disparidades entre Lima y otros centros. El desarrollo de este sector genera mayor formalización económica y parte de los ingresos fiscales se destinan a mejorar la capacidad institucional para la planificación ambiental proactiva [@amésquitacubillas2018].
 
-For example, in agriculture, digital technologies, such as automation, remote sensing and artificial intelligence driven data analysis are used optimize production[^18]. The development of these technologies is fast-tracked through the creation of ecological industrial parks[^19] with the knowledge disseminated to farmers by existing producer cooperatives, who receive state support to provide training. These measures are also employed to reduce in food wastage across the production and supply chain [@bedoya-perales2021]. The use of composted biowaste from cities for fertilizer is a prime example of a successful circular economic measure. Similar efficiency gains are observed in livestock farming, however there is a reduction in overall production. This is partly due to a shift in the general population towards more plant-based diets but also the expansion of environmentally certified aquaculture [@dolores-salinas2024] as an efficient means to produce dietary protein. A small artisanal fishing sector persists but this is not promoted above more efficient industrial fishing, which itself is subject to stricter quotas and technological advances to improve sustainability. By applying modern techniques and optimising resources, moderate intensification is achieved, meaning that agricultural and livestock production require less overall land whilst delivering improved food security.
+En todos los sectores primarios existe el intento de equilibrar el aumento de la producción con mejoras en la sostenibilidad [@lesenfants2024]. El principal medio para lograrlo son marcos regulatorios sólidos y soluciones tecnológicas verdes, incluyendo la adopción de principios de economía circular[^17].
 
-In the mining sector the concept of Extended Producer Responsibility (EPR) is brought into law[^20]. This makes companies responsible for the environmental impacts of their activities across their entire life cycle including the disposal and recovery of products and waste. This creates the incentive to introduce more circular practices such as the valorisation of mining waste, for example for use within the construction sector, as well eliminating the use of toxic chemicals such as cyanide. Additional mining concessions are granted, though these are limited to areas with comparatively lower values for ecosystem services and biodiversity. At the same time regulatory requirements remain flexible enough to sustain the viability of these operations, resulting in a steady rate of new site development.
+Por ejemplo, en agricultura se usan tecnologías digitales como automatización, teledetección y análisis de datos con inteligencia artificial para optimizar la producción[^18]. Estas tecnologías se desarrollan rápidamente en parques industriales ecológicos[^19] y se difunden a través de cooperativas de productores con apoyo estatal. Gracias a ello se reduce el desperdicio alimentario a lo largo de la cadena de suministro [@bedoya-perales2021]. El uso de biorresiduos compostados como fertilizante urbano es un ejemplo exitoso de economía circular. En ganadería también se observan mejoras de eficiencia, si bien la producción global disminuye por el cambio hacia dietas más vegetales y la expansión de la acuicultura sostenible certificada [@dolores-salinas2024]. Un pequeño sector de pesca artesanal persiste, pero no se prioriza sobre la pesca industrial eficiente, que opera bajo cuotas más estrictas y avances tecnológicos.
 
-In the forestry sector, the 2023 modification to the Forest and Wildlife law[^21] is repealed and responsibility for forest zoning is returned to MINAM. Forest concessions are supported to achieve certification under the Forest Stewardship Council (FSC) standards, ensuring sustainable environmental and social practices[^22]. The expansion of carbon markets means that some concessions transition from logging to REDD+ projects[^23]. The tourism sector remains largely focused on nature-based activities, such as wellness retreats and eco-friendly adventure sports, albeit with additional regulations ensuring that a proportion of revenue is used for environmental conservation.
+En minería se incorpora la Responsabilidad Extendida del Productor (REP) en la ley[^20], lo que obliga a las empresas a asumir los impactos ambientales de todo su ciclo de vida, incluyendo la gestión de residuos. Esto incentiva prácticas circulares como la valorización de residuos mineros para la construcción y la eliminación de químicos tóxicos como el cianuro. Se otorgan nuevas concesiones, aunque limitadas a áreas con valores comparativamente menores de servicios ecosistémicos y biodiversidad, manteniendo requisitos regulatorios flexibles para preservar la viabilidad operativa.
 
-### Indigenous Communities
+En el sector forestal se deroga la modificación de 2023 a la Ley Forestal y de Fauna Silvestre[^21] y vuelve al MINAM la responsabilidad de la zonificación. Se apoya la certificación FSC para garantizar prácticas sostenibles[^22] y muchos concesionarios pasan de la tala a proyectos REDD+[^23]. El turismo conserva su énfasis en actividades basadas en la naturaleza, como retiros de bienestar y deportes de aventura ecológicos, con regulaciones que destinan parte de los ingresos a la conservación ambiental.
 
-Indigenous communities are recognised as key actors in conservation, with community-driven conservation initiatives, underpinned by Indigenous knowledge, playing a central role in maintaining ecosystem services and addressing land-use conflicts [@berkes2000]. While the role of Indigenous communities in decision-making processes is strengthened, challenges remain in ensuring full inclusion, as external actors continue to influence key decisions. Land tenure security is enhanced, and benefit-sharing mechanisms are more widely implemented, although inconsistencies still exist, leading to regional disparities [@blackman2017]. Some land rights disputes continue to persist, necessitating ongoing dialogue to balance Indigenous autonomy with broader environmental and economic goals.
 
-### Governance, Planning and Resource Management
+### Comunidades indígenas
 
-The systems of governance surrounding land and natural resources are made more robust, with effective monitoring and enforcement ensuring sustainable practices across sectors. This is guided by an environmental research agenda focusing on identifying solutions to optimize the provision of ecosystem services [@bennett2015]. This along with increased transparency of environmental regulations improves public trust. To ensure efficient and coherent planning, governance continues to be conducted in a largely top-down fashion, but with some decisions devolved to regional experts.
+Las comunidades indígenas se reconocen como actores clave en la conservación, con iniciativas impulsadas por el conocimiento ancestral que mantienen servicios ecosistémicos y abordan conflictos de uso del suelo [@berkes2000]. Aunque su participación en la toma de decisiones se fortalece, persisten desafíos debido a la influencia de actores externos. La seguridad de la tenencia de la tierra mejora y se implementan mecanismos de reparto de beneficios, aunque con inconsistencias que generan disparidades regionales [@blackman2017]. Algunas disputas de tierra continúan, por lo que se requiere un diálogo constante para equilibrar la autonomía indígena con objetivos ambientales y económicos más amplios.
 
-The overarching goal of landscape planning is to maximise the efficiency of land use by clustering similar activities together (residential areas, agriculture, etc.) and encouraging the multi-functional use of land (for example, renewable energy infrastructure integrated within agricultural areas). In line with this the provision of ecosystem services is directly considered within planning and incorporated within the Ecological and Economic Zoning plans which gain more prominence given the trend of regionalized economic development [@gustafsson2017]. In urban areas, Nature Based Solutions such as rain gardens and green roofs are used to limit the impact of flooding and heat exposure while simultaneously improving mental health by reinforcing the societal connection with nature[^24].
+### Gobernanza, planificación y gestión de recursos
 
-Improvements to infrastructure further bridge socio-economic divides by increasing access to basic services [@prieto-egido2023]. Roads and public transport systems are upgraded with a focus of promoting greener, more efficient modes of transportation, such as electric vehicles, to minimise environmental impacts[^25]. Energy demand is increasingly met with renewable energy due to an expansion of renewable energy infrastructure. The management of water resources is improved with availability managed with a strong regulatory system, the expansion of existing tariff-based PES schemes, and technological innovations to improve efficiency of usage [@dextre2022]. Water quality is also enhanced through the implementation of modern bio-remediation methods[^26].
+Los sistemas de gobernanza de la tierra y los recursos naturales se robustecen con un monitoreo y un cumplimiento más efectivos, lo que garantiza prácticas sostenibles en todos los sectores. Esta evolución se guía por una agenda de investigación ambiental dedicada a optimizar la provisión de servicios ecosistémicos [@bennett2015] y por una mayor transparencia regulatoria que mejora la confianza pública. Para mantener la coherencia en la planificación, la gobernanza sigue siendo mayormente top-down, con ciertas decisiones delegadas a expertos regionales.
 
-### Ecological Restoration and Protection
+El objetivo principal de la planificación del paisaje es maximizar la eficiencia del uso del suelo agrupando actividades similares (residencial, agrícola, etc.) y fomentando su uso multifuncional (por ejemplo, integrar infraestructura renovable en áreas agrícolas). De esta manera, los servicios ecosistémicos se consideran directamente en los planes de Zonificación Ecológica y Económica, cuya relevancia aumenta ante el desarrollo económico regionalizado [@gustafsson2017]. En zonas urbanas se aplican soluciones basadas en la naturaleza como jardines de lluvia y cubiertas verdes para minimizar inundaciones y olas de calor, al mismo tiempo que mejoran la salud mental al reforzar la conexión social con la naturaleza[^24].
 
-As part of the effort to mitigate the impacts of climate change, large-scale environmental restoration projects are initiated to rehabilitate degraded areas, with a particular focus on soil restoration. In addition to boosting carbon sequestration and reducing local populations’ exposure to natural hazards, these projects create semi-natural habitats that support a variety of species, which in turn help maintain key ecosystem services and strengthen resilience. In accordance with the KM-GBF target[^27], the areal coverage of protected areas is expanded to 30% by the year 2030. New conservations areas are selected to prioritise the provision of key ecosystem services such as water maintenance and carbon sequestration, as well as their potential to improve the connectivity of the national conservation estate [@deléglise2024]. These new conservation areas are managed according to IUCN category VI[^28], but may have different levels of management, such as national, regional, or private conservation areas, depending on the scale of the ecosystem services in question. This flexibility ensures that local communities can directly manage areas where benefits are largely local, while regions of broader territorial importance remain under the responsibility of regional or national authorities. Existing conservation areas retain their current governance and management arrangements.
+Las mejoras en infraestructura también reducen brechas socioeconómicas al aumentar el acceso a servicios básicos [@prieto-egido2023]. Se modernizan carreteras y transporte público con el fin de promover modos más verdes y eficientes, como vehículos eléctricos[^25]. La demanda energética se cubre cada vez más con renovables gracias a la expansión de la infraestructura correspondiente. La gestión del agua mejora con una regulación estricta, la expansión de esquemas de PES tarifarios y la implementación de innovaciones tecnológicas para optimizar su uso [@dextre2022]. La calidad del agua se eleva mediante métodos modernos de biorremediación[^26].
+
+### Restauración y protección ecológica
+
+Como parte de la estrategia para mitigar el cambio climático, se inician proyectos de restauración ambiental a gran escala para rehabilitar áreas degradadas, con especial atención a la restauración del suelo. Además de aumentar la captura de carbono y reducir la exposición de la población local a riesgos naturales, estos proyectos crean hábitats seminaturales que albergan diversas especies, las cuales contribuyen a sostener servicios ecosistémicos clave y a fortalecer la resiliencia. De acuerdo con el objetivo del KM-GBF[^27], la cobertura de áreas protegidas se amplía al 30 % para 2030. Las nuevas áreas de conservación se seleccionan para priorizar servicios ecosistémicos esenciales, como el mantenimiento del agua y la captura de carbono, así como para mejorar la conectividad de la red nacional de conservación [@deléglise2024]. Se gestionan según la IUCN categoría VI[^28], con diferentes niveles administrativos (nacional, regional, privado) según la escala de los servicios ecosistémicos. Esta flexibilidad permite que las comunidades locales gestionen directamente áreas con beneficios locales, mientras que las de mayor relevancia territorial siguen bajo responsabilidad regional o nacional. Las áreas existentes mantienen sus arreglos actuales de gobernanza y gestión.
 :::
 ::::
 

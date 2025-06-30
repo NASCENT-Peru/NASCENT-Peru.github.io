@@ -4,17 +4,17 @@ bibliography: references.bib
 
 # Business as Usual
 
-::: {.row .intro_es}
+::: {.row .intro}
 El paisaje del Perú en 2060 es emblemático del impulso por el desarrollo económico a expensas de mejorar la sostenibilidad ambiental. La agricultura y las actividades extractivas se han expandido hasta dominar gran parte del país, exacerbando las tendencias indeseables de uso y ocupación del suelo, como la deforestación y la expansión urbana. Los impactos del cambio climático sobre la seguridad hídrica y alimentaria impulsan la migración de la población desde las regiones montañosas hacia las zonas costeras y amazónicas.
 :::
 
-::: {.row .visual_es}
+::: {.row .visual}
 ![](../img/scenario_images/bau.jpg){style="border-radius: 8px;" fig-align="center" height="400"}
 :::
 
 ------------------------------------------------------------------------
 
-::: {.row .characteristics_es}
+::: {.row .characteristics}
 ### Características
 
 <h4>
@@ -64,13 +64,13 @@ El paisaje del Perú en 2060 es emblemático del impulso por el desarrollo econ�
 
 :::
 
-::: {.row .themes_es}
+::: {.row .themes}
 ![](../img/wordclouds/Business_as_usual.png)
 :::
 
 ------------------------------------------------------------------------
 
-:::: {.row .narrative_es}
+:::: {.row .narrative}
 ::: collapsible-text
 ### Cambio de valores y estilos de vida
 
