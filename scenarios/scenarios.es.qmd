@@ -1,5 +1,5 @@
 ---
-title: "Scenarios"
+title: "Escenarios"
 title-block-banner: "#f6f8fa"
 format: 
   html:
