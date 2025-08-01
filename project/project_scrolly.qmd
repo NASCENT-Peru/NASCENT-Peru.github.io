@@ -1,0 +1,459 @@
+---
+title: Project
+subtitle: "Details of the projects research method"
+comments: false
+title-block-banner: "#f6f8fa"
+format: 
+  closeread-html:
+    fontsize: 1.1rem
+    # remove-header-space: true
+    cr-style:
+      narrative-background-color-overlay: "rgb(255,255,255,0.75)"
+      narrative-font-size: 1.4rem
+      narrative-text-color-overlay: "#000000"
+      narrative-background-color-sidebar: "#f6f8fa"
+      narrative-text-color-sidebar: "#000000"
+      section-background-color: "#ffffff"
+      narrative-overlay-max-width: "700px"
+---
+::::{.cr-section}
+This is an overview of all work packages of the **<span style="color:#146973;">NASCENT-Peru</span>** project, which aims to create and simulate **normative, nature-positive scenarios for future landscape development in Peru**, assess their ecological and economic impacts, and communicate the results to relevant stakeholders.
+@cr-complete-workflow
+
+The first step is the creation of the normative, nature-positive scenarios. But, before we discuss the scenario creation we want to clarify what is ment with "**normative scenarios**". 
+@cr-complete-workflow_scenario_highlight
+
+:::{#cr-complete-workflow}
+![](../img/scenario_construction.png){fig-align="center" width="70%"style="margin-left: 30px;"}
+![](../img/modelling.png){fig-align="center" width="70%"style="margin-left: 30px;"}
+![](../img/economic_analysis.png){fig-align="center" width="62%"style="margin-left: 30px;"}
+![](../img/communication.png){fig-align="right" width="70%"style="margin-left: 30px;"}
+:::
+
+:::{#cr-complete-workflow_scenario_highlight}
+![](../img/scenario_construction.png){fig-align="center" width="70%"style="margin-left: 30px;"}
+![](../img/modelling.png){fig-align="center" width="70%"style="opacity: 0.1;margin-left: 30px;"}
+![](../img/economic_analysis.png){fig-align="center" width="62%"style="opacity: 0.1;margin-left: 30px;"}
+![](../img/communication.png){fig-align="center" width="70%"style="opacity: 0.1;margin-left: 30px;"}
+:::
+::::
+
+::::{.cr-section}
+The best way to understand **normative scenario** analysis is to contrast it with the the type of scenario analysis we commonly see which is **exploratory scenario** analysis.
+Both types begin by analysing the historical trend for a given measure of interest and then use that trend to predict how the measure will change from the present into the future. @cr-exploratory_vs_normative
+
+**Exploratory scenario** analysis illustrates the range of possible future outcomes. It typically centres on a business-as-usual scenario extrapolated from current trends. Alternative futures are then defined as small deviations from that baseline. Such scenarios are often devised in a ‘top-down’ manner by experts. As a result, they offer no insight into the societal desirability of their outcomes.  [@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="45%, 20%"}
+
+<!--
+pan to 45%, 20%
+-->
+By contrast, **normative scenarios** are centred around specific desirable future endpoints. Rather than predicting the single most likely future, they open up space for deep, transformative change. They are typically devised with stakeholder participation, which allows them to incorporate diverse value perspectives. This participation can engage and mobilise actors and encourage stewardship in realising the scenarios’ goals. Therefore, we aimed to create normative scenarios in **<span style="color:#146973;">NASCENT-Peru</span>**. [@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="-45%, 20%"}
+
+
+:::{#cr-exploratory_vs_normative}
+![](../img/exploratory_vs_normative.png){fig-align="center" width="80%"}
+:::
+::::
+
+::::{.cr-section}
+
+The workflow for creating normative nature-positive scenarios comprises three main steps: <br><br>
+1.	**Conducting workshops** with relevant stakeholders to discuss future landscape development in Peru. <br><br>
+2.	**Drafting future-development narratives** based on the workshop outcomes. <br><br>
+3.	**Quantifying narrative content** using scientific literature to generate inputs for our computer models. @cr-scenario_creation-workflow
+
+
+So let's start with the **workshops**.
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-15%, 90%"}
+
+<!---
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-45%, 110%"}
+--->
+
+In May and June of 2024 we conducted a series of **5 workshops** in different regions across Peru. We started off with a **national workshop** in Lima followed by **four regional workshops** in Piura, Puerto Maldonado, Huaraz and Tarapoto. @cr-workshop_regions
+
+@cr-workshop_regions_national
+
+At the national workshop in Lima, we invited participants to: <br><br>
+1.	**Identify** the key **drivers** shaping Peru’s future landscape. <br><br>
+2.	**Group** those **drivers** into Social, Technological, Ecological, Economic, and Political categories. <br><br>
+3.	**Rank** each **driver** by its anticipated impact. @cr-national_workshop_group
+
+
+As the bubble chart shows, the Political category (blue bubbles) leads in perceived importance (higher on the vertical axis). Its principal drivers are **land-use planning policies** (zoning and land ownership), **weakness of government institutions** (insufficient administrative capacity and widespread public distrust), **modifications to forestry law** (concession rules and enforcement mechanisms) and **poor institutional coordination** (overlapping mandates and unclear responsibilities). For the other categories, the single most significant drivers are: <br><br>
+•	Social: **demographic change** (population growth and urbanisation)<br><br>
+•	Technological: **closing the energy gap** (grid extension and reliable supply)<br><br>
+•	Environmental: **infrastructure projects** (roads and dams)<br><br>
+•	Economic: **illegal economic activities** (informal mining and logging) @cr-driver_importance
+
+
+Following the national workshop, we held **four regional workshops** and applied the Three Horizons Framework to guide discussions about the landscape across different temporal states. @cr-workshop_regions_regional
+
+
+The Three Horizons Framework divides system change into three time-based horizons: <br><br>
+•	Horizon 1: the established, **current state** of the system <br><br>
+•	Horizon 2: the **emerging** **drivers** or **actions** that reinforce or challenge that state <br><br>
+•	Horizon 3: the aspirational, long-term **future state** <br><br>
+We adapted this framework for our workshops by defining Horizon 1 as each region’s **current landscape**, Horizon 2 as the **national drivers** identified in Lima that could support or impede change, and Horizon 3 as the **desirable future landscape** envisioned by participants. @cr-3horizons_regional
+
+
+In each of the regional workshops, participants: <br><br>
+1.	Characterised the **current landscape** in their region. <br><br>
+2.	Defined a **desirable future landscape**. <br><br>
+3.	**Evaluated the national drivers**, judging for each whether it would support or impede the transition from the current landscape to the desirable future landscape.
+@cr-regional_workshop_impressions
+
+Across all five workshops, **103 participants** from more than **85 organisations** took part. They represented five stakeholder groups: <br><br>
+•	Academia <br><br>
+•	Government officials <br><br>
+•	NGOs/CBOs <br><br>
+•	Private sector <br><br>
+•	Practitioners @cr-participants_overview
+
+Together, the stakeholders identified over 700 statements about desirable future landscapes in Peru. Each regional workshop highlighted a clear priority. In the **Andean Rainforest**, participants prioritised **agricultural production** through industrialisation and technological innovation. In the **Amazon Basin**, participants focused on **reducing** mercury, plastics and other **contaminants** in rivers and soils. In the **Andean Highlands**, participants emphasised **improved water management** by capturing rainy season flows for year-round supply. On the **Coast**, participants highlighted **biodiversity connectivity** through expanded protected areas and alignment of economic planning with ecological zoning. @cr-regional_highlights
+
+The regional workshops also revealed **differing perspectives** on whether certain drivers would support or hinder progress towards the desired future landscapes. The **drivers highlighted in bold** in the graphic are those where the workshops expressed particularly divergent views regarding their influence on achieving regional visions. @cr-regional_driver_variability
+
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-15%, 90%"}
+
+The next step was to synthesise the information collected from all workshops into coherent **narratives**. @cr-scenario_creation-workflow
+
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-45%, 0%"}
+
+We **translated** all statements collected from the workshops into English, then **extracted** those describing desirable landscape characteristics. These statements were **arranged** systematically and **combined** where appropriate, resulting in a final set of **60 unique statements**. @cr-statement_processing
+
+To prepare for narrative development, we organised the 60 unique statements into thematic groups using the Nature Futures Framework (**NFF**), developed by the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES). The **NFF** maps positive visions of human–nature relationships along **three value axes**: <br><br>
+**Nature for Nature**: viewing nature as having intrinsic value and deserving respect regardless of human benefit. <br><br>
+**Nature for Society**: recognising the instrumental value of nature in providing ecosystem services that support people. <br><br>
+**Nature as Culture**: valuing the relational connections between people and nature through culture, identity, and traditional practices. @cr-NFF
+
+In the next step, we conducted an internal exercise within our research group, in which we individually positioned **all statements within** the triangular space defined by the **NFF**. @cr-NFF_app
+
+A subsequent k-means clustering was conducted to group the statements objectively. By calculating the silhouette score across 1000 runs per cluster number (k), we found that the **optimal number of clusters was three**. We therefore assigned each statement to one of three groups, each aligned with one axis of the Nature Futures Framework. @cr-silhouette_score
+
+After assigning each statement to one of these groups, we assessed the level of agreement among individual placements. In the image, the **<span style="color:#f1b1aa;">red dots</span>** represent these individual responses, while the **black dot** indicates the average position. @cr-NFF_agree For some statements, there was strong agreement among individual responses regarding their placement. 
+
+For other statements, there was more disagreement. In those cases, we discussed the positions as a group to agree upon a final placement. @cr-NFF_disagree
+
+In the end, each statement was assigned to one of the three axes of the Nature Futures Framework. Statements that corresponded to more than one value perspective are situated between the axes in the image. This grouping formed the foundation for developing the scenario narratives. @cr-NFF_clustered_results
+
+We **summarised similar drivers** from the national workshop into single, broader drivers where appropriate. In the next step, we **linked each statement to the relevant drivers** to describe how future landscape change could unfold in relation to each driver under each scenario. In addition to the three normative scenarios, each linked to one axis of the Nature Futures Framework, we also **developed an exploratory Business as Usual scenario** for contrast. All linked **statements were further enriched** with information from an extensive literature review. @cr-narrative_creation
+
+
+Finally, we developed the narratives for each scenario through an **iterative writing process**, incorporating two rounds of feedback to ensure clarity and coherence. In each narrative, we systematically integrated the grouped statements, linked drivers, and insights from the literature review, **grounding every scenario** in both stakeholder perspectives and scientific evidence. @cr-scenario_narratives
+
+:::{#cr-scenario_creation-workflow}
+![](../img/scenario_creation.png){fig-align="center" width="80%"}
+:::
+
+:::{#cr-workshop_regions}
+![](../img/Workshop_map.png){fig-align="center" width="70%"}
+:::
+
+:::{#cr-workshop_regions_national}
+![](../img/Workshop_map_national.png){fig-align="center" width="70%"}
+:::
+
+
+::: {#cr-national_workshop_group}
+![](../img/National_workshop_group.png){fig-align="center" width="70%"}
+:::
+
+:::{#cr-workshop_regions_regional}
+![](../img/Workshop_map_regional.png){fig-align="center" width="70%"}
+:::
+
+:::{#cr-driver_importance}
+![](../img/Driver_importance_bubble_ENG.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-3horizons_regional}
+![](../img/3horizons_regional_workshop_en.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-regional_workshop_impressions}
+![](../img/regional_workshop_impressions.png){fig-align="center" width="90%"}
+:::
+
+
+
+:::{#cr-participants_overview}
+![](../img/participants_overview_EN.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-regional_highlights}
+![](../img/regional_workshops_highlights_EN.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-regional_driver_variability}
+![](../img/regional_driver_variability_EN.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-statement_processing}
+![](../img/statement_processing_EN.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-NFF}
+![](../img/naturefutureframework.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-NFF_app}
+![](../img/NFF_app_EN.png){fig-align="center" width="90%"}
+:::
+
+
+
+:::{#cr-silhouette_score}
+![](../img/mean_silhouette_unique_statements.png){fig-align="center" width="75%"}
+:::
+
+:::{#cr-NFF_agree}
+![](../img/review_agreement.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-NFF_disagree}
+![](../img/review_disagreement.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-NFF_clustered_results}
+![](../img/final_clustered_results.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-narrative_creation}
+![](../img/narrative_creation.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-scenario_narratives}
+![](../img/scenario_narratives_EN.png){fig-align="center" width="90%"}
+:::
+
+::::
+
+## Overarching steps
+
+
+
+::: {style="text-align: center"}
+[![](../img/scenario_icon.svg) [Create Normative Scenarios:]{.h3 style="color: #000;"} [Nature-positive future landscape development]{style="color: #000;"}](#sec-scenario_creation)
+:::
+
+![](../img/scenario_construction.png){fig-align="center" width="70%"}
+
+![](../img/modelling.png){fig-align="center" width="70%"}
+
+![](../img/economic_analysis.png){fig-align="center" width="65%"}
+
+![](../img/communication.png){fig-align="center" width="70%"}
+
+<!-- <img src="../img/workflow_NASCENT_Peru.png" usemap="#image-map" class="wf_map"> -->
+
+<!-- <map name="image-map"> -->
+
+<!--     <area target="" alt="Workshops" title="Workshops" href="#workshops" coords="8.3%,25%,8%" shape="circle"> -->
+
+<!--     <area target="" alt="Narratives" title="Narratives" href="#narratives" coords="25%,75%,8%" shape="circle"> -->
+
+<!--     <area target="" alt="Quantification" title="Quantification" href="#quantification" coords="41.7%,25%,8%" shape="circle"> -->
+
+<!--     <area target="" alt="Simulations" title="Simulations" href="#simulations" coords="58.3%,75%,8%" shape="circle"> -->
+
+<!--     <area target="" alt="Economic analysis" title="Economic analysis" href="#economic-analysis" coords="75%,25%,8%" shape="circle"> -->
+
+<!--     <area target="" alt="Communication" title="Communication" href="#communication" coords="91.7%,75%,8%" shape="circle"> -->
+
+<!-- </map> -->
+
+<!-- <script> -->
+
+<!-- function updateMapCoords() { -->
+
+<!--     const img = document.querySelector('.wf_map'); -->
+
+<!--     if (!img) return; -->
+
+<!--     const width = img.offsetWidth; -->
+
+<!--     const height = img.offsetHeight; -->
+
+<!--     const areasPercent = [ -->
+
+<!--         {x: 8.3, y: 25, r: 28}, // Workshops -->
+
+<!--         {x: 25, y: 75, r: 28}, // Narratives -->
+
+<!--         {x: 41.7, y: 25, r: 28}, // Workshops -->
+
+<!--         {x: 58.3, y: 75, r: 28}, // Narratives -->
+
+<!--         {x: 75, y: 25, r: 28}, // Workshops -->
+
+<!--         {x: 91.7, y: 75, r: 28}, // Narratives -->
+
+<!--         // Add the rest of your areas here -->
+
+<!--     ]; -->
+
+<!--     const areas = document.querySelectorAll('area'); -->
+
+<!--     areas.forEach((area, index) => { -->
+
+<!--         if (index >= areasPercent.length) return; -->
+
+<!--         const ap = areasPercent[index]; -->
+
+<!--         const coords = [ -->
+
+<!--             Math.round(ap.x * width / 100), -->
+
+<!--             Math.round(ap.y * height / 100), -->
+
+<!--             Math.round(ap.r * Math.min(width, height) / 100) // Assuming radius scales with the smaller of width or height -->
+
+<!--         ]; -->
+
+<!--         area.coords = coords.join(','); -->
+
+<!--     }); -->
+
+<!-- } -->
+
+<!-- window.onload = updateMapCoords; -->
+
+<!-- window.onresize = updateMapCoords; -->
+
+<!-- </script> -->
+
+## Scenario creation {#sec-scenario_creation}
+
+![](../img/scenario_creation.png){fig-align="center" width="80%"}
+
+The project's participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.
+
+#### Workshop Locations
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(leaflet)
+library(fontawesome) #devtools::install_github("rstudio/fontawesome")
+library(mapview)
+
+
+national <- makeAwesomeIcon(text = fa("people-roof"),
+                              iconColor = 'white',
+                              library = 'fa',
+                              markerColor = 'darkgreen')
+  
+regional <- makeAwesomeIcon(text = fa("people-roof"),
+                              iconColor = 'white',
+                              library = 'fa',
+                              markerColor = 'lightgreen')
+
+
+#uncomment for saving map
+#Workshop_locations <- 
+  leaflet(options = leafletOptions(zoomControl = FALSE,
+                                 attributionControl=FALSE)) %>%
+  #addProviderTiles(providers$Esri.WorldTerrain) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addAwesomeMarkers(lng=-77.043,
+                    lat=-12.038,
+                    icon= national,
+                    popup="Lima, National Workshop 9th May",
+                    label = "Lima, National Workshop, 9th May",
+                    labelOptions = labelOptions(#noHide = TRUE,
+                                                direction = "bottom",
+                                                style = list("color" = "black",
+                                                "font-family" = "Roboto",
+                                                "font-style" = "italic",
+                                                "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                                "font-size" = "12px",
+                                                "border-color" = "rgba(0,0,0,0.5)")))%>%
+  addAwesomeMarkers(lng=-69.189, lat=-12.594, icon = regional, popup="Puerto Maldonado, Regional Workshop", label = "Puerto Maldonado Regional Workshop 28th May",
+                    labelOptions = labelOptions(#noHide = TRUE,
+                                                direction = "bottom",
+                                                style = list("color" = "black",
+                                                "font-family" = "Roboto",
+                                                "font-style" = "italic",
+                                                "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                                "font-size" = "12px",
+                                                "border-color" = "rgba(0,0,0,0.5)")))%>%
+  addAwesomeMarkers(lng=-77.529, lat=-9.526, icon = regional, popup="Huaraz, Regional Workshop", label = "Huaraz, Regional Workshop 4th June",
+                    labelOptions = labelOptions(#noHide = TRUE,
+                                                direction = "bottom",
+                                                style = list("color" = "black",
+                                                "font-family" = "Roboto",
+                                                "font-style" = "italic",
+                                                "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                                "font-size" = "12px",
+                                                "border-color" = "rgba(0,0,0,0.5)")))%>%
+  addAwesomeMarkers(lng=-76.370, lat=-6.485, icon = regional, popup="Tarapoto, Regional Workshop", label = "Tarapoto, Regional Workshop 10th June",
+                    labelOptions = labelOptions(#noHide = TRUE,
+                                                direction = "bottom",
+                                                style = list("color" = "black",
+                                                "font-family" = "Roboto",
+                                                "font-style" = "italic",
+                                                "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                                "font-size" = "12px",
+                                                "border-color" = "rgba(0,0,0,0.5)")))%>%
+  addAwesomeMarkers(lng=-80.63282, lat=-5.19449, icon = regional, popup="Piura, Regional Workshop", label="Piura, Regional Workshop 20th May",
+                    labelOptions = labelOptions(#noHide = TRUE,
+                                                direction = "bottom",
+                                                style = list("color" = "black",
+                                                "font-family" = "Roboto",
+                                                "font-style" = "italic",
+                                                "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                                "font-size" = "12px",
+                                                "border-color" = "rgba(0,0,0,0.5)")))
+
+#save as html
+# mapview::mapshot2(x= Workshop_locations,
+#                   url =  "img/Workshop_locations.html",
+#                   remove_controls = NULL,
+#                   cliprect = "viewport",
+#                   selfcontained = TRUE)
+
+
+# #save image
+# mapview::mapshot2(x= Workshop_locations,
+#                   file = "img/workshop_locations.png",
+#                   remove_controls = TRUE,
+#                   #vwidth=1800,
+#                   #vheight=950,
+#                   #cliprect = "viewport",
+#                   cliprect = c(40, 30, 620, 875), #ALL OF PERU
+#                   expand= c(400,0,0,700),
+#                   #,selfcontained = TRUE
+#                   )
+
+```
+
+```{=html}
+<!-- ### Timeline
+<img data-quarto-disable-processing="true" src="../img/Timeline.png" style="height: 150%; width: 150%;);"/> -->
+```
+
+<!-- ## Narratives: {#narratives} -->
+
+<!-- In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of 'business as usual' and negative scenarios, while the normative scenarios consist of nature-positive scenarios. -->
+
+<!-- ## Quantification: {#quantification} -->
+
+<!-- The rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers. -->
+
+<!-- ## Simulations: {#simulations} -->
+
+<!-- During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors. -->
+
+<!-- ## Economic Analysis: {#economic-analysis} -->
+
+<!-- The economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES). -->
+
+## Communication: {#communication}
+
+As part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.
+
+<!-- The workflow used in NASCENT-Peru is based on the methodology used in -->
+
+<!-- <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a><br> -->
