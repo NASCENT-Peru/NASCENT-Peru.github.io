@@ -90,10 +90,21 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="../project/project.html" aria-current="page"> 
 <span class="menu-text">Proyecto</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../scenarios/scenarios.html"> 
-<span class="menu-text">Escenarios</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outputs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outputs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outputs">
+<li>
+    <a class="dropdown-item" href="../project/project_scrolly.html">
+ <span class="dropdown-text">A walkthrough of the creation of the NASCENT-Peru scenarios</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../scenarios/scenarios.html">
+ <span class="dropdown-text">Escenarios</span></a>
+  </li>  
+    </ul>
+</li>
   <li class="nav-item">
     <a class="nav-link" href="../impressions/impressions.html"> 
 <span class="menu-text">Impresiones</span></a>
@@ -179,67 +190,159 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><p>El siguiente gráfico muestra los pasos del flujo de trabajo del proyecto NASCENT-Peru para crear y simular escenarios normativos, positivos para la naturaleza, para el futuro desarrollo del paisaje en Perú. Haga clic en cada paso para obtener más información.</p>
-<p><img src="../img/Worklfow_Nascent_es.png" usemap="#image-map" class="wf_map"></p>
-<map name="image-map"><area target="" alt="Talleres" title="Talleres" href="#workshops" coords="8.3%,25%,8%" shape="circle">
-<area target="" alt="Narrativas" title="Narrativas" href="#narratives" coords="25%,75%,8%" shape="circle">
-<area target="" alt="Cuantificación" title="Cuantificación" href="#quantification" coords="41.7%,25%,8%" shape="circle">
-<area target="" alt="Simulaciones" title="Simulaciones" href="#simulations" coords="58.3%,75%,8%" shape="circle">
-<area target="" alt="Análisis Económico" title="Análisis Económico" href="#economic-analysis" coords="75%,25%,8%" shape="circle">
-<area target="" alt="Comunicación" title="Comunicación" href="#communication" coords="91.7%,75%,8%" shape="circle"></map><script>
-function updateMapCoords() {
-    const img = document.querySelector('.wf_map');
-    if (!img) return;
+<style>
+  #markmap {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 500px;
+    width: 100%;
+    background: white;
+  }
+  #markmap svg {
+    width: 100%;
+    height: 100%;
+  }
+  #markmap img {
+    padding-right: 8px;
+    vertical-align: middle;
+  }
+  #content {
+    margin-top: 50px; /* Reduced margin */
+    padding: 1rem;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Use scroll-padding-top on the root element */
+  html {
+    scroll-padding-top: 520px; /* 500px markmap height + 20px buffer */
+  }
+  
+  /* Alternative approach: create invisible anchor targets */
+  #content h2[id],
+  #content h3[id] {
+    position: relative;
+  }
+  
+  #content h2[id]::before,
+  #content h3[id]::before {
+    content: "";
+    display: block;
+    height: 520px;
+    margin-top: -520px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  /* Customize markmap link hover colors to match text colors */
+  #markmap .mm-link:hover {
+    stroke: inherit !important;
+    opacity: 0.8;
+  }
+  
+  #markmap .mm-node:hover .mm-link {
+    stroke: inherit !important;
+    opacity: 0.8;
+  }
+  
+  /* Make sure text links in markmap inherit their color on hover and remove underline */
+  #markmap a {
+    text-decoration: none !important;
+  }
+  
+  #markmap a:hover {
+    color: inherit !important;
+    opacity: 0.8;
+    text-decoration: none !important;
+  }
+  
+  /* Remove underlines from all states */
+  #markmap a:link,
+  #markmap a:visited,
+  #markmap a:active {
+    text-decoration: none !important;
+  }
+</style>
+<svg id="markmap"></svg><script src="https://cdn.jsdelivr.net/npm/d3@7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.15"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view"></script><script type="module">
+  const ROOT_COLOR = "#166F75";
+  const BRANCH_COLORS = ["#42792E", "#6A8D29", "#04735B", "#3A8B95"];
 
-    const width = img.offsetWidth;
-    const height = img.offsetHeight;
+  const markdown = String.raw`
+# <img src="https://nascent-peru.github.io/img/NASCENT_logo_horizontal_upscayl.png" alt="Alt Text" width="400" /><span style="font-weight:bold; color:${ROOT_COLOR};"></span>
+## <a href="#scenario-creation"><img src="../img/scenario_creation.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Create Normative Scenarios</span></a>
+- <a href="#workshops"><img src="../img/workshop_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Talleres</span>
+- <a href="#narratives"><img src="../img/narratives_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Narrativas</span>
+- <a href="#quantification"><img src="../img/quantification_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Cuantificación</span>
+## <a href="#scenario-modeling"><img src="../img/modelling_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Impactos del escenario modelo</span></a>
+- <a href="#lulcc"><img src="../img/lulc_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};"> Cambio de uso del suelo</span>
+- <a href="#es-modelling"><img src="../img/es_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Servicios de los ecosistemas</span>
+- <a href="#biodiversity-modelling"><img src="../img/biodiversity_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Biodiversidad</span>
+## <a href="#economic-analysis"><img src="../img/economic_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[2]};">Resumir Impactos Ambientales</span></a>
+## <a href="#communication"><img src="../img/communication_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[3]};">Comunicación y Difusión</span></a>
+`;
 
-    const areasPercent = [
-        {x: 8.3, y: 25, r: 28}, // Workshops
-        {x: 25, y: 75, r: 28}, // Narratives
-        {x: 41.7, y: 25, r: 28}, // Quantification
-        {x: 58.3, y: 75, r: 28}, // Simulations
-        {x: 75, y: 25, r: 28}, // Economic analysis
-        {x: 91.7, y: 75, r: 28}, // Communication
-    ];
+  const transformer = new window.markmap.Transformer();
+  const { root } = transformer.transform(markdown);
 
-    const areas = document.querySelectorAll('area');
-    areas.forEach((area, index) => {
-        if (index >= areasPercent.length) return;
-        const ap = areasPercent[index];
-        const coords = [
-            Math.round(ap.x * width / 100),
-            Math.round(ap.y * height / 100),
-            Math.round(ap.r * Math.min(width, height) / 100) // Assuming radius scales with the smaller of width or height
-        ];
-        area.coords = coords.join(',');
-    });
-}
+  // Color the root node
+  root._subtreeColor = ROOT_COLOR;
 
-window.onload = updateMapCoords;
-window.onresize = updateMapCoords;
-</script><section id="workshops" class="level3"><h3 class="anchored" data-anchor-id="workshops">1. Talleres:</h3>
+  // Assign each top-level branch its own color
+  root.children.forEach((child, index) => {
+    const branchColor = BRANCH_COLORS[index % BRANCH_COLORS.length];
+    const markSubtree = (node) => {
+      node._subtreeColor = branchColor;
+      if (node.children) node.children.forEach(markSubtree);
+    };
+    markSubtree(child);
+  });
+
+  window.markmap.Markmap.create("#markmap", {
+    initialExpandLevel: 2,
+    autoFit: true,
+    zoom: false,
+    pan: false,
+    color: node => node._subtreeColor || "#222"
+  }, root);
+</script><div id="content">
+<section id="scenario-creation" class="level2"><h2 class="anchored" data-anchor-id="scenario-creation">Create Normative Scenarios</h2>
+<section id="workshops" class="level3"><h3 class="anchored" data-anchor-id="workshops">Talleres</h3>
 <p>El proceso participativo del proyecto incluye una serie de talleres, tanto nacionales como regionales, que reúnen a partes interesadas y expertos. El objetivo es identificar en colaboración los aspectos deseables e indeseables del futuro cambio paisajístico.</p>
 </section><section id="lugares-de-los-talleres" class="level3"><h3 class="anchored" data-anchor-id="lugares-de-los-talleres">Lugares de los talleres</h3>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-ce6b84aa9bf0c904ae58" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-ce6b84aa9bf0c904ae58">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false,"attributionControl":false},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addAwesomeMarkers","args":[-12.038,-77.04300000000001,{"icon":"home","markerColor":"darkgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Lima, Taller Nacional 9 de Mayo",null,null,null,"Lima, Taller Nacional 9 de Mayo",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-12.594,-69.18899999999999,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Puerto Maldonado, Taller Regional",null,null,null,"Taller Regional de Puerto Maldonado 28 de Mayo",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-9.526,-77.529,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Huaraz, Taller Regional",null,null,null,"Huaraz, Taller Regional 4 de Junio",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-6.485,-76.37,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Tarapoto, Taller Regional",null,null,null,"Tarapoto, Taller Regional 10 de Junio",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-5.19449,-80.63282,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Piura, Taller Regional",null,null,null,"Piura, Taller Regional 20 de Mayo",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]}],"limits":{"lat":[-12.594,-5.19449],"lng":[-80.63282,-69.18899999999999]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-c599e71322fe3a2eb105" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-c599e71322fe3a2eb105">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false,"attributionControl":false},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addAwesomeMarkers","args":[-12.038,-77.04300000000001,{"icon":"home","markerColor":"darkgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Lima, Taller Nacional 9 de Mayo",null,null,null,"Lima, Taller Nacional 9 de Mayo",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-12.594,-69.18899999999999,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Puerto Maldonado, Taller Regional",null,null,null,"Taller Regional de Puerto Maldonado 28 de Mayo",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-9.526,-77.529,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Huaraz, Taller Regional",null,null,null,"Huaraz, Taller Regional 4 de Junio",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-6.485,-76.37,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Tarapoto, Taller Regional",null,null,null,"Tarapoto, Taller Regional 10 de Junio",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-5.19449,-80.63282,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Piura, Taller Regional",null,null,null,"Piura, Taller Regional 20 de Mayo",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]}],"limits":{"lat":[-12.594,-5.19449],"lng":[-80.63282,-69.18899999999999]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-</section><section id="narratives" class="level2"><h2 class="anchored" data-anchor-id="narratives">Narrativas:</h2>
+</section><section id="narratives" class="level3"><h3 class="anchored" data-anchor-id="narratives">Narrativas</h3>
 <p>Además de los talleres, se realiza una encuesta en línea. A partir de la información obtenida en los talleres y la encuesta, se crean escenarios exploratorios y normativos. Los escenarios exploratorios consisten en escenarios negativos y en que todo sigue igual, mientras que los escenarios normativos consisten en escenarios positivos para la naturaleza.</p>
-</section><section id="quantification" class="level2"><h2 class="anchored" data-anchor-id="quantification">Cuantificación:</h2>
+</section><section id="quantification" class="level3"><h3 class="anchored" data-anchor-id="quantification">Cuantificación</h3>
 <p>Las tasas de cambio del uso y la ocupación del suelo (LULCC) se determinan para cada escenario cuantificando las tendencias de los factores socioeconómicos, biofísicos y climáticos.</p>
-</section><section id="simulations" class="level2"><h2 class="anchored" data-anchor-id="simulations">Simulaciones:</h2>
+</section></section><section id="scenario-modeling" class="level2"><h2 class="anchored" data-anchor-id="scenario-modeling">Impactos del escenario modelo</h2>
 <p>Durante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) y la distribución de especies para cada escenario, teniendo en cuenta el futuro Uso y ocupación del Suelo (LULC) como uno de los factores de entrada.</p>
-</section><section id="economic-analysis" class="level2"><h2 class="anchored" data-anchor-id="economic-analysis">Análisis Económico:</h2>
+<section id="lulcc" class="level3"><h3 class="anchored" data-anchor-id="lulcc">Cambio de uso del suelo</h3>
+</section><section id="es-modelling" class="level3"><h3 class="anchored" data-anchor-id="es-modelling">Servicios de los ecosistemas</h3>
+</section><section id="biodiversity-modelling" class="level3"><h3 class="anchored" data-anchor-id="biodiversity-modelling">Biodiversidad</h3>
+</section></section><section id="análisis-económico" class="level2"><h2 class="anchored" data-anchor-id="análisis-económico">Resumir Impactos Ambientales</h2>
 <p>Las características económicas de cada escenario se cuantifican en función del uso y la ocupación del suelo (LULC) y de los servicios ecosistémicos (ES).</p>
-</section><section id="communication" class="level2"><h2 class="anchored" data-anchor-id="communication">Comunicación:</h2>
-<p>Como parte de la metodología del proyecto, se presentarán resultados provisionales para refinar los escenarios. Los resultados finales y los conjuntos de datos se pondrán a disposición del público, contribuyendo así a la base de conocimientos para futuros proyectos.</p>
-<p>El procedimiento utilizado en NASCENT-Perú se basa en la metodología utilizada en <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a><br></p>
+</section><section id="communication" class="level2"><h2 class="anchored" data-anchor-id="communication">Comunicación y Difusión</h2>
+<section id="project-report" class="level3"><h3 class="anchored" data-anchor-id="project-report">Project report</h3>
+<p>Sub pluribus dente, diva illi ac <a href="http://pars.com/postquaminicere">mandata moenia</a> illi, c quam flumina, recessit loca. Abripit Lethaei crines tuae seque cupidine et, erat acres virorum illis.</p>
+<p>Dare nec emittunt induit; parte <em>via criminis solvit</em> ignibus et solio. Sua meliore Crete non cum ignoscite forma; e munere. Ante his galeam serpens. Senemque illa sine solet et oculos pietasque quondam; est aquae, vestem, <strong>in</strong>?</p>
+</section><section id="social-media" class="level3"><h3 class="anchored" data-anchor-id="social-media">Social Media</h3>
+<p>Pyram tum illam armis adflabat. Ait obvius inde sumus tenuissima qui credere sentit <a href="http://me-doleas.com/nonfaciat.php">dextra</a> Cythereiadasque <a href="http://flexit.io/antiquique">levitate</a>. Trachine grata; est rogat lenta pulveris, partimque circumdata, hunc arte postquam, matrisque, mea tamen.</p>
+<p>Spectantur numero; adeundi quaerunt talia sacerdos scribit ferox corpora flumina <strong>urgeturque scilicet misereri</strong> mulcebunt tepida, at vivis pugnandi. Sororum suppositosque armo praecutiunt, de utero cacumine subito salutifera priorum stamina iubentque de tulit vocandus esse! Quoniam Lycii. Lecti laniata; ambo eque quasque, si <strong>uterum cervix</strong>.</p>
+</section><section id="virtual-presentation" class="level3"><h3 class="anchored" data-anchor-id="virtual-presentation">Virtual presentation</h3>
+<p>Sub pluribus dente, diva illi ac</p>
+</section></section>
+</div>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+
+</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();

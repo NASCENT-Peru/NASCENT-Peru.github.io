@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
 <link rel="alternate" hreflang="en" href="https://nascent-peru.github.io/project/project_scrolly.html" />
 <link rel="alternate" hreflang="es" href="https://nascent-peru.github.io/es/project/project_scrolly.es.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.32">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Project – NASCENT-PERU</title>
+<title>A walkthrough of the creation of the NASCENT-Peru scenarios – NASCENT-PERU</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,29 +21,12 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script><script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-9872dd04ae3fb70325af0b26f1f619b6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
-<script src="../site_libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
-<script src="../site_libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
-<script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
-<script id="quarto-search-options" type="application/json">{
+<script src="../site_libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script><script src="../site_libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script><script src="../site_libs/quarto-contrib/closeread-0.1.0/closeread.js"></script><script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -71,43 +52,23 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<style>
+}</script><style>
 
       .quarto-title-block .quarto-title-banner {
         background: #f6f8fa;
       }
 </style>
-<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
-<link href="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet">
-<script src="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
-<link href="../site_libs/fontawesome-4.7.0/font-awesome.min.css" rel="stylesheet">
 <meta cr-debug-mode="false">
 <meta cr-remove-header-space="false">
-
-
 <link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/qmd-lab/closeread/closeread.css">
 </head>
-
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo">
-    </a>
+    <img src="../img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">NASCENT-PERU</span>
     </a>
@@ -118,14 +79,28 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
+<li class="nav-item"><div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> English</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://nascent-peru.github.io/es/project/project_scrolly.html" id="language-link-es">Español</a></li></ul>
+</div></li>
+<li class="nav-item">
     <a class="nav-link" href="../project/project.html"> 
 <span class="menu-text">Project</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../scenarios/scenarios.html"> 
-<span class="menu-text">Scenarios</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outputs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outputs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outputs">
+<li>
+    <a class="dropdown-item" href="../project/project_scrolly.html">
+ <span class="dropdown-text">A walkthrough of the creation of the NASCENT-Peru scenarios</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../scenarios/scenarios.html">
+ <span class="dropdown-text">Scenario narrative explorer</span></a>
+  </li>  
+    </ul>
+</li>
   <li class="nav-item">
     <a class="nav-link" href="../impressions/impressions.html"> 
 <span class="menu-text">Impressions</span></a>
@@ -138,8 +113,8 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-info" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Info</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-info">    
-        <li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-info">
+<li>
     <a class="dropdown-item" href="../about/team.html">
  <span class="dropdown-text">Team</span></a>
   </li>  
@@ -152,10 +127,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Contributers</span></a>
   </li>  
     </ul>
-  </li>
+</li>
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
     <a class="nav-link" href="https://github.com/blenback/NASCENT-Peru"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -185,18 +160,13 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <h1 class="title">Project</h1>
-            <p class="subtitle lead">Details of the projects research method</p>
+      <h1 class="title">A walkthrough of the creation of the NASCENT-Peru scenarios</h1>
                       </div>
   </div>
     
@@ -214,25 +184,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
-      <!-- user-provided yaml closeread style options -->
-      <style>
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content"><!-- user-provided yaml closeread style options --><style>
         :root {
-          --cr-narrative-overlay-max-width: 700px;
---cr-narrative-text-color-sidebar: #000000;
---cr-narrative-text-color-overlay: #000000;
---cr-narrative-background-color-overlay: rgb(255,255,255,0.75);
+          --cr-narrative-background-color-overlay: rgb(255,255,255,0.75);
 --cr-section-background-color: #ffffff;
---cr-narrative-font-size: 1.4rem;
+--cr-narrative-text-color-sidebar: #000000;
 --cr-narrative-background-color-sidebar: #f6f8fa;
+--cr-narrative-text-color-overlay: #000000;
+--cr-narrative-font-size: 1.4rem;
+--cr-narrative-overlay-max-width: 700px;
         }
       </style>
-    
-
-
-
-
-
 <div class="cr-section cr-column-screen sidebar-left">
 <div class="narrative-col">
 <div class="trigger new-trigger" data-focus-on="cr-complete-workflow">
@@ -249,10 +211,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="sticky-col">
 <div class="sticky-col-stack">
 <div id="cr-complete-workflow" class="sticky">
-<p><img src="../img/scenario_construction.png" class="img-fluid quarto-figure quarto-figure-center" style="margin-left: 30px;;width:70.0%"> <img src="../img/modelling.png" class="img-fluid quarto-figure quarto-figure-center" style="margin-left: 30px;;width:70.0%"> <img src="../img/economic_analysis.png" class="img-fluid quarto-figure quarto-figure-center" style="margin-left: 30px;;width:62.0%"> <img src="../img/communication.png" class="img-fluid quarto-figure quarto-figure-right" style="margin-left: 30px;;width:70.0%"></p>
+<p><img src="../img/scenario_construction.png" class="img-fluid quarto-figure quarto-figure-center" style="margin-left: 30px;;width:70.0%"><img src="../img/modelling.png" class="img-fluid quarto-figure quarto-figure-center" style="margin-left: 30px;;width:70.0%"><img src="../img/economic_analysis.png" class="img-fluid quarto-figure quarto-figure-center" style="margin-left: 30px;;width:62.0%"><img src="../img/communication.png" class="img-fluid quarto-figure quarto-figure-right" style="margin-left: 30px;;width:70.0%"></p>
 </div>
 <div id="cr-complete-workflow_scenario_highlight" class="sticky">
-<p><img src="../img/scenario_construction.png" class="img-fluid quarto-figure quarto-figure-center" style="margin-left: 30px;;width:70.0%"> <img src="../img/modelling.png" class="img-fluid quarto-figure quarto-figure-center" style="opacity: 0.1;margin-left: 30px;;width:70.0%"> <img src="../img/economic_analysis.png" class="img-fluid quarto-figure quarto-figure-center" style="opacity: 0.1;margin-left: 30px;;width:62.0%"> <img src="../img/communication.png" class="img-fluid quarto-figure quarto-figure-center" style="opacity: 0.1;margin-left: 30px;;width:70.0%"></p>
+<p><img src="../img/scenario_construction.png" class="img-fluid quarto-figure quarto-figure-center" style="margin-left: 30px;;width:70.0%"><img src="../img/modelling.png" class="img-fluid quarto-figure quarto-figure-center" style="opacity: 0.1;margin-left: 30px;;width:70.0%"><img src="../img/economic_analysis.png" class="img-fluid quarto-figure quarto-figure-center" style="opacity: 0.1;margin-left: 30px;;width:62.0%"><img src="../img/communication.png" class="img-fluid quarto-figure quarto-figure-center" style="opacity: 0.1;margin-left: 30px;;width:70.0%"></p>
 </div>
 </div>
 </div>
@@ -286,8 +248,7 @@ pan to 45%, 20%
 <div class="sticky-col-stack">
 <div id="cr-exploratory_vs_normative" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/exploratory_vs_normative.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figure class="figure"><p><img src="../img/exploratory_vs_normative.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
@@ -385,7 +346,7 @@ pan to 45%, 20%
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-NFF">
 <div class="narrative">
-<p>To prepare for narrative development, we organised the 60 unique statements into thematic groups using the Nature Futures Framework (<strong>NFF</strong>), developed by the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES). The <strong>NFF</strong> maps positive visions of human–nature relationships along <strong>three value axes</strong>: <br><br> <strong>Nature for Nature</strong>: viewing nature as having intrinsic value and deserving respect regardless of human benefit. <br><br> <strong>Nature for Society</strong>: recognising the instrumental value of nature in providing ecosystem services that support people. <br><br> <strong>Nature as Culture</strong>: valuing the relational connections between people and nature through culture, identity, and traditional practices.</p>
+<p>To prepare for narrative development, we organised the 60 unique statements into thematic groups using the Nature Futures Framework (<strong>NFF</strong>), developed by the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES). The <strong>NFF</strong> maps positive visions of human–nature relationships along <strong>three value axes</strong>: <br><br><strong>Nature for Nature</strong>: viewing nature as having intrinsic value and deserving respect regardless of human benefit. <br><br><strong>Nature for Society</strong>: recognising the instrumental value of nature in providing ecosystem services that support people. <br><br><strong>Nature as Culture</strong>: valuing the relational connections between people and nature through culture, identity, and traditional practices.</p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-NFF_app">
@@ -428,251 +389,131 @@ pan to 45%, 20%
 <div class="sticky-col-stack">
 <div id="cr-scenario_creation-workflow" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/scenario_creation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figure class="figure"><p><img src="../img/scenario_creation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-workshop_regions" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/Workshop_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<figure class="figure"><p><img src="../img/Workshop_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-workshop_regions_national" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/Workshop_map_national.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<figure class="figure"><p><img src="../img/Workshop_map_national.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-national_workshop_group" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/National_workshop_group.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<figure class="figure"><p><img src="../img/National_workshop_group.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-workshop_regions_regional" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/Workshop_map_regional.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<figure class="figure"><p><img src="../img/Workshop_map_regional.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-driver_importance" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/Driver_importance_bubble_ENG.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/Driver_importance_bubble_ENG.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-3horizons_regional" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/3horizons_regional_workshop_en.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/3horizons_regional_workshop_en.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-regional_workshop_impressions" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/regional_workshop_impressions.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/regional_workshop_impressions.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-participants_overview" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/participants_overview_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/participants_overview_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-regional_highlights" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/regional_workshops_highlights_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/regional_workshops_highlights_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-regional_driver_variability" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/regional_driver_variability_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/regional_driver_variability_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-statement_processing" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/statement_processing_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/statement_processing_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-NFF" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/naturefutureframework.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/naturefutureframework.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-NFF_app" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/NFF_app_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/NFF_app_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-silhouette_score" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/mean_silhouette_unique_statements.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+<figure class="figure"><p><img src="../img/mean_silhouette_unique_statements.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-NFF_agree" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/review_agreement.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/review_agreement.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-NFF_disagree" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/review_disagreement.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/review_disagreement.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-NFF_clustered_results" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/final_clustered_results.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/final_clustered_results.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-narrative_creation" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/narrative_creation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/narrative_creation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 <div id="cr-scenario_narratives" class="sticky">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/scenario_narratives_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<figure class="figure"><p><img src="../img/scenario_narratives_EN.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section id="overarching-steps" class="level2">
-<h2 class="anchored" data-anchor-id="overarching-steps">Overarching steps</h2>
-<div style="text-align: center">
-<p><a href="#sec-scenario_creation"><img src="../img/scenario_icon.svg" class="img-fluid"> <span class="h3" style="color: #000;">Create Normative Scenarios:</span> <span style="color: #000;">Nature-positive future landscape development</span></a></p>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/scenario_construction.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/modelling.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/economic_analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/communication.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<!-- <img src="../img/workflow_NASCENT_Peru.png" usemap="#image-map" class="wf_map"> -->
-<!-- <map name="image-map"> -->
-<!--     <area target="" alt="Workshops" title="Workshops" href="#workshops" coords="8.3%,25%,8%" shape="circle"> -->
-<!--     <area target="" alt="Narratives" title="Narratives" href="#narratives" coords="25%,75%,8%" shape="circle"> -->
-<!--     <area target="" alt="Quantification" title="Quantification" href="#quantification" coords="41.7%,25%,8%" shape="circle"> -->
-<!--     <area target="" alt="Simulations" title="Simulations" href="#simulations" coords="58.3%,75%,8%" shape="circle"> -->
-<!--     <area target="" alt="Economic analysis" title="Economic analysis" href="#economic-analysis" coords="75%,25%,8%" shape="circle"> -->
-<!--     <area target="" alt="Communication" title="Communication" href="#communication" coords="91.7%,75%,8%" shape="circle"> -->
-<!-- </map> -->
-<!-- <script> -->
-<!-- function updateMapCoords() { -->
-<!--     const img = document.querySelector('.wf_map'); -->
-<!--     if (!img) return; -->
-<!--     const width = img.offsetWidth; -->
-<!--     const height = img.offsetHeight; -->
-<!--     const areasPercent = [ -->
-<!--         {x: 8.3, y: 25, r: 28}, // Workshops -->
-<!--         {x: 25, y: 75, r: 28}, // Narratives -->
-<!--         {x: 41.7, y: 25, r: 28}, // Workshops -->
-<!--         {x: 58.3, y: 75, r: 28}, // Narratives -->
-<!--         {x: 75, y: 25, r: 28}, // Workshops -->
-<!--         {x: 91.7, y: 75, r: 28}, // Narratives -->
-<!--         // Add the rest of your areas here -->
-<!--     ]; -->
-<!--     const areas = document.querySelectorAll('area'); -->
-<!--     areas.forEach((area, index) => { -->
-<!--         if (index >= areasPercent.length) return; -->
-<!--         const ap = areasPercent[index]; -->
-<!--         const coords = [ -->
-<!--             Math.round(ap.x * width / 100), -->
-<!--             Math.round(ap.y * height / 100), -->
-<!--             Math.round(ap.r * Math.min(width, height) / 100) // Assuming radius scales with the smaller of width or height -->
-<!--         ]; -->
-<!--         area.coords = coords.join(','); -->
-<!--     }); -->
-<!-- } -->
-<!-- window.onload = updateMapCoords; -->
-<!-- window.onresize = updateMapCoords; -->
-<!-- </script> -->
-</section>
-<section id="sec-scenario_creation" class="level2">
-<h2 class="anchored" data-anchor-id="sec-scenario_creation">Scenario creation</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/scenario_creation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-<p>The project’s participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.</p>
-<section id="workshop-locations" class="level4">
-<h4 class="anchored" data-anchor-id="workshop-locations">Workshop Locations</h4>
-<div class="cell">
-<div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-b94bd5211b6732bafe03" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-b94bd5211b6732bafe03">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false,"attributionControl":false},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addAwesomeMarkers","args":[-12.038,-77.04300000000001,{"icon":"home","markerColor":"darkgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Lima, National Workshop 9th May",null,null,null,"Lima, National Workshop, 9th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-12.594,-69.18899999999999,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Puerto Maldonado, Regional Workshop",null,null,null,"Puerto Maldonado Regional Workshop 28th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-9.526,-77.529,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Huaraz, Regional Workshop",null,null,null,"Huaraz, Regional Workshop 4th June",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-6.485,-76.37,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Tarapoto, Regional Workshop",null,null,null,"Tarapoto, Regional Workshop 10th June",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-5.19449,-80.63282,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Piura, Regional Workshop",null,null,null,"Piura, Regional Workshop 20th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]}],"limits":{"lat":[-12.594,-5.19449],"lng":[-80.63282,-69.18899999999999]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<!-- ### Timeline
-<img data-quarto-disable-processing="true" src="../img/Timeline.png" style="height: 150%; width: 150%;);"/> -->
-<!-- ## Narratives: {#narratives} -->
-<!-- In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of 'business as usual' and negative scenarios, while the normative scenarios consist of nature-positive scenarios. -->
-<!-- ## Quantification: {#quantification} -->
-<!-- The rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers. -->
-<!-- ## Simulations: {#simulations} -->
-<!-- During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors. -->
-<!-- ## Economic Analysis: {#economic-analysis} -->
-<!-- The economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES). -->
-</section>
-</section>
-<section id="communication" class="level2">
-<h2 class="anchored" data-anchor-id="communication">Communication:</h2>
-<p>As part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.</p>
-<!-- The workflow used in NASCENT-Peru is based on the methodology used in -->
-<!-- <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a><br> -->
 
 
-</section>
 
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -1076,4 +917,5 @@ pan to 45%, 20%
 
 
 
-</body></html>
+</body>
+</html>
