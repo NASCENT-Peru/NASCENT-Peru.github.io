@@ -17,7 +17,7 @@ format:
       narrative-overlay-max-width: "700px"
 ---
 <div style="font-size: 1.5rem;">
-Comprender cómo podrían cambiar los paisajes de Perú en el futuro requiere más que ejecutar modelos computacionales. Implica un proceso que reúna a personas con diferentes experiencias, valores y áreas de especialización. En **NASCENT-Peru**, combinamos la participación de las partes interesadas, la evidencia científica y la modelización de escenarios para explorar futuros positivos para la naturaleza y sus posibles implicaciones. El scrollytelling que sigue presenta este proceso paso a paso, desde las primeras ideas compartidas en los talleres hasta los escenarios finales utilizados en nuestras simulaciones. Desplácese hacia abajo para explorar el proceso.
+Comprender cómo podrían cambiar los paisajes de Perú en el futuro requiere más que ejecutar modelos computacionales. Implica un proceso que reúna a personas con diferentes experiencias, valores y áreas de especialización. En **NASCENT-Peru**, combinamos la participación de las partes interesadas, la evidencia científica y la modelización de escenarios para explorar futuros positivos para la naturaleza y sus posibles implicaciones. El scrollytelling que sigue presenta este proceso paso a paso, desde las primeras ideas compartidas en los talleres hasta los escenarios finales utilizados en nuestras simulaciones. **Desplácese hacia abajo para explorar el proceso.**
 </div>
 
 <div style="height: 600px;"></div>
@@ -61,7 +61,7 @@ Por el contrario, los **escenarios normativos** se centran en puntos finales fut
 
 ::::{.cr-section}
 
-El flujo de trabajo para crear escenarios normativos y positivos para la naturaleza consta de tres pasos principales: <br><br>
+En nuestro proyecto el flujo de trabajo para crear escenarios normativos y positivos para la naturaleza consta de tres pasos principales: <br><br>
 1. **Realizar talleres** con las partes interesadas pertinentes para debatir el desarrollo futuro del paisaje en Perú. <br><br>
 2. **Redactar narrativas de desarrollo futuro** basadas en los resultados de los talleres. <br><br> 
 3. **Cuantificar el contenido de las narrativas** utilizando literatura científica para generar insumos para nuestros modelos computacionales.  
@@ -86,10 +86,10 @@ En el taller nacional en Lima, los participantes participaron en una serie de ej
 @cr-national_workshop_group
 
 
-Los resultados de esta clasificación se muestran en el gráfico de burbujas. La categoría <span style="color:#48b5c4;">Política</span> encabeza en cuanto al número de impulsores considerados importantes (más alto en el eje vertical). Sus principales impulsores son **políticas de ordenamiento territorial** (zonificación y tenencia de la tierra), **debilidad de las instituciones gubernamentales** (capacidad administrativa insuficiente y amplia desconfianza pública), **modificaciones a la ley forestal** (normas de concesión y mecanismos de aplicación) y **escasa coordinación institucional** (mandatos superpuestos y responsabilidades poco claras). Para las demás categorías, los impulsores individuales más significativos son: <br><br>
+Los resultados de esta clasificación se muestran en el gráfico de burbujas. La categoría <span style="color:#48b5c4;">Política</span> encabeza en cuanto al número de impulsores considerados importantes (más alto en el eje vertical). Sus principales impulsores son **políticas de ordenamiento territorial** (zonificación y tenencia de la tierra), **debilidad de las instituciones gubernamentales** (capacidad administrativa insuficiente y amplia desconfianza pública), **modificaciones de ley forestal** (normas de concesión y mecanismos de aplicación) y **deficiente articulación institucional** (mandatos superpuestos y responsabilidades poco claras). Para las demás categorías, los impulsores individuales más significativos son: <br><br>
 • <span style="color:#61a346;">Social</span>: **cambio demográfico** (crecimiento poblacional y urbanización) <br><br>
-• <span style="color:#a7ca6b;">Tecnológica</span>: **cerrar la brecha energética** (extensión de la red y suministro confiable) <br><br>
-• <span style="color:#c4d048;">Ambiental</span>: **proyectos de infraestructura** (carreteras y represas) <br><br>
+• <span style="color:#a7ca6b;">Tecnológica</span>: **cierre la brecha energética** (extensión de la red y suministro confiable) <br><br>
+• <span style="color:#c4d048;">Ambiental</span>: **proyectos en infraestructura** (carreteras y represas) <br><br>
 • <span style="color:#109777;">Económica</span>: **actividades económicas ilegales** (minería y tala informal)  
 @cr-driver_importance
 
@@ -117,7 +117,7 @@ En total, los cinco talleres reunieron a **103 participantes** de más de **85 o
 • Profesionales  
 @cr-participants_overview
 
-En conjunto, las partes interesadas identificaron más de 700 declaraciones que describen paisajes futuros deseables en Perú. En cada taller regional, surgieron ciertas prioridades a partir de las discusiones sobre estos futuros imaginados. En la **Selva Alta**, esta prioridad fue la **producción agrícola** mediante la industrialización y la innovación tecnológica. En la **Amazonía**, fue la **reducción** de mercurio, plásticos y otros **contaminantes** en ríos y suelos. En la **Sierra Andina**, fue la **mejora de la gestión del agua** mediante la captación de caudales de la temporada de lluvias para el abastecimiento durante todo el año. En la **Costa**, fue la **conectividad de la biodiversidad** mediante la ampliación de áreas protegidas y la alineación de la planificación económica con la zonificación ecológica.  
+En conjunto, las partes interesadas identificaron más de 700 declaraciones que describen paisajes futuros deseables en Perú. En cada taller regional, surgieron ciertas prioridades a partir de las discusiones sobre estos futuros imaginados. En la **Selva Andina (Tarapoto)**, esta prioridad fue la **producción agrícola** mediante la industrialización y la innovación tecnológica. En el **Cuenca del Amazonas (Puerto Maldonado)**, fue la **reducción** de mercurio, plásticos y otros **contaminantes** en ríos y suelos. En los **Andes (Huaraz)**, fue la **mejora de la gestión del agua** mediante la captación de caudales de la temporada de lluvias para el abastecimiento durante todo el año. En la **Costa Peruana (Piura)**, fue la **conectividad de la biodiversidad** mediante la ampliación de áreas protegidas y la alineación de la planificación económica con la zonificación ecológica.  
 @cr-regional_highlights
 
 Los talleres regionales también revelaron **perspectivas divergentes** sobre si ciertos impulsores apoyarían o dificultarían el progreso hacia los paisajes futuros deseados. Los **impulsores resaltados en negrita** en el gráfico son aquellos sobre los que los talleres expresaron opiniones particularmente divergentes en cuanto a su influencia para lograr las visiones regionales.  

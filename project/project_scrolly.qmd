@@ -65,7 +65,7 @@ By contrast, **normative scenarios** are centred around specific desirable futur
 
 ::::{.cr-section}
 
-The workflow for creating normative nature-positive scenarios comprises three main steps: <br><br>
+In our project the workflow for creating normative nature-positive scenarios comprises three main steps: <br><br>
 1.	**Conducting workshops** with relevant stakeholders to discuss future landscape development in Peru. <br><br>
 2.	**Drafting future-development narratives** based on the workshop outcomes. <br><br>
 3.	**Quantifying narrative content** using scientific literature to generate inputs for our computer models. @cr-scenario_creation-workflow
@@ -118,7 +118,7 @@ In total, the five workshops brought together **103 participants** from more tha
 •	Private sector <br><br>
 •	Practitioners @cr-participants_overview
 
-Together, the stakeholders identified over 700 statements describing desirable future landscapes in Peru. In each regional workshop, certain priorities emerged from the discussions about these envisioned futures. In the **Andean Rainforest**, this was **agricultural production** through industrialisation and technological innovation. In the **Amazon Basin**, it was **reducing** mercury, plastics, and other **contaminants** in rivers and soils. In the **Andean Highlands**, it was **improved water management** by capturing rainy season flows for year-round supply. On the **Coast**, it was **biodiversity connectivity** through expanded protected areas and the alignment of economic planning with ecological zoning.  @cr-regional_highlights
+Together, the stakeholders identified over 700 statements describing desirable future landscapes in Peru. In each regional workshop, certain priorities emerged from the discussions about these envisioned futures. In the **Andean Rainforest (Tarapoto)**, this was **agricultural production** through industrialisation and technological innovation. In the **Amazon Basin (Puerto Maldonado)**, it was **reducing** mercury, plastics, and other **contaminants** in rivers and soils. In the **Andes (Huaraz)**, it was **improved water management** by capturing rainy season flows for year-round supply. On the **Coast (Piura)**, it was **biodiversity connectivity** through expanded protected areas and the alignment of economic planning with ecological zoning.  @cr-regional_highlights
 
 The regional workshops also revealed **differing perspectives** on whether certain drivers would support or hinder progress towards the desired future landscapes. The **drivers highlighted in bold** in the graphic are those where the workshops expressed particularly divergent views regarding their influence on achieving regional visions. @cr-regional_driver_variability
 
