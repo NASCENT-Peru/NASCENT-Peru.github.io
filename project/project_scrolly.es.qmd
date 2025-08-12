@@ -14,142 +14,162 @@ format:
       section-background-color: "#ffffff"
       narrative-overlay-max-width: "700px"
 ---
+<div style="font-size: 1.5rem;">
+Comprender cómo podrían cambiar los paisajes de Perú en el futuro requiere más que ejecutar modelos computacionales. Implica un proceso que reúna a personas con diferentes experiencias, valores y áreas de especialización. En **NASCENT-Peru**, combinamos la participación de las partes interesadas, la evidencia científica y la modelización de escenarios para explorar futuros positivos para la naturaleza y sus posibles implicaciones. El scrollytelling que sigue presenta este proceso paso a paso, desde las primeras ideas compartidas en los talleres hasta los escenarios finales utilizados en nuestras simulaciones.
+</div>
+<br></br>
+
 ::::{.cr-section}
-This is an overview of all work packages of the **<span style="color:#146973;">NASCENT-Peru</span>** project, which aims to create and simulate **normative, nature-positive scenarios for future landscape development in Peru**, assess their ecological and economic impacts, and communicate the results to relevant stakeholders.
+
+El proyecto **NASCENT-Peru** se centra en la creación y modelización de **escenarios normativos** y **positivos para la naturaleza** para el desarrollo futuro del paisaje en Perú. Estos escenarios se evalúan posteriormente en cuanto a sus impactos ecológicos y económicos, y los resultados se comunican a las partes interesadas pertinentes.  
 @cr-complete-workflow
 
-The first step is the creation of the normative, nature-positive scenarios. But, before we discuss the scenario creation we want to clarify what is ment with "**normative scenarios**". 
-@cr-complete-workflow_scenario_highlight
+El primer paso es la creación de escenarios normativos y positivos para la naturaleza. Pero, antes de explicar cómo se crean estos escenarios, queremos aclarar qué se entiende por "**escenarios normativos**".  
+@cr-complete-workflow_highlight
 
 :::{#cr-complete-workflow}
-![](../img/scenario_construction.png){fig-align="center" width="70%"style="margin-left: 30px;"}
-![](../img/modelling.png){fig-align="center" width="70%"style="margin-left: 30px;"}
-![](../img/economic_analysis.png){fig-align="center" width="62%"style="margin-left: 30px;"}
-![](../img/communication.png){fig-align="right" width="70%"style="margin-left: 30px;"}
+![](../img/NASCENT_steps_ES.png){fig-align="center" width="70%"style="margin-left: 30px;"}
 :::
 
-:::{#cr-complete-workflow_scenario_highlight}
-![](../img/scenario_construction.png){fig-align="center" width="70%"style="margin-left: 30px;"}
-![](../img/modelling.png){fig-align="center" width="70%"style="opacity: 0.1;margin-left: 30px;"}
-![](../img/economic_analysis.png){fig-align="center" width="62%"style="opacity: 0.1;margin-left: 30px;"}
-![](../img/communication.png){fig-align="center" width="70%"style="opacity: 0.1;margin-left: 30px;"}
+:::{#cr-complete-workflow_highlight}
+![](../img/NASCENT_steps_ES_focus.png){fig-align="center" width="70%"style="margin-left: 30px;"}
+
 :::
 ::::
 
 ::::{.cr-section}
-The best way to understand **normative scenario** analysis is to contrast it with the the type of scenario analysis we commonly see which is **exploratory scenario** analysis.
-Both types begin by analysing the historical trend for a given measure of interest and then use that trend to predict how the measure will change from the present into the future. @cr-exploratory_vs_normative
+La mejor manera de comprender el análisis de **escenarios normativos** es contrastarlo con el tipo de análisis de escenarios que vemos habitualmente, que es el análisis de **escenarios exploratorios**.  
+Ambos tipos comienzan analizando la tendencia histórica de una determinada variable de interés y luego utilizan esa tendencia para predecir cómo cambiará dicha variable desde el presente hacia el futuro.  
+@cr-exploratory_vs_normative
 
-**Exploratory scenario** analysis illustrates the range of possible future outcomes. It typically centres on a business-as-usual scenario extrapolated from current trends. Alternative futures are then defined as small deviations from that baseline. Such scenarios are often devised in a ‘top-down’ manner by experts. As a result, they offer no insight into the societal desirability of their outcomes.  [@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="45%, 20%"}
+El análisis de **escenarios exploratorios** ilustra el rango de posibles resultados futuros. Normalmente se centra en un escenario de continuidad de tendencias, extrapolado a partir de las condiciones actuales. Los futuros alternativos se definen entonces como pequeñas desviaciones respecto a esa línea de base. Estos escenarios suelen elaborarse de manera “de arriba hacia abajo” por parte de expertos. Como resultado, no ofrecen información sobre la deseabilidad social de sus resultados.  
+[@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="45%, 20%"}
 
 <!--
 pan to 45%, 20%
 -->
-By contrast, **normative scenarios** are centred around specific desirable future endpoints. Rather than predicting the single most likely future, they open up space for deep, transformative change. They are typically devised with stakeholder participation, which allows them to incorporate diverse value perspectives. This participation can engage and mobilise actors and encourage stewardship in realising the scenarios’ goals. Therefore, we aimed to create normative scenarios in **<span style="color:#146973;">NASCENT-Peru</span>**. [@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="-45%, 20%"}
-
+Por el contrario, los **escenarios normativos** se centran en puntos finales futuros específicos y deseables. En lugar de predecir el único futuro más probable, abren espacio para un cambio profundo y transformador. Suelen elaborarse con la participación de las partes interesadas, lo que permite incorporar diversas perspectivas de valor. Esta participación puede implicar y movilizar a los actores y fomentar la responsabilidad en la materialización de los objetivos de los escenarios. Por ello, en **NASCENT-Peru** nos propusimos crear escenarios normativos.  
+[@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="-45%, 20%"}
 
 :::{#cr-exploratory_vs_normative}
-![](../img/exploratory_vs_normative.png){fig-align="center" width="80%"}
+![](../img/exploratory_vs_normative_ES.png){fig-align="center" width="80%"}
 :::
 ::::
 
 ::::{.cr-section}
 
-The workflow for creating normative nature-positive scenarios comprises three main steps: <br><br>
-1.	**Conducting workshops** with relevant stakeholders to discuss future landscape development in Peru. <br><br>
-2.	**Drafting future-development narratives** based on the workshop outcomes. <br><br>
-3.	**Quantifying narrative content** using scientific literature to generate inputs for our computer models. @cr-scenario_creation-workflow
+El flujo de trabajo para crear escenarios normativos y positivos para la naturaleza consta de tres pasos principales: <br><br>
+1. **Realizar talleres** con las partes interesadas pertinentes para debatir el desarrollo futuro del paisaje en Perú. <br><br>
+2. **Redactar narrativas de desarrollo futuro** basadas en los resultados de los talleres. <br><br> 
+3. **Cuantificar el contenido de las narrativas** utilizando literatura científica para generar insumos para nuestros modelos computacionales.  
+@cr-scenario_creation-workflow
 
-
-So let's start with the **workshops**.
+Comencemos entonces con los **talleres**.  
 [@cr-scenario_creation-workflow]{scale-by="2" pan-to="-15%, 90%"}
 
 <!---
 [@cr-scenario_creation-workflow]{scale-by="2" pan-to="-45%, 110%"}
 --->
 
-In May and June of 2024 we conducted a series of **5 workshops** in different regions across Peru. We started off with a **national workshop** in Lima followed by **four regional workshops** in Piura, Puerto Maldonado, Huaraz and Tarapoto. @cr-workshop_regions
+En mayo y junio de 2024 realizamos una serie de **5 talleres** en diferentes regiones de Perú. Comenzamos con un **taller nacional** en Lima, seguido de **cuatro talleres regionales** en Piura, Puerto Maldonado, Huaraz y Tarapoto.  
+@cr-workshop_regions
 
 @cr-workshop_regions_national
 
-At the national workshop in Lima, we invited participants to: <br><br>
-1.	**Identify** the key **drivers** shaping Peru’s future landscape. <br><br>
-2.	**Group** those **drivers** into Social, Technological, Ecological, Economic, and Political categories. <br><br>
-3.	**Rank** each **driver** by its anticipated impact. @cr-national_workshop_group
+En el taller nacional en Lima, los participantes participaron en una serie de ejercicios que incluyeron tareas individuales, discusiones en grupo y sesiones plenarias para:  <br><br>
+1. **Identificar** los principales **impulsores** que están moldeando el futuro paisaje de Perú. <br><br> 
+2. **Agrupar** esos **impulsores** en las categorías Social, Tecnológica, Ecológica, Económica y Política. <br><br> 
+3. **Clasificar** cada **impulsor** según su impacto previsto en el paisaje.  
+@cr-national_workshop_group
 
 
-As the bubble chart shows, the Political category (blue bubbles) leads in perceived importance (higher on the vertical axis). Its principal drivers are **land-use planning policies** (zoning and land ownership), **weakness of government institutions** (insufficient administrative capacity and widespread public distrust), **modifications to forestry law** (concession rules and enforcement mechanisms) and **poor institutional coordination** (overlapping mandates and unclear responsibilities). For the other categories, the single most significant drivers are: <br><br>
-•	Social: **demographic change** (population growth and urbanisation)<br><br>
-•	Technological: **closing the energy gap** (grid extension and reliable supply)<br><br>
-•	Environmental: **infrastructure projects** (roads and dams)<br><br>
-•	Economic: **illegal economic activities** (informal mining and logging) @cr-driver_importance
+Los resultados de esta clasificación se muestran en el gráfico de burbujas. La categoría <span style="color:#48b5c4;">Política</span> encabeza en cuanto al número de impulsores considerados importantes (más alto en el eje vertical). Sus principales impulsores son **políticas de ordenamiento territorial** (zonificación y tenencia de la tierra), **debilidad de las instituciones gubernamentales** (capacidad administrativa insuficiente y amplia desconfianza pública), **modificaciones a la ley forestal** (normas de concesión y mecanismos de aplicación) y **escasa coordinación institucional** (mandatos superpuestos y responsabilidades poco claras). Para las demás categorías, los impulsores individuales más significativos son: <br><br>
+• <span style="color:#61a346;">Social</span>: **cambio demográfico** (crecimiento poblacional y urbanización) <br><br>
+• <span style="color:#a7ca6b;">Tecnológica</span>: **cerrar la brecha energética** (extensión de la red y suministro confiable) <br><br>
+• <span style="color:#c4d048;">Ambiental</span>: **proyectos de infraestructura** (carreteras y represas) <br><br>
+• <span style="color:#109777;">Económica</span>: **actividades económicas ilegales** (minería y tala informal)  
+@cr-driver_importance
+
+Tras el taller nacional, realizamos **cuatro talleres regionales** y aplicamos el Marco de los Tres Horizontes para guiar las discusiones sobre el paisaje en diferentes estados temporales.  
+@cr-workshop_regions_regional
 
 
-Following the national workshop, we held **four regional workshops** and applied the Three Horizons Framework to guide discussions about the landscape across different temporal states. @cr-workshop_regions_regional
+El Marco de los Tres Horizontes divide el cambio de un sistema en tres horizontes basados en el tiempo: <br><br>
+• <span style="color:#41792e;">Horizonte 1</span>: el **estado actual** y establecido del sistema <br><br>
+• <span style="color:#b6c237;">Horizonte 2</span>: los **impulsores** o **acciones** **emergentes** que refuerzan o desafían ese estado <br><br>
+• <span style="color:#137c65;">Horizonte 3</span>: el **estado futuro** aspiracional y a largo plazo <br><br> Adaptamos este marco para nuestros talleres definiendo el <span style="color:#41792e;">Horizonte 1</span> como el **paisaje actual** de cada región, el <span style="color:#b6c237;">Horizonte 2</span> como los **impulsores nacionales** identificados en Lima que podrían apoyar o dificultar cambios en el paisaje, y el <span style="color:#137c65;">Horizonte 3</span> como el **paisaje futuro deseable** imaginado por los participantes.  
+@cr-3horizons_regional
 
-
-The Three Horizons Framework divides system change into three time-based horizons: <br><br>
-•	Horizon 1: the established, **current state** of the system <br><br>
-•	Horizon 2: the **emerging** **drivers** or **actions** that reinforce or challenge that state <br><br>
-•	Horizon 3: the aspirational, long-term **future state** <br><br>
-We adapted this framework for our workshops by defining Horizon 1 as each region’s **current landscape**, Horizon 2 as the **national drivers** identified in Lima that could support or impede change, and Horizon 3 as the **desirable future landscape** envisioned by participants. @cr-3horizons_regional
-
-
-In each of the regional workshops, participants: <br><br>
-1.	Characterised the **current landscape** in their region. <br><br>
-2.	Defined a **desirable future landscape**. <br><br>
-3.	**Evaluated the national drivers**, judging for each whether it would support or impede the transition from the current landscape to the desirable future landscape.
+En cada uno de los talleres regionales, los participantes trabajaron en una serie de ejercicios interactivos para: <br><br> 
+1. Caracterizar el **paisaje actual** de su región (<span style="color:#94bdc1;">Horizonte 1</span>). <br><br>
+2. Definir un **paisaje futuro deseable** (<span style="color:#64be68;">Horizonte 3</span>). <br><br> 
+3. **Evaluar los impulsores nacionales**, juzgando en cada caso si apoyarían o impedirían la transición desde el paisaje actual hacia el paisaje futuro deseable (<span style="color:#c45541;">Horizonte 2</span>).  
 @cr-regional_workshop_impressions
 
-Across all five workshops, **103 participants** from more than **85 organisations** took part. They represented five stakeholder groups: <br><br>
-•	Academia <br><br>
-•	Government officials <br><br>
-•	NGOs/CBOs <br><br>
-•	Private sector <br><br>
-•	Practitioners @cr-participants_overview
+En total, los cinco talleres reunieron a **103 participantes** de más de **85 organizaciones**. Representaban a cinco grupos de partes interesadas: <br><br>
+• Academia  <br><br> 
+• Funcionarios gubernamentales <br><br> 
+• ONG / Organizaciones comunitarias de base <br><br> 
+• Sector privado <br><br> 
+• Profesionales  
+@cr-participants_overview
 
-Together, the stakeholders identified over 700 statements about desirable future landscapes in Peru. Each regional workshop highlighted a clear priority. In the **Andean Rainforest**, participants prioritised **agricultural production** through industrialisation and technological innovation. In the **Amazon Basin**, participants focused on **reducing** mercury, plastics and other **contaminants** in rivers and soils. In the **Andean Highlands**, participants emphasised **improved water management** by capturing rainy season flows for year-round supply. On the **Coast**, participants highlighted **biodiversity connectivity** through expanded protected areas and alignment of economic planning with ecological zoning. @cr-regional_highlights
+En conjunto, las partes interesadas identificaron más de 700 declaraciones que describen paisajes futuros deseables en Perú. En cada taller regional, surgieron ciertas prioridades a partir de las discusiones sobre estos futuros imaginados. En la **Selva Alta**, esta prioridad fue la **producción agrícola** mediante la industrialización y la innovación tecnológica. En la **Amazonía**, fue la **reducción** de mercurio, plásticos y otros **contaminantes** en ríos y suelos. En la **Sierra Andina**, fue la **mejora de la gestión del agua** mediante la captación de caudales de la temporada de lluvias para el abastecimiento durante todo el año. En la **Costa**, fue la **conectividad de la biodiversidad** mediante la ampliación de áreas protegidas y la alineación de la planificación económica con la zonificación ecológica.  
+@cr-regional_highlights
 
-The regional workshops also revealed **differing perspectives** on whether certain drivers would support or hinder progress towards the desired future landscapes. The **drivers highlighted in bold** in the graphic are those where the workshops expressed particularly divergent views regarding their influence on achieving regional visions. @cr-regional_driver_variability
+Los talleres regionales también revelaron **perspectivas divergentes** sobre si ciertos impulsores apoyarían o dificultarían el progreso hacia los paisajes futuros deseados. Los **impulsores resaltados en negrita** en el gráfico son aquellos sobre los que los talleres expresaron opiniones particularmente divergentes en cuanto a su influencia para lograr las visiones regionales.  
+@cr-regional_driver_variability
 
+La fase de **talleres** concluyó con una amplia recopilación de ideas sobre los paisajes futuros de Perú, destacando las prioridades regionales y las áreas de desacuerdo en los impulsores clave.  
 [@cr-scenario_creation-workflow]{scale-by="2" pan-to="-15%, 90%"}
 
-The next step was to synthesise the information collected from all workshops into coherent **narratives**. @cr-scenario_creation-workflow
+Sobre esta base, el siguiente paso fue sintetizar la información de todos los talleres en **narrativas** coherentes.  
+@cr-scenario_creation-workflow
 
 [@cr-scenario_creation-workflow]{scale-by="2" pan-to="-45%, 0%"}
 
-We **translated** all statements collected from the workshops into English, then **extracted** those describing desirable landscape characteristics. These statements were **arranged** systematically and **combined** where appropriate, resulting in a final set of **60 unique statements**. @cr-statement_processing
+**Tradujimos** todas las declaraciones recopiladas en los talleres al inglés y luego **extrajimos** aquellas que describían características deseables del paisaje. Estas declaraciones fueron **organizadas** sistemáticamente y **combinadas** cuando fue apropiado, dando como resultado un conjunto final de **60 declaraciones únicas**.  
+@cr-statement_processing
 
-To prepare for narrative development, we organised the 60 unique statements into thematic groups using the Nature Futures Framework (**NFF**), developed by the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES). The **NFF** maps positive visions of human–nature relationships along **three value axes**: <br><br>
-**Nature for Nature**: viewing nature as having intrinsic value and deserving respect regardless of human benefit. <br><br>
-**Nature for Society**: recognising the instrumental value of nature in providing ecosystem services that support people. <br><br>
-**Nature as Culture**: valuing the relational connections between people and nature through culture, identity, and traditional practices. @cr-NFF
+Para preparar el desarrollo de las narrativas, organizamos las 60 declaraciones únicas en grupos temáticos utilizando el Marco de Futuros de la Naturaleza (**NFF**, por sus siglas en inglés), desarrollado por la Plataforma Intergubernamental Científico-Normativa sobre Diversidad Biológica y Servicios de los Ecosistemas (IPBES). El **NFF** representa visiones positivas de las relaciones humano–naturaleza a lo largo de **tres ejes de valor**: <br><br> 
+<span style="color:#aac172;">Naturaleza para la Naturaleza</span>: considerar que la naturaleza tiene un valor intrínseco y merece respeto independientemente del beneficio humano. <br><br>
+<span style="color:#E6B1A3;">Naturaleza para la Sociedad</span>: reconocer el valor instrumental de la naturaleza en la provisión de servicios ecosistémicos que benefician a las personas. <br><br>
+<span style="color:#758EAE;">Naturaleza como Cultura</span>: valorar las conexiones relacionales entre las personas y la naturaleza a través de la cultura, la identidad y las prácticas tradicionales.  
+@cr-NFF
 
-In the next step, we conducted an internal exercise within our research group, in which we individually positioned **all statements within** the triangular space defined by the **NFF**. @cr-NFF_app
+Luego realizamos un ejercicio interno en el que cada miembro de nuestro grupo de investigación posicionó individualmente **las 60 declaraciones dentro** del espacio triangular definido por el **NFF**, utilizando una aplicación web personalizada que desarrollamos para este fin.  
+@cr-NFF_app
 
-A subsequent k-means clustering was conducted to group the statements objectively. By calculating the silhouette score across 1000 runs per cluster number (k), we found that the **optimal number of clusters was three**. We therefore assigned each statement to one of three groups, each aligned with one axis of the Nature Futures Framework. @cr-silhouette_score
+Posteriormente, se llevó a cabo un análisis de conglomerados mediante k-means para agrupar las declaraciones de forma objetiva. Al calcular el índice de silueta en 1000 ejecuciones por número de conglomerados (k), encontramos que el **número óptimo de conglomerados era tres**. Los conglomerados resultantes se alinearon estrechamente con uno de los tres ejes del Marco de Futuros de la Naturaleza.  
+@cr-silhouette_score
 
-After assigning each statement to one of these groups, we assessed the level of agreement among individual placements. In the image, the **<span style="color:#f1b1aa;">red dots</span>** represent these individual responses, while the **black dot** indicates the average position. @cr-NFF_agree For some statements, there was strong agreement among individual responses regarding their placement. 
+Después de asignar cada declaración a uno de estos tres conglomerados, evaluamos el nivel de acuerdo entre las ubicaciones individuales. En la imagen, los **<span style="color:#f1b1aa;">puntos rojos</span>** representan estas respuestas individuales, mientras que el **punto negro** indica la posición promedio.  
+@cr-NFF_agree  
+Para algunas declaraciones, hubo un fuerte acuerdo entre las respuestas individuales sobre su ubicación.
 
-For other statements, there was more disagreement. In those cases, we discussed the positions as a group to agree upon a final placement. @cr-NFF_disagree
+En otras hubo más desacuerdo. En estos casos, discutimos cuál de los tres conglomerados correspondía mejor al contenido de cada declaración y alcanzamos un consenso sobre la ubicación final.  
+@cr-NFF_disagree
 
-In the end, each statement was assigned to one of the three axes of the Nature Futures Framework. Statements that corresponded to more than one value perspective are situated between the axes in the image. This grouping formed the foundation for developing the scenario narratives. @cr-NFF_clustered_results
+Al final, cada declaración se asignó a uno de los tres ejes del Marco de Futuros de la Naturaleza. Las declaraciones que correspondían a más de una perspectiva de valor se situaron entre los ejes en la imagen. Esta agrupación formó la base para el desarrollo de las narrativas de los escenarios.  
+@cr-NFF_clustered_results
 
-We **summarised similar drivers** from the national workshop into single, broader drivers where appropriate. In the next step, we **linked each statement to the relevant drivers** to describe how future landscape change could unfold in relation to each driver under each scenario. In addition to the three normative scenarios, each linked to one axis of the Nature Futures Framework, we also **developed an exploratory Business as Usual scenario** for contrast. All linked **statements were further enriched** with information from an extensive literature review. @cr-narrative_creation
+**Resumimos** los impulsores similares del taller nacional en impulsores únicos y más amplios cuando fue apropiado. En el siguiente paso, **vinculamos cada declaración con los impulsores pertinentes** para describir cómo podría desarrollarse el cambio futuro del paisaje en relación con cada impulsor en cada escenario. Además de los tres escenarios normativos, cada uno vinculado a un eje del Marco de Futuros de la Naturaleza, también **desarrollamos un escenario exploratorio de Continuidad de Tendencias** como contraste. Todas las declaraciones vinculadas fueron **enriquecidas** con información procedente de una amplia revisión bibliográfica.  
+@cr-narrative_creation
 
 
-Finally, we developed the narratives for each scenario through an **iterative writing process**, incorporating two rounds of feedback to ensure clarity and coherence. In each narrative, we systematically integrated the grouped statements, linked drivers, and insights from the literature review, **grounding every scenario** in both stakeholder perspectives and scientific evidence. @cr-scenario_narratives
+Finalmente, desarrollamos las narrativas para cada escenario mediante un **proceso iterativo de redacción**, incorporando dos rondas de retroalimentación para garantizar la claridad y la coherencia. En cada narrativa, integramos de manera sistemática las declaraciones agrupadas, los impulsores vinculados y la información obtenida de la revisión bibliográfica, **fundamentando cada escenario** tanto en las perspectivas de las partes interesadas como en la evidencia científica. Como parte de este enriquecimiento, también cuantificamos ciertos aspectos de los escenarios utilizando fuentes bibliográficas, como el número proyectado de habitantes para 2060 o el porcentaje de la población que viviría en áreas urbanas.  
+@cr-scenario_narratives
 
 :::{#cr-scenario_creation-workflow}
-![](../img/scenario_creation.png){fig-align="center" width="80%"}
+![](../img/scenario_creation_ES.png){fig-align="center" width="80%"}
 :::
 
 :::{#cr-workshop_regions}
-![](../img/Workshop_map.png){fig-align="center" width="70%"}
+![](../img/Workshop_map_ES.png){fig-align="center" width="70%"}
 :::
 
 :::{#cr-workshop_regions_national}
-![](../img/Workshop_map_national.png){fig-align="center" width="70%"}
+![](../img/Workshop_map_national_ES.png){fig-align="center" width="70%"}
 :::
 
 
@@ -158,15 +178,15 @@ Finally, we developed the narratives for each scenario through an **iterative wr
 :::
 
 :::{#cr-workshop_regions_regional}
-![](../img/Workshop_map_regional.png){fig-align="center" width="70%"}
+![](../img/Workshop_map_regional_ES.png){fig-align="center" width="70%"}
 :::
 
 :::{#cr-driver_importance}
-![](../img/Driver_importance_bubble_ENG.png){fig-align="center" width="90%"}
+![](../img/Driver_importance_bubble_ES.png){fig-align="center" width="90%"}
 :::
 
 :::{#cr-3horizons_regional}
-![](../img/3horizons_regional_workshop_en.png){fig-align="center" width="90%"}
+![](../img/3horizons_regional_workshop_ES.png){fig-align="center" width="90%"}
 :::
 
 :::{#cr-regional_workshop_impressions}
@@ -176,33 +196,33 @@ Finally, we developed the narratives for each scenario through an **iterative wr
 
 
 :::{#cr-participants_overview}
-![](../img/participants_overview_EN.png){fig-align="center" width="90%"}
+![](../img/participants_overview_ES.png){fig-align="center" width="90%"}
 :::
 
 :::{#cr-regional_highlights}
-![](../img/regional_workshops_highlights_EN.png){fig-align="center" width="90%"}
+![](../img/regional_workshops_highlights_ES.png){fig-align="center" width="90%"}
 :::
 
 :::{#cr-regional_driver_variability}
-![](../img/regional_driver_variability_EN.png){fig-align="center" width="90%"}
+![](../img/regional_driver_variability_ES.png){fig-align="center" width="90%"}
 :::
 
 :::{#cr-statement_processing}
-![](../img/statement_processing_EN.png){fig-align="center" width="90%"}
+![](../img/statement_processing_ES.png){fig-align="center" width="90%"}
 :::
 
 :::{#cr-NFF}
-![](../img/naturefutureframework.png){fig-align="center" width="90%"}
+![](../img/naturefutureframework_es.png){fig-align="center" width="90%"}
 :::
 
 :::{#cr-NFF_app}
-![](../img/NFF_app_EN.png){fig-align="center" width="90%"}
+![](../img/NFF_app_ES.png){fig-align="center" width="90%"}
 :::
 
 
 
 :::{#cr-silhouette_score}
-![](../img/mean_silhouette_unique_statements.png){fig-align="center" width="75%"}
+![](../img/mean_silhouette_unique_statements_ES.png){fig-align="center" width="75%"}
 :::
 
 :::{#cr-NFF_agree}
@@ -214,7 +234,7 @@ Finally, we developed the narratives for each scenario through an **iterative wr
 :::
 
 :::{#cr-NFF_clustered_results}
-![](../img/final_clustered_results.png){fig-align="center" width="90%"}
+![](../img/final_clustered_results_ES.png){fig-align="center" width="90%"}
 :::
 
 :::{#cr-narrative_creation}
@@ -222,10 +242,11 @@ Finally, we developed the narratives for each scenario through an **iterative wr
 :::
 
 :::{#cr-scenario_narratives}
-![](../img/scenario_narratives_EN.png){fig-align="center" width="90%"}
+![](../img/scenario_narratives_ES.png){fig-align="center" width="90%"}
 :::
 
 ::::
+
 
 
 
