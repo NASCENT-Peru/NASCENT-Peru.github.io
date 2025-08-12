@@ -1,0 +1,251 @@
+---
+title: Project
+subtitle: "Details of the projects research method"
+comments: false
+title-block-banner: "#f6f8fa"
+format: 
+  closeread-html:
+    fontsize: 1.1rem
+    # remove-header-space: true
+    cr-style:
+      narrative-background-color-overlay: "rgb(255,255,255,0.75)"
+      narrative-font-size: 1.4rem
+      narrative-text-color-overlay: "#000000"
+      narrative-background-color-sidebar: "#f6f8fa"
+      narrative-text-color-sidebar: "#000000"
+      section-background-color: "#ffffff"
+      narrative-overlay-max-width: "700px"
+---
+<div style="font-size: 1.5rem;">
+Comprender cómo podrían cambiar los paisajes de Perú en el futuro requiere más que ejecutar modelos computacionales. Implica un proceso que reúna a personas con diferentes experiencias, valores y áreas de especialización. En **NASCENT-Peru**, combinamos la participación de las partes interesadas, la evidencia científica y la modelización de escenarios para explorar futuros positivos para la naturaleza y sus posibles implicaciones. El scrollytelling que sigue presenta este proceso paso a paso, desde las primeras ideas compartidas en los talleres hasta los escenarios finales utilizados en nuestras simulaciones.
+</div>
+<br></br>
+
+::::{.cr-section}
+
+El proyecto **NASCENT-Peru** se centra en la creación y modelización de **escenarios normativos** y **positivos para la naturaleza** para el desarrollo futuro del paisaje en Perú. Estos escenarios se evalúan posteriormente en cuanto a sus impactos ecológicos y económicos, y los resultados se comunican a las partes interesadas pertinentes.  
+@cr-complete-workflow
+
+El primer paso es la creación de escenarios normativos y positivos para la naturaleza. Pero, antes de explicar cómo se crean estos escenarios, queremos aclarar qué se entiende por "**escenarios normativos**".  
+@cr-complete-workflow_highlight
+
+:::{#cr-complete-workflow}
+![](../img/NASCENT_steps_ES.png){fig-align="center" width="70%"style="margin-left: 30px;"}
+:::
+
+:::{#cr-complete-workflow_highlight}
+![](../img/NASCENT_steps_ES_focus.png){fig-align="center" width="70%"style="margin-left: 30px;"}
+
+:::
+::::
+
+::::{.cr-section}
+La mejor manera de comprender el análisis de **escenarios normativos** es contrastarlo con el tipo de análisis de escenarios que vemos habitualmente, que es el análisis de **escenarios exploratorios**.  
+Ambos tipos comienzan analizando la tendencia histórica de una determinada variable de interés y luego utilizan esa tendencia para predecir cómo cambiará dicha variable desde el presente hacia el futuro.  
+@cr-exploratory_vs_normative
+
+El análisis de **escenarios exploratorios** ilustra el rango de posibles resultados futuros. Normalmente se centra en un escenario de continuidad de tendencias, extrapolado a partir de las condiciones actuales. Los futuros alternativos se definen entonces como pequeñas desviaciones respecto a esa línea de base. Estos escenarios suelen elaborarse de manera “de arriba hacia abajo” por parte de expertos. Como resultado, no ofrecen información sobre la deseabilidad social de sus resultados.  
+[@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="45%, 20%"}
+
+<!--
+pan to 45%, 20%
+-->
+Por el contrario, los **escenarios normativos** se centran en puntos finales futuros específicos y deseables. En lugar de predecir el único futuro más probable, abren espacio para un cambio profundo y transformador. Suelen elaborarse con la participación de las partes interesadas, lo que permite incorporar diversas perspectivas de valor. Esta participación puede implicar y movilizar a los actores y fomentar la responsabilidad en la materialización de los objetivos de los escenarios. Por ello, en **NASCENT-Peru** nos propusimos crear escenarios normativos.  
+[@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="-45%, 20%"}
+
+:::{#cr-exploratory_vs_normative}
+![](../img/exploratory_vs_normative_ES.png){fig-align="center" width="80%"}
+:::
+::::
+
+::::{.cr-section}
+
+El flujo de trabajo para crear escenarios normativos y positivos para la naturaleza consta de tres pasos principales: <br><br>
+1. **Realizar talleres** con las partes interesadas pertinentes para debatir el desarrollo futuro del paisaje en Perú. <br><br>
+2. **Redactar narrativas de desarrollo futuro** basadas en los resultados de los talleres. <br><br> 
+3. **Cuantificar el contenido de las narrativas** utilizando literatura científica para generar insumos para nuestros modelos computacionales.  
+@cr-scenario_creation-workflow
+
+Comencemos entonces con los **talleres**.  
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-15%, 90%"}
+
+<!---
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-45%, 110%"}
+--->
+
+En mayo y junio de 2024 realizamos una serie de **5 talleres** en diferentes regiones de Perú. Comenzamos con un **taller nacional** en Lima, seguido de **cuatro talleres regionales** en Piura, Puerto Maldonado, Huaraz y Tarapoto.  
+@cr-workshop_regions
+
+@cr-workshop_regions_national
+
+En el taller nacional en Lima, los participantes participaron en una serie de ejercicios que incluyeron tareas individuales, discusiones en grupo y sesiones plenarias para:  <br><br>
+1. **Identificar** los principales **impulsores** que están moldeando el futuro paisaje de Perú. <br><br> 
+2. **Agrupar** esos **impulsores** en las categorías Social, Tecnológica, Ecológica, Económica y Política. <br><br> 
+3. **Clasificar** cada **impulsor** según su impacto previsto en el paisaje.  
+@cr-national_workshop_group
+
+
+Los resultados de esta clasificación se muestran en el gráfico de burbujas. La categoría <span style="color:#48b5c4;">Política</span> encabeza en cuanto al número de impulsores considerados importantes (más alto en el eje vertical). Sus principales impulsores son **políticas de ordenamiento territorial** (zonificación y tenencia de la tierra), **debilidad de las instituciones gubernamentales** (capacidad administrativa insuficiente y amplia desconfianza pública), **modificaciones a la ley forestal** (normas de concesión y mecanismos de aplicación) y **escasa coordinación institucional** (mandatos superpuestos y responsabilidades poco claras). Para las demás categorías, los impulsores individuales más significativos son: <br><br>
+• <span style="color:#61a346;">Social</span>: **cambio demográfico** (crecimiento poblacional y urbanización) <br><br>
+• <span style="color:#a7ca6b;">Tecnológica</span>: **cerrar la brecha energética** (extensión de la red y suministro confiable) <br><br>
+• <span style="color:#c4d048;">Ambiental</span>: **proyectos de infraestructura** (carreteras y represas) <br><br>
+• <span style="color:#109777;">Económica</span>: **actividades económicas ilegales** (minería y tala informal)  
+@cr-driver_importance
+
+Tras el taller nacional, realizamos **cuatro talleres regionales** y aplicamos el Marco de los Tres Horizontes para guiar las discusiones sobre el paisaje en diferentes estados temporales.  
+@cr-workshop_regions_regional
+
+
+El Marco de los Tres Horizontes divide el cambio de un sistema en tres horizontes basados en el tiempo: <br><br>
+• <span style="color:#41792e;">Horizonte 1</span>: el **estado actual** y establecido del sistema <br><br>
+• <span style="color:#b6c237;">Horizonte 2</span>: los **impulsores** o **acciones** **emergentes** que refuerzan o desafían ese estado <br><br>
+• <span style="color:#137c65;">Horizonte 3</span>: el **estado futuro** aspiracional y a largo plazo <br><br> Adaptamos este marco para nuestros talleres definiendo el <span style="color:#41792e;">Horizonte 1</span> como el **paisaje actual** de cada región, el <span style="color:#b6c237;">Horizonte 2</span> como los **impulsores nacionales** identificados en Lima que podrían apoyar o dificultar cambios en el paisaje, y el <span style="color:#137c65;">Horizonte 3</span> como el **paisaje futuro deseable** imaginado por los participantes.  
+@cr-3horizons_regional
+
+En cada uno de los talleres regionales, los participantes trabajaron en una serie de ejercicios interactivos para: <br><br> 
+1. Caracterizar el **paisaje actual** de su región (<span style="color:#94bdc1;">Horizonte 1</span>). <br><br>
+2. Definir un **paisaje futuro deseable** (<span style="color:#64be68;">Horizonte 3</span>). <br><br> 
+3. **Evaluar los impulsores nacionales**, juzgando en cada caso si apoyarían o impedirían la transición desde el paisaje actual hacia el paisaje futuro deseable (<span style="color:#c45541;">Horizonte 2</span>).  
+@cr-regional_workshop_impressions
+
+En total, los cinco talleres reunieron a **103 participantes** de más de **85 organizaciones**. Representaban a cinco grupos de partes interesadas: <br><br>
+• Academia  <br><br> 
+• Funcionarios gubernamentales <br><br> 
+• ONG / Organizaciones comunitarias de base <br><br> 
+• Sector privado <br><br> 
+• Profesionales  
+@cr-participants_overview
+
+En conjunto, las partes interesadas identificaron más de 700 declaraciones que describen paisajes futuros deseables en Perú. En cada taller regional, surgieron ciertas prioridades a partir de las discusiones sobre estos futuros imaginados. En la **Selva Alta**, esta prioridad fue la **producción agrícola** mediante la industrialización y la innovación tecnológica. En la **Amazonía**, fue la **reducción** de mercurio, plásticos y otros **contaminantes** en ríos y suelos. En la **Sierra Andina**, fue la **mejora de la gestión del agua** mediante la captación de caudales de la temporada de lluvias para el abastecimiento durante todo el año. En la **Costa**, fue la **conectividad de la biodiversidad** mediante la ampliación de áreas protegidas y la alineación de la planificación económica con la zonificación ecológica.  
+@cr-regional_highlights
+
+Los talleres regionales también revelaron **perspectivas divergentes** sobre si ciertos impulsores apoyarían o dificultarían el progreso hacia los paisajes futuros deseados. Los **impulsores resaltados en negrita** en el gráfico son aquellos sobre los que los talleres expresaron opiniones particularmente divergentes en cuanto a su influencia para lograr las visiones regionales.  
+@cr-regional_driver_variability
+
+La fase de **talleres** concluyó con una amplia recopilación de ideas sobre los paisajes futuros de Perú, destacando las prioridades regionales y las áreas de desacuerdo en los impulsores clave.  
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-15%, 90%"}
+
+Sobre esta base, el siguiente paso fue sintetizar la información de todos los talleres en **narrativas** coherentes.  
+@cr-scenario_creation-workflow
+
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-45%, 0%"}
+
+**Tradujimos** todas las declaraciones recopiladas en los talleres al inglés y luego **extrajimos** aquellas que describían características deseables del paisaje. Estas declaraciones fueron **organizadas** sistemáticamente y **combinadas** cuando fue apropiado, dando como resultado un conjunto final de **60 declaraciones únicas**.  
+@cr-statement_processing
+
+Para preparar el desarrollo de las narrativas, organizamos las 60 declaraciones únicas en grupos temáticos utilizando el Marco de Futuros de la Naturaleza (**NFF**, por sus siglas en inglés), desarrollado por la Plataforma Intergubernamental Científico-Normativa sobre Diversidad Biológica y Servicios de los Ecosistemas (IPBES). El **NFF** representa visiones positivas de las relaciones humano–naturaleza a lo largo de **tres ejes de valor**: <br><br> 
+<span style="color:#aac172;">Naturaleza para la Naturaleza</span>: considerar que la naturaleza tiene un valor intrínseco y merece respeto independientemente del beneficio humano. <br><br>
+<span style="color:#E6B1A3;">Naturaleza para la Sociedad</span>: reconocer el valor instrumental de la naturaleza en la provisión de servicios ecosistémicos que benefician a las personas. <br><br>
+<span style="color:#758EAE;">Naturaleza como Cultura</span>: valorar las conexiones relacionales entre las personas y la naturaleza a través de la cultura, la identidad y las prácticas tradicionales.  
+@cr-NFF
+
+Luego realizamos un ejercicio interno en el que cada miembro de nuestro grupo de investigación posicionó individualmente **las 60 declaraciones dentro** del espacio triangular definido por el **NFF**, utilizando una aplicación web personalizada que desarrollamos para este fin.  
+@cr-NFF_app
+
+Posteriormente, se llevó a cabo un análisis de conglomerados mediante k-means para agrupar las declaraciones de forma objetiva. Al calcular el índice de silueta en 1000 ejecuciones por número de conglomerados (k), encontramos que el **número óptimo de conglomerados era tres**. Los conglomerados resultantes se alinearon estrechamente con uno de los tres ejes del Marco de Futuros de la Naturaleza.  
+@cr-silhouette_score
+
+Después de asignar cada declaración a uno de estos tres conglomerados, evaluamos el nivel de acuerdo entre las ubicaciones individuales. En la imagen, los **<span style="color:#f1b1aa;">puntos rojos</span>** representan estas respuestas individuales, mientras que el **punto negro** indica la posición promedio.  
+@cr-NFF_agree  
+Para algunas declaraciones, hubo un fuerte acuerdo entre las respuestas individuales sobre su ubicación.
+
+En otras hubo más desacuerdo. En estos casos, discutimos cuál de los tres conglomerados correspondía mejor al contenido de cada declaración y alcanzamos un consenso sobre la ubicación final.  
+@cr-NFF_disagree
+
+Al final, cada declaración se asignó a uno de los tres ejes del Marco de Futuros de la Naturaleza. Las declaraciones que correspondían a más de una perspectiva de valor se situaron entre los ejes en la imagen. Esta agrupación formó la base para el desarrollo de las narrativas de los escenarios.  
+@cr-NFF_clustered_results
+
+**Resumimos** los impulsores similares del taller nacional en impulsores únicos y más amplios cuando fue apropiado. En el siguiente paso, **vinculamos cada declaración con los impulsores pertinentes** para describir cómo podría desarrollarse el cambio futuro del paisaje en relación con cada impulsor en cada escenario. Además de los tres escenarios normativos, cada uno vinculado a un eje del Marco de Futuros de la Naturaleza, también **desarrollamos un escenario exploratorio de Continuidad de Tendencias** como contraste. Todas las declaraciones vinculadas fueron **enriquecidas** con información procedente de una amplia revisión bibliográfica.  
+@cr-narrative_creation
+
+
+Finalmente, desarrollamos las narrativas para cada escenario mediante un **proceso iterativo de redacción**, incorporando dos rondas de retroalimentación para garantizar la claridad y la coherencia. En cada narrativa, integramos de manera sistemática las declaraciones agrupadas, los impulsores vinculados y la información obtenida de la revisión bibliográfica, **fundamentando cada escenario** tanto en las perspectivas de las partes interesadas como en la evidencia científica. Como parte de este enriquecimiento, también cuantificamos ciertos aspectos de los escenarios utilizando fuentes bibliográficas, como el número proyectado de habitantes para 2060 o el porcentaje de la población que viviría en áreas urbanas.  
+@cr-scenario_narratives
+
+:::{#cr-scenario_creation-workflow}
+![](../img/scenario_creation_ES.png){fig-align="center" width="80%"}
+:::
+
+:::{#cr-workshop_regions}
+![](../img/Workshop_map_ES.png){fig-align="center" width="70%"}
+:::
+
+:::{#cr-workshop_regions_national}
+![](../img/Workshop_map_national_ES.png){fig-align="center" width="70%"}
+:::
+
+
+::: {#cr-national_workshop_group}
+![](../img/National_workshop_group.png){fig-align="center" width="70%"}
+:::
+
+:::{#cr-workshop_regions_regional}
+![](../img/Workshop_map_regional_ES.png){fig-align="center" width="70%"}
+:::
+
+:::{#cr-driver_importance}
+![](../img/Driver_importance_bubble_ES.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-3horizons_regional}
+![](../img/3horizons_regional_workshop_ES.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-regional_workshop_impressions}
+![](../img/regional_workshop_impressions.png){fig-align="center" width="90%"}
+:::
+
+
+
+:::{#cr-participants_overview}
+![](../img/participants_overview_ES.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-regional_highlights}
+![](../img/regional_workshops_highlights_ES.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-regional_driver_variability}
+![](../img/regional_driver_variability_ES.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-statement_processing}
+![](../img/statement_processing_ES.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-NFF}
+![](../img/naturefutureframework_es.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-NFF_app}
+![](../img/NFF_app_ES.png){fig-align="center" width="90%"}
+:::
+
+
+
+:::{#cr-silhouette_score}
+![](../img/mean_silhouette_unique_statements_ES.png){fig-align="center" width="75%"}
+:::
+
+:::{#cr-NFF_agree}
+![](../img/review_agreement.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-NFF_disagree}
+![](../img/review_disagreement.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-NFF_clustered_results}
+![](../img/final_clustered_results_ES.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-narrative_creation}
+![](../img/narrative_creation.png){fig-align="center" width="90%"}
+:::
+
+:::{#cr-scenario_narratives}
+![](../img/scenario_narratives_ES.png){fig-align="center" width="90%"}
+:::
+
+::::
+

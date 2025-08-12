@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -53,10 +53,13 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b1d0cad6c70f2c9123552821a767166f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
+<script src="../site_libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
+<script src="../site_libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
 <script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -85,9 +88,11 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<meta cr-debug-mode="false">
+<meta cr-remove-header-space="false">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/qmd-lab/closeread/closeread.css">
 </head>
 
 <body class="nav-fixed">
@@ -184,21 +189,20 @@ div.csl-indent {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-    </div>
+    
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content">
 
 
 
 
-<section id="business-as-usual" class="level1 page-columns page-full">
+<section id="business-as-usual" class="level1">
 <h1>Business as Usual</h1>
 <div class="row intro">
-<p>The landscape of Peru in 2060 is emblematic of the drive for economic development at the expense of improving environmental sustainability. Agriculture and extractive activities have expanded to dominate large parts of the country exacerbating undesirable land use trends of deforestation and urban sprawl. The impacts of climatic change in terms of water and food security drive migration of the population from the mountainous regions to the coastal and amazonian areas.</p>
+<p>El paisaje del Perú en 2060 es emblemático del impulso por el desarrollo económico a expensas de mejorar la sostenibilidad ambiental. La agricultura y las actividades extractivas se han expandido hasta dominar gran parte del país, exacerbando las tendencias indeseables de uso y ocupación del suelo, como la deforestación y la expansión urbana. Los impactos del cambio climático sobre la seguridad hídrica y alimentaria impulsan la migración de la población desde las regiones montañosas hacia las zonas costeras y amazónicas.</p>
 </div>
 <div class="row visual">
 <div class="quarto-figure quarto-figure-center">
@@ -208,57 +212,59 @@ div.csl-indent {
 </div>
 </div>
 <hr>
-<section id="characteristics" class="level3 row characteristics">
-<h3 class="anchored" data-anchor-id="characteristics">Characteristics</h3>
+<section id="características" class="level3 row characteristics">
+<h3 class="anchored" data-anchor-id="características">Características</h3>
 <h4 class="anchored">
-<span class="popover-key" data-popover-key="climate" style="cursor: pointer;"> <img src="../img/icons/climate_icon.png" alt="Climate Icon" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Climate Change:</span> <strong> RCP 4.5 </strong> </span>
+<span class="popover-key" data-popover-key="climate" style="cursor: pointer;"> <img src="../img/icons/climate_icon.png" alt="Icono de clima" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Cambio climático:</span> <strong> RCP 4.5 </strong> </span>
 </h4>
 <h4 class="anchored">
-<span class="popover-key" data-popover-key="population" style="cursor: pointer;"> <img src="../img/icons/population_icon.png" alt="Population Icon" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Population:</span> <strong> 39.81 million by 2060</strong> </span>
+<span class="popover-key" data-popover-key="population" style="cursor: pointer;"> <img src="../img/icons/population_icon.png" alt="Icono de población" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Población:</span> <strong> 39.81 millones para 2060</strong> </span>
 </h4>
 <h4 class="anchored">
-<span class="popover-key" data-popover-key="economy" style="cursor: pointer;"> <img src="../img/icons/economy_icon.png" alt="Economy Icon" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Economic development:</span> <strong> 1007 billion USD</strong> </span>
+<span class="popover-key" data-popover-key="economy" style="cursor: pointer;"> <img src="../img/icons/economy_icon.png" alt="Icono de economía" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Desarrollo económico:</span> <strong> 1007 mil millones USD</strong> </span>
 </h4>
 <h4 class="anchored">
-<span class="popover-key" data-popover-key="value" style="cursor: pointer;"> <img src="../img/icons/value_icon.png" alt="Value Icon" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Value perspective on nature:</span> <strong> Instrumental</strong> </span>
+<span class="popover-key" data-popover-key="value" style="cursor: pointer;"> <img src="../img/icons/value_icon.png" alt="Icono de valores" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Perspectiva de valor sobre la naturaleza:</span> <strong> Instrumental</strong> </span>
 </h4>
 <h4 class="anchored">
-<span class="popover-key" data-popover-key="protected" style="cursor: pointer;"> <img src="../img/icons/protected_icon.png" alt="Protected Areas Icon" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Protected areas (proportion of Peru under protection):</span> <strong> 25% by 2030</strong> </span>
+<span class="popover-key" data-popover-key="protected" style="cursor: pointer;"> <img src="../img/icons/protected_icon.png" alt="Icono de áreas protegidas" style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"> <span class="text-decoration-underline">Áreas protegidas (proporción del Perú bajo protección):</span> <strong> 25 % para 2030</strong> </span>
 </h4>
 </section>
 <div class="row themes">
 <p><img src="../img/wordclouds/Business_as_usual.png" class="img-fluid"></p>
 </div>
 <hr>
-<div class="row narrative page-columns page-full">
-<div class="collapsible-text page-columns page-full">
-<section id="shifting-values-and-lifestyles" class="level3">
-<h3 class="anchored" data-anchor-id="shifting-values-and-lifestyles">Shifting Values and Lifestyles</h3>
-<p>As a result of the COVID-19 pandemic and political instability in the late 2010’s Peru continues to prioritise economic development over addressing climate change and environmental degradation. Nature continues to be primarily viewed as a resource for economic growth, with little regard for its intrinsic value or its role in providing regulating and supporting ecosystem services necessary for maintaining quality of life <span class="citation" data-cites="rea2017">(<a href="#ref-rea2017" role="doc-biblioref">1</a>)</span>.</p>
-<p>While economic development has helped to alleviate some social and economic inequalities, conservative social policies still leave significant gaps in access to basic services and education. By 2060 GDP per capita reaches approximately 1007 billion USD (following SSP2, unit converted to USD using purchasing power parity (PPP) in 2017; <span class="citation" data-cites="crespocuaresma2017">(<a href="#ref-crespocuaresma2017" role="doc-biblioref">2</a>)</span>), reflecting robust yet uneven economic progress. Consequently, environmental awareness and responsibility is still of limited concern for the majority of the population. Due to improvements in standards of living, the population continues to grow at a moderate rate reaching 39.81 million by 2060. This combined with a relatively high per capita living space and a moderate rate of rural to urban migration (86.88% of population living in urban areas by 2060), means that the total area of land utilized for human settlements expands considerably. Given that sustainability is not a strong focus and food security has been improved for the majority of the population, there is no large-scale shift in personal consumption habits, leading to an increase in average per capita meat consumption. In addition, unsustainable modes of private transport continue to dominate.</p>
+<div class="row narrative">
+<div class="collapsible-text">
+<section id="cambio-de-valores-y-estilos-de-vida" class="level3">
+<h3 class="anchored" data-anchor-id="cambio-de-valores-y-estilos-de-vida">Cambio de valores y estilos de vida</h3>
+<p>Como resultado de la pandemia de COVID-19 y la inestabilidad política de finales de la década de 2010, el Perú sigue priorizando el desarrollo económico por encima de la atención al cambio climático y la degradación ambiental. La naturaleza continúa viéndose principalmente como un recurso para el crecimiento económico, con escasa consideración por su valor intrínseco o su papel en la provisión de servicios ecosistémicos reguladores y de soporte necesarios para mantener la calidad de vida <span class="citation" data-cites="rea2017">(<a href="#ref-rea2017" role="doc-biblioref">1</a>)</span>.</p>
+<div data-focus-on="crespocuaresma2017">
+<p>Si bien el desarrollo económico ha contribuido a aliviar algunas desigualdades sociales y económicas, las políticas sociales conservadoras siguen dejando importantes brechas en el acceso a servicios básicos y educación. Para 2060, el PIB per cápita alcanza aproximadamente 1007 mil millones USD (siguiendo SSP2, convertido a USD mediante paridad de poder adquisitivo (PPA) de 2017;lo que refleja un progreso económico robusto pero desigual. En consecuencia, la conciencia y responsabilidad ambiental siguen siendo limitadas para la mayoría de la población. Gracias a la mejora en el nivel de vida, la población crece a un ritmo moderado y llega a 39.81 millones en 2060. Esto, combinado con una elevada superficie habitacional per cápita y una tasa moderada de migración del campo a la ciudad (86.88 % de la población en zonas urbanas para 2060), hace que el área total de suelo destinada a asentamientos humanos se expanda considerablemente. Dado que la sostenibilidad no es una prioridad y la seguridad alimentaria se ha mejorado para la mayoría, no se produce un cambio de gran escala en los hábitos de consumo, lo que conlleva un aumento del consumo medio de carne. Además, siguen dominando modos de transporte privado poco sostenibles.</p>
+</div>
 </section>
-<section id="changing-economic-priorities" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="changing-economic-priorities">Changing economic priorities</h3>
-<p>Economic development continues according to the current model of extractivism, maintaining reliance on resource and emission intensive activities <span class="citation" data-cites="svampa2012">(<a href="#ref-svampa2012" role="doc-biblioref">3</a>)</span>. However, increasing political stability throughout the 2030s leads to greater foreign investment. This allows companies to steadily expand their international production networks, refining supply chains, diversifying operations, and tapping into global resources. This incremental growth leverages established trade agreements and gradual policy improvements to enhance efficiency and profitability, maintaining competitiveness without dramatic shifts from current practices<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. These developments reduce the extent of the informal economy although Lima-Callao continues to be the only national metropolis and centre of service-based economic activities.</p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;<a href="https://observatorio.ceplan.gob.pe/ficha/o21_2024" class="uri">https://observatorio.ceplan.gob.pe/ficha/o21_2024</a></p></div></div><p>Across the primary sectors, there is moderate adoption of new technologies, although these are focused on improving production and not necessarily sustainability <span class="citation" data-cites="finger2023">(<a href="#ref-finger2023" role="doc-biblioref">4</a>)</span>. This process occurs asymmetrically, with larger businesses displaying much more success in technological adoption whereas small and medium sized enterprises are limited by a lack of capacity.</p>
-<p>In agriculture, the broad transition from subsistence to commercial farming continues driven by demand for the export market. This results in an increase in agricultural intensification and the cultivation of non-native crops such as strawberries, asparagus and blueberries. There is also a greater amount of land utilised for livestock production to sustain the demand for meat products. As a result, the area of land utilized for agriculture expands significantly, coupled with a higher degree of intensification. This is accompanied by a shift from artisanal to industrial fishing and the expansion of aquaculture.</p>
-<p>Rising international mineral prices, particularly for copper, drive continued expansion of mining activities. This results in the allocation of additional mining concessions, with minimal attention to sustainability improvements in the sector. Weak enforcement of regulations, coupled with lax environmental legislation, leads to high rates of concession exploitation, while small-scale illegal mining remains persistent. The current carbon-intensive model of mass tourism is maintained <span class="citation" data-cites="sun2024">(<a href="#ref-sun2024" role="doc-biblioref">5</a>)</span>. It prioritises conventional attractions, contributing to over-tourism in certain areas without significant efforts to reduce environmental impact.</p>
+<section id="cambio-de-prioridades-económicas" class="level3">
+<h3 class="anchored" data-anchor-id="cambio-de-prioridades-económicas">Cambio de prioridades económicas</h3>
+<p>El desarrollo económico continúa bajo el modelo extractivista actual, manteniendo la dependencia de actividades intensivas en recursos y emisiones <span class="citation" data-cites="svampa2012">(<a href="#ref-svampa2012" role="doc-biblioref">2</a>)</span>. No obstante, la mayor estabilidad política a lo largo de la década de 2030 impulsa una mayor inversión extranjera. Esto permite a las empresas expandir poco a poco sus redes de producción internacionales, perfeccionar las cadenas de suministro, diversificar operaciones y aprovechar recursos globales. Este crecimiento incremental se apoya en acuerdos comerciales ya establecidos y en mejoras normativas graduales para aumentar la eficiencia y la rentabilidad, manteniendo la competitividad sin cambios drásticos respecto de las prácticas actuales<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Estos avances reducen la magnitud de la economía informal, aunque Lima-Callao sigue siendo la única metrópoli nacional y centro de actividades de servicios.</p>
+<p>En los sectores primarios se adopta de forma moderada nuevas tecnologías, aunque dirigidas a mejorar la producción y no necesariamente la sostenibilidad <span class="citation" data-cites="finger2023">(<a href="#ref-finger2023" role="doc-biblioref">3</a>)</span>. Este proceso es asimétrico: las grandes empresas tienen mucho más éxito en la adopción tecnológica, mientras que las pequeñas y medianas carecen de capacidad.</p>
+<p>En agricultura continúa la transición de la subsistencia a la producción comercial, impulsada por la demanda del mercado de exportación. Esto aumenta la intensificación agrícola y el cultivo de especies no nativas como fresas, espárragos y arándanos. También se amplía la superficie destinada a la ganadería para satisfacer la demanda de carne, de modo que el área agrícola crece de forma notable y con mayor intensificación. A la vez se pasa de la pesca artesanal a la industrial y se expande la acuicultura.</p>
+<p>El alza de los precios internacionales de minerales, en especial el cobre, impulsa la expansión continua de la minería, concediéndose más licencias con poca atención a la sostenibilidad. La débil ejecución normativa y la legislación ambiental laxa favorecen altas tasas de explotación, mientras persiste la minería ilegal a pequeña escala. Se mantiene el modelo de turismo masivo intensivo en carbono <span class="citation" data-cites="sun2024">(<a href="#ref-sun2024" role="doc-biblioref">4</a>)</span>, centrado en atracciones convencionales y contribuyendo al sobre-turismo en áreas concretas sin esfuerzos relevantes para reducir el impacto ambiental.</p>
 </section>
-<section id="indigenous-communities" class="level3">
-<h3 class="anchored" data-anchor-id="indigenous-communities">Indigenous Communities</h3>
-<p>Despite formal land tenure rights in some regions, weak enforcement leaves Indigenous communities vulnerable to land grabbing and resource exploitation. Social inequalities persist, limiting access to basic services and economic opportunities. While the importance of Indigenous knowledge is acknowledged in some policy frameworks, it remains marginalised in decision-making, reducing its influence on conservation and development <span class="citation" data-cites="arotoma-rojas2024">(<a href="#ref-arotoma-rojas2024" role="doc-biblioref">6</a>)</span>. A lack of political will to strengthen land rights and governance structures further excludes Indigenous communities from shaping policies that impact their territories and livelihoods <span class="citation" data-cites="blackman2017">(<a href="#ref-blackman2017" role="doc-biblioref">7</a>)</span>.</p>
+<section id="comunidades-indígenas" class="level3">
+<h3 class="anchored" data-anchor-id="comunidades-indígenas">Comunidades indígenas</h3>
+<p>Pese a que en algunas regiones existen derechos formales de tenencia de la tierra, la débil aplicación de la ley deja a las comunidades indígenas vulnerables al acaparamiento de tierras y la explotación de recursos. Persisten las desigualdades sociales, limitando el acceso a servicios básicos y a oportunidades económicas. Aunque el valor del conocimiento indígena se reconoce en algunos marcos de política, sigue marginado en la toma de decisiones, reduciendo su influencia en la conservación y el desarrollo <span class="citation" data-cites="arotoma-rojas2024">(<a href="#ref-arotoma-rojas2024" role="doc-biblioref">5</a>)</span>. La falta de voluntad política para reforzar los derechos sobre la tierra y las estructuras de gobernanza excluye aún más a estas comunidades de las políticas que afectan a sus territorios y medios de vida <span class="citation" data-cites="blackman2017">(<a href="#ref-blackman2017" role="doc-biblioref">6</a>)</span>.</p>
 </section>
-<section id="governance-planning-and-resource-management" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="governance-planning-and-resource-management">Governance, Planning and Resource Management</h3>
-<p>Weak institutional coordination across governance levels and sectors continues to hinder the development of cohesive policies <span class="citation" data-cites="gustafsson2019">(<a href="#ref-gustafsson2019" role="doc-biblioref">8</a>)</span>. Public participation is limited to token consultations, and decision-making processes lack transparency <span class="citation" data-cites="few2007">(<a href="#ref-few2007" role="doc-biblioref">9</a>)</span>. Despite this, the trend of political stability does marginally improve public trust in the state.</p>
-<p>Overall Land use planning is improved, with every department completing Ecological and Economic Zoning plans <span class="citation" data-cites="gustafsson2017">(<a href="#ref-gustafsson2017" role="doc-biblioref">10</a>)</span>. However, planning remains largely reactive and subject to capture by economic actors, meaning that developments are sometimes allowed to proceed in ecologically sensitive areas in contradiction of the zoning plans. This is especially true of urban expansion, which still occurs informally due to migration to areas of increasing economic activity and because of climatic change induced impacts.</p>
-<p>The 2023 modification to the forest law is not repealed and forestry policy remains focused on short-term economic gains<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Existing forest concessions prioritize timber production although there is an increase in the number and scale of forest-based carbon credit projects which contribute towards reducing deforestation <span class="citation" data-cites="pan2022">(<a href="#ref-pan2022" role="doc-biblioref">11</a>)</span>. However, because of the overall orientation of the sector alongside weak enforcement of regulations, the conversion of forest to agricultural land by small scale farmers is allowed to persist. This in addition to the granting of mining concessions on forested lands leads to a trend of continued forest cover loss and degradation until 2060.</p>
-<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;<a href="https://forestpolicy.org/risk-tool/country/peru#:~:text=In%20late%202023%2C%20the%20Peruvian,reconsideration%20from%20some%20Congress%20members" class="uri">https://forestpolicy.org/risk-tool/country/peru#:~:text=In%20late%202023%2C%20the%20Peruvian,reconsideration%20from%20some%20Congress%20members</a></p></div><div id="fn3"><p><sup>3</sup>&nbsp;https://observatorio.ceplan.gob.pe/ficha/o17_2024</p></div><div id="fn4"><p><sup>4</sup>&nbsp;https://observatorio.ceplan.gob.pe/ficha/o6_2024</p></div></div><p>Transport infrastructure development focuses primarily on road improvement, enhancing connections and the quality of road networks without significant attention to minimizing ecological impacts. There is a particular expansion of export-related infrastructure (e.g.&nbsp;ports and processing facilities for agricultural and mining products) in key production sites such as the northern and southern coastal regions<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Communications infrastructure is improved however access to digital services remains uneven <span class="citation" data-cites="prieto-egido2023">(<a href="#ref-prieto-egido2023" role="doc-biblioref">12</a>)</span>. To adapt to the increasing intensity and severity of natural disasters there is a strong focus on developing more resilient infrastructure<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, although is achieved via improvements to engineering rather than the incorporation of Nature-Based Solutions.</p>
-<p>Inadequate planning and management of water resources alongside global high intensity climate change (RCP 4.5 / RCP 6.0) exacerbate problems of water insecurity. Disruption to water availability and quality in mountainous regions driven by substantial further decline of glacial areas forces migration of the population to the coast. Given the increased demand for water for the agricultural sector there is a need to implement expensive technological solutions such as water desalination plants.</p>
+<section id="gobernanza-planificación-y-gestión-de-recursos" class="level3">
+<h3 class="anchored" data-anchor-id="gobernanza-planificación-y-gestión-de-recursos">Gobernanza, planificación y gestión de recursos</h3>
+<p>La escasa coordinación institucional entre niveles de gobierno y sectores sigue dificultando políticas coherentes <span class="citation" data-cites="gustafsson2019">(<a href="#ref-gustafsson2019" role="doc-biblioref">7</a>)</span>. La participación pública se limita a consultas simbólicas y los procesos decisorios carecen de transparencia <span class="citation" data-cites="few2007">(<a href="#ref-few2007" role="doc-biblioref">8</a>)</span>. Aun así, la mayor estabilidad política mejora tímidamente la confianza pública en el Estado.</p>
+<p>En general, mejora la planificación del uso del suelo y cada departamento completa planes de Zonificación Ecológica y Económica <span class="citation" data-cites="gustafsson2017">(<a href="#ref-gustafsson2017" role="doc-biblioref">9</a>)</span>. Sin embargo, la planificación sigue siendo sobre todo reactiva y susceptible de captura por actores económicos, permitiendo a veces desarrollos en áreas ecológicamente sensibles en contradicción con esos planes. Esto es especialmente cierto para la expansión urbana, que continúa informalmente debido a la migración hacia zonas de mayor actividad económica y a los impactos del cambio climático.</p>
+<p>La reforma de 2023 de la ley forestal no se revoca, y la política se centra en ganancias económicas a corto plazo<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Las concesiones existentes priorizan la producción de madera, aunque aumenta la cantidad y tamaño de proyectos de créditos de carbono basados en bosques que ayudan a reducir la deforestación <span class="citation" data-cites="pan2022">(<a href="#ref-pan2022" role="doc-biblioref">10</a>)</span>. Sin embargo, la orientación del sector y la ejecución normativa débil permiten la conversión de bosque a agricultura por pequeños agricultores. Junto con la concesión de áreas mineras en terrenos boscosos, esto genera una tendencia continua de pérdida y degradación forestal hasta 2060.</p>
+<p>La infraestructura de transporte se centra sobre todo en mejorar carreteras, reforzando conexiones y calidad de redes sin dar mucha importancia a los impactos ecológicos. Se amplía especialmente la infraestructura de exportación (puertos e instalaciones de procesamiento de productos agrícolas y mineros) en regiones costeras septentrionales y meridionales<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. La infraestructura de comunicaciones mejora, pero el acceso a servicios digitales sigue siendo desigual <span class="citation" data-cites="prieto-egido2023">(<a href="#ref-prieto-egido2023" role="doc-biblioref">11</a>)</span>. Para hacer frente a la mayor intensidad y gravedad de los desastres naturales, se apuesta por infraestructuras más resilientes<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, basadas en mejoras de ingeniería más que en Soluciones basadas en la naturaleza.</p>
+<p>La planificación y gestión inadecuadas de los recursos hídricos, junto con el cambio climático global de alta intensidad (RCP 4.5 / RCP 6.0), agravan los problemas de inseguridad hídrica. La disminución pronunciada de los glaciares reduce la disponibilidad y calidad del agua en zonas montañosas y obliga a la población a migrar hacia la costa. Dada la mayor demanda de agua en agricultura, se requieren soluciones tecnológicas costosas, como plantas desalinizadoras.</p>
 </section>
-<section id="ecological-restoration-and-protection" class="level3">
-<h3 class="anchored" data-anchor-id="ecological-restoration-and-protection">Ecological Restoration and Protection</h3>
-<p>Due to a lack of political and social support there is no expansion of conservation areas beyond the existing coverage of 17.88% and hence Peru does not achieve its international commitment to protect 30% of the national territory by 2030. Programs to mitigate the trend of biodiversity loss are hindered by competing sectoral priorities and insufficient integration of long-term sustainability goals. Environmental restoration efforts are minimal and primarily driven by regulatory compliance. Degraded areas are often repurposed for monoculture plantations or urban expansion, exacerbating habitat loss and ecosystem degradation <span class="citation" data-cites="lamb2003">(<a href="#ref-lamb2003" role="doc-biblioref">13</a>)</span>.</p>
+<section id="restauración-y-protección-ecológica" class="level3">
+<h3 class="anchored" data-anchor-id="restauración-y-protección-ecológica">Restauración y protección ecológica</h3>
+<p>La falta de apoyo político y social impide ampliar las áreas de conservación más allá de la cobertura actual del 17.88 %, por lo que el Perú no cumple su compromiso internacional de proteger el 30 % del territorio nacional para 2030. Los programas para frenar la pérdida de biodiversidad se ven obstaculizados por prioridades sectoriales contrapuestas y la escasa integración de objetivos de sostenibilidad a largo plazo. Los esfuerzos de restauración ambiental son mínimos y obedecen principalmente al cumplimiento normativo. Las áreas degradadas suelen destinarse a plantaciones monoespecíficas o a la expansión urbana, profundizando la pérdida de hábitats y la degradación de los ecosistemas <span class="citation" data-cites="lamb2003">(<a href="#ref-lamb2003" role="doc-biblioref">12</a>)</span>.</p>
 </section>
 </div>
 </div>
@@ -304,43 +310,48 @@ div.csl-indent {
 <div id="ref-rea2017" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Rea AW, Munns WR. The value of nature: Economic, intrinsic, or both? Integrated environmental assessment and management [Internet]. 2017 Sep;13(5):953–5. Available from: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5790155/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5790155/</a></div>
 </div>
-<div id="ref-crespocuaresma2017" class="csl-entry" role="listitem">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Crespo Cuaresma J. Income projections for climate change research: A framework based on human capital dynamics. Global Environmental Change [Internet]. 2017 Jan 1;42:226–36. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S0959378015000382">https://www.sciencedirect.com/science/article/pii/S0959378015000382</a></div>
-</div>
 <div id="ref-svampa2012" class="csl-entry" role="listitem">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline">Svampa M. Resource extractivism and alternatives : Latin American perspectives on development. Journal fur Entwicklungspolitik [Internet]. 2012;28(3):43–73. Available from: <a href="https://www.memoria.fahce.unlp.edu.ar/library?a=d&amp;c=arti&amp;d=Jpr13750">https://www.memoria.fahce.unlp.edu.ar/library?a=d&amp;c=arti&amp;d=Jpr13750</a></div>
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Svampa M. Resource extractivism and alternatives : Latin American perspectives on development. Journal fur Entwicklungspolitik [Internet]. 2012;28(3):43–73. Available from: <a href="https://www.memoria.fahce.unlp.edu.ar/library?a=d&amp;c=arti&amp;d=Jpr13750">https://www.memoria.fahce.unlp.edu.ar/library?a=d&amp;c=arti&amp;d=Jpr13750</a></div>
 </div>
 <div id="ref-finger2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline">Finger R. Digital innovations for&nbsp;sustainable and&nbsp;resilient agricultural systems. European Review of Agricultural Economics [Internet]. 2023 Sep 1;50(4):1277–309. Available from: <a href="https://doi.org/10.1093/erae/jbad021">https://doi.org/10.1093/erae/jbad021</a></div>
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Finger R. Digital innovations for&nbsp;sustainable and&nbsp;resilient agricultural systems. European Review of Agricultural Economics [Internet]. 2023 Sep 1;50(4):1277–309. Available from: <a href="https://doi.org/10.1093/erae/jbad021">https://doi.org/10.1093/erae/jbad021</a></div>
 </div>
 <div id="ref-sun2024" class="csl-entry" role="listitem">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline">Sun YY, Faturay F, Lenzen M, Gössling S, Higham J. Drivers of global tourism carbon emissions. Nature Communications [Internet]. 2024 Dec 10;15(1):10384. Available from: <a href="https://www.nature.com/articles/s41467-024-54582-7">https://www.nature.com/articles/s41467-024-54582-7</a></div>
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Sun YY, Faturay F, Lenzen M, Gössling S, Higham J. Drivers of global tourism carbon emissions. Nature Communications [Internet]. 2024 Dec 10;15(1):10384. Available from: <a href="https://www.nature.com/articles/s41467-024-54582-7">https://www.nature.com/articles/s41467-024-54582-7</a></div>
 </div>
 <div id="ref-arotoma-rojas2024" class="csl-entry" role="listitem">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline">Arotoma-Rojas I, Berrang-Ford L, Ford JD, Zavaleta-Cortijo C, Cooke P, Chicmana-Zapata V. An intercultural approach to climate justice: A systematic review of Peruvian climate and food policy. PLOS Climate [Internet]. 2024 Sep 20;3(9):e0000404. Available from: <a href="https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000404">https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000404</a></div>
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Arotoma-Rojas I, Berrang-Ford L, Ford JD, Zavaleta-Cortijo C, Cooke P, Chicmana-Zapata V. An intercultural approach to climate justice: A systematic review of Peruvian climate and food policy. PLOS Climate [Internet]. 2024 Sep 20;3(9):e0000404. Available from: <a href="https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000404">https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000404</a></div>
 </div>
 <div id="ref-blackman2017" class="csl-entry" role="listitem">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline">Blackman A, Corral L, Lima ES, Asner GP. Titling indigenous communities protects forests in the peruvian amazon. Proceedings of the National Academy of Sciences [Internet]. 2017 Apr 18;114(16):4123–8. Available from: <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1603290114">https://www.pnas.org/doi/abs/10.1073/pnas.1603290114</a></div>
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Blackman A, Corral L, Lima ES, Asner GP. Titling indigenous communities protects forests in the peruvian amazon. Proceedings of the National Academy of Sciences [Internet]. 2017 Apr 18;114(16):4123–8. Available from: <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1603290114">https://www.pnas.org/doi/abs/10.1073/pnas.1603290114</a></div>
 </div>
 <div id="ref-gustafsson2019" class="csl-entry" role="listitem">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline">Gustafsson MT, Scurrah M. Strengthening subnational institutions for sustainable development in resource-rich states: Decentralized land-use planning in peru. World Development [Internet]. 2019 Jul 1;119:133–44. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S0305750X19300464">https://www.sciencedirect.com/science/article/pii/S0305750X19300464</a></div>
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Gustafsson MT, Scurrah M. Strengthening subnational institutions for sustainable development in resource-rich states: Decentralized land-use planning in peru. World Development [Internet]. 2019 Jul 1;119:133–44. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S0305750X19300464">https://www.sciencedirect.com/science/article/pii/S0305750X19300464</a></div>
 </div>
 <div id="ref-few2007" class="csl-entry" role="listitem">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline">Few R, Brown K, Tompkins EL. Public participation and climate change adaptation: Avoiding the illusion of inclusion. Climate Policy [Internet]. 2007 Jan 1;7(1):46–59. Available from: <a href="https://www.tandfonline.com/doi/abs/10.1080/14693062.2007.9685637">https://www.tandfonline.com/doi/abs/10.1080/14693062.2007.9685637</a></div>
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Few R, Brown K, Tompkins EL. Public participation and climate change adaptation: Avoiding the illusion of inclusion. Climate Policy [Internet]. 2007 Jan 1;7(1):46–59. Available from: <a href="https://www.tandfonline.com/doi/abs/10.1080/14693062.2007.9685637">https://www.tandfonline.com/doi/abs/10.1080/14693062.2007.9685637</a></div>
 </div>
 <div id="ref-gustafsson2017" class="csl-entry" role="listitem">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline">Gustafsson MT. The struggles surrounding ecological and economic zoning in peru. Third World Quarterly [Internet]. 2017 May 4;38(5):1146–63. Available from: <a href="https://doi.org/10.1080/01436597.2016.1255141">https://doi.org/10.1080/01436597.2016.1255141</a></div>
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Gustafsson MT. The struggles surrounding ecological and economic zoning in peru. Third World Quarterly [Internet]. 2017 May 4;38(5):1146–63. Available from: <a href="https://doi.org/10.1080/01436597.2016.1255141">https://doi.org/10.1080/01436597.2016.1255141</a></div>
 </div>
 <div id="ref-pan2022" class="csl-entry" role="listitem">
-<div class="csl-left-margin">11. </div><div class="csl-right-inline">Pan C, Shrestha A, Innes JL, Zhou G, Li N, Li J, et al. Key challenges and approaches to addressing barriers in forest carbon offset projects. Journal of Forestry Research [Internet]. 2022 Aug 1;33(4):1109–22. Available from: <a href="https://doi.org/10.1007/s11676-022-01488-z">https://doi.org/10.1007/s11676-022-01488-z</a></div>
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Pan C, Shrestha A, Innes JL, Zhou G, Li N, Li J, et al. Key challenges and approaches to addressing barriers in forest carbon offset projects. Journal of Forestry Research [Internet]. 2022 Aug 1;33(4):1109–22. Available from: <a href="https://doi.org/10.1007/s11676-022-01488-z">https://doi.org/10.1007/s11676-022-01488-z</a></div>
 </div>
 <div id="ref-prieto-egido2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">12. </div><div class="csl-right-inline">Prieto-Egido I, Sanchez-Chaparro T, Urquijo-Reguera J. Impacts of information and communication technologies on the SDGs: The case of mayu telecomunicaciones in rural areas of peru. Information Technology for Development [Internet]. 2023 Jan 2;29(1):103–27. Available from: <a href="https://doi.org/10.1080/02681102.2022.2073581">https://doi.org/10.1080/02681102.2022.2073581</a></div>
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Prieto-Egido I, Sanchez-Chaparro T, Urquijo-Reguera J. Impacts of information and communication technologies on the SDGs: The case of mayu telecomunicaciones in rural areas of peru. Information Technology for Development [Internet]. 2023 Jan 2;29(1):103–27. Available from: <a href="https://doi.org/10.1080/02681102.2022.2073581">https://doi.org/10.1080/02681102.2022.2073581</a></div>
 </div>
 <div id="ref-lamb2003" class="csl-entry" role="listitem">
-<div class="csl-left-margin">13. </div><div class="csl-right-inline">Lamb D, Gilmour D. Rehabilitation and restoration of degraded forests [Internet]. UK; Switzerland; 2003. Available from: <a href="https://portals.iucn.org/library/sites/library/files/documents/FR-IS-005.pdf">https://portals.iucn.org/library/sites/library/files/documents/FR-IS-005.pdf</a></div>
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Lamb D, Gilmour D. Rehabilitation and restoration of degraded forests [Internet]. UK; Switzerland; 2003. Available from: <a href="https://portals.iucn.org/library/sites/library/files/documents/FR-IS-005.pdf">https://portals.iucn.org/library/sites/library/files/documents/FR-IS-005.pdf</a></div>
 </div>
-</div></section></div></main> <!-- /main -->
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://observatorio.ceplan.gob.pe/ficha/o21_2024" class="uri">https://observatorio.ceplan.gob.pe/ficha/o21_2024</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://forestpolicy.org/risk-tool/country/peru#:~:text=In%20late%202023%2C%20the%20Peruvian,reconsideration%20from%20some%20Congress%20members" class="uri">https://forestpolicy.org/risk-tool/country/peru#:~:text=In%20late%202023%2C%20the%20Peruvian,reconsideration%20from%20some%20Congress%20members</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>https://observatorio.ceplan.gob.pe/ficha/o17_2024<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>https://observatorio.ceplan.gob.pe/ficha/o6_2024<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -423,6 +434,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -533,6 +546,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
