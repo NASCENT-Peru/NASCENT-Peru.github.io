@@ -7,53 +7,141 @@ title-block-banner: "#f6f8fa"
 
 El siguiente gráfico muestra los pasos del flujo de trabajo del proyecto NASCENT-Peru para crear y simular escenarios normativos, positivos para la naturaleza, para el futuro desarrollo del paisaje en Perú. Haga clic en cada paso para obtener más información.
 
-<img src="../img/Worklfow_Nascent_es.png" usemap="#image-map" class="wf_map">
+```{=html}
+<style>
+  #markmap {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 500px;
+    width: 100%;
+    background: white;
+  }
+  #markmap svg {
+    width: 100%;
+    height: 100%;
+  }
+  #markmap img {
+    padding-right: 8px;
+    vertical-align: middle;
+  }
+  #content {
+    margin-top: 50px; /* Reduced margin */
+    padding: 1rem;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Use scroll-padding-top on the root element */
+  html {
+    scroll-padding-top: 520px; /* 500px markmap height + 20px buffer */
+  }
+  
+  /* Alternative approach: create invisible anchor targets */
+  #content h2[id],
+  #content h3[id] {
+    position: relative;
+  }
+  
+  #content h2[id]::before,
+  #content h3[id]::before {
+    content: "";
+    display: block;
+    height: 520px;
+    margin-top: -520px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  /* Customize markmap link hover colors to match text colors */
+  #markmap .mm-link:hover {
+    stroke: inherit !important;
+    opacity: 0.8;
+  }
+  
+  #markmap .mm-node:hover .mm-link {
+    stroke: inherit !important;
+    opacity: 0.8;
+  }
+  
+  /* Make sure text links in markmap inherit their color on hover and remove underline */
+  #markmap a {
+    text-decoration: none !important;
+  }
+  
+  #markmap a:hover {
+    color: inherit !important;
+    opacity: 0.8;
+    text-decoration: none !important;
+  }
+  
+  /* Remove underlines from all states */
+  #markmap a:link,
+  #markmap a:visited,
+  #markmap a:active {
+    text-decoration: none !important;
+  }
+</style>
+```
 
-<map name="image-map">
-    <area target="" alt="Talleres" title="Talleres" href="#workshops" coords="8.3%,25%,8%" shape="circle">
-    <area target="" alt="Narrativas" title="Narrativas" href="#narratives" coords="25%,75%,8%" shape="circle">
-    <area target="" alt="Cuantificación" title="Cuantificación" href="#quantification" coords="41.7%,25%,8%" shape="circle">
-    <area target="" alt="Simulaciones" title="Simulaciones" href="#simulations" coords="58.3%,75%,8%" shape="circle">
-    <area target="" alt="Análisis Económico" title="Análisis Económico" href="#economic-analysis" coords="75%,25%,8%" shape="circle">
-    <area target="" alt="Comunicación" title="Comunicación" href="#communication" coords="91.7%,75%,8%" shape="circle">
-</map>
 
-<script>
-function updateMapCoords() {
-    const img = document.querySelector('.wf_map');
-    if (!img) return;
+```{=html}
+<svg id="markmap"></svg>
 
-    const width = img.offsetWidth;
-    const height = img.offsetHeight;
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.15"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view"></script>
 
-    const areasPercent = [
-        {x: 8.3, y: 25, r: 28}, // Workshops
-        {x: 25, y: 75, r: 28}, // Narratives
-        {x: 41.7, y: 25, r: 28}, // Quantification
-        {x: 58.3, y: 75, r: 28}, // Simulations
-        {x: 75, y: 25, r: 28}, // Economic analysis
-        {x: 91.7, y: 75, r: 28}, // Communication
-    ];
+<script type="module">
+  const ROOT_COLOR = "#166F75";
+  const BRANCH_COLORS = ["#42792E", "#6A8D29", "#04735B", "#3A8B95"];
 
-    const areas = document.querySelectorAll('area');
-    areas.forEach((area, index) => {
-        if (index >= areasPercent.length) return;
-        const ap = areasPercent[index];
-        const coords = [
-            Math.round(ap.x * width / 100),
-            Math.round(ap.y * height / 100),
-            Math.round(ap.r * Math.min(width, height) / 100) // Assuming radius scales with the smaller of width or height
-        ];
-        area.coords = coords.join(',');
-    });
-}
+  const markdown = String.raw`
+# <img src="https://nascent-peru.github.io/img/NASCENT_logo_horizontal_upscayl.png" alt="Alt Text" width="400" /><span style="font-weight:bold; color:${ROOT_COLOR};"></span>
+## <a href="#scenario-creation"><img src="../img/scenario_creation.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Create Normative Scenarios</span></a>
+- <a href="#workshops"><img src="../img/workshop_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Talleres</span>
+- <a href="#narratives"><img src="../img/narratives_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Narrativas</span>
+- <a href="#quantification"><img src="../img/quantification_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Cuantificación</span>
+## <a href="#scenario-modeling"><img src="../img/modelling_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Impactos del escenario modelo</span></a>
+- <a href="#lulcc"><img src="../img/lulc_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};"> Cambio de uso del suelo</span>
+- <a href="#es-modelling"><img src="../img/es_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Servicios de los ecosistemas</span>
+- <a href="#biodiversity-modelling"><img src="../img/biodiversity_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Biodiversidad</span>
+## <a href="#economic-analysis"><img src="../img/economic_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[2]};">Resumir Impactos Ambientales</span></a>
+## <a href="#communication"><img src="../img/communication_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[3]};">Comunicación y Difusión</span></a>
+`;
 
-window.onload = updateMapCoords;
-window.onresize = updateMapCoords;
+  const transformer = new window.markmap.Transformer();
+  const { root } = transformer.transform(markdown);
+
+  // Color the root node
+  root._subtreeColor = ROOT_COLOR;
+
+  // Assign each top-level branch its own color
+  root.children.forEach((child, index) => {
+    const branchColor = BRANCH_COLORS[index % BRANCH_COLORS.length];
+    const markSubtree = (node) => {
+      node._subtreeColor = branchColor;
+      if (node.children) node.children.forEach(markSubtree);
+    };
+    markSubtree(child);
+  });
+
+  window.markmap.Markmap.create("#markmap", {
+    initialExpandLevel: 2,
+    autoFit: true,
+    zoom: false,
+    pan: false,
+    color: node => node._subtreeColor || "#222"
+  }, root);
 </script>
+```
 
+<div id="content">
 
-### 1. Talleres: {#workshops}
+## Create Normative Scenarios {#scenario-creation}
+
+### Talleres {#workshops}
 El proceso participativo del proyecto incluye una serie de talleres, tanto nacionales como regionales, que reúnen a partes interesadas y expertos. El objetivo es identificar en colaboración los aspectos deseables e indeseables del futuro cambio paisajístico.
 
 ### Lugares de los talleres
@@ -155,22 +243,52 @@ regional <- makeAwesomeIcon(text = fa("people-roof"),
 
 ```
 
-## Narrativas: {#narratives}
+### Narrativas {#narratives}
 Además de los talleres, se realiza una encuesta en línea. A partir de la información obtenida en los talleres y la encuesta, se crean escenarios exploratorios y normativos. Los escenarios exploratorios consisten en escenarios negativos y en que todo sigue igual, mientras que los escenarios normativos consisten en escenarios positivos para la naturaleza.
 
-## Cuantificación: {#quantification}
+### Cuantificación {#quantification}
 Las tasas de cambio del uso y la ocupación del suelo (LULCC) se determinan para cada escenario cuantificando las tendencias de los factores socioeconómicos, biofísicos y climáticos.
 
-## Simulaciones: {#simulations}
+## Impactos del escenario modelo {#scenario-modeling}
 Durante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) y la distribución de especies para cada escenario, teniendo en cuenta el futuro Uso y ocupación del Suelo (LULC) como uno de los factores de entrada.
 
-## Análisis Económico: {#economic-analysis}
+### Cambio de uso del suelo {#lulcc}
+
+### Servicios de los ecosistemas {#es-modelling}
+
+### Biodiversidad {#biodiversity-modelling}
+
+## Resumir Impactos Ambientales {#análisis-económico}
 Las características económicas de cada escenario se cuantifican en función del uso y la ocupación del suelo (LULC) y de los servicios ecosistémicos (ES).
 
-## Comunicación: {#communication}
-Como parte de la metodología del proyecto, se presentarán resultados provisionales para refinar los escenarios. Los resultados finales y los conjuntos de datos se pondrán a disposición del público, contribuyendo así a la base de conocimientos para futuros proyectos.
+## Comunicación y Difusión {#communication}
+### Project report
 
-El procedimiento utilizado en NASCENT-Perú se basa en la metodología utilizada en
-<a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a><br>
+Sub pluribus dente, diva illi ac [mandata
+moenia](http://pars.com/postquaminicere) illi, c quam flumina, recessit loca.
+Abripit Lethaei crines tuae seque cupidine et, erat acres virorum illis.
+
+Dare nec emittunt induit; parte *via criminis solvit* ignibus et solio. Sua
+meliore Crete non cum ignoscite forma; e munere. Ante his galeam serpens.
+Senemque illa sine solet et oculos pietasque quondam; est aquae, vestem, **in**?
+
+### Social Media
+
+Pyram tum illam armis adflabat. Ait obvius inde sumus tenuissima qui credere
+sentit [dextra](http://me-doleas.com/nonfaciat.php) Cythereiadasque
+[levitate](http://flexit.io/antiquique). Trachine grata; est rogat lenta
+pulveris, partimque circumdata, hunc arte postquam, matrisque, mea tamen.
+
+Spectantur numero; adeundi quaerunt talia sacerdos scribit ferox corpora flumina
+**urgeturque scilicet misereri** mulcebunt tepida, at vivis pugnandi. Sororum
+suppositosque armo praecutiunt, de utero cacumine subito salutifera priorum
+stamina iubentque de tulit vocandus esse! Quoniam Lycii. Lecti laniata; ambo
+eque quasque, si **uterum cervix**.
+
+### Virtual presentation
+
+Sub pluribus dente, diva illi ac
+
+</div>
 
 

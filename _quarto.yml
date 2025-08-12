@@ -15,11 +15,12 @@ website:
     foreground: "dark"
     pinned: true
     logo: img/NASCENT_logo_no_text.jpg.png
-
-     # your sub-pages
     left:
       - project/project.qmd
-      - scenarios/scenarios.qmd
+      - menu:
+              - project/project_scrolly.qmd
+              - scenarios/scenarios.qmd
+        text: "Outputs"
       - impressions/impressions.qmd
       - glossary/glossary.qmd
       - menu:
@@ -27,9 +28,6 @@ website:
               - about/funding.qmd
               - about/contributers.qmd
         text: "Info"
-
-
-    # your social media handles
     right:
       - icon: github
         href: https://github.com/blenback/NASCENT-Peru

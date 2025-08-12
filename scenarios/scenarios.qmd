@@ -1,5 +1,5 @@
 ---
-title: "Scenarios"
+title: "Scenario narrative explorer"
 title-block-banner: "#f6f8fa"
 format: 
   html:
@@ -43,7 +43,7 @@ header-includes:
 
       // Second pass: apply max height
       rows.forEach(row => {
-        row.style.height = maxHeight + "px";
+        // row.style.height = maxHeight + "px";
       });
     });
     }
