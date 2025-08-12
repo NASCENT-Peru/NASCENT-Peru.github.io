@@ -1,5 +1,6 @@
 ---
 title: A walkthrough of the scenario creation process
+subtitle: "Interactive exploration of our methods"
 comments: false
 title-block-banner: "#f6f8fa"
 format: 
@@ -15,10 +16,12 @@ format:
       section-background-color: "#ffffff"
       narrative-overlay-max-width: "700px"
 ---
+
 <div style="font-size: 1.5rem;">
-Understanding how Peru’s landscapes might change in the future requires more than running computer models. It calls for a process that brings together people with different experiences, values, and areas of expertise. In **NASCENT-Peru**, we combined stakeholder participation, scientific evidence, and scenario modelling to explore nature-positive futures and their potential implications. The scrollytelling below takes you through this process step by step, from the first ideas shared in workshops to the final scenarios used in our simulations.
+Understanding how Peru’s landscapes might change in the future requires more than running computer models. It calls for a process that brings together people with different experiences, values, and areas of expertise. In **NASCENT-Peru**, we combined stakeholder participation, scientific evidence, and scenario modelling to explore nature-positive futures and their potential implications. The scrollytelling below takes you through this process step by step, from the first ideas shared in workshops to the final scenarios used in our simulations. **Scroll down to explore the process.**
 </div>
-<br></br>
+
+<div style="height: 600px;"></div>
 
 ::::{.cr-section}
 

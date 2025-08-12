@@ -1,5 +1,6 @@
 ---
 title: Un recorrido por el proceso de creación de escenarios
+subtitle: "Exploración interactiva de nuestros métodos"
 comments: false
 title-block-banner: "#f6f8fa"
 format: 
@@ -16,9 +17,10 @@ format:
       narrative-overlay-max-width: "700px"
 ---
 <div style="font-size: 1.5rem;">
-Comprender cómo podrían cambiar los paisajes de Perú en el futuro requiere más que ejecutar modelos computacionales. Implica un proceso que reúna a personas con diferentes experiencias, valores y áreas de especialización. En **NASCENT-Peru**, combinamos la participación de las partes interesadas, la evidencia científica y la modelización de escenarios para explorar futuros positivos para la naturaleza y sus posibles implicaciones. El scrollytelling que sigue presenta este proceso paso a paso, desde las primeras ideas compartidas en los talleres hasta los escenarios finales utilizados en nuestras simulaciones.
+Comprender cómo podrían cambiar los paisajes de Perú en el futuro requiere más que ejecutar modelos computacionales. Implica un proceso que reúna a personas con diferentes experiencias, valores y áreas de especialización. En **NASCENT-Peru**, combinamos la participación de las partes interesadas, la evidencia científica y la modelización de escenarios para explorar futuros positivos para la naturaleza y sus posibles implicaciones. El scrollytelling que sigue presenta este proceso paso a paso, desde las primeras ideas compartidas en los talleres hasta los escenarios finales utilizados en nuestras simulaciones. Desplácese hacia abajo para explorar el proceso.
 </div>
-<br></br>
+
+<div style="height: 600px;"></div>
 
 ::::{.cr-section}
 
