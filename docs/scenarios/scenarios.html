@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Scenarios – NASCENT-PERU</title>
+<title>Scenario narrative explorer – NASCENT-PERU</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,7 +123,7 @@ rowTypes.forEach(type => {
 
   // Second pass: apply max height
   rows.forEach(row => {
-    row.style.height = maxHeight + "px";
+    // row.style.height = maxHeight + "px";
   });
 });
 }
@@ -274,10 +274,21 @@ document.body.addEventListener('mouseleave', e => {
     <a class="nav-link" href="../project/project.html"> 
 <span class="menu-text">Project</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../scenarios/scenarios.html" aria-current="page"> 
-<span class="menu-text">Scenarios</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outputs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outputs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outputs">    
+        <li>
+    <a class="dropdown-item" href="../project/project_scrolly.html">
+ <span class="dropdown-text">A walkthrough of the scenario creation process.</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../scenarios/scenarios.html">
+ <span class="dropdown-text">Scenario narrative explorer</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../impressions/impressions.html"> 
 <span class="menu-text">Impressions</span></a>
@@ -347,7 +358,7 @@ document.body.addEventListener('mouseleave', e => {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <h1 class="title">Scenarios</h1>
+      <h1 class="title">Scenario narrative explorer</h1>
                       </div>
   </div>
     

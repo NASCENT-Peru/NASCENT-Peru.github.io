@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.56">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Project – NASCENT-PERU</title>
 <style>
 code{white-space: pre-wrap;}
@@ -19,6 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -30,11 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b1d0cad6c70f2c9123552821a767166f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
+<script src="../site_libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
+<script src="../site_libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
+<script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -60,27 +68,43 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><style>
+}</script>
+<style>
 
       .quarto-title-block .quarto-title-banner {
         background: #f6f8fa;
       }
 </style>
 <link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script><link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script><script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script><link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-binding-2.2.2/leaflet.js"></script><link href="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet">
-<script src="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script><link href="../site_libs/fontawesome-4.7.0/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<link href="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet">
+<script src="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="../site_libs/fontawesome-4.7.0/font-awesome.min.css" rel="stylesheet">
+<meta cr-debug-mode="false">
+<meta cr-remove-header-space="false">
+
+
+<link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/qmd-lab/closeread/closeread.css">
 </head>
-<body class="nav-fixed fullcontent">
+
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo"></a>
+    <img src="../img/NASCENT_logo_no_text.jpg.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">NASCENT-PERU</span>
     </a>
@@ -91,14 +115,25 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link active" href="../project/project.html" aria-current="page"> 
 <span class="menu-text">Project</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../scenarios/scenarios.html"> 
-<span class="menu-text">Scenarios</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outputs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outputs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outputs">    
+        <li>
+    <a class="dropdown-item" href="../project/project_scrolly.html">
+ <span class="dropdown-text">A walkthrough of the scenario creation process.</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../scenarios/scenarios.html">
+ <span class="dropdown-text">Scenario narrative explorer</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../impressions/impressions.html"> 
 <span class="menu-text">Impressions</span></a>
@@ -111,8 +146,8 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-info" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Info</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-info">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-info">    
+        <li>
     <a class="dropdown-item" href="../about/team.html">
  <span class="dropdown-text">Team</span></a>
   </li>  
@@ -125,10 +160,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Contributers</span></a>
   </li>  
     </ul>
-</li>
+  </li>
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/blenback/NASCENT-Peru"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -158,19 +193,23 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
       <h1 class="title">Project</h1>
             <p class="subtitle lead">Details of the projects research method</p>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page">
 
       
     
@@ -178,101 +217,205 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="overarching-steps" class="level2"><h2 class="anchored" data-anchor-id="overarching-steps">Overarching steps</h2>
-<p>The graphic below shows the steps of the NASCENT-Peru project workflow for creating and simulating normative, nature-positive scenarios for future landscape development in Peru. Click on each step to learn more about it.</p>
-<div style="text-align: center">
-<p><a href="#sec-scenario_creation"><img src="../img/scenario_icon.svg" class="img-fluid"><span class="h3" style="color: #000;">Create Normative Scenarios:</span> <span style="color: #000;">Nature-positive future landscape development</span></a></p>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../img/scenario_construction.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../img/modelling.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../img/economic_analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../img/communication.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-<!-- <img src="../img/workflow_NASCENT_Peru.png" usemap="#image-map" class="wf_map"> -->
-<!-- <map name="image-map"> -->
-<!--     <area target="" alt="Workshops" title="Workshops" href="#workshops" coords="8.3%,25%,8%" shape="circle"> -->
-<!--     <area target="" alt="Narratives" title="Narratives" href="#narratives" coords="25%,75%,8%" shape="circle"> -->
-<!--     <area target="" alt="Quantification" title="Quantification" href="#quantification" coords="41.7%,25%,8%" shape="circle"> -->
-<!--     <area target="" alt="Simulations" title="Simulations" href="#simulations" coords="58.3%,75%,8%" shape="circle"> -->
-<!--     <area target="" alt="Economic analysis" title="Economic analysis" href="#economic-analysis" coords="75%,25%,8%" shape="circle"> -->
-<!--     <area target="" alt="Communication" title="Communication" href="#communication" coords="91.7%,75%,8%" shape="circle"> -->
-<!-- </map> -->
-<!-- <script> -->
-<!-- function updateMapCoords() { -->
-<!--     const img = document.querySelector('.wf_map'); -->
-<!--     if (!img) return; -->
-<!--     const width = img.offsetWidth; -->
-<!--     const height = img.offsetHeight; -->
-<!--     const areasPercent = [ -->
-<!--         {x: 8.3, y: 25, r: 28}, // Workshops -->
-<!--         {x: 25, y: 75, r: 28}, // Narratives -->
-<!--         {x: 41.7, y: 25, r: 28}, // Workshops -->
-<!--         {x: 58.3, y: 75, r: 28}, // Narratives -->
-<!--         {x: 75, y: 25, r: 28}, // Workshops -->
-<!--         {x: 91.7, y: 75, r: 28}, // Narratives -->
-<!--         // Add the rest of your areas here -->
-<!--     ]; -->
-<!--     const areas = document.querySelectorAll('area'); -->
-<!--     areas.forEach((area, index) => { -->
-<!--         if (index >= areasPercent.length) return; -->
-<!--         const ap = areasPercent[index]; -->
-<!--         const coords = [ -->
-<!--             Math.round(ap.x * width / 100), -->
-<!--             Math.round(ap.y * height / 100), -->
-<!--             Math.round(ap.r * Math.min(width, height) / 100) // Assuming radius scales with the smaller of width or height -->
-<!--         ]; -->
-<!--         area.coords = coords.join(','); -->
-<!--     }); -->
-<!-- } -->
-<!-- window.onload = updateMapCoords; -->
-<!-- window.onresize = updateMapCoords; -->
-<!-- </script> -->
-</section><section id="sec-scenario_creation" class="level2"><h2 class="anchored" data-anchor-id="sec-scenario_creation">Scenario creation</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../img/scenario_creation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-<p>The project’s participatory process involves a series of workshops, both national and regional, that bring together stakeholders and experts. The aim is to collaboratively identify desirable and undesirable aspects of future landscape change.</p>
-<section id="workshop-locations" class="level4"><h4 class="anchored" data-anchor-id="workshop-locations">Workshop Locations</h4>
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+
+
+
+
+
+<p>The interactive graphic below shows the steps of the NASCENT-Peru project workflow for creating and simulating normative, nature-positive scenarios for future landscape development in Peru. Click on each step to learn more about it.</p>
+<style>
+  #markmap {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 500px;
+    width: 100%;
+    background: white;
+  }
+  #markmap svg {
+    width: 100%;
+    height: 100%;
+  }
+  #markmap img {
+    padding-right: 8px;
+    vertical-align: middle;
+  }
+  #content {
+    margin-top: 50px; /* Reduced margin */
+    padding: 1rem;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Use scroll-padding-top on the root element */
+  html {
+    scroll-padding-top: 520px; /* 500px markmap height + 20px buffer */
+  }
+  
+  /* Alternative approach: create invisible anchor targets */
+  #content h2[id],
+  #content h3[id] {
+    position: relative;
+  }
+  
+  #content h2[id]::before,
+  #content h3[id]::before {
+    content: "";
+    display: block;
+    height: 520px;
+    margin-top: -520px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  /* Customize markmap link hover colors to match text colors */
+  #markmap .mm-link:hover {
+    stroke: inherit !important;
+    opacity: 0.8;
+  }
+  
+  #markmap .mm-node:hover .mm-link {
+    stroke: inherit !important;
+    opacity: 0.8;
+  }
+  
+  /* Make sure text links in markmap inherit their color on hover and remove underline */
+  #markmap a {
+    text-decoration: none !important;
+  }
+  
+  #markmap a:hover {
+    color: inherit !important;
+    opacity: 0.8;
+    text-decoration: none !important;
+  }
+  
+  /* Remove underlines from all states */
+  #markmap a:link,
+  #markmap a:visited,
+  #markmap a:active {
+    text-decoration: none !important;
+  }
+</style>
+<svg id="markmap"></svg>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.15"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view"></script>
+
+<script type="module">
+  const ROOT_COLOR = "#166F75";
+  const BRANCH_COLORS = ["#42792E", "#6A8D29", "#04735B", "#3A8B95"];
+
+  const markdown = String.raw`
+# <img src="https://nascent-peru.github.io/img/NASCENT_logo_horizontal_upscayl.png" alt="Alt Text" width="400" /><span style="font-weight:bold; color:${ROOT_COLOR};"></span>
+## <a href="#scenario-creation"><img src="../img/scenario_creation.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Create Normative Scenarios</span></a>
+- <a href="#workshops"><img src="../img/workshop_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Workshops</span>
+- <a href="#narratives"><img src="../img/narratives_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Narratives</span>
+- <a href="#quantification"><img src="../img/quantification_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Quantification</span>
+## <a href="#scenario-modeling"><img src="../img/modelling_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Model scenario impacts</span></a>
+- <a href="#lulcc"><img src="../img/lulc_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};"> Land Use Change</span>
+- <a href="#es-modelling"><img src="../img/es_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Ecosystem Services</span>
+- <a href="#biodiversity-modelling"><img src="../img/biodiversity_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Biodiversity</span>
+## <a href="#economic-analysis"><img src="../img/economic_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[2]};">Summarize Environmental Impacts</span></a>
+## <a href="#communication"><img src="../img/communication_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[3]};">Communication and Dissemination</span></a>
+`;
+
+  const transformer = new window.markmap.Transformer();
+  const { root } = transformer.transform(markdown);
+
+  // Color the root node
+  root._subtreeColor = ROOT_COLOR;
+
+  // Assign each top-level branch its own color
+  root.children.forEach((child, index) => {
+    const branchColor = BRANCH_COLORS[index % BRANCH_COLORS.length];
+    const markSubtree = (node) => {
+      node._subtreeColor = branchColor;
+      if (node.children) node.children.forEach(markSubtree);
+    };
+    markSubtree(child);
+  });
+
+  window.markmap.Markmap.create("#markmap", {
+    initialExpandLevel: 2,
+    autoFit: true,
+    zoom: false,
+    pan: false,
+    color: node => node._subtreeColor || "#222"
+  }, root);
+</script>
+<div id="content">
+<section id="scenario-creation" class="level2">
+<h2 class="anchored" data-anchor-id="scenario-creation">Create Normative Scenarios</h2>
+<section id="workshops" class="level3">
+<h3 class="anchored" data-anchor-id="workshops">Workshops</h3>
+<p>The project’s participatory process involved a series of workshops, both national and regional, that bring together stakeholders and experts. The aim was to collaboratively identify desirable and undesirable aspects of future landscape change.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-139f2839373800a127d1" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-139f2839373800a127d1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false,"attributionControl":false},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addAwesomeMarkers","args":[-12.038,-77.04300000000001,{"icon":"home","markerColor":"darkgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Lima, National Workshop 9th May",null,null,null,"Lima, National Workshop, 9th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-12.594,-69.18899999999999,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Puerto Maldonado, Regional Workshop",null,null,null,"Puerto Maldonado Regional Workshop 28th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-9.526,-77.529,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Huaraz, Regional Workshop",null,null,null,"Huaraz, Regional Workshop 4th June",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-6.485,-76.37,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Tarapoto, Regional Workshop",null,null,null,"Tarapoto, Regional Workshop 10th June",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-5.19449,-80.63282,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Piura, Regional Workshop",null,null,null,"Piura, Regional Workshop 20th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]}],"limits":{"lat":[-12.594,-5.19449],"lng":[-80.63282,-69.18899999999999]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-15c069cf3aa484e62e41" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-15c069cf3aa484e62e41">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false,"attributionControl":false},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addAwesomeMarkers","args":[-12.038,-77.04300000000001,{"icon":"home","markerColor":"darkgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Lima, National Workshop 9th May",null,null,null,"Lima, National Workshop, 9th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-12.594,-69.18899999999999,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Puerto Maldonado, Regional Workshop",null,null,null,"Puerto Maldonado Regional Workshop 28th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-9.526,-77.529,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Huaraz, Regional Workshop",null,null,null,"Huaraz, Regional Workshop 4th June",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-6.485,-76.37,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Tarapoto, Regional Workshop",null,null,null,"Tarapoto, Regional Workshop 10th June",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[-5.19449,-80.63282,{"icon":"home","markerColor":"lightgreen","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","text":"<svg aria-hidden=\"true\" role=\"img\" viewBox=\"0 0 640 512\" style=\"height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;\"><path d=\"M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5V480c0 17.7-14.3 32-32 32H120c-17.7 0-32-14.3-32-32V441.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3h19.5c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6h19.5c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5V480c0 17.7-14.3 32-32 32H472c-17.7 0-32-14.3-32-32V441.5l-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5V400c0 17.7-14.3 32-32 32H296c-17.7 0-32-14.3-32-32V345.5l-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z\"/><\/svg>","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Piura, Regional Workshop",null,null,null,"Piura, Regional Workshop 20th May",{"interactive":false,"permanent":false,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"style":{"color":"black","font-family":"Roboto","font-style":"italic","box-shadow":"3px 3px rgba(0,0,0,0.25)","font-size":"12px","border-color":"rgba(0,0,0,0.5)"},"className":"","sticky":true},null]}],"limits":{"lat":[-12.594,-5.19449],"lng":[-80.63282,-69.18899999999999]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <!-- ### Timeline
 <img data-quarto-disable-processing="true" src="../img/Timeline.png" style="height: 150%; width: 150%;);"/> -->
-<!-- ## Narratives: {#narratives} -->
-<!-- In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of 'business as usual' and negative scenarios, while the normative scenarios consist of nature-positive scenarios. -->
-<!-- ## Quantification: {#quantification} -->
-<!-- The rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers. -->
-<!-- ## Simulations: {#simulations} -->
-<!-- During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors. -->
-<!-- ## Economic Analysis: {#economic-analysis} -->
-<!-- The economic characteristics of each scenario are quantified based on the land use and land cover (LULC) and ecosystem services (ES). -->
-</section></section><section id="communication" class="level2"><h2 class="anchored" data-anchor-id="communication">Communication:</h2>
+</section>
+<section id="narratives" class="level3">
+<h3 class="anchored" data-anchor-id="narratives">Narratives</h3>
+<p>In addition to the workshops, an online survey is conducted. Based on the information gathered through the workshops and survey, explorative and normative scenarios are created. The exploratory scenarios consist of ‘business as usual’ and negative scenarios, while the normative scenarios consist of nature-positive scenarios.</p>
+</section>
+<section id="quantification" class="level3">
+<h3 class="anchored" data-anchor-id="quantification">Quantification</h3>
+<p>The rates of land use and land cover change (LULCC) are determined for each scenario by quantifying the trends in socio-economic, biophysical, and climatic drivers.</p>
+</section>
+</section>
+<section id="scenario-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="scenario-modeling">Model Scenario Impacts</h2>
+<p>During the simulation phase, the Ecosystem Services (ES) and species distribution for each scenario are determined, taking into account the future Land Use and Land Cover (LULC) as one of the input factors.</p>
+<section id="lulcc" class="level3">
+<h3 class="anchored" data-anchor-id="lulcc">Land Use Change</h3>
+</section>
+<section id="es-modelling" class="level3">
+<h3 class="anchored" data-anchor-id="es-modelling">Ecosystem Services</h3>
+</section>
+<section id="biodiversity-modelling" class="level3">
+<h3 class="anchored" data-anchor-id="biodiversity-modelling">Biodiversity</h3>
+</section>
+</section>
+<section id="economic-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="economic-analysis">Summarize Environmental Impacts</h2>
+</section>
+<section id="communication" class="level2">
+<h2 class="anchored" data-anchor-id="communication">Communication and Dissemination</h2>
 <p>As part of the project methodology, interim results will be presented to refine scenarios. The final results and the datasets will be made publicly available, contributing to the knowledge base for future projects.</p>
-<!-- The workflow used in NASCENT-Peru is based on the methodology used in -->
-<!-- <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/593508/iEMSs_ValPar_pres.pdf?sequence=4" target="_blank">ValPar.CH</a><br> -->
+<section id="project-report" class="level3">
+<h3 class="anchored" data-anchor-id="project-report">Project report</h3>
+<p>Sub pluribus dente, diva illi ac <a href="http://pars.com/postquaminicere">mandata moenia</a> illi, c quam flumina, recessit loca. Abripit Lethaei crines tuae seque cupidine et, erat acres virorum illis.</p>
+<p>Dare nec emittunt induit; parte <em>via criminis solvit</em> ignibus et solio. Sua meliore Crete non cum ignoscite forma; e munere. Ante his galeam serpens. Senemque illa sine solet et oculos pietasque quondam; est aquae, vestem, <strong>in</strong>?</p>
+</section>
+<section id="social-media" class="level3">
+<h3 class="anchored" data-anchor-id="social-media">Social Media</h3>
+<p>Pyram tum illam armis adflabat. Ait obvius inde sumus tenuissima qui credere sentit <a href="http://me-doleas.com/nonfaciat.php">dextra</a> Cythereiadasque <a href="http://flexit.io/antiquique">levitate</a>. Trachine grata; est rogat lenta pulveris, partimque circumdata, hunc arte postquam, matrisque, mea tamen.</p>
+<p>Spectantur numero; adeundi quaerunt talia sacerdos scribit ferox corpora flumina <strong>urgeturque scilicet misereri</strong> mulcebunt tepida, at vivis pugnandi. Sororum suppositosque armo praecutiunt, de utero cacumine subito salutifera priorum stamina iubentque de tulit vocandus esse! Quoniam Lycii. Lecti laniata; ambo eque quasque, si <strong>uterum cervix</strong>.</p>
+</section>
+<section id="virtual-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="virtual-presentation">Virtual presentation</h3>
+<p>Sub pluribus dente, diva illi ac</p>
+</section>
+</section>
+</div>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -354,6 +497,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -464,6 +609,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -690,6 +836,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

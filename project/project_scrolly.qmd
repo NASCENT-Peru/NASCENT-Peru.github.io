@@ -1,6 +1,5 @@
 ---
-title: Project
-subtitle: "Details of the projects research method"
+title: A walkthrough of the scenario creation process
 comments: false
 title-block-banner: "#f6f8fa"
 format: 
