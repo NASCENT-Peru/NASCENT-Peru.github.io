@@ -99,16 +99,16 @@ El siguiente gráfico muestra los pasos del flujo de trabajo del proyecto NASCEN
 
   const markdown = String.raw`
 # <img src="https://nascent-peru.github.io/img/NASCENT_logo_horizontal_upscayl.png" alt="Alt Text" width="400" /><span style="font-weight:bold; color:${ROOT_COLOR};"></span>
-## <a href="#scenario-creation"><img src="../img/scenario_creation.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Create Normative Scenarios</span></a>
-- <a href="#workshops"><img src="../img/workshop_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Talleres</span>
-- <a href="#narratives"><img src="../img/narratives_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Narrativas</span>
-- <a href="#quantification"><img src="../img/quantification_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Cuantificación</span>
-## <a href="#scenario-modeling"><img src="../img/modelling_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Impactos del escenario modelo</span></a>
-- <a href="#lulcc"><img src="../img/lulc_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};"> Cambio de uso del suelo</span>
-- <a href="#es-modelling"><img src="../img/es_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Servicios de los ecosistemas</span>
-- <a href="#biodiversity-modelling"><img src="../img/biodiversity_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Biodiversidad</span>
-## <a href="#economic-analysis"><img src="../img/economic_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[2]};">Resumir Impactos Ambientales</span></a>
-## <a href="#communication"><img src="../img/communication_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[3]};">Comunicación y Difusión</span></a>
+## <a href="#scenario-creation"><img src="../../img/scenario_creation.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Create Normative Scenarios</span></a>
+- <a href="#workshops"><img src="../../img/workshop_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Talleres</span>
+- <a href="#narratives"><img src="../../img/narratives_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Narrativas</span>
+- <a href="#quantification"><img src="../../img/quantification_icon.png" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[0]};">Cuantificación</span>
+## <a href="#scenario-modeling"><img src="../../img/modelling_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Impactos del escenario modelo</span></a>
+- <a href="#lulcc"><img src="../../img/lulc_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};"> Cambio de uso del suelo</span>
+- <a href="#es-modelling"><img src="../../img/es_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Servicios de los ecosistemas</span>
+- <a href="#biodiversity-modelling"><img src="../../img/biodiversity_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[1]};">Biodiversidad</span>
+## <a href="#economic-analysis"><img src="../../img/economic_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[2]};">Resumir Impactos Ambientales</span></a>
+## <a href="#communication"><img src="../../img/communication_icon.svg" width="50" alt="" /><span style="font-weight:bold; color:${BRANCH_COLORS[3]};">Comunicación y Difusión</span></a>
 `;
 
   const transformer = new window.markmap.Transformer();
