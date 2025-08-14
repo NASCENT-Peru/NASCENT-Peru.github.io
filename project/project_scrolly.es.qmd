@@ -48,13 +48,13 @@ Ambos tipos comienzan analizando la tendencia histórica de una determinada vari
 @cr-exploratory_vs_normative
 
 El análisis de **escenarios exploratorios** ilustra el rango de posibles resultados futuros. Normalmente se centra en un escenario de continuidad de tendencias, extrapolado a partir de las condiciones actuales. Los futuros alternativos se definen entonces como pequeñas desviaciones respecto a esa línea de base. Estos escenarios suelen elaborarse de manera “de arriba hacia abajo” por parte de expertos. Como resultado, no ofrecen información sobre la deseabilidad social de sus resultados.  
-[@cr-exploratory_vs_normative]{scale-by="1.7" pan-to="45%, 10%"}
+[@cr-exploratory_vs_normative]{scale-by="1.5" pan-to="45%, 10%"}
 
 <!--
 pan to 45%, 20%
 -->
 Por el contrario, los **escenarios normativos** se centran en puntos finales futuros específicos y deseables. En lugar de predecir el único futuro más probable, abren espacio para un cambio profundo y transformador. Suelen elaborarse con la participación de las partes interesadas, lo que permite incorporar diversas perspectivas de valor. Esta participación puede implicar y movilizar a los actores y fomentar la responsabilidad en la materialización de los objetivos de los escenarios. Por ello, en **NASCENT-Peru** nos propusimos crear escenarios normativos.  
-[@cr-exploratory_vs_normative]{scale-by="1.7" pan-to="-45%, 10%"}
+[@cr-exploratory_vs_normative]{scale-by="1.5" pan-to="-45%, 10%"}
 
 :::{#cr-exploratory_vs_normative}
 ![](../img/exploratory_vs_normative_ES.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
