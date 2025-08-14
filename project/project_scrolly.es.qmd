@@ -7,7 +7,7 @@ format:
   closeread-html:
     theme:
       - cosmo
-      - /html/styles.scss
+      - ../html/styles.scss
     remove-header-space: true
     cr-style:
       narrative-background-color-overlay: "rgb(255,255,255,0.75)"
