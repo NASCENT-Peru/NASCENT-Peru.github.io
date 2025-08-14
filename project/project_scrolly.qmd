@@ -5,8 +5,10 @@ comments: false
 title-block-banner: "#f6f8fa"
 format: 
   closeread-html:
-    fontsize: 1.1rem
-    # remove-header-space: true
+    theme:
+      - cosmo
+      - html/styles.scss
+    remove-header-space: true
     cr-style:
       narrative-background-color-overlay: "rgb(255,255,255,0.75)"
       narrative-font-size: 1.4rem
