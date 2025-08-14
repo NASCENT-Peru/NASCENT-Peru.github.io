@@ -2,14 +2,14 @@ project:
   type: website
   output-dir: docs
   execute-dir: project
+
+css: "styles.css"
+
 website:
   site-url: "https://nascent-peru.github.io/"
   repo-url: "https://github.com/NASCENT-Peru/NASCENT-Peru.github.io"
   title: "NASCENT-PERU"
   description: "NAture-positive SCenarios for ENvironmental Transitions: Peru"
-  #image: img/NASCENT_logo_vertical.jpg
-  #favicon: img/NASCENT_logo_no_text.jpg.png
-
   navbar:
     background: "white"
     foreground: "dark"
@@ -43,17 +43,14 @@ website:
         aria-label: email
         href: "mailto:bblack@ethz.ch"
 
-
 preview:
   port: 22222
   browser: true
   watch-inputs: false
   navigate: true
 
-
 format:
   html:
-    css: "styles.css"
     fontsize: 1.1em
     theme:
       - cosmo
@@ -71,27 +68,9 @@ format:
       margin-width: 150px
       gutter-width: 1.5rem
 
-  closeread-html:
-    css: "styles.css"
-    fontsize: 1.1em
-    theme:
-      - cosmo
-      - html/styles.scss
-    toc: false
-    code-link: true
-    anchor-sections: true
-    fig-cap-location: margin
-    reference-location: margin
-    footnotes-hover: true
-    page-layout: article
-    grid:
-      sidebar-width: 400px
-      body-width: 1100px
-      margin-width: 150px
-      gutter-width: 1.5rem
-      
 popover-glossary:
   path: glossary.yml
+
 csl: vancouver.csl
 
 babelquarto:
@@ -102,10 +81,9 @@ babelquarto:
     text: "English"
   mainlanguage: 'en'
   languages: ['es']
+
 title-es: NASCENT-PERU
 lang: en
 
 execute:
   freeze: auto
-
-
