@@ -5,8 +5,10 @@ comments: false
 title-block-banner: "#f6f8fa"
 format: 
   closeread-html:
-    fontsize: 1.1rem
-    # remove-header-space: true
+    theme:
+      - cosmo
+      - ../html/styles.scss
+    remove-header-space: true
     cr-style:
       narrative-background-color-overlay: "rgb(255,255,255,0.75)"
       narrative-font-size: 1.4rem
@@ -50,16 +52,16 @@ The first step is the creation of the normative, nature-positive scenarios. But,
 The best way to understand **normative scenario** analysis is to contrast it with the the type of scenario analysis we commonly see which is **exploratory scenario** analysis.
 Both types begin by analysing the historical trend for a given measure of interest and then use that trend to predict how the measure will change from the present into the future. @cr-exploratory_vs_normative
 
-**Exploratory scenario** analysis illustrates the range of possible future outcomes. It typically centres on a business-as-usual scenario extrapolated from current trends. Alternative futures are then defined as small deviations from that baseline. Such scenarios are often devised in a ‘top-down’ manner by experts. As a result, they offer no insight into the societal desirability of their outcomes.  [@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="45%, 20%"}
+**Exploratory scenario** analysis illustrates the range of possible future outcomes. It typically centres on a business-as-usual scenario extrapolated from current trends. Alternative futures are then defined as small deviations from that baseline. Such scenarios are often devised in a ‘top-down’ manner by experts. As a result, they offer no insight into the societal desirability of their outcomes.  [@cr-exploratory_vs_normative]{scale-by="1.5" pan-to="45%, 10%"}
 
 <!--
 pan to 45%, 20%
 -->
-By contrast, **normative scenarios** are centred around specific desirable future endpoints. Rather than predicting the single most likely future, they open up space for deep, transformative change. They are typically devised with stakeholder participation, which allows them to incorporate diverse value perspectives. This participation can engage and mobilise actors and encourage stewardship in realising the scenarios’ goals. Therefore, we aimed to create normative scenarios in **NASCENT-Peru**. [@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="-45%, 20%"}
+By contrast, **normative scenarios** are centred around specific desirable future endpoints. Rather than predicting the single most likely future, they open up space for deep, transformative change. They are typically devised with stakeholder participation, which allows them to incorporate diverse value perspectives. This participation can engage and mobilise actors and encourage stewardship in realising the scenarios’ goals. Therefore, we aimed to create normative scenarios in **NASCENT-Peru**. [@cr-exploratory_vs_normative]{scale-by="1.5" pan-to="-45%, 10%"}
 
 
 :::{#cr-exploratory_vs_normative}
-![](../img/exploratory_vs_normative.png){fig-align="center" width="80%"}
+![](../img/exploratory_vs_normative.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 ::::
 
@@ -72,7 +74,7 @@ In our project the workflow for creating normative nature-positive scenarios com
 
 
 So let's start with the **workshops**.
-[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-15%, 90%"}
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-30%, 90%"}
 
 <!---
 [@cr-scenario_creation-workflow]{scale-by="2" pan-to="-45%, 110%"}
@@ -152,88 +154,88 @@ We **summarised similar drivers** from the national workshop into single, broade
 Finally, we developed the narratives for each scenario through an **iterative writing process**, incorporating two rounds of feedback to ensure clarity and coherence. In each narrative, we systematically integrated the grouped statements, linked drivers, and insights from the literature review, **grounding every scenario** in both stakeholder perspectives and scientific evidence. As part of this enrichment, we also quantified certain aspects of the scenarios using literature sources, such as the projected number of inhabitants by 2060 or the share of the population living in urban areas. @cr-scenario_narratives
 
 :::{#cr-scenario_creation-workflow}
-![](../img/scenario_creation.png){fig-align="center" width="80%"}
+![](../img/scenario_creation.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-workshop_regions}
-![](../img/Workshop_map.png){fig-align="center" width="70%"}
+![](../img/Workshop_map.png){fig-align="center" style="max-height:90vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-workshop_regions_national}
-![](../img/Workshop_map_national.png){fig-align="center" width="70%"}
+![](../img/Workshop_map_national.png){fig-align="center" style="max-height:90vh;width:auto;height:auto;"}
 :::
 
 
 ::: {#cr-national_workshop_group}
-![](../img/National_workshop_group.png){fig-align="center" width="70%"}
+![](../img/National_workshop_group.png){fig-align="center" style="max-height:65vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-workshop_regions_regional}
-![](../img/Workshop_map_regional.png){fig-align="center" width="70%"}
+![](../img/Workshop_map_regional.png){fig-align="center" style="max-height:90vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-driver_importance}
-![](../img/Driver_importance_bubble_ENG.png){fig-align="center" width="90%"}
+![](../img/Driver_importance_bubble_ENG.png){fig-align="center" style="max-height:90vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-3horizons_regional}
-![](../img/3horizons_regional_workshop_en.png){fig-align="center" width="90%"}
+![](../img/3horizons_regional_workshop_en.png){fig-align="center" style="max-height:75vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-regional_workshop_impressions}
-![](../img/regional_workshop_impressions.png){fig-align="center" width="90%"}
+![](../img/regional_workshop_impressions.png){fig-align="center" style="max-height:55vh;width:auto;height:auto;"}
 :::
 
 
 
 :::{#cr-participants_overview}
-![](../img/participants_overview_EN.png){fig-align="center" width="90%"}
+![](../img/participants_overview_EN.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-regional_highlights}
-![](../img/regional_workshops_highlights_EN.png){fig-align="center" width="90%"}
+![](../img/regional_workshops_highlights_EN.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-regional_driver_variability}
-![](../img/regional_driver_variability_EN.png){fig-align="center" width="90%"}
+![](../img/regional_driver_variability_EN.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-statement_processing}
-![](../img/statement_processing_EN.png){fig-align="center" width="90%"}
+![](../img/statement_processing_EN.png){fig-align="center" style="max-height:35vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF}
-![](../img/naturefutureframework.png){fig-align="center" width="90%"}
+![](../img/naturefutureframework.png){fig-align="center" style="max-height:60vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF_app}
-![](../img/NFF_app_EN.png){fig-align="center" width="90%"}
+![](../img/NFF_app_EN.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 
 
 :::{#cr-silhouette_score}
-![](../img/mean_silhouette_unique_statements.png){fig-align="center" width="75%"}
+![](../img/mean_silhouette_unique_statements.png){fig-align="center" style="max-height:75vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF_agree}
-![](../img/review_agreement.png){fig-align="center" width="90%"}
+![](../img/review_agreement.png){fig-align="center" style="max-height:70vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF_disagree}
-![](../img/review_disagreement.png){fig-align="center" width="90%"}
+![](../img/review_disagreement.png){fig-align="center" style="max-height:70vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF_clustered_results}
-![](../img/final_clustered_results.png){fig-align="center" width="90%"}
+![](../img/final_clustered_results.png){fig-align="center" style="max-height:70vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-narrative_creation}
-![](../img/narrative_creation.png){fig-align="center" width="90%"}
+![](../img/narrative_creation.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-scenario_narratives}
-![](../img/scenario_narratives_EN.png){fig-align="center" width="90%"}
+![](../img/scenario_narratives_EN.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 ::::

@@ -5,8 +5,10 @@ comments: false
 title-block-banner: "#f6f8fa"
 format: 
   closeread-html:
-    fontsize: 1.1rem
-    # remove-header-space: true
+    theme:
+      - cosmo
+      - ../html/styles.scss
+    remove-header-space: true
     cr-style:
       narrative-background-color-overlay: "rgb(255,255,255,0.75)"
       narrative-font-size: 1.4rem
@@ -31,11 +33,11 @@ El primer paso es la creación de escenarios normativos y positivos para la natu
 @cr-complete-workflow_highlight
 
 :::{#cr-complete-workflow}
-![](../img/NASCENT_steps_ES.png){fig-align="center" width="70%"style="margin-left: 30px;"}
+![](../img/NASCENT_steps_ES.png){fig-align="center" style="max-height:70vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-complete-workflow_highlight}
-![](../img/NASCENT_steps_ES_focus.png){fig-align="center" width="70%"style="margin-left: 30px;"}
+![](../img/NASCENT_steps_ES_focus.png){fig-align="center" style="max-height:70vh;width:auto;height:auto;"}
 
 :::
 ::::
@@ -46,16 +48,16 @@ Ambos tipos comienzan analizando la tendencia histórica de una determinada vari
 @cr-exploratory_vs_normative
 
 El análisis de **escenarios exploratorios** ilustra el rango de posibles resultados futuros. Normalmente se centra en un escenario de continuidad de tendencias, extrapolado a partir de las condiciones actuales. Los futuros alternativos se definen entonces como pequeñas desviaciones respecto a esa línea de base. Estos escenarios suelen elaborarse de manera “de arriba hacia abajo” por parte de expertos. Como resultado, no ofrecen información sobre la deseabilidad social de sus resultados.  
-[@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="45%, 20%"}
+[@cr-exploratory_vs_normative]{scale-by="1.5" pan-to="45%, 10%"}
 
 <!--
 pan to 45%, 20%
 -->
 Por el contrario, los **escenarios normativos** se centran en puntos finales futuros específicos y deseables. En lugar de predecir el único futuro más probable, abren espacio para un cambio profundo y transformador. Suelen elaborarse con la participación de las partes interesadas, lo que permite incorporar diversas perspectivas de valor. Esta participación puede implicar y movilizar a los actores y fomentar la responsabilidad en la materialización de los objetivos de los escenarios. Por ello, en **NASCENT-Peru** nos propusimos crear escenarios normativos.  
-[@cr-exploratory_vs_normative]{scale-by="1.8" pan-to="-45%, 20%"}
+[@cr-exploratory_vs_normative]{scale-by="1.5" pan-to="-45%, 10%"}
 
 :::{#cr-exploratory_vs_normative}
-![](../img/exploratory_vs_normative_ES.png){fig-align="center" width="80%"}
+![](../img/exploratory_vs_normative_ES.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 ::::
 
@@ -68,7 +70,7 @@ En nuestro proyecto el flujo de trabajo para crear escenarios normativos y posit
 @cr-scenario_creation-workflow
 
 Comencemos entonces con los **talleres**.  
-[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-15%, 90%"}
+[@cr-scenario_creation-workflow]{scale-by="2" pan-to="-30%, 90%"}
 
 <!---
 [@cr-scenario_creation-workflow]{scale-by="2" pan-to="-45%, 110%"}
@@ -164,88 +166,88 @@ Finalmente, desarrollamos las narrativas para cada escenario mediante un **proce
 @cr-scenario_narratives
 
 :::{#cr-scenario_creation-workflow}
-![](../img/scenario_creation_ES.png){fig-align="center" width="80%"}
+![](../img/scenario_creation_ES.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-workshop_regions}
-![](../img/Workshop_map_ES.png){fig-align="center" width="70%"}
+![](../img/Workshop_map_ES.png){fig-align="center" style="max-height:90vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-workshop_regions_national}
-![](../img/Workshop_map_national_ES.png){fig-align="center" width="70%"}
+![](../img/Workshop_map_national_ES.png){fig-align="center" style="max-height:90vh;width:auto;height:auto;"}
 :::
 
 
 ::: {#cr-national_workshop_group}
-![](../img/National_workshop_group.png){fig-align="center" width="70%"}
+![](../img/National_workshop_group.png){fig-align="center" style="max-height:65vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-workshop_regions_regional}
-![](../img/Workshop_map_regional_ES.png){fig-align="center" width="70%"}
+![](../img/Workshop_map_regional_ES.png){fig-align="center" style="max-height:90vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-driver_importance}
-![](../img/Driver_importance_bubble_ES.png){fig-align="center" width="90%"}
+![](../img/Driver_importance_bubble_ES.png){fig-align="center" style="max-height:90vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-3horizons_regional}
-![](../img/3horizons_regional_workshop_ES.png){fig-align="center" width="90%"}
+![](../img/3horizons_regional_workshop_ES.png){fig-align="center" style="max-height:75vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-regional_workshop_impressions}
-![](../img/regional_workshop_impressions.png){fig-align="center" width="90%"}
+![](../img/regional_workshop_impressions.png){fig-align="center" style="max-height:55vh;width:auto;height:auto;"}
 :::
 
 
 
 :::{#cr-participants_overview}
-![](../img/participants_overview_ES.png){fig-align="center" width="90%"}
+![](../img/participants_overview_ES.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-regional_highlights}
-![](../img/regional_workshops_highlights_ES.png){fig-align="center" width="90%"}
+![](../img/regional_workshops_highlights_ES.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-regional_driver_variability}
-![](../img/regional_driver_variability_ES.png){fig-align="center" width="90%"}
+![](../img/regional_driver_variability_ES.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-statement_processing}
-![](../img/statement_processing_ES.png){fig-align="center" width="90%"}
+![](../img/statement_processing_ES.png){fig-align="center" style="max-height:35vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF}
-![](../img/naturefutureframework_es.png){fig-align="center" width="90%"}
+![](../img/naturefutureframework_es.png){fig-align="center" style="max-height:60vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF_app}
-![](../img/NFF_app_ES.png){fig-align="center" width="90%"}
+![](../img/NFF_app_ES.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 
 
 :::{#cr-silhouette_score}
-![](../img/mean_silhouette_unique_statements_ES.png){fig-align="center" width="75%"}
+![](../img/mean_silhouette_unique_statements_ES.png){fig-align="center" style="max-height:75vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF_agree}
-![](../img/review_agreement.png){fig-align="center" width="90%"}
+![](../img/review_agreement.png){fig-align="center" style="max-height:70vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF_disagree}
-![](../img/review_disagreement.png){fig-align="center" width="90%"}
+![](../img/review_disagreement.png){fig-align="center" style="max-height:70vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-NFF_clustered_results}
-![](../img/final_clustered_results_ES.png){fig-align="center" width="90%"}
+![](../img/final_clustered_results_ES.png){fig-align="center" style="max-height:70vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-narrative_creation}
-![](../img/narrative_creation.png){fig-align="center" width="90%"}
+![](../img/narrative_creation.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 :::{#cr-scenario_narratives}
-![](../img/scenario_narratives_ES.png){fig-align="center" width="90%"}
+![](../img/scenario_narratives_ES.png){fig-align="center" style="max-height:80vh;width:auto;height:auto;"}
 :::
 
 ::::
