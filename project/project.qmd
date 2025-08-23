@@ -269,11 +269,6 @@ tagList(
 
 ```
 
-```{=html}
-<!-- ### Timeline
-<img data-quarto-disable-processing="true" src="../img/Timeline.png" style="height: 150%; width: 150%;);"/> -->
-```
-
 Here are some pictures from the workshops:
 
 ```{=html}
@@ -386,11 +381,6 @@ Here are some pictures from the workshops:
     <div class="carousel-item">
       <a href="../../img/Puerto_group.JPG" data-lightbox="carousel-gallery" data-title="Puerto Group">
         <img src="../../img/Puerto_group.JPG" class="d-block w-100" alt="Puerto Group">
-      </a>
-    </div>
-    <div class="carousel-item">
-      <a href="../../img/Sara.jpg" data-lightbox="carousel-gallery" data-title="Sara">
-        <img src="../../img/Sara.jpg" class="d-block w-100" alt="Sara">
       </a>
     </div>
     <div class="carousel-item">
