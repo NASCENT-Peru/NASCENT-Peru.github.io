@@ -2,6 +2,10 @@ project:
   type: website
   output-dir: docs
   execute-dir: project
+
+resources:
+  - "img/"
+
 website:
   site-url: "https://nascent-peru.github.io/"
   repo-url: "https://github.com/NASCENT-Peru/NASCENT-Peru.github.io"
