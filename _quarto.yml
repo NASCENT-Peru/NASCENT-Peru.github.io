@@ -88,6 +88,6 @@ babelquarto:
   languages: ['es']
 title-es: NASCENT-PERU
 lang: en
-
-execute:
-  freeze: auto
+#
+# execute:
+#   freeze: false

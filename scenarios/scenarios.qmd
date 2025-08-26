@@ -1,5 +1,5 @@
 ---
-title: "Scenario narrative explorer"
+title: "Scenario narratives"
 title-block-banner: "#f6f8fa"
 format: 
   html:

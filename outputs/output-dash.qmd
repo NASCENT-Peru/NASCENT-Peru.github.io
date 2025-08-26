@@ -1,0 +1,24 @@
+---
+title: "NASCENT Scenario Explorer"
+format: 
+  dashboard:
+    orientation: columns
+title-block-banner: "#f6f8fa"
+popover-glossary:
+  path: glossary.yml
+execute:
+  freeze: false
+  cache: false
+  echo: false
+bibliography: references.bib
+---
+
+# Land Use Change
+
+## Interactive Map
+
+## Barchart
+
+# Ecosystem Services & Biodiversity
+
+# Economic impacts
