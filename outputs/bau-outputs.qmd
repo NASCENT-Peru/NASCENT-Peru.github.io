@@ -1,0 +1,173 @@
+# Business-as-usual
+
+::: {.row .lulc}
+### Land Use Change
+
+:::: {.panel-tabset group="dimension"}
+
+#### 2020
+
+:::{.card expandable="true"}
+<!-- Map -->
+```{=html}
+<div class="map-container" id="bau2020">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('bau2020', '../../img/lulc.png', 'en'); // 'en' for English, 'de' for German
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+<!-- Create a bar chart with plotly -->
+```{r}
+library(plotly)
+library(jsonlite)
+library(dplyr)
+
+# load json file of perc area
+lulc_2020 <- fromJSON("outputs/data/lulc-2020-perc_area.json", flatten = TRUE)
+
+# convert to DF
+lulc_2020_df <- data.frame(
+  class = unlist(lulc_2020),
+  perc_area = as.numeric(names(lulc_2020))
+)
+row.names(lulc_2020_df) <- NULL
+
+# colour palette
+LULC_pal <- list("Urban/amenities" = '#a8aba5', #Urban
+            "Static" = "#d1d3cf", #static
+            "Open Forest" = "#97d1d5", #Open forest
+            "Closed forest" = "#29898f", #closed forest
+            "Overgrown/shrubland" = "#bb8a75", #Shrubland
+            "Intensive agriculture" =  "#f59f78", #Intensive agriculture
+            "Alpine pastures" = "#6ca147", #Alpine pastures
+            "Grassland or meadows" = "#c4e0a1", #Grassland
+            "Permanent crops" = "#DDCC66", #Permanet crops
+            "Glacier" = "#d5f1ff",
+            "River" = "#93d0ee",
+            "Lake" = "#93d0ee")
+
+#add the colours and clean names to the df in the current order
+lulc_2020_df$color <- unlist(LULC_pal)
+lulc_2020_df$clean_class <- names(LULC_pal)
+
+# create the plotly bar chart with no labels on the bars and no x axis title or main title
+p <- plot_ly(lulc_2020_df, 
+             x = ~clean_class, 
+             y = ~perc_area, 
+             type = 'bar',
+             marker = list(color = ~color),
+             text = ~paste0(round(perc_area, 2), '%'),
+             textposition = 'none') %>%
+  layout(
+    title = list(text = "% Area of Land Use Classes in 2020"),  
+    xaxis = list(title = ""), # remove x-axis title
+    yaxis = list(title = "Percentage Area (%)", range = c(0, 100)),
+    showlegend = FALSE,
+    margin = list(b = 150)      # keep space for long x labels
+  )%>%
+  config(displayModeBar = FALSE) 
+p
+
+```
+:::
+
+#### 2060
+
+:::{.card expandable="true"}
+<!-- Map -->
+```{=html}
+<div class="map-container" id="bau2060">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('bau2060', '../../img/lulc.png', 'en'); // 'en' for English, 'de' for German
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+<!-- Create a bar chart with plotly -->
+```{r}
+library(plotly)
+library(jsonlite)
+library(dplyr)
+
+# load json file of perc area
+lulc_2020 <- fromJSON("outputs/data/lulc-2020-perc_area.json", flatten = TRUE)
+
+# convert to DF
+lulc_2020_df <- data.frame(
+  class = unlist(lulc_2020),
+  perc_area = as.numeric(names(lulc_2020))
+)
+row.names(lulc_2020_df) <- NULL
+
+# colour palette
+LULC_pal <- list("Urban/amenities" = '#a8aba5', #Urban
+            "Static" = "#d1d3cf", #static
+            "Open Forest" = "#97d1d5", #Open forest
+            "Closed forest" = "#29898f", #closed forest
+            "Overgrown/shrubland" = "#bb8a75", #Shrubland
+            "Intensive agriculture" =  "#f59f78", #Intensive agriculture
+            "Alpine pastures" = "#6ca147", #Alpine pastures
+            "Grassland or meadows" = "#c4e0a1", #Grassland
+            "Permanent crops" = "#DDCC66", #Permanet crops
+            "Glacier" = "#d5f1ff",
+            "River" = "#93d0ee",
+            "Lake" = "#93d0ee")
+
+#add the colours and clean names to the df in the current order
+lulc_2020_df$color <- unlist(LULC_pal)
+lulc_2020_df$clean_class <- names(LULC_pal)
+
+# create the plotly bar chart with no labels on the bars and no x axis title or main title
+p <- plot_ly(lulc_2020_df, 
+             x = ~clean_class, 
+             y = ~perc_area, 
+             type = 'bar',
+             marker = list(color = ~color),
+             text = ~paste0(round(perc_area, 2), '%'),
+             textposition = 'none') %>%
+  layout(
+    title = list(text = "% Area of Land Use Classes in 2060"),  
+    xaxis = list(title = ""), # remove x-axis title
+    yaxis = list(title = "Percentage Area (%)", range = c(0, 100)),
+    showlegend = FALSE,
+    margin = list(b = 150)      # keep space for long x labels
+  )%>%
+  config(displayModeBar = FALSE) 
+p
+
+```
+:::
+
+#### Change
+
+::::
+:::
+------------------------------------------------------------------------
+
+### Ecosystem Services & Biodiversity
+
+------------------------------------------------------------------------
+
+### Economic impacts
+

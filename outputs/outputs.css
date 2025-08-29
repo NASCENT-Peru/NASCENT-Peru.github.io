@@ -1,0 +1,122 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.zoom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 30;
+}
+
+.zoom button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #666;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  min-width: 35px;
+  min-height: 35px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.zoom button:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: #333;
+}
+
+.zoom button:active {
+  background: rgba(240, 240, 240, 1);
+}
+
+#mapTooltip {
+  position: absolute;
+  display: none;
+  background: white;
+  border: 1px solid black;
+  padding: 3px 6px;
+  font-size: 0.9em;
+  border-radius: 3px;
+  pointer-events: none;
+  z-index: 40;
+}
+
+.card {
+  border: none !important;
+  box-shadow: none;  /* optional, also removes subtle shadow */
+}
+
+/* --- Outer card-tabsets (dashboard top-level tabs) --- */
+.card-header.bslib-navs-card-title {
+  background-color: #29898f !important;   /* teal background */
+  border-bottom: 3px solid #1f5f66;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Outer card-tab labels */
+.card-header.bslib-navs-card-title .nav-link {
+  color: white !important;
+  font-weight: 600;
+  border: none !important;
+  margin-right: 0.25rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Outer card active tab */
+.card-header.bslib-navs-card-title .nav-link.active {
+  background-color: #1f5f66 !important;
+  color: #fff !important;
+}
+
+/* Outer card hover */
+.card-header.bslib-navs-card-title .nav-link:hover {
+  background-color: #3a7a89 !important;
+  color: #fff !important;
+}
+
+/* --- Inner panel-tabsets --- */
+.panel-tabset > .nav-tabs {
+  background-color: #f5f5f5 !important;  /* light gray */
+  border-bottom: 2px solid #ccc;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Inner panel tab labels */
+.panel-tabset > .nav-tabs .nav-link {
+  color: #555 !important;
+  font-weight: 500;
+  border: none !important;
+  margin-right: 0.25rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Inner panel active tab */
+.panel-tabset > .nav-tabs .nav-link.active {
+  background-color: #29898f !important;  /* teal */
+  color: white !important;
+  font-weight: 600;
+  border: none !important;
+}
+
+/* Inner panel hover */
+.panel-tabset > .nav-tabs .nav-link:hover {
+  background-color: #ddd !important;
+  color: black !important;
+}
