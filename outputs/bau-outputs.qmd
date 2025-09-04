@@ -176,11 +176,11 @@ p
 
 :::::: columns
 ::: {.column width="30%"}
-Here you can add some text, explanation, or even another figure/table.\
-For example:\
-- Ecosystem Services overview\
-- Contextual notes\
-- Links to data sources
+Ecosystem services influence a wide range of economic sectors, and future changes in these services will affect the Peruvian economy.
+To assess this impact, we examined the relationships between 8 ecosystem services and 7 economic sectors, using data from the [ENCORE database](https://www.encorenature.org/en), which evaluates sectoral dependencies on ecosystem services. Only the sectors relevant to Peru were included.\
+- The spider diagram (right) allows you to explore the overall dependencies. Click on an ecosystem service to highlight it, or double-click to remove it from the diagram.\
+- The bar plots (below) provide service-specific details. Use the tabs to switch between ecosystem services, and the drop-down menu to focus on a single economic sector.\
+
 :::
 ::: {.column width="70%"}
 ```{r}
