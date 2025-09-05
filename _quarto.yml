@@ -5,6 +5,8 @@ project:
 
 resources:
   - "img/"
+  - "outputs/data/"
+  - "js/"
 
 website:
   site-url: "https://nascent-peru.github.io/"

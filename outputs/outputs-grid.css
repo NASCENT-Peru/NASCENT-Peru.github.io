@@ -1,0 +1,257 @@
+/* Grid Layout Styles */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 250px repeat(4, 1fr);
+  gap: 1px;
+  background-color: white;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+/* Scenario header row */
+.scenarios-header {
+    display: contents;
+    background-color: transparent;
+}
+
+.subject-header-placeholder {
+    background-color: transparent;
+    border-bottom: 2px solid #ddd;
+    padding: 15px;
+    grid-column: 1;
+}
+
+/* Scenario headers */
+.scenario-header {
+    background-color: #f1f3f4;
+    color: #333;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+.scenario-header.collapsed:hover { background-color: #e0e2e4; }
+.scenario-header:hover { background-color: #dee2e6; }
+.scenario-header:not(.collapsed) { background-color: #3a7a89; color: #fff; }
+.scenario-header:not(.collapsed):hover { background-color: #3a7a89; }
+.scenario-header.dimmed { opacity: 0.6; }
+.scenario-header::after { content: none; }
+
+/* Subject rows */
+.subject-row { display: contents; }
+
+.subject-header {
+    background-color: #f1f3f4;
+    color: #333;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+}
+.subject-header.collapsed:hover { background-color: #e0e2e4; }
+.subject-header:hover { background-color: #dee2e6; }
+.subject-header:not(.collapsed) { background-color: #3a7a89; color: #fff; }
+.subject-header:not(.collapsed):hover { background-color: #3a7a89; }
+.subject-header.dimmed { background-color: #f1f3f4; opacity: 0.7; }
+.subject-header::after { content: none; }
+
+/* Content cells */
+.content-cell {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.3s ease;
+}
+
+/* Collapsed due to subject row */
+.content-cell.collapsed {
+  opacity: 0.6;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Hide children smoothly */
+.content-cell.collapsed > * {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.content-cell:not(.collapsed) > * {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Collapsed due to scenario dimming */
+.content-cell.scenario-collapsed {
+  background-color: #ddd;
+  opacity: 0.6;
+  padding: 10px;
+  max-height: none;
+}
+.content-cell.scenario-collapsed > * {
+  background-color: #ddd;
+  opacity: 0.6;
+}
+
+/* Ensure collapsed row overrides scenario-collapsed */
+.content-cell.collapsed.scenario-collapsed {
+  max-height: 0 !important;
+  padding: 0 !important;
+}
+
+/* Expanded cells */
+.content-cell:not(.collapsed):not(.scenario-collapsed) {
+  opacity: 1;
+  max-height: 1000px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+/* Dimmed but not collapsed */
+.content-cell.dimmed {
+  background-color: #ddd;
+  opacity: 0.6;
+}
+
+/* Grid positioning for content cells */
+.content-cell[data-scenario="bau"] { grid-column: 2; }
+.content-cell[data-scenario="nature"] { grid-column: 3; }
+.content-cell[data-scenario="society"] { grid-column: 4; }
+.content-cell[data-scenario="culture"] { grid-column: 5; }
+
+/* Map container */
+.map-container {
+    position: relative;
+    height: 400px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+.map-container canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.zoom {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10;
+}
+.zoom button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 0.2s;
+}
+.zoom button:hover { background: #f0f0f0; }
+
+/* Tooltip */
+.map-tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+.map-tooltip.show { opacity: 1; }
+
+/* Card styles for expandable content */
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px 0;
+    background: white;
+}
+.card.expandable { cursor: pointer; }
+
+.grid-layout h2 { border-bottom: none !important; }
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+
+/* Panel tabset styles */
+.panel-tabset { margin: 15px 0; }
+.panel-tabset .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 15px;
+}
+.panel-tabset .nav-tabs button {
+    border: none;
+    background: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+.panel-tabset .nav-tabs button.active {
+    border-bottom-color: #0066cc;
+    font-weight: bold;
+}
+.panel-tabset .nav-tabs button:hover { background-color: #f8f9fa; }
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .grid-layout { grid-template-columns: 200px 1fr 1fr; }
+    .content-cell[data-scenario="society"],
+    .content-cell[data-scenario="culture"] { display: none; }
+    .scenario-header[data-scenario="society"],
+    .scenario-header[data-scenario="culture"] { display: none; }
+}
+
+@media (max-width: 768px) {
+    .grid-layout { grid-template-columns: 150px 1fr; font-size: 0.9em; }
+    .content-cell[data-scenario="nature"],
+    .content-cell[data-scenario="society"],
+    .content-cell[data-scenario="culture"] { display: none; }
+    .scenario-header[data-scenario="nature"],
+    .scenario-header[data-scenario="society"],
+    .scenario-header[data-scenario="culture"] { display: none; }
+    .subject-header,
+    .scenario-header { padding: 10px; }
+}
+
+/* Expandable headers */
+.expandable-header { user-select: none; }
+.expandable-header:active { transform: scale(0.98); }
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+
+
+
+

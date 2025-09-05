@@ -1,0 +1,208 @@
+::: {.content-cell data-scenario="bau" data-subject="lulc"}
+
+:::: {.panel-tabset group="dimension"}
+
+#### 2020
+
+:::{.card expandable="true"}
+<!-- Map -->
+```{=html}
+<div class="map-container" id="bau2020lulc" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    createInteractiveMap('bau2020lulc', '../../img/lulc.png', 'en', 'lulc');
+});
+</script>
+
+```
+:::
+
+:::{.card expandable="true"}
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="bau2020Chart"></canvas>
+</div>
+
+<!-- Load Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+fetch('data/lulc-2020-perc_area.json')
+  .then(response => response.json())
+  .then(data => {
+    // Invert the JSON: values = labels, keys = percentages
+    const labels = Object.values(data).map(arr => arr[0]);
+    const values = Object.keys(data).map(k => parseFloat(k));
+
+    // Palette keyed by your shorthand names
+    const LULC_pal = {
+      "urban": "#a8aba5",
+      "static": "#d1d3cf",
+      "open_forest": "#97d1d5",
+      "closed_forest": "#29898f",
+      "shrubland": "#bb8a75",
+      "int_ag": "#f59f78",
+      "alp_past": "#6ca147",
+      "grassland": "#c4e0a1",
+      "perm_crops": "#DDCC66",
+      "glacier": "#d5f1ff",
+      "river": "#93d0ee",
+      "lake": "#93d0ee"
+    };
+
+    const chartData = {
+      labels: labels,
+      datasets: [{
+        data: values,
+        backgroundColor: labels.map(l => LULC_pal[l] || "#cccccc"),
+        borderWidth: 0
+      }]
+    };
+
+    const ctx = document.getElementById('bau2020Chart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: chartData,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'BAU - % Area of Land Use Classes in 2020'
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return context.parsed.y.toFixed(2) + '%';
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: { display: true, text: 'Percentage Area (%)' }
+          }
+        }
+      }
+    });
+  });
+});
+</script>
+
+```
+:::
+
+#### 2060
+
+:::{.card expandable="true"}
+<!-- Map -->
+:::
+
+:::{.card expandable="true"}
+<!-- BAU 2060 chart -->
+:::
+
+#### Change
+
+:::{.card expandable="true"}
+<!-- Change analysis for BAU -->
+:::
+
+::::
+:::
+
+::: {.content-cell data-scenario="nature" data-subject="lulc"}
+
+:::: {.panel-tabset group="dimension"}
+
+#### 2020
+
+:::{.card expandable="true"}
+<!-- Map -->
+<!-- Map -->
+```{=html}
+<div class="map-container" id="nature2020lulc" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    createInteractiveMap('nature2020lulc', '../../img/lulc.png', 'en', 'lulc');
+});
+</script>
+
+
+```
+:::
+
+:::{.card expandable="true"}
+<!-- Nature for Nature 2020 chart -->
+:::
+
+#### 2060
+
+:::{.card expandable="true"}
+<!-- Map -->
+:::
+
+:::{.card expandable="true"}
+<!-- Nature for Nature 2060 chart -->
+:::
+
+#### Change
+
+:::{.card expandable="true"}
+<!-- Change analysis for Nature for Nature -->
+:::
+
+::::
+:::
+
+::: {.content-cell data-scenario="society" data-subject="lulc"}
+
+:::: {.panel-tabset group="dimension"}
+
+#### 2020
+<!-- Similar structure for Nature for Society -->
+
+#### 2060
+<!-- Similar structure -->
+
+#### Change
+<!-- Similar structure -->
+
+::::
+:::
+
+::: {.content-cell data-scenario="culture" data-subject="lulc"}
+
+:::: {.panel-tabset group="dimension"}
+
+#### 2020
+<!-- Similar structure for Nature as Culture -->
+
+#### 2060
+<!-- Similar structure -->
+
+#### Change
+<!-- Similar structure -->
+
+::::
+:::
