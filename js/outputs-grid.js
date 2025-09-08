@@ -93,22 +93,62 @@ document.addEventListener("DOMContentLoaded", function () {
         updateInstructionNotes();
     }
 
-    // Dynamically set grid column widths
+    // Dynamically set grid column widths using CSS classes
     function updateGridColumns() {
         const gridLayout = document.querySelector('.grid-layout');
         if (!gridLayout) return;
 
-        let template = '250px '; // subject column
+        // Remove existing grid state classes
+        gridLayout.classList.remove('one-expanded', 'two-expanded', 'three-expanded', 'four-expanded', 'all-collapsed');
 
-        if (state.expandedScenarios.size === 0) {
-            SCENARIOS.forEach(() => template += '1fr ');
+        const expandedCount = state.expandedScenarios.size;
+
+        if (expandedCount === 0) {
+            // No scenarios expanded - use default equal distribution
+            gridLayout.classList.add('all-collapsed');
+            gridLayout.style.gridTemplateColumns = '250px repeat(4, 1fr)';
         } else {
-            SCENARIOS.forEach(scenario => {
-                template += state.expandedScenarios.has(scenario) ? '1fr ' : '80px ';
-            });
-        }
+            // Apply appropriate class based on number of expanded scenarios
+            switch (expandedCount) {
+                case 1:
+                    gridLayout.classList.add('one-expanded');
+                    break;
+                case 2:
+                    gridLayout.classList.add('two-expanded');
+                    break;
+                case 3:
+                    gridLayout.classList.add('three-expanded');
+                    break;
+                case 4:
+                    gridLayout.classList.add('four-expanded');
+                    break;
+            }
 
-        gridLayout.style.gridTemplateColumns = template.trim();
+            // Build the grid template dynamically
+            let template = '250px '; // subject column
+
+            if (expandedCount === 1) {
+                // One expanded: give it more space, others get minimal
+                SCENARIOS.forEach(scenario => {
+                    template += state.expandedScenarios.has(scenario) ? '2fr ' : '0.5fr ';
+                });
+            } else if (expandedCount === 2) {
+                // Two expanded: share space between them
+                SCENARIOS.forEach(scenario => {
+                    template += state.expandedScenarios.has(scenario) ? '1.5fr ' : '0.5fr ';
+                });
+            } else if (expandedCount === 3) {
+                // Three expanded: equal distribution for expanded, minimal for collapsed
+                SCENARIOS.forEach(scenario => {
+                    template += state.expandedScenarios.has(scenario) ? '1.33fr ' : '0.5fr ';
+                });
+            } else {
+                // All expanded: equal distribution
+                SCENARIOS.forEach(() => template += '1fr ');
+            }
+
+            gridLayout.style.gridTemplateColumns = template.trim();
+        }
     }
 
     // Enhanced resize function for Plotly charts
@@ -155,12 +195,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize display
     updateGridDisplay();
 
-// Refresh tabsets to ensure proper behavior inside content cells
-if (typeof refreshTabsets === "function") {
-    refreshTabsets();
-}
-
-
+    // Refresh tabsets to ensure proper behavior inside content cells
+    if (typeof refreshTabsets === "function") {
+        refreshTabsets();
+    }
 
     // Popover configuration (keeping your existing popover functionality)
     const popoverMap = {
@@ -243,5 +281,3 @@ if (typeof refreshTabsets === "function") {
         }
     });
 });
-
-

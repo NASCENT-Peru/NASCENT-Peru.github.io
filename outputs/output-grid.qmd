@@ -18,11 +18,12 @@ execute:
   error: false
   message: false
 ---
-
-::: {#instruction-text style="font-size: 1.25em; font-weight: 400; text-align: center;"}
 We present three normative scenarios (**Nature for Nature**, **Nature for Society**, and **Nature as Culture**) and one exploratory scenario (**Business as Usual**) of future landscape change in Peru.
 
 Click on the column headers to expand/collapse scenarios and click on row headers to expand/collapse subject areas.
+
+::: {#instruction-text style="font-size: 1.25em; font-weight: 400; text-align: center;"}
+
 :::
 
 

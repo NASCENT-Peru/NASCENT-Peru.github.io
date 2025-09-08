@@ -9,6 +9,23 @@
   overflow-x: auto;
 }
 
+/* Dynamic grid columns based on expanded state */
+.grid-layout.one-expanded {
+  grid-template-columns: 250px 2fr 0.5fr 0.5fr 0.5fr;
+}
+
+.grid-layout.two-expanded {
+  grid-template-columns: 250px 1.5fr 1.5fr 0.5fr 0.5fr;
+}
+
+.grid-layout.three-expanded {
+  grid-template-columns: 250px 1.33fr 1.33fr 1.33fr 0.5fr;
+}
+
+.grid-layout.four-expanded {
+  grid-template-columns: 250px repeat(4, 1fr);
+}
+
 /* Scenario header row */
 .scenarios-header {
     display: contents;
@@ -32,10 +49,43 @@
     transition: all 0.3s ease;
     border-bottom: 2px solid #ddd;
     position: relative;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
+/* Smaller font for collapsed scenario headers */
+.scenario-header.collapsed {
+    font-size: 0.85rem;
+    padding: 10px 8px;
+}
+
+/* Even smaller font when multiple columns are collapsed */
+.grid-layout.three-expanded .scenario-header.collapsed,
+.grid-layout.two-expanded .scenario-header.collapsed {
+    font-size: 0.75rem;
+    padding: 10px 5px;
+}
+
+.grid-layout.one-expanded .scenario-header.collapsed {
+    font-size: 0.7rem;
+    padding: 10px 3px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: normal;
+}
+
 .scenario-header.collapsed:hover { background-color: #e0e2e4; }
 .scenario-header:hover { background-color: #dee2e6; }
-.scenario-header:not(.collapsed) { background-color: #3a7a89; color: #fff; }
+.scenario-header:not(.collapsed) {
+    background-color: #3a7a89;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    writing-mode: initial;
+    text-orientation: initial;
+}
 .scenario-header:not(.collapsed):hover { background-color: #3a7a89; }
 .scenario-header.dimmed { opacity: 0.6; }
 .scenario-header::after { content: none; }
@@ -75,7 +125,7 @@
 
 /* Collapsed due to subject row */
 .content-cell.collapsed {
-  opacity: 0.6;
+  opacity: 0.4;
   max-height: 0;
   padding: 0;
   overflow: hidden;
@@ -96,13 +146,13 @@
 /* Collapsed due to scenario dimming */
 .content-cell.scenario-collapsed {
   background-color: #ddd;
-  opacity: 0.6;
+  opacity: 0.4;
   padding: 10px;
   max-height: none;
 }
 .content-cell.scenario-collapsed > * {
   background-color: #ddd;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 /* Ensure collapsed row overrides scenario-collapsed */
@@ -233,6 +283,74 @@
 }
 
 
+/* Container for all buttons */
+#bau-landuse-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+#nat-landuse-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+#cul-landuse-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+#soc-landuse-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Each button styled as a pill */
+.landusechange {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ccc;
+  border-radius: 20px;          /* rounded corners */
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #fdfdfd;
+  font-size: 14px;
+  line-height: 1.2;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* On hover */
+.landusechange:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Active (clicked) button */
+.landusechange.active {
+  background-color: #e0e0e0;
+  font-weight: 600;
+  border-color: #999;
+}
+
+/* Color swatch box */
+.landusechange .color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;          /* round swatch */
+  border: 1px solid #333;
+}
+
+
 
 /* Responsive design */
 @media (max-width: 1200px) {
@@ -253,6 +371,13 @@
     .scenario-header[data-scenario="culture"] { display: none; }
     .subject-header,
     .scenario-header { padding: 10px; }
+
+    /* Reset vertical text on mobile */
+    .grid-layout.one-expanded .scenario-header.collapsed {
+        writing-mode: initial;
+        text-orientation: initial;
+        font-size: 0.8rem;
+    }
 }
 
 /* Expandable headers */

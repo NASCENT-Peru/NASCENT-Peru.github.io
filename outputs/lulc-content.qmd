@@ -3,8 +3,6 @@
 :::: {.panel-tabset group="dimension"}
 
 #### 2020
-
-:::{.card expandable="true"}
 <!-- Map -->
 ```{=html}
 <div class="map-container" id="bau2020lulc" data-sync-key="lulc">
@@ -17,110 +15,114 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    createInteractiveMap('bau2020lulc', '../../img/lulc.png', 'en', 'lulc');
+    createInteractiveMap('bau2020lulc', 'data/lulc/lulc-bau-2020.png', 'en', 'lulc');
 });
 </script>
-
 ```
-:::
-
-:::{.card expandable="true"}
+<!-- Chart -->
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
   <canvas id="bau2020Chart"></canvas>
 </div>
 
-<!-- Load Chart.js library -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "bau2020Chart",
+      "data/lulc/lulc-bau-2020.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage Area of Land Use Classes in 2020"
+    );
+  });
+</script>
+```
+
+
+#### 2060
+<!-- Map -->
+```{=html}
+<div class="map-container" id="bau2060lulc" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-fetch('data/lulc-2020-perc_area.json')
-  .then(response => response.json())
-  .then(data => {
-    // Invert the JSON: values = labels, keys = percentages
-    const labels = Object.values(data).map(arr => arr[0]);
-    const values = Object.keys(data).map(k => parseFloat(k));
-
-    // Palette keyed by your shorthand names
-    const LULC_pal = {
-      "urban": "#a8aba5",
-      "static": "#d1d3cf",
-      "open_forest": "#97d1d5",
-      "closed_forest": "#29898f",
-      "shrubland": "#bb8a75",
-      "int_ag": "#f59f78",
-      "alp_past": "#6ca147",
-      "grassland": "#c4e0a1",
-      "perm_crops": "#DDCC66",
-      "glacier": "#d5f1ff",
-      "river": "#93d0ee",
-      "lake": "#93d0ee"
-    };
-
-    const chartData = {
-      labels: labels,
-      datasets: [{
-        data: values,
-        backgroundColor: labels.map(l => LULC_pal[l] || "#cccccc"),
-        borderWidth: 0
-      }]
-    };
-
-    const ctx = document.getElementById('bau2020Chart').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: chartData,
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          title: {
-            display: true,
-            text: 'BAU - % Area of Land Use Classes in 2020'
-          },
-          tooltip: {
-            callbacks: {
-              label: function(context) {
-                return context.parsed.y.toFixed(2) + '%';
-              }
-            }
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            max: 100,
-            title: { display: true, text: 'Percentage Area (%)' }
-          }
-        }
-      }
-    });
-  });
+    createInteractiveMap('bau2060lulc', 'data/lulc/lulc-bau-2060.png', 'en', 'lulc');
 });
 </script>
 
 ```
-:::
+<!-- Chart -->
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="bau2060Chart"></canvas>
+</div>
 
-#### 2060
-
-:::{.card expandable="true"}
-<!-- Map -->
-:::
-
-:::{.card expandable="true"}
-<!-- BAU 2060 chart -->
-:::
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "bau2060Chart",
+      "data/lulc/lulc-bau-2060.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage Area of Land Use Classes in 2060"
+    );
+  });
+</script>
+```
 
 #### Change
+<!-- Map -->
+```{=html}
+<div class="map-container" id="bau-change-map" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
 
-:::{.card expandable="true"}
-<!-- Change analysis for BAU -->
-:::
+<!-- Buttons container -->
+<div id="bau-landuse-buttons"></div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create map instance with a base map (could be a default "overview" PNG)
+  const mapInst = createInteractiveMap(
+    'bau-change-map',
+    'data/lulc/bau-forested_areas-change.png', // pick a default class map to load first
+    'en',
+    false
+  );
+
+  // Attach land-use buttons for scenario "bau"
+  attachLandUseButtons(mapInst, 'bau-landuse-buttons', 'data/lulc/LULC_pal.json', 'bau');
+});
+</script>
+```
+<!-- Chart -->
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="bauchangeChart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "bauchangeChart",
+      "data/lulc/lulc-bau-change.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage difference in LULC area in 2060 relative to 2020"
+    );
+  });
+</script>
+```
 ::::
 :::
 
@@ -130,8 +132,6 @@ fetch('data/lulc-2020-perc_area.json')
 
 #### 2020
 
-:::{.card expandable="true"}
-<!-- Map -->
 <!-- Map -->
 ```{=html}
 <div class="map-container" id="nature2020lulc" data-sync-key="lulc">
@@ -144,32 +144,122 @@ fetch('data/lulc-2020-perc_area.json')
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    createInteractiveMap('nature2020lulc', '../../img/lulc.png', 'en', 'lulc');
+    createInteractiveMap('nature2020lulc', 'data/lulc/lulc-nat-2020.png', 'en', 'lulc');
 });
 </script>
-
-
 ```
-:::
 
-:::{.card expandable="true"}
-<!-- Nature for Nature 2020 chart -->
-:::
+
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="nature2020Chart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "nature2020Chart",
+      "data/lulc/lulc-nat-2020.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage Area of Land Use Classes in 2020"
+    );
+  });
+</script>
+```
+
 
 #### 2060
 
 :::{.card expandable="true"}
 <!-- Map -->
+```{=html}
+<div class="map-container" id="nature2060lulc" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    createInteractiveMap('nature2060lulc', 'data/lulc/lulc-nat-2060.png', 'en', 'lulc');
+});
+</script>
+```
 :::
 
 :::{.card expandable="true"}
-<!-- Nature for Nature 2060 chart -->
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="nature2060Chart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "nature2060Chart",
+      "data/lulc/lulc-nat-2060.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage Area of Land Use Classes in 2020"
+    );
+  });
+</script>
+```
 :::
 
 #### Change
 
 :::{.card expandable="true"}
-<!-- Change analysis for Nature for Nature -->
+```{=html}
+<div class="map-container" id="nat-change-map" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<!-- Buttons container -->
+<div id="nat-landuse-buttons"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create map instance with a base map (could be a default "overview" PNG)
+  const mapInst = createInteractiveMap(
+    'nat-change-map',
+    'data/lulc/bau-forested_areas-change.png', // pick a default class map to load first
+    'en',
+    false
+  );
+
+  // Attach land-use buttons for scenario "bau"
+  attachLandUseButtons(mapInst, 'nat-landuse-buttons', 'data/lulc/LULC_pal.json', 'nat');
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="natureChangeChart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "natureChangeChart",
+      "data/lulc/lulc-nat-change.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage difference in LULC area in 2060 relative to 2020"
+    );
+  });
+</script>
+```
 :::
 
 ::::
@@ -180,13 +270,134 @@ document.addEventListener('DOMContentLoaded', function() {
 :::: {.panel-tabset group="dimension"}
 
 #### 2020
-<!-- Similar structure for Nature for Society -->
+:::{.card expandable="true"}
+<!-- Map -->
+```{=html}
+<div class="map-container" id="society2020lulc" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    createInteractiveMap('society2020lulc', 'data/lulc/lulc-soc-2020.png', 'en', 'lulc');
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="society2020Chart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "society2020Chart",
+      "data/lulc/lulc-soc-2020.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage Area of Land Use Classes in 2020"
+    );
+  });
+</script>
+```
+:::
 
 #### 2060
-<!-- Similar structure -->
+:::{.card expandable="true"}
+<!-- Map -->
+```{=html}
+<div class="map-container" id="society2060lulc" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    createInteractiveMap('society2060lulc', 'data/lulc/lulc-soc-2020.png', 'en', 'lulc');
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="society2060Chart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "society2060Chart",
+      "data/lulc/lulc-soc-2060.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage Area of Land Use Classes in 2060"
+    );
+  });
+</script>
+```
+:::
 
 #### Change
-<!-- Similar structure -->
+:::{.card expandable="true"}
+```{=html}
+<div class="map-container" id="soc-change-map" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<!-- Buttons container -->
+<div id="soc-landuse-buttons"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create map instance with a base map (could be a default "overview" PNG)
+  const mapInst = createInteractiveMap(
+    'soc-change-map',
+    'data/lulc/bau-forested_areas-change.png', // pick a default class map to load first
+    'en',
+    false
+  );
+
+  // Attach land-use buttons for scenario "bau"
+  attachLandUseButtons(mapInst, 'soc-landuse-buttons', 'data/lulc/LULC_pal.json', 'soc');
+});
+</script>
+```
+:::
+:::{.card expandable="true"}
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="societyChangeChart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "societyChangeChart",
+      "data/lulc/lulc-soc-change.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage difference in LULC area in 2060 relative to 2020"
+    );
+  });
+</script>
+```
+:::
 
 ::::
 :::
@@ -196,13 +407,135 @@ document.addEventListener('DOMContentLoaded', function() {
 :::: {.panel-tabset group="dimension"}
 
 #### 2020
-<!-- Similar structure for Nature as Culture -->
+:::{.card expandable="true"}
+<!-- Map -->
+```{=html}
+<div class="map-container" id="culture2020lulc" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    createInteractiveMap('culture2020lulc', 'data/lulc/lulc-soc-2020.png', 'en', 'lulc');
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="culture2020Chart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "culture2020Chart",
+      "data/lulc/lulc-cul-2020.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage Area of Land Use Classes in 2020"
+    );
+  });
+</script>
+```
+:::
 
 #### 2060
-<!-- Similar structure -->
+:::{.card expandable="true"}
+<!-- Map -->
+```{=html}
+<div class="map-container" id="culture2060lulc" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    createInteractiveMap('culture2060lulc', 'data/lulc/lulc-soc-2020.png', 'en', 'lulc');
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="culture2060Chart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "culture2060Chart",
+      "data/lulc/lulc-cul-2060.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage Area of Land Use Classes in 2060"
+    );
+  });
+</script>
+```
+:::
 
 #### Change
-<!-- Similar structure -->
+:::{.card expandable="true"}
+```{=html}
+<div class="map-container" id="cul-change-map" data-sync-key="lulc">
+  <canvas></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<!-- Buttons container -->
+<div id="cul-landuse-buttons"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create map instance with a base map (could be a default "overview" PNG)
+  const mapInst = createInteractiveMap(
+    'cul-change-map',
+    'data/lulc/bau-forested_areas-change.png', // pick a default class map to load first
+    'en',
+    false
+  );
+
+  // Attach land-use buttons for scenario "bau"
+  attachLandUseButtons(mapInst, 'cul-landuse-buttons', 'data/lulc/LULC_pal.json', 'cul');
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+```{=html}
+<!-- Chart container -->
+<div class="chart-container" style="position: relative; height: 400px; width: 100%;">
+  <canvas id="cultureChangeChart"></canvas>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeChart(
+      "cultureChangeChart",
+      "data/lulc/lulc-cul-change.json",
+      "data/lulc/LULC_pal.json",
+      "Percentage difference in LULC area in 2060 relative to 2020"
+    );
+  });
+</script>
+```
+:::
 
 ::::
 :::
