@@ -198,25 +198,41 @@
     height: 400px;
     padding: 10px;
 }
+#radarChart {
+  width: 100%;
+  height: 100%;
+}
 
 /* Panel tabset styles */
-.panel-tabset { margin: 15px 0; }
-.panel-tabset .nav-tabs {
-    border-bottom: 1px solid #dee2e6;
-    margin-bottom: 15px;
+.panel-tabset {
+  margin: 15px 0;
 }
-.panel-tabset .nav-tabs button {
-    border: none;
-    background: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
+
+/* Make tabs rounded */
+.panel-tabset .nav-tabs .nav-link {
+  border: 1px solid #dee2e6 !important;
+  border-radius: 8px 8px 0 0 !important; /* round top corners */
+  background-color: #f8f9fa !important;
+  color: #333 !important;
+  padding: 8px 16px;
+  margin-right: 4px; /* little gap between tabs */
+  transition: background-color 0.2s ease;
 }
-.panel-tabset .nav-tabs button.active {
-    border-bottom-color: #0066cc;
-    font-weight: bold;
+
+/* Hover effect */
+.panel-tabset .nav-tabs .nav-link:hover {
+  background-color: #e9ecef !important;
 }
-.panel-tabset .nav-tabs button:hover { background-color: #f8f9fa; }
+
+/* Active tab */
+.panel-tabset .nav-tabs .nav-link.active {
+  background-color: #3b7a89 !important;
+  border-color: #3b7a89 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+
 
 /* Responsive design */
 @media (max-width: 1200px) {
