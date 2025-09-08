@@ -176,12 +176,13 @@ p
 
 :::::: columns
 ::: {.column width="30%"}
-Here you can add some text, explanation, or even another figure/table.\
-For example:\
-- Ecosystem Services overview\
-- Contextual notes\
-- Links to data sources
+Ecosystem services influence a wide range of economic sectors, and future changes in these services will affect the Peruvian economy. To assess this impact, we examined the relationships between 8 ecosystem services and 7 economic sectors, using data from the [ENCORE database](https://www.encorenature.org/en), which evaluates sectoral dependencies on ecosystem services. Only the sectors relevant to Peru were included.
+
+-   The spider diagram (right) allows you to explore the overall dependencies. Click on an ecosystem service to highlight it, or double-click to remove it from the diagram.
+
+-   The bar plots (below) provide service-specific details. Use the tabs to switch between ecosystem services, and the drop-down menu to focus on a single economic sector.\
 :::
+
 ::: {.column width="70%"}
 ```{r}
 #| echo: false
@@ -194,6 +195,7 @@ library(plotly)
 # Load ENCORE ES and economic impact for Peru DF from the data folder
 peru <- read.csv("outputs/data/peru_diagram_df.csv")
 
+peru$ISIC_cat[peru$ISIC_cat=="Public_admin"] <- "Public Administration"
 
 # Map rating to numeric scale
 rating_map <- c("VL" = 1, "L" = 2, "M" = 3, "H" = 4, "VH" = 5)
@@ -215,7 +217,7 @@ get_es_summary <- function(es_name, peru_data, all_cats) {
 
 # Categories
 all_cats <- c("Agriculture", "Mining", "Construction", 
-              "Manufacturing", "Public_admin", "Transport", "Services")
+              "Manufacturing", "Public Administration", "Transport", "Services")
 
 # Select ES
 selected_es <- c("Habitat_maint","Water_flow_reg", "Rec", "Poll", 
@@ -293,8 +295,6 @@ p <- layout(
 p
 ```
 :::
-
-
 
 ::: {.panel-tabset group="dimension"}
 #### Water Yield
@@ -557,4 +557,4 @@ plots[["Soil_qual"]]      # show Nutrient retention
 plots[["Spirit_art"]]     # show Emblematic species
 ```
 :::
-
+::::::
