@@ -50,6 +50,14 @@ Click on the column headers to expand/collapse scenarios and click on row header
 
 <!-- Land Use Change Row -->
 ::: {.subject-row}
+::: {.subject-header .expandable-header data-subject="characteristics"}
+### Characteristics
+:::
+{{< include ../outputs/characteristics.qmd >}}
+:::
+
+<!-- Land Use Change Row -->
+::: {.subject-row}
 ::: {.subject-header .expandable-header data-subject="lulc"}
 ### Land Use Change
 :::

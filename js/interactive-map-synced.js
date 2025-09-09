@@ -90,91 +90,76 @@ function createInteractiveMap(containerId, imagePath, language = 'en', enableSyn
   }
 
   // Resize canvas and fit image
-  function fitImage() {
-    // Keep old canvas size & global transform to compute preserved center if needed
-    const oldCanvasW = canvas.width || container.clientWidth;
-    const oldCanvasH = canvas.height || container.clientHeight;
-    const prevScale = globalSyncState.scale;
-    const prevTranslateX = globalSyncState.translateX;
-    const prevTranslateY = globalSyncState.translateY;
+function fitImage(force = false) {
+  const oldCanvasW = canvas.width || container.clientWidth;
+  const oldCanvasH = canvas.height || container.clientHeight;
+  const prevScale = globalSyncState.scale;
+  const prevTranslateX = globalSyncState.translateX;
+  const prevTranslateY = globalSyncState.translateY;
 
-    const w = container.clientWidth;
-    const h = container.clientHeight;
+  const w = container.clientWidth;
+  const h = container.clientHeight;
 
-    // If the container is hidden (tab not active), skip resize
-    if (w === 0 || h === 0) {
-      return;
-    }
+  if (w === 0 || h === 0) return; // skip hidden containers
+  if (!mapImage.width || !mapImage.height) return;
 
-    if (!mapImage.width || !mapImage.height) return;
+  // Resize canvas
+  canvas.width = w;
+  canvas.height = h;
+  canvas.style.width = w + 'px';
+  canvas.style.height = h + 'px';
 
-    // Update canvas pixel size
-    canvas.width = w;
-    canvas.height = h;
-    canvas.style.width = w + 'px';
-    canvas.style.height = h + 'px';
+  // Fit-to-container scale
+  const scaleX = w / mapImage.width;
+  const scaleY = h / mapImage.height;
+  const baseScaleCalc = Math.min(scaleX, scaleY);
 
-    // Fit image to container while preserving aspect ratio
-    const scaleX = w / mapImage.width;
-    const scaleY = h / mapImage.height;
-    baseScale = Math.min(scaleX, scaleY); // "contain" style
-
-    if (enableSync) {
-      // If it's the first initialization for synced maps -> center & set base
-      if (!globalSyncState.isInitialized) {
-        globalSyncState.baseScale = baseScale;
-        globalSyncState.scale = baseScale;
-        globalSyncState.translateX = (w - mapImage.width * globalSyncState.scale) / 2;
-        globalSyncState.translateY = (h - mapImage.height * globalSyncState.scale) / 2;
-        globalSyncState.isInitialized = true;
-
-      } else if (!globalSyncState.userInteracted) {
-        // User hasn't interacted yet: keep re-fitting/centering on resize/expansion
-        globalSyncState.baseScale = baseScale;
-        globalSyncState.scale = baseScale;
-        globalSyncState.translateX = (w - mapImage.width * globalSyncState.scale) / 2;
-        globalSyncState.translateY = (h - mapImage.height * globalSyncState.scale) / 2;
-
-      } else {
-        // User HAS interacted: preserve the map center as best as possible
-        // Compute the map coordinates of the old canvas center, then re-project to new canvas size
-        try {
-          const effectivePrevScale = (prevScale && prevScale > 0) ? prevScale : globalSyncState.baseScale || 1;
-          const mapCenterX = (oldCanvasW / 2 - prevTranslateX) / effectivePrevScale;
-          const mapCenterY = (oldCanvasH / 2 - prevTranslateY) / effectivePrevScale;
-
-          // Keep the same scale (do NOT change globalSyncState.scale)
-          globalSyncState.translateX = (w / 2) - mapCenterX * globalSyncState.scale;
-          globalSyncState.translateY = (h / 2) - mapCenterY * globalSyncState.scale;
-        } catch (err) {
-          // fallback: center
-          globalSyncState.translateX = (w - mapImage.width * globalSyncState.scale) / 2;
-          globalSyncState.translateY = (h - mapImage.height * globalSyncState.scale) / 2;
-        }
-      }
-
-      // After adjusting global state, redraw ALL synced maps so they match the new canvas size/center
-      syncedMapInstances.forEach(inst => inst.redraw());
+  if (enableSync) {
+    if (!globalSyncState.isInitialized || !globalSyncState.userInteracted || force) {
+      // Always re-fit if force = true
+      globalSyncState.baseScale = baseScaleCalc;
+      globalSyncState.scale = baseScaleCalc;
+      globalSyncState.translateX = (w - mapImage.width * baseScaleCalc) / 2;
+      globalSyncState.translateY = (h - mapImage.height * baseScaleCalc) / 2;
+      globalSyncState.isInitialized = true;
+      globalSyncState.userInteracted = false;
     } else {
-      // Independent map always fits to container (old behaviour for non-synced maps)
-      scale = baseScale;
-      translateX = (w - mapImage.width * scale) / 2;
-      translateY = (h - mapImage.height * scale) / 2;
-      redraw();
+      // Preserve center if user has interacted
+      try {
+        const effectivePrevScale = (prevScale && prevScale > 0) ? prevScale : globalSyncState.baseScale || 1;
+        const mapCenterX = (oldCanvasW / 2 - prevTranslateX) / effectivePrevScale;
+        const mapCenterY = (oldCanvasH / 2 - prevTranslateY) / effectivePrevScale;
+
+        globalSyncState.translateX = (w / 2) - mapCenterX * globalSyncState.scale;
+        globalSyncState.translateY = (h / 2) - mapCenterY * globalSyncState.scale;
+      } catch {
+        globalSyncState.translateX = (w - mapImage.width * globalSyncState.scale) / 2;
+        globalSyncState.translateY = (h - mapImage.height * globalSyncState.scale) / 2;
+      }
     }
+
+    // Redraw all synced maps
+    syncedMapInstances.forEach(inst => inst.redraw());
+  } else {
+    // Independent (non-synced) maps
+    scale = baseScaleCalc;
+    translateX = (w - mapImage.width * scale) / 2;
+    translateY = (h - mapImage.height * scale) / 2;
+    redraw();
   }
+}
+
 
   // Observe container size changes (handles expandable cards)
-  const ro = new ResizeObserver(() => {
-    fitImage();
-    // If this is a synced map, ensure all synced maps redraw as well (fitImage already triggers redraws in that case)
-    if (enableSync) {
-      syncedMapInstances.forEach(inst => {
-        if (inst !== mapInstance) inst.redraw();
-      });
+const ro = new ResizeObserver(entries => {
+  for (let entry of entries) {
+    if (entry.contentRect.width > 0 && entry.contentRect.height > 0) {
+      mapInstance.fitImage(true); // force re-fit on resize/expansion
     }
-  });
-  ro.observe(container);
+  }
+});
+ro.observe(container);
+
 
   mapImage.onload = fitImage;
 
@@ -377,20 +362,21 @@ function resetSyncedMapsView() {
     const h = inst.container.clientHeight;
     const img = inst.mapImage;
 
-    // Skip hidden maps (in inactive tabsets)
     if (w === 0 || h === 0 || !img.width || !img.height) return;
 
-    const currentScale = globalSyncState.scale || globalSyncState.baseScale;
-    globalSyncState.translateX = (w - img.width * currentScale) / 2;
-    globalSyncState.translateY = (h - img.height * currentScale) / 2;
+    // Always reset to true fit (base scale)
+    const fitScale = Math.min(w / img.width, h / img.height);
+
+    globalSyncState.scale = fitScale;
+    globalSyncState.baseScale = fitScale;
+    globalSyncState.translateX = (w - img.width * fitScale) / 2;
+    globalSyncState.translateY = (h - img.height * fitScale) / 2;
     globalSyncState.userInteracted = false;
     globalSyncState.isInitialized = true;
 
     inst.redraw();
   });
 }
-
-
 
 // Utility function to disable synchronization for a specific map
 function disableMapSync(containerId) {
@@ -417,4 +403,7 @@ function enableMapSync(containerId) {
   }
 }
 
+document.addEventListener('shown.bs.tab', () => {
+  syncedMapInstances.forEach(inst => inst.fitImage(true));
+});
 

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // State tracking
     const state = {
         expandedScenarios: new Set(),     // no scenario expanded initially
-        expandedSubjects: new Set(['lulc']) // LULC row open by default
+        expandedSubjects: new Set(['characteristics']) // LULC row open by default
     };
 
     // Keep scenario order fixed left→right
@@ -39,6 +39,40 @@ document.addEventListener("DOMContentLoaded", function () {
         updateGridDisplay();
     }
 
+    // Animate expand/collapse of content cells
+    function animateContentCell(cell, expand) {
+        if (expand) {
+            cell.classList.remove('collapsed');
+            let startHeight = cell.offsetHeight;
+            let endHeight = cell.scrollHeight;
+
+            cell.style.maxHeight = startHeight + "px";
+            void cell.offsetHeight; // force reflow
+
+            cell.style.maxHeight = endHeight + "px";
+
+            cell.addEventListener('transitionend', function handler(e) {
+                if (e.propertyName === "max-height") {
+                    cell.style.maxHeight = "none"; // reset for responsiveness
+                    cell.removeEventListener('transitionend', handler);
+                }
+            });
+        } else {
+            let startHeight = cell.scrollHeight;
+            cell.style.maxHeight = startHeight + "px";
+            void cell.offsetHeight; // force reflow
+
+            cell.style.maxHeight = "0px";
+
+            cell.addEventListener('transitionend', function handler(e) {
+                if (e.propertyName === "max-height") {
+                    cell.classList.add('collapsed');
+                    cell.removeEventListener('transitionend', handler);
+                }
+            });
+        }
+    }
+
     // Update grid display based on current state
     function updateGridDisplay() {
         const hasExpandedScenarios = state.expandedScenarios.size > 0;
@@ -54,27 +88,28 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Update content cells
+        // Update content cells with smooth animation
         document.querySelectorAll('.content-cell').forEach(cell => {
             const scenario = cell.getAttribute('data-scenario');
             const subject = cell.getAttribute('data-subject');
 
-            cell.classList.remove('scenario-collapsed', 'collapsed', 'dimmed');
+            const shouldCollapse = (hasExpandedSubjects && !state.expandedSubjects.has(subject));
 
-            // Scenario collapsed
-            if (!state.expandedScenarios.has(scenario)) {
-                cell.classList.add('scenario-collapsed');
+            if (shouldCollapse && !cell.classList.contains('collapsed')) {
+                animateContentCell(cell, false); // collapse
+            } else if (!shouldCollapse && cell.classList.contains('collapsed')) {
+                animateContentCell(cell, true); // expand
             }
 
-            // Subject collapsed only if a subject is expanded
-            if (hasExpandedSubjects && !state.expandedSubjects.has(subject)) {
-                cell.classList.add('collapsed');
-            }
+            // Scenario collapse handling
+            cell.classList.toggle('scenario-collapsed', !state.expandedScenarios.has(scenario));
 
             // Dim cells if scenario or subject collapsed
             if ((hasExpandedScenarios && !state.expandedScenarios.has(scenario)) ||
                 (hasExpandedSubjects && !state.expandedSubjects.has(subject))) {
                 cell.classList.add('dimmed');
+            } else {
+                cell.classList.remove('dimmed');
             }
         });
 
@@ -98,55 +133,37 @@ document.addEventListener("DOMContentLoaded", function () {
         const gridLayout = document.querySelector('.grid-layout');
         if (!gridLayout) return;
 
-        // Remove existing grid state classes
         gridLayout.classList.remove('one-expanded', 'two-expanded', 'three-expanded', 'four-expanded', 'all-collapsed');
 
         const expandedCount = state.expandedScenarios.size;
 
         if (expandedCount === 0) {
-            // No scenarios expanded - use default equal distribution
             gridLayout.classList.add('all-collapsed');
             gridLayout.style.gridTemplateColumns = '250px repeat(4, 1fr)';
         } else {
-            // Apply appropriate class based on number of expanded scenarios
             switch (expandedCount) {
-                case 1:
-                    gridLayout.classList.add('one-expanded');
-                    break;
-                case 2:
-                    gridLayout.classList.add('two-expanded');
-                    break;
-                case 3:
-                    gridLayout.classList.add('three-expanded');
-                    break;
-                case 4:
-                    gridLayout.classList.add('four-expanded');
-                    break;
+                case 1: gridLayout.classList.add('one-expanded'); break;
+                case 2: gridLayout.classList.add('two-expanded'); break;
+                case 3: gridLayout.classList.add('three-expanded'); break;
+                case 4: gridLayout.classList.add('four-expanded'); break;
             }
 
-            // Build the grid template dynamically
-            let template = '250px '; // subject column
-
+            let template = '250px ';
             if (expandedCount === 1) {
-                // One expanded: give it more space, others get minimal
                 SCENARIOS.forEach(scenario => {
                     template += state.expandedScenarios.has(scenario) ? '2fr ' : '0.5fr ';
                 });
             } else if (expandedCount === 2) {
-                // Two expanded: share space between them
                 SCENARIOS.forEach(scenario => {
                     template += state.expandedScenarios.has(scenario) ? '1.5fr ' : '0.5fr ';
                 });
             } else if (expandedCount === 3) {
-                // Three expanded: equal distribution for expanded, minimal for collapsed
                 SCENARIOS.forEach(scenario => {
                     template += state.expandedScenarios.has(scenario) ? '1.33fr ' : '0.5fr ';
                 });
             } else {
-                // All expanded: equal distribution
                 SCENARIOS.forEach(() => template += '1fr ');
             }
-
             gridLayout.style.gridTemplateColumns = template.trim();
         }
     }
@@ -170,7 +187,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const instructionText = document.getElementById('instruction-text');
         const hasExpandedScenarios = state.expandedScenarios.size > 0;
         const hasExpandedSubjects = state.expandedSubjects.size > 0;
-
         if (instructionText) {
             instructionText.style.display = (hasExpandedScenarios || hasExpandedSubjects) ? 'none' : 'block';
         }
@@ -202,30 +218,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Popover configuration (keeping your existing popover functionality)
     const popoverMap = {
-        climate: {
-            content: 'IPCC climate change <a href="https://en.wikipedia.org/wiki/Representative_Concentration_Pathway" target="_blank" rel="noopener noreferrer">Representative Concentration Pathway</a>.'
-        },
-        population: {
-            content: "Population projected growth to 2060."
-        },
-        economy: {
-            content: "GDP per capita projected to 2060 (converted to USD using purchasing power parity (PPP) in 2017), "
-        },
-        value: {
-            content: 'Societal values: intrinsic, instrumental, etc., according to the <a href="https://www.naturefuturesframework.org/" target="_blank" rel="noopener noreferrer">IPBES-NFF</a>.'
-        },
-        protected: {
-            content: "% of national land covered by conservation areas"
-        }
+        climate: { content: 'IPCC climate change <a href="https://en.wikipedia.org/wiki/Representative_Concentration_Pathway" target="_blank" rel="noopener noreferrer">Representative Concentration Pathway</a>.' },
+        population: { content: "Population projected growth to 2060." },
+        economy: { content: "GDP per capita projected to 2060 (converted to USD using purchasing power parity (PPP) in 2017)." },
+        value: { content: 'Societal values: intrinsic, instrumental, etc., according to the <a href="https://www.naturefuturesframework.org/" target="_blank" rel="noopener noreferrer">IPBES-NFF</a>.' },
+        protected: { content: "% of national land covered by conservation areas" }
     };
-
-    // Initialize Bootstrap popovers if available
-    if (typeof bootstrap !== 'undefined') {
-        const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-        popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl);
-        });
-    }
 
     // Initialize custom popovers
     const elems = document.querySelectorAll(".popover-key");
@@ -244,7 +242,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             let hideTimeout;
-
             function clearHideTimeout() {
                 if (hideTimeout) {
                     clearTimeout(hideTimeout);
@@ -281,3 +278,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
