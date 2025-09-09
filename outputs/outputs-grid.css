@@ -387,11 +387,35 @@
   margin-right: 0.5em;
 }
 
-/* Collapsed cells: show grey behind the fade, matching header */
-.content-cell.collapsed,
-.content-cell.collapsed.scenario-collapsed {
-  background-color: #f1f3f4 !important;
+.subject-header { position: relative; }
+
+.info-icon {
+    display: inline-flex;       /* inline so it flows with text */
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: #666;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.5em;         /* small space after heading text */
+    vertical-align: middle;     /* align with text */
+    opacity: 0;                 /* hidden by default */
+    transition: background 0.2s, opacity 0.2s;
 }
+
+.subject-header:hover .info-icon {
+    opacity: 1;
+}
+
+
+
+
+
+
 
 
 

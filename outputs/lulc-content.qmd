@@ -270,7 +270,6 @@ document.addEventListener('DOMContentLoaded', function() {
 :::: {.panel-tabset group="dimension"}
 
 #### 2020
-:::{.card expandable="true"}
 <!-- Map -->
 ```{=html}
 <div class="map-container" id="society2020lulc" data-sync-key="lulc">
@@ -287,9 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-:::
 
-:::{.card expandable="true"}
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
@@ -307,10 +304,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 ```
-:::
 
 #### 2060
-:::{.card expandable="true"}
 <!-- Map -->
 ```{=html}
 <div class="map-container" id="society2060lulc" data-sync-key="lulc">
@@ -327,9 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-:::
 
-:::{.card expandable="true"}
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
@@ -347,10 +340,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 ```
-:::
 
 #### Change
-:::{.card expandable="true"}
 ```{=html}
 <div class="map-container" id="soc-change-map" data-sync-key="lulc">
   <canvas></canvas>
@@ -378,8 +369,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-:::
-:::{.card expandable="true"}
+
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
@@ -397,8 +387,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 ```
-:::
-
 ::::
 :::
 
@@ -407,7 +395,6 @@ document.addEventListener('DOMContentLoaded', function() {
 :::: {.panel-tabset group="dimension"}
 
 #### 2020
-:::{.card expandable="true"}
 <!-- Map -->
 ```{=html}
 <div class="map-container" id="culture2020lulc" data-sync-key="lulc">
@@ -424,9 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-:::
 
-:::{.card expandable="true"}
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
@@ -444,10 +429,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 ```
-:::
 
 #### 2060
-:::{.card expandable="true"}
 <!-- Map -->
 ```{=html}
 <div class="map-container" id="culture2060lulc" data-sync-key="lulc">
@@ -464,9 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-:::
 
-:::{.card expandable="true"}
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
@@ -484,10 +465,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 ```
-:::
 
 #### Change
-:::{.card expandable="true"}
 ```{=html}
 <div class="map-container" id="cul-change-map" data-sync-key="lulc">
   <canvas></canvas>
@@ -515,9 +494,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-:::
 
-:::{.card expandable="true"}
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
@@ -535,7 +512,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 ```
-:::
-
 ::::
 :::

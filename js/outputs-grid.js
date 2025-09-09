@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
         refreshTabsets();
     }
 
-    // Popover configuration (keeping your existing popover functionality)
+    // Popover configuration for custom keys
     const popoverMap = {
         climate: { content: 'IPCC climate change <a href="https://en.wikipedia.org/wiki/Representative_Concentration_Pathway" target="_blank" rel="noopener noreferrer">Representative Concentration Pathway</a>.' },
         population: { content: "Population projected growth to 2060." },
@@ -225,7 +225,6 @@ document.addEventListener("DOMContentLoaded", function () {
         protected: { content: "% of national land covered by conservation areas" }
     };
 
-    // Initialize custom popovers
     const elems = document.querySelectorAll(".popover-key");
     elems.forEach(el => {
         const key = el.dataset.popoverKey;
@@ -277,5 +276,47 @@ document.addEventListener("DOMContentLoaded", function () {
             }, true);
         }
     });
+
+    // -----------------------
+    // Initialize popovers for info icons next to headings
+    // -----------------------
+    const infoIcons = document.querySelectorAll('.info-icon');
+    infoIcons.forEach(el => {
+        if (typeof bootstrap !== 'undefined') {
+            new bootstrap.Popover(el, {
+                trigger: 'hover focus',
+                placement: 'right',
+                html: false
+            });
+        }
+    });
+
+const ecosystemContent = `
+<p>Ecosystem services influence a wide range of economic sectors, and future changes in these services will affect the Peruvian economy. To assess this impact, we examined the relationships between <strong>8 ecosystem services</strong> and <strong>7 economic sectors</strong>, using data from the <a href="https://www.encorenature.org/en" target="_blank" rel="noopener noreferrer">ENCORE database</a>, which evaluates sectoral dependencies on ecosystem services. Only the sectors relevant to Peru were included.</p>
+<p>We analyzed <strong>two scenarios</strong> to evaluate the impact of ecosystem service changes on economic sectors. We calculate the impact as the product of the <strong>average change</strong> in ecosystem services and the <strong>materiality rating</strong> of each economic sector:</p>
+<p>$$Impact = avg\\_change \\times mat\\_rating + std$$</p>
+<p>The results of the scenario analyses are shown below in the bar plots.</p>
+`;
+
+const el = document.getElementById('ecosystem-icon');
+if (typeof bootstrap !== 'undefined' && el) {
+    const pop = new bootstrap.Popover(el, {
+        html: true,
+        content: ecosystemContent,
+        trigger: 'hover focus',
+        placement: 'right'
+    });
+
+    // Ensure math renders after the popover is shown
+    el.addEventListener('shown.bs.popover', () => {
+        if (window.MathJax) {
+            // v3 MathJax
+            MathJax.typesetPromise();
+        }
+    });
+}
+
+
 });
+
 

@@ -92,6 +92,195 @@ section#footnotes {
   display: none;
 }
 
+/* Panel tabset styles */
+.panel-tabset {
+  margin: 15px 0;
+}
+
+/* Make tabs rounded */
+.panel-tabset .nav-tabs .nav-link {
+  border: 1px solid #dee2e6 !important;
+  border-radius: 8px 8px 0 0 !important; /* round top corners */
+  background-color: #f8f9fa !important;
+  color: #333 !important;
+  padding: 8px 16px;
+  margin-right: 4px; /* little gap between tabs */
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+.panel-tabset .nav-tabs .nav-link:hover {
+  background-color: #e9ecef !important;
+}
+
+/* Active tab */
+.panel-tabset .nav-tabs .nav-link.active {
+  background-color: #3b7a89 !important;
+  border-color: #3b7a89 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+/* =========================
+   MARKMAP BASE STYLES
+   ========================= */
+#markmap {
+  width: 100%;
+  background: white;
+  z-index: 1000;
+}
+
+#markmap svg {
+  width: 100%;
+  height: 100%;
+}
+
+#markmap img {
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+#content {
+  margin-top: 50px;
+  padding: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Anchor offset for smooth scroll */
+#content h2[id],
+#content h3[id] {
+  position: relative;
+}
+
+#content h2[id]::before,
+#content h3[id]::before {
+  content: "";
+  display: block;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Hover styles for markmap links */
+#markmap .mm-link:hover {
+  stroke: inherit !important;
+  opacity: 0.8;
+}
+
+#markmap .mm-node:hover .mm-link {
+  stroke: inherit !important;
+  opacity: 0.8;
+}
+
+#markmap a {
+  text-decoration: none !important;
+}
+
+#markmap a:hover {
+  color: inherit !important;
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+
+#markmap a:link,
+#markmap a:visited,
+#markmap a:active {
+  text-decoration: none !important;
+}
+
+#markmap.show {
+  display: block !important;
+}
+
+/* =========================
+   BUTTON BASE STYLE
+   ========================= */
+#markmap-toggle {
+  display: none; /* hidden on desktop */
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #166F75;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   BREAKPOINTS
+   ========================= */
+
+/* Desktop: wide screens ≥1367px */
+@media (min-width: 1367px) {
+  #markmap {
+    position: sticky;
+    top: 0;
+    height: 500px;
+  }
+
+  html {
+    scroll-padding-top: 520px;
+  }
+
+  #content h2[id]::before,
+  #content h3[id]::before {
+    height: 520px;
+    margin-top: -520px;
+  }
+}
+
+/* Laptop / Tablet: 769px–1366px */
+@media (max-width: 1366px) and (min-width: 769px) {
+  #markmap {
+    position: relative;
+    display: none; /* hidden until toggled */
+    height: 250px;
+    margin-bottom: 1rem;
+  }
+
+  html {
+    scroll-padding-top: 100px;
+  }
+
+  #content h2[id]::before,
+  #content h3[id]::before {
+    height: 100px;
+    margin-top: -100px;
+  }
+
+  #markmap-toggle {
+    display: inline-block;
+  }
+}
+
+/* Mobile: ≤768px */
+@media (max-width: 768px) {
+  #markmap {
+    position: relative;
+    display: none; /* hidden until toggled */
+    height: 250px;
+    margin-bottom: 1rem;
+  }
+
+  html {
+    scroll-padding-top: 100px;
+  }
+
+  #content h2[id]::before,
+  #content h3[id]::before {
+    height: 100px;
+    margin-top: -100px;
+  }
+
+  #markmap-toggle {
+    display: inline-block;
+  }
+}
+
 
 
 

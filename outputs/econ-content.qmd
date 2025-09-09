@@ -1,436 +1,140 @@
-:::::::: {.content-cell data-scenario="bau" data-subject="econ"}
-::::: grid
-::: g-col-6
-Ecosystem services influence a wide range of economic sectors, and future changes in these services will affect the Peruvian economy. To assess this impact, we examined the relationships between 8 ecosystem services and 7 economic sectors, using data from the [ENCORE database](https://www.encorenature.org/en), which evaluates sectoral dependencies on ecosystem services. Only the sectors relevant to Peru were included.
-
--   The spider diagram (right) allows you to explore the overall dependencies. Click on an ecosystem service to highlight it, or double-click to remove it from the diagram.
-
--   The bar plots (below) provide service-specific details. Use the tabs to switch between ecosystem services, and the drop-down menu to focus on a single economic sector.\
-:::
-
-::: g-col-6
-```{=html}
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-
-  <div class="chart-container">
-    <canvas id="radarChart"></canvas>
-  </div>
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Mapping ratings to numeric
-    const ratingMap = { "VL": 1, "L": 2, "M": 3, "H": 4, "VH": 5 };
-
-    // Categories (ISIC)
-    const allCats = ["Agriculture","Mining","Construction",
-                     "Manufacturing","Public_admin","Transport","Services"];
-
-    // Ecosystem services
-    const selectedES = ["Habitat_maint","Water_flow_reg","Rec","Poll",
-                        "Soil_ret","Biomass","Soil_qual","Spirit_art"];
-
-    // Pretty labels
-    const esLabels = {
-      "Habitat_maint": "Habitat quality",
-      "Poll": "Pollinator abundance",
-      "Biomass": "Carbon stored in biomass",
-      "Soil_qual": "Nutrient retention by landscape",
-      "Soil_ret": "Sediment retention by landscape",
-      "Water_flow_reg": "Water yield",
-      "Rec": "Recreation potential",
-      "Spirit_art": "Emblematic species"
-    };
-
-    // Load CSV
-    Papa.parse("data/peru_diagram_df.csv", {
-      download: true,
-      header: true,
-      dynamicTyping: true,
-      complete: function(results) {
-        const data = results.data;
-
-        function getEsSummary(esName) {
-          // Filter rows for this ES
-          const rows = data.filter(d => d.Ecosystem_Service === esName);
-
-          // Map to numeric ratings
-          rows.forEach(d => {
-            d.rating_num = ratingMap[d.rating] || 0;
-          });
-
-          // Find max rating per category
-          const catMax = {};
-          allCats.forEach(c => catMax[c] = 0);
-          rows.forEach(d => {
-            if (d.ISIC_cat in catMax) {
-              catMax[d.ISIC_cat] = Math.max(catMax[d.ISIC_cat], d.rating_num);
-            }
-          });
-
-          return allCats.map(c => catMax[c] || 0);
-        }
-
-        // Assign colors for ES lines (extend palette as needed)
-        const palette = [
-          "#1f77b4","#ff7f0e","#2ca02c","#d62728",
-          "#9467bd","#8c564b","#e377c2","#7f7f7f"
-        ];
-
-        // Build datasets
-        const datasets = selectedES.map((es, i) => ({
-          label: esLabels[es],
-          data: getEsSummary(es),
-          fill: true,
-          borderColor: palette[i % palette.length],
-          backgroundColor: palette[i % palette.length] + "33", // semi-transparent
-          pointBackgroundColor: palette[i % palette.length],
-          pointBorderColor: "#fff",
-          pointHoverBackgroundColor: "#fff",
-          pointHoverBorderColor: palette[i % palette.length]
-        }));
-
-        // Chart config
-        const config = {
-          type: 'radar',
-          data: {
-            labels: allCats,
-            datasets: datasets
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-              r: {
-                min: 0,
-                max: 5,
-                ticks: {
-                  stepSize: 1,
-                  callback: function(value) {
-                    const labels = ["No","VL","L","M","H","VH"];
-                    return labels[value] || value;
-                  }
-                },
-                pointLabels: {
-                  font: { size: 10, family: "Arial" },
-                  color: "black"
-                }
-              }
-            },
-            plugins: {
-              legend: {
-                position: 'bottom',
-                labels: { font: { size: 10 } }
-              },
-              tooltip: {
-                callbacks: {
-                  label: function(context) {
-                    const val = context.raw;
-                    const labels = ["No","VL","L","M","H","VH"];
-                    return `${context.dataset.label}: ${labels[val] || val}`;
-                  }
-                }
-              }
-            }
-          }
-        };
-
-        // Render chart
-        const ctx = document.getElementById("radarChart").getContext("2d");
-        new Chart(ctx, config);
-      }
-    });
-  });
-  </script>
-```
-:::
-:::::
-
-::: {.panel-tabset group="econ-services"}
-#### Water Yield
-
+:::: {.content-cell data-scenario="bau" data-subject="econ"}
 ```{r}
 #| echo: false
 #| warning: false
-#| message: false
+#| fig-width: 8
+#| fig-height: 8
 library(dplyr)
-library(stringr)
 library(tidyr)
 library(plotly)
-
 # Load ENCORE ES and economic impact for Peru DF from the data folder
 peru <- read.csv("outputs/data/peru_diagram_df.csv")
 
-# Canonical levels and colors
-rating_levels <- c("Very low", "Low", "Medium", "High", "Very high")
-rating_colors <- c(
-  "Very low"  = "#1a9850",
-  "Low"       = "#91cf60",
-  "Medium"    = "#ffffbf",
-  "High"      = "#fc8d59",
-  "Very high" = "#d73027"
+peru$ISIC_cat[peru$ISIC_cat=="Public_admin"] <- "Public Administration"
+
+#load scenario df
+scenarios <- read.csv("outputs/data/dummy_scenarios.csv")
+
+# map rating to numeric scores 
+rating_map <- c("VL" = 1, "L" = 2, "M" = 3, "H" = 4, "VH" = 5)
+
+peru <- peru %>%
+  mutate(rating_num = ifelse(is.na(rating), 0, rating_map[as.character(rating)]))
+
+# join peru df with scenarios 
+scenario_data <- peru %>%
+  inner_join(scenarios, by = "Ecosystem_Service")
+
+# expand each row of peru_df for all scenarios
+#expanded <- crossing(Scenario = unique(scenarios$Scenario), peru)
+# now join safely
+#joined <- expanded %>%
+#  left_join(scenarios, by = c("Scenario", "Ecosystem_Service"))
+
+
+# calculate impacts with noise 
+set.seed(123) # reproducible
+
+scenario_data <- scenario_data %>%
+  rowwise() %>%
+  mutate(
+    impact = ifelse(
+      is.na(avg_change),
+      0,  # no change if ES not in scenario
+      avg_change * rating_num + rnorm(1, mean = 0, sd = std)
+    )
+  ) %>%
+  ungroup()
+
+# box plot 
+# Aggregate to ISIC_section (or ISIC_division if you prefer)
+category_summary <- scenario_data %>%
+  group_by(ISIC_cat, Scenario) %>%
+  summarise(
+    mean_impact = mean(impact, na.rm = TRUE),
+    sd_impact = sd(impact, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+
+# Define bins and colors
+bin_colors <- c(
+  "[-1,-0.75)"  = "#873426",  # dark red
+  "[-0.75,-0.5)"= "#A64B2A",  # red-orange
+  "[-0.5,-0.25)"= "#D27E3F",  # orange
+  "[-0.25,0)"   = "#E5C965",  # yellow
+  "[0,0.25)"    = "#A8D08D",  # light green
+  "[0.25,0.5)"  = "#70AD47",  # medium green
+  "[0.5,0.75)"  = "#4F7F3F",  # dark green
+  "[0.75,1]"    = "#3B5C3E"   # forest green
 )
 
-# Pretty labels
-es_labels <- c(
-  "Habitat_maint" = "Habitat quality",
-  "Poll"          = "Pollinator abundance",
-  "Biomass"       = "Carbon stored in biomass",
-  "Soil_qual"     = "Nutrient retention by landscape",
-  "Soil_ret"      = "Sediment retention by landscape",
-  "Water_flow_reg"= "Water yield",
-  "Rec"           = "Recreation potential",
-  "Spirit_art"    = "Emblematic species"
-)
+# Get all ISIC categories (so missing ones are kept in plots)
+all_cats <- unique(scenario_data$ISIC_cat)
 
-# Ecosystem services to plot
-selected_es <- c("Habitat_maint","Water_flow_reg", "Rec", "Poll", 
-                 "Soil_ret", "Biomass", "Soil_qual", "Spirit_art")
+# Loop over scenarios and store plots in a list
+plots <- list()
+scenarios_list <- unique(scenario_data$Scenario)
 
-# --- helper to clean and summarise ---
-clean_ES_data <- function(df, ES) {
-  df %>%
-    filter(Ecosystem_Service == ES, !is.na(rating)) %>%
-    mutate(
-      rating = as.character(rating) |> str_trim(),
-      rating = dplyr::recode(rating,
-                             "VL" = "Very low", "L" = "Low", "M" = "Medium",
-                             "H" = "High", "VH" = "Very high",
-                             .default = rating
-      ),
-      rating = case_when(
-        str_to_lower(rating) %in% c("very low","very-low") ~ "Very low",
-        str_to_lower(rating) %in% c("low")                 ~ "Low",
-        str_to_lower(rating) %in% c("medium","med")        ~ "Medium",
-        str_to_lower(rating) %in% c("high")                ~ "High",
-        str_to_lower(rating) %in% c("very high","very-high") ~ "Very high",
-        TRUE ~ rating
-      ),
-      rating = factor(rating, levels = rating_levels)
-    ) %>%
-    filter(!is.na(rating))
-}
-
-build_summary <- function(df) {
-  df %>%
-    mutate(rating = as.character(rating)) %>%
-    group_by(rating) %>%
+for (scen in scenarios_list) {
+  
+  scen_data <- scenario_data %>%
+    filter(Scenario == scen) %>%
+    group_by(ISIC_cat) %>%
     summarise(
-      n_classes   = n(),
-      classes_list = paste(sort(ISIC_class), collapse = "<br>"),
+      mean_impact = mean(impact, na.rm = TRUE),
+      sd_impact   = sd(impact, na.rm = TRUE),
       .groups = "drop"
     ) %>%
-    tidyr::complete(
-      rating = rating_levels,
-      fill = list(n_classes = 0, classes_list = "")
-    ) %>%
-    mutate(rating = factor(rating, levels = rating_levels)) %>%
-    arrange(rating)
+    right_join(tibble(ISIC_cat = all_cats), by = "ISIC_cat") %>%
+    mutate(
+      mean_impact = replace_na(mean_impact, 0),
+      sd_impact   = replace_na(sd_impact, 0),
+      impact_bin  = cut(mean_impact,
+                        breaks = seq(-1, 1, by = 0.25),
+                        include.lowest = TRUE,
+                        right = FALSE)
+    )
+  
+  # Static ggplot
+  p <- ggplot(scen_data, aes(x = ISIC_cat, y = mean_impact, 
+                             fill = impact_bin,
+                             text = paste0("ISIC: ", ISIC_cat,
+                                           "<br>Mean Impact: ", round(mean_impact, 3),
+                                           "<br>SD: ", round(sd_impact, 3)))) +
+    geom_col(width = 0.7) +
+    geom_errorbar(aes(ymin = mean_impact - sd_impact,
+                      ymax = mean_impact + sd_impact),
+                  width = 0.2) +
+    scale_fill_manual(values = bin_colors, drop = FALSE, na.value = "grey90") +
+    coord_cartesian(ylim = c(-1, 1)) +
+    theme_minimal(base_size = 12) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    labs(title = "Impact of change in Ecosystem service provosion according to ISIC Category",
+         x = "ISIC Category",
+         y = "Economical Impact",
+        fill = "Impact"
+      )
+  
+  
+  # Convert to plotly
+  plots[[scen]] <- ggplotly(p, tooltip = "text")
 }
 
-# --- function to build one plot for a given ES ---
-make_plot <- function(ES) {
-  ES_data <- clean_ES_data(peru, ES)
-  
-  all_sum <- build_summary(ES_data)
-  cats    <- sort(unique(ES_data$ISIC_cat))
-  
-  cat_summaries <- lapply(cats, function(cat) {
-    df <- build_summary(filter(ES_data, ISIC_cat == cat))
-    df$ISIC_cat <- cat
-    df
-  })
-  names(cat_summaries) <- cats
-  
-  # base figure
-  p <- plot_ly()
-  
-  # All categories trace
-  p <- add_bars(
-    p, data = all_sum,
-    x = ~rating, y = ~n_classes,
-    text = ~paste0(
-      "Category: All<br>",
-      "Rating: ", rating, "<br>",
-      "# classes: ", n_classes,
-      ifelse(classes_list == "", "", paste0("<br><br>", classes_list))
-    ),
-    hovertemplate = "%{text}<extra></extra>",
-    textposition  = "none",
-    marker = list(color = unname(rating_colors[as.character(all_sum$rating)])),
-    name = "All categories", visible = TRUE
-  )
-  
-  # Per-category traces
-  for (cat in cats) {
-    df <- cat_summaries[[cat]]
-    p <- add_bars(
-      p, data = df,
-      x = ~rating, y = ~n_classes,
-      text = ~paste0(
-        "Category: ", ISIC_cat, "<br>",
-        "Rating: ", rating, "<br>",
-        "# classes: ", n_classes,
-        ifelse(classes_list == "", "", paste0("<br><br>", classes_list))
-      ),
-      hovertemplate = "%{text}<extra></extra>",
-      textposition  = "none",
-      marker = list(color = unname(rating_colors[as.character(df$rating)])),
-      name = cat, visible = FALSE
-    )
-  }
-  
-  # Visibility setup
-  n_traces   <- 1 + length(cats)
-  vis_all    <- c(TRUE, rep(FALSE, length(cats)))
-  vis_percat <- lapply(seq_along(cats), function(i) { v <- rep(FALSE, n_traces); v[i+1] <- TRUE; v })
-  
-  ymax_all <- max(all_sum$n_classes, 0)
-  ymax_cat <- sapply(cat_summaries, function(df) max(df$n_classes, 0))
-  
-  buttons <- c(
-    list(list(
-      method = "update",
-      label  = "All categories",
-      args   = list(
-        list(visible = vis_all),
-        list(
-          title = paste("Dependency on", es_labels[ES], "— All ISIC categories"),
-          yaxis = list(range = c(0, max(1, ymax_all) * 1.1))
-        )
-      )
-    )),
-    lapply(seq_along(cats), function(i) {
-      list(
-        method = "update",
-        label  = cats[i],
-        args   = list(
-          list(visible = vis_percat[[i]]),
-          list(
-            #title = paste("Dependency on", es_labels[ES], "—", cats[i]),
-            yaxis = list(range = c(0, max(1, ymax_cat[i]) * 1.1))
-          )
-        )
-      )
-    })
-  )
-  
-  p <- layout(
-    p,
-    barmode = "group",
-    #title   = paste("Dependency on", es_labels[ES], "— All ISIC categories"),
-    xaxis   = list(title = "Dependency rating"),
-    yaxis   = list(title = "Number of ISIC classes"),
-    showlegend = FALSE,
-    updatemenus = list(list(
-      type = "dropdown", y = 1.15, x = 0, showactive = TRUE, buttons = buttons
-    ))
-  )
-  
-  if (max(all_sum$n_classes) == 0) {
-    p <- p %>% layout(
-      annotations = list(list(
-        x = 0.5, y = 0.5, xref = "paper", yref = "paper",
-        text = "No ISIC classes with non-NA ratings for this ES",
-        showarrow = FALSE
-      ))
-    )
-  }
-  
-  return(p)
-}
-
-# --- generate plots for all selected services ---
-plots <- lapply(selected_es, make_plot)
-names(plots) <- selected_es
-
-plots[["Water_flow_reg"]]  # show water yield
-
+# --- Call plots interactively one by one ---
+plots[["Scenario 1"]]
 ```
+::::
 
-#### Pollinator Abundance
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-plots[["Poll"]]            # show pollinator abundance
-```
-
-#### Habitat Quality
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-plots[["Habitat_maint"]]  # show Habitat quality 
-```
-
-#### Recreation Potential
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-plots[["Rec"]]            # show Recreation potential
-```
-
-#### Sediment Retention
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-plots[["Soil_ret"]]       # show Sediment retention 
-```
-
-#### Carbon Stored in Biomass
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-plots[["Biomass"]]        # show Carbon stored in biomass
-```
-
-#### Nutrient Retention
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-plots[["Soil_qual"]]      # show Nutrient retention
-```
-
-#### Emblematic Species
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-plots[["Spirit_art"]]     # show Emblematic species
-```
-:::
-::::::::
 
 :::: {.content-cell data-scenario="nature" data-subject="econ"}
-::: {.panel-tabset group="econ-services"}
-#### Water Yield
-
-#### Pollinator Abundance
-
-#### Habitat Quality
-
-#### Recreation Potential
-
-#### Sediment Retention
-
-#### Carbon Stored in Biomass
-
-#### Nutrient Retention
-
-#### Emblematic Species
-:::
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 8
+#| fig-height: 8
+plots[["Scenario 2"]]
+```
 ::::
 
 :::: {.content-cell data-scenario="society" data-subject="econ"}
