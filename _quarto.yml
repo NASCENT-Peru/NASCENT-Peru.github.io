@@ -5,6 +5,8 @@ project:
 
 resources:
   - "img/"
+  - "outputs/data/"
+  - "js/"
 
 website:
   site-url: "https://nascent-peru.github.io/"
@@ -88,6 +90,6 @@ babelquarto:
   languages: ['es']
 title-es: NASCENT-PERU
 lang: en
-
-execute:
-  freeze: auto
+#
+# execute:
+#   freeze: false

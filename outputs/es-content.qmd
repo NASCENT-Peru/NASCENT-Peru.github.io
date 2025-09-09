@@ -1,0 +1,124 @@
+::: {.content-cell data-scenario="bau" data-subject="es"}
+
+:::: {.panel-tabset group="es-services"}
+
+#### Carbon Storage
+
+:::{.card expandable="true"}
+<!-- Carbon storage map for BAU -->
+```{=html}
+<div class="map-container" id="bauCarbonES">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('bauCarbonES', '../../img/lulc.png', 'en');
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+<!-- Carbon storage analysis -->
+```{r}
+# Your carbon storage analysis code here
+```
+:::
+
+#### Water Regulation
+
+:::{.card expandable="true"}
+<!-- Water regulation content for BAU -->
+```{r}
+# Water regulation analysis for BAU
+```
+:::
+
+#### Biodiversity
+
+:::{.card expandable="true"}
+<!-- Biodiversity content for BAU -->
+```{r}
+# Biodiversity analysis for BAU
+```
+:::
+
+::::
+:::
+
+::: {.content-cell data-scenario="nature" data-subject="es"}
+
+:::: {.panel-tabset group="es-services"}
+
+#### Carbon Storage
+
+:::{.card expandable="true"}
+<!-- Carbon storage for Nature for Nature -->
+```{=html}
+<div class="map-container" id="natureCarbonES">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natureCarbonES', '../../img/lulc.png', 'en');
+});
+</script>
+```
+:::
+
+:::{.card expandable="true"}
+```{r}
+# Carbon storage analysis for Nature for Nature
+```
+:::
+
+#### Water Regulation
+<!-- Water regulation content for Nature for Nature -->
+
+#### Biodiversity
+<!-- Biodiversity content for Nature for Nature -->
+
+::::
+:::
+
+::: {.content-cell data-scenario="society" data-subject="es"}
+
+:::: {.panel-tabset group="es-services"}
+
+#### Carbon Storage
+<!-- Carbon storage content for Nature for Society -->
+
+#### Water Regulation
+<!-- Water regulation content for Nature for Society -->
+
+#### Biodiversity
+<!-- Biodiversity content for Nature for Society -->
+
+::::
+:::
+
+::: {.content-cell data-scenario="culture" data-subject="es"}
+
+:::: {.panel-tabset group="es-services"}
+
+#### Carbon Storage
+<!-- Carbon storage content for Nature as Culture -->
+
+#### Water Regulation
+<!-- Water regulation content for Nature as Culture -->
+
+#### Biodiversity
+<!-- Biodiversity content for Nature as Culture -->
+
+::::
+:::

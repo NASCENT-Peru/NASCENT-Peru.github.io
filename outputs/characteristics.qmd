@@ -1,0 +1,222 @@
+::: {.content-cell data-scenario="bau" data-subject="characteristics"}
+::::: grid
+::: g-col-6
+<h4>
+  <span class="popover-key" data-popover-key="climate" style="cursor: pointer;">
+    <img src="../img/icons/climate_icon.png" alt="Climate Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Climate Change:</span>
+    <strong> RCP 4.5 </strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="population" style="cursor: pointer;">
+    <img src="../img/icons/population_icon.png" alt="Population Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Population:</span>
+    <strong> 39.81 million by 2060</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="economy" style="cursor: pointer;">
+    <img src="../img/icons/economy_icon.png" alt="Economy Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Economic development:</span>
+    <strong> 1007 billion USD</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="value" style="cursor: pointer;">
+    <img src="../img/icons/value_icon.png" alt="Value Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Value perspective on nature:</span>
+    <strong> Instrumental</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="protected" style="cursor: pointer;">
+    <img src="../img/icons/protected_icon.png" alt="Protected Areas Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Protected areas (proportion of Peru under protection):</span>
+    <strong> 25% by 2030</strong>
+  </span>
+</h4>
+:::
+
+
+::: g-col-6
+![](../img/wordclouds/Business_as_usual.svg)
+:::
+:::::
+:::
+
+
+::: {.content-cell data-scenario="nature" data-subject="characteristics"}
+::::: grid
+::: g-col-6
+<h4>
+  <span class="popover-key" data-popover-key="climate" style="cursor: pointer;">
+    <img src="../img/icons/climate_icon.png" alt="Climate Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Climate Change:</span>
+    <strong> RCP 2.6 </strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="population" style="cursor: pointer;">
+    <img src="../img/icons/population_icon.png" alt="Population Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Population:</span>
+    <strong> 37.21 million</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="economy" style="cursor: pointer;">
+    <img src="../img/icons/economy_icon.png" alt="Economy Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Economic development:</span>
+    <strong> 1007 billion USD </strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="value" style="cursor: pointer;">
+    <img src="../img/icons/value_icon.png" alt="Value Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Value perspective on nature:</span>
+    <strong> Mainly Intrinsic</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="protected" style="cursor: pointer;">
+    <img src="../img/icons/protected_icon.png" alt="Protected Areas Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Protected areas (proportion of Peru under protection):</span>
+    <strong> 30% by 2030</strong>
+  </span>
+</h4>
+:::
+
+
+::: g-col-6
+![](../img/wordclouds/Nature_for_nature.svg)
+:::
+::::: 
+:::
+
+::: {.content-cell data-scenario="society" data-subject="characteristics"}
+::::: grid
+::: g-col-6
+<h4>
+  <span class="popover-key" data-popover-key="climate" style="cursor: pointer;">
+    <img src="../img/icons/climate_icon.png" alt="Climate Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Climate Change:</span>
+    <strong> RCP 2.6 </strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="population" style="cursor: pointer;">
+    <img src="../img/icons/population_icon.png" alt="Population Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Population:</span>
+    <strong> 37.21 million</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="economy" style="cursor: pointer;">
+    <img src="../img/icons/economy_icon.png" alt="Economy Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Economic development:</span>
+    <strong> 1192 billion USD</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="value" style="cursor: pointer;">
+    <img src="../img/icons/value_icon.png" alt="Value Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Value perspective on nature:</span>
+    <strong> Mainly Instrumental</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="protected" style="cursor: pointer;">
+    <img src="../img/icons/protected_icon.png" alt="Protected Areas Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Protected areas (proportion of Peru under protection):</span>
+    <strong> 30% by 2030</strong>
+  </span>
+</h4>
+:::
+
+::: g-col-6
+![](../img/wordclouds/Nature_for_society.svg)
+:::
+:::::
+:::
+
+::: {.content-cell data-scenario="culture" data-subject="characteristics"}
+::::: grid
+::: g-col-6
+<h4>
+  <span class="popover-key" data-popover-key="climate" style="cursor: pointer;">
+    <img src="../img/icons/climate_icon.png" alt="Climate Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Climate Change:</span>
+    <strong> RCP 2.6 </strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="population" style="cursor: pointer;">
+    <img src="../img/icons/population_icon.png" alt="Population Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Population:</span>
+    <strong> 37.21 million</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="economy" style="cursor: pointer;">
+    <img src="../img/icons/economy_icon.png" alt="Economy Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Economic development:</span>
+    <strong> 812 billion USD</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="value" style="cursor: pointer;">
+    <img src="../img/icons/value_icon.png" alt="Value Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Value perspective on nature:</span>
+    <strong> Mainly Relational</strong>
+  </span>
+</h4>
+
+<h4>
+  <span class="popover-key" data-popover-key="protected" style="cursor: pointer;">
+    <img src="../img/icons/protected_icon.png" alt="Protected Areas Icon" 
+         style="width: 10%; max-width: 40px; vertical-align: middle; margin-right: 0.5em;"/>
+    <span class="text-decoration-underline">Protected areas (proportion of Peru under protection):</span>
+    <strong> 30% by 2030</strong>
+  </span>
+</h4>
+:::
+
+::: g-col-6
+![](../img/wordclouds/Nature_as_culture.svg)
+:::
+:::::
+:::

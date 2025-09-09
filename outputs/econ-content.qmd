@@ -1,0 +1,178 @@
+:::: {.content-cell data-scenario="bau" data-subject="econ"}
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 8
+#| fig-height: 8
+library(dplyr)
+library(tidyr)
+library(plotly)
+# Load ENCORE ES and economic impact for Peru DF from the data folder
+peru <- read.csv("outputs/data/peru_diagram_df.csv")
+
+peru$ISIC_cat[peru$ISIC_cat=="Public_admin"] <- "Public Administration"
+
+#load scenario df
+scenarios <- read.csv("outputs/data/dummy_scenarios.csv")
+
+# map rating to numeric scores 
+rating_map <- c("VL" = 1, "L" = 2, "M" = 3, "H" = 4, "VH" = 5)
+
+peru <- peru %>%
+  mutate(rating_num = ifelse(is.na(rating), 0, rating_map[as.character(rating)]))
+
+# join peru df with scenarios 
+scenario_data <- peru %>%
+  inner_join(scenarios, by = "Ecosystem_Service")
+
+# expand each row of peru_df for all scenarios
+#expanded <- crossing(Scenario = unique(scenarios$Scenario), peru)
+# now join safely
+#joined <- expanded %>%
+#  left_join(scenarios, by = c("Scenario", "Ecosystem_Service"))
+
+
+# calculate impacts with noise 
+set.seed(123) # reproducible
+
+scenario_data <- scenario_data %>%
+  rowwise() %>%
+  mutate(
+    impact = ifelse(
+      is.na(avg_change),
+      0,  # no change if ES not in scenario
+      avg_change * rating_num + rnorm(1, mean = 0, sd = std)
+    )
+  ) %>%
+  ungroup()
+
+# box plot 
+# Aggregate to ISIC_section (or ISIC_division if you prefer)
+category_summary <- scenario_data %>%
+  group_by(ISIC_cat, Scenario) %>%
+  summarise(
+    mean_impact = mean(impact, na.rm = TRUE),
+    sd_impact = sd(impact, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+
+# Define bins and colors
+bin_colors <- c(
+  "[-1,-0.75)"  = "#873426",  # dark red
+  "[-0.75,-0.5)"= "#A64B2A",  # red-orange
+  "[-0.5,-0.25)"= "#D27E3F",  # orange
+  "[-0.25,0)"   = "#E5C965",  # yellow
+  "[0,0.25)"    = "#A8D08D",  # light green
+  "[0.25,0.5)"  = "#70AD47",  # medium green
+  "[0.5,0.75)"  = "#4F7F3F",  # dark green
+  "[0.75,1]"    = "#3B5C3E"   # forest green
+)
+
+# Get all ISIC categories (so missing ones are kept in plots)
+all_cats <- unique(scenario_data$ISIC_cat)
+
+# Loop over scenarios and store plots in a list
+plots <- list()
+scenarios_list <- unique(scenario_data$Scenario)
+
+for (scen in scenarios_list) {
+  
+  scen_data <- scenario_data %>%
+    filter(Scenario == scen) %>%
+    group_by(ISIC_cat) %>%
+    summarise(
+      mean_impact = mean(impact, na.rm = TRUE),
+      sd_impact   = sd(impact, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    right_join(tibble(ISIC_cat = all_cats), by = "ISIC_cat") %>%
+    mutate(
+      mean_impact = replace_na(mean_impact, 0),
+      sd_impact   = replace_na(sd_impact, 0),
+      impact_bin  = cut(mean_impact,
+                        breaks = seq(-1, 1, by = 0.25),
+                        include.lowest = TRUE,
+                        right = FALSE)
+    )
+  
+  # Static ggplot
+  p <- ggplot(scen_data, aes(x = ISIC_cat, y = mean_impact, 
+                             fill = impact_bin,
+                             text = paste0("ISIC: ", ISIC_cat,
+                                           "<br>Mean Impact: ", round(mean_impact, 3),
+                                           "<br>SD: ", round(sd_impact, 3)))) +
+    geom_col(width = 0.7) +
+    geom_errorbar(aes(ymin = mean_impact - sd_impact,
+                      ymax = mean_impact + sd_impact),
+                  width = 0.2) +
+    scale_fill_manual(values = bin_colors, drop = FALSE, na.value = "grey90") +
+    coord_cartesian(ylim = c(-1, 1)) +
+    theme_minimal(base_size = 12) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+    labs(title = "Impact of change in Ecosystem service provosion according to ISIC Category",
+         x = "ISIC Category",
+         y = "Economical Impact",
+        fill = "Impact"
+      )
+  
+  
+  # Convert to plotly
+  plots[[scen]] <- ggplotly(p, tooltip = "text")
+}
+
+# --- Call plots interactively one by one ---
+plots[["Scenario 1"]]
+```
+::::
+
+
+:::: {.content-cell data-scenario="nature" data-subject="econ"}
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 8
+#| fig-height: 8
+plots[["Scenario 2"]]
+```
+::::
+
+:::: {.content-cell data-scenario="society" data-subject="econ"}
+::: {.panel-tabset group="econ-services"}
+#### Water Yield
+
+#### Pollinator Abundance
+
+#### Habitat Quality
+
+#### Recreation Potential
+
+#### Sediment Retention
+
+#### Carbon Stored in Biomass
+
+#### Nutrient Retention
+
+#### Emblematic Species
+:::
+::::
+
+:::: {.content-cell data-scenario="culture" data-subject="econ"}
+::: {.panel-tabset group="econ-services"}
+#### Water Yield
+
+#### Pollinator Abundance
+
+#### Habitat Quality
+
+#### Recreation Potential
+
+#### Sediment Retention
+
+#### Carbon Stored in Biomass
+
+#### Nutrient Retention
+
+#### Emblematic Species
+:::
+::::

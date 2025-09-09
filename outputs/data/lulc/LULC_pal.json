@@ -1,0 +1,37 @@
+[
+    {
+        "class_name": "Forested areas",
+        "colour": "#29898f",
+        "class_value": 101
+    },
+    {
+        "class_name": "Natural Grasslands and Shrublands",
+        "colour": "#c4e0a1",
+        "class_value": 102
+    },
+    {
+        "class_name": "Low-Intensity Agricultural Areas",
+        "colour": "#6ca147",
+        "class_value": 103
+    },
+    {
+        "class_name": "High-Intensity Agricultural Areas",
+        "colour": "#f59f78",
+        "class_value": 104
+    },
+    {
+        "class_name": "Built-Up and Barren Lands",
+        "colour": "#a8aba5",
+        "class_value": 105
+    },
+    {
+        "class_name": "Mining",
+        "colour": "#d1d3cf",
+        "class_value": 106
+    },
+    {
+        "class_name": "Water body",
+        "colour": "#93d0ee",
+        "class_value": 107
+    }
+]

@@ -1,0 +1,90 @@
+---
+title: "NASCENT Scenario Explorer"
+title-block-banner: "#f6f8fa"
+format: 
+  html:
+    css: "outputs-grid.css"  # Changed from outputs.css
+    page-layout: custom
+    grid:
+      sidebar-width: 10px
+      margin-width: 10px
+      gutter-width: 1.5rem
+    include-in-header: outputs-grid.html
+popover-glossary:
+  path: glossary.yml
+execute:
+  echo: false
+  warning: false
+  error: false
+  message: false
+---
+
+::: {#instruction-text style="font-size: 1.25em; font-weight: 400; text-align: center;"}
+We present three normative scenarios (**Nature for Nature**, **Nature for Society**, and **Nature as Culture**) and one exploratory scenario (**Business as Usual**) of future landscape change in Peru. Click on the column headers to expand/collapse scenarios and click on row headers to expand/collapse subject areas.
+:::
+
+::::::::::::::::: grid-layout
+<!-- Top header row with scenario names -->
+
+:::::::: scenarios-header
+::: subject-header-placeholder
+<!-- Empty space above subject headers -->
+:::
+
+::: {.scenario-header .expandable-header data-scenario="bau"}
+## Business as Usual
+:::
+
+::: {.scenario-header .expandable-header data-scenario="nature"}
+## Nature for Nature
+:::
+
+::: {.scenario-header .expandable-header data-scenario="society"}
+## Nature for Society
+:::
+
+::: {.scenario-header .expandable-header data-scenario="culture"}
+## Nature as Culture
+:::
+::::::::
+
+<!-- Characterstics row -->
+:::: subject-row
+::: {.subject-header .expandable-header data-subject="characteristics"}
+### Characteristics
+[i]{.info-icon tabindex="0" data-bs-toggle="popover" data-bs-content="An overview of the general characteristics and trends of the scenario."}
+:::
+
+{{< include ../outputs/characteristics.qmd >}}
+::::
+
+<!-- Land Use Change Row -->
+:::: subject-row
+::: {.subject-header .expandable-header data-subject="lulc"}
+### Land Use Change
+[i]{.info-icon tabindex="0" data-bs-toggle="popover" data-bs-content="Maps and visualisations of simulated Land Use Land Cover change under the scenarios."}
+:::
+
+{{< include ../outputs/lulc-content.qmd >}}
+::::
+
+<!-- Ecosystem Services Row -->
+:::: subject-row
+::: {.subject-header .expandable-header data-subject="es"}
+### Ecosystem Services & Biodiversity
+:::
+
+{{< include ../outputs/es-content.qmd >}}
+::::
+
+<!-- Economic Impacts Row -->
+
+:::: subject-row
+::: {.subject-header .expandable-header data-subject="econ"}
+### Economic Impacts
+[i]{.info-icon tabindex="0" data-bs-toggle="popover" id="ecosystem-icon" data-bs-html="true" data-bs-placement="right"}
+:::
+
+{{< include ../outputs/econ-content.qmd >}}
+::::
+:::::::::::::::::

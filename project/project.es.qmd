@@ -7,88 +7,14 @@ title-block-banner: "#f6f8fa"
 
 El siguiente gráfico muestra los pasos del flujo de trabajo del proyecto NASCENT-Peru para crear y simular escenarios normativos, positivos para la naturaleza, para el futuro desarrollo del paisaje en Perú. Haga clic en cada paso para obtener más información.
 
-```{=html}
-<style>
-  #markmap {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    height: 500px;
-    width: 100%;
-    background: white;
-  }
-  #markmap svg {
-    width: 100%;
-    height: 100%;
-  }
-  #markmap img {
-    padding-right: 8px;
-    vertical-align: middle;
-  }
-  #content {
-    margin-top: 50px; /* Reduced margin */
-    padding: 1rem;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Use scroll-padding-top on the root element */
-  html {
-    scroll-padding-top: 520px; /* 500px markmap height + 20px buffer */
-  }
-  
-  /* Alternative approach: create invisible anchor targets */
-  #content h2[id],
-  #content h3[id] {
-    position: relative;
-  }
-  
-  #content h2[id]::before,
-  #content h3[id]::before {
-    content: "";
-    display: block;
-    height: 520px;
-    margin-top: -520px;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  
-  /* Customize markmap link hover colors to match text colors */
-  #markmap .mm-link:hover {
-    stroke: inherit !important;
-    opacity: 0.8;
-  }
-  
-  #markmap .mm-node:hover .mm-link {
-    stroke: inherit !important;
-    opacity: 0.8;
-  }
-  
-  /* Make sure text links in markmap inherit their color on hover and remove underline */
-  #markmap a {
-    text-decoration: none !important;
-  }
-  
-  #markmap a:hover {
-    color: inherit !important;
-    opacity: 0.8;
-    text-decoration: none !important;
-  }
-  
-  /* Remove underlines from all states */
-  #markmap a:link,
-  #markmap a:visited,
-  #markmap a:active {
-    text-decoration: none !important;
-  }
-</style>
-```
+<button id="markmap-toggle">
 
+Show project overview
+
+</button>
 
 ```{=html}
 <svg id="markmap"></svg>
-
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.15"></script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-view"></script>
@@ -134,17 +60,26 @@ El siguiente gráfico muestra los pasos del flujo de trabajo del proyecto NASCEN
     pan: false,
     color: node => node._subtreeColor || "#222"
   }, root);
+  
+  const toggleBtn = document.getElementById("markmap-toggle");
+  const markmapEl = document.getElementById("markmap");
+
+  toggleBtn.addEventListener("click", () => {
+    const isVisible = markmapEl.classList.toggle("show");
+    toggleBtn.textContent = isVisible ? "Hide Map" : "Show Map";
+  });
 </script>
 ```
 
-<div id="content">
-
+::::::: {#content}
 ## Create Normative Scenarios {#scenario-creation}
 
 ### Talleres {#workshops}
+
 El proceso participativo del proyecto incluye una serie de talleres, tanto nacionales como regionales, que reúnen a partes interesadas y expertos. El objetivo es identificar en colaboración los aspectos deseables e indeseables del futuro cambio paisajístico.
 
 ### Lugares de los talleres
+
 ```{r}
 #| echo: false
 #| warning: false
@@ -244,12 +179,15 @@ regional <- makeAwesomeIcon(text = fa("people-roof"),
 ```
 
 ### Narrativas {#narratives}
+
 Además de los talleres, se realiza una encuesta en línea. A partir de la información obtenida en los talleres y la encuesta, se crean escenarios exploratorios y normativos. Los escenarios exploratorios consisten en escenarios negativos y en que todo sigue igual, mientras que los escenarios normativos consisten en escenarios positivos para la naturaleza.
 
 ### Cuantificación {#quantification}
+
 Las tasas de cambio del uso y la ocupación del suelo (LULCC) se determinan para cada escenario cuantificando las tendencias de los factores socioeconómicos, biofísicos y climáticos.
 
 ## Impactos del escenario modelo {#scenario-modeling}
+
 Durante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) y la distribución de especies para cada escenario, teniendo en cuenta el futuro Uso y ocupación del Suelo (LULC) como uno de los factores de entrada.
 
 ### Cambio de uso del suelo {#lulcc}
@@ -259,36 +197,411 @@ Durante la fase de simulación, se determinan los Servicios Ecosistémicos (ES) 
 ### Biodiversidad {#biodiversity-modelling}
 
 ## Resumir Impactos Ambientales {#análisis-económico}
-Las características económicas de cada escenario se cuantifican en función del uso y la ocupación del suelo (LULC) y de los servicios ecosistémicos (ES).
+
+Los servicios ecosistémicos influyen en una amplia gama de sectores económicos, y los cambios futuros en estos servicios afectarán a la economía peruana. Para evaluar este impacto, examinamos las relaciones entre ocho servicios ecosistémicos y siete sectores económicos, utilizando datos de la base de datos ENCORE (https://www.encorenature.org/en), que evalúa las dependencias sectoriales de los servicios ecosistémicos. Solo se incluyeron los sectores relevantes para Perú.
+
+-   El diagrama de araña (derecha) permite explorar las dependencias generales. Haga clic en un servicio ecosistémico para resaltarlo, o haga doble clic para eliminarlo del diagrama.
+
+-   Los gráficos de barras (abajo) proporcionan detalles específicos de cada servicio. Utilice las pestañas para cambiar entre los servicios ecosistémicos y el menú desplegable para centrarse en un solo sector económico.
+
+:::::: grid
+::: g-col-6
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 8
+#| fig-height: 8
+library(dplyr)
+library(tidyr)
+library(plotly)
+# Load ENCORE ES and economic impact for Peru DF from the data folder
+peru <- read.csv("outputs/data/peru_diagram_df.csv")
+
+peru$ISIC_cat[peru$ISIC_cat=="Public_admin"] <- "Public Administration"
+
+# Map rating to numeric scale
+rating_map <- c("VL" = 1, "L" = 2, "M" = 3, "H" = 4, "VH" = 5)
+
+get_es_summary <- function(es_name, peru_data, all_cats) {
+  rating_map <- c("VL" = 1, "L" = 2, "M" = 3, "H" = 4, "VH" = 5)
+  
+  peru_data %>%
+    filter(Ecosystem_Service == es_name) %>%
+    mutate(rating_num = rating_map[as.character(rating)]) %>%
+    group_by(ISIC_cat) %>%
+    summarise(max_rating = max(rating_num, na.rm = TRUE), .groups = "drop") %>%
+    mutate(max_rating = ifelse(is.infinite(max_rating), NA, max_rating)) %>%
+    right_join(data.frame(ISIC_cat = all_cats), by = "ISIC_cat") %>%
+    mutate(max_rating = ifelse(is.na(max_rating), 0, max_rating)) %>%
+    arrange(match(ISIC_cat, all_cats)) %>%
+    pull(max_rating)
+}
+
+# Categories
+all_cats <- c("Agriculture", "Mining", "Construction", 
+              "Manufacturing", "Public Administration", "Transport", "Services")
+
+# Select ES
+selected_es <- c("Habitat_maint","Water_flow_reg", "Rec", "Poll", 
+                 "Soil_ret", "Biomass", "Soil_qual", "Spirit_art")
+
+# Collect ratings for each ES
+ratings_list <- lapply(selected_es, get_es_summary, peru_data = peru, all_cats = all_cats)
+
+# Build long-format dataframe for plotly
+radar_data <- data.frame(
+  ISIC_cat = rep(all_cats, times = length(selected_es)),
+  Rating = unlist(ratings_list),
+  ES = rep(selected_es, each = length(all_cats))
+)
+
+# Define nicer labels
+es_labels <- c(
+  "Habitat_maint" = "Habitat quality",
+  "Poll"          = "Pollinator abundance",
+  "Biomass"       = "Carbon stored in biomass",
+  "Soil_qual"     = "Nutrient retention by landscape",
+  "Soil_ret"      = "Sediment retention by landscape",
+  "Water_flow_reg"= "Water yield",
+  "Rec"           = "Recreation potential",
+  "Spirit_art"    = "Emblematic species"
+)
+
+# Radar chart
+p <- plot_ly(type = 'scatterpolar', mode = 'lines+markers')
+
+for (es in selected_es) {
+  df <- radar_data %>% filter(ES == es)
+  p <- add_trace(
+    p,
+    r = df$Rating,
+    theta = df$ISIC_cat,
+    name = es_labels[es],
+    fill = 'toself',
+    hovertemplate = paste(
+      "Ecosystem Service:", es, "<br>",
+      "ISIC category: %{theta}<br>",
+      "Rating: %{r}<extra></extra>"
+    )
+  )
+}
+
+p <- layout(
+  p,
+  polar = list(
+    radialaxis = list(
+      visible = TRUE,
+      range = c(0, 5),
+      tickvals = 0:5,
+      ticktext = c("No", "VL", "L", "M", "H", "VH"),
+      tickfont = list(size = 12)  # font size of radial ticks (numbers)
+    ),
+    angularaxis = list(
+      tickfont = list(size = 10, color = "black", family = "Arial")  # category labels
+    )
+  ),
+  showlegend = TRUE,
+  legend = list(
+    orientation = "h",   # horizontal legend
+    x = 0.5,             # center horizontally
+    y = -0.3,            # below the plot
+    xanchor = "center",
+    yanchor = "top",
+    font = list(size = 10),
+    tracegroupgap = 0,   # no gaps between items
+    itemclick = "toggleothers", # optional: click hides others
+    itemdoubleclick = "toggle"  # optional
+  )
+)
+
+p
+```
+:::
+
+:::: g-col-6
+::: panel-tabset
+#### Water Yield
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(plotly)
+
+# Load ENCORE ES and economic impact for Peru DF from the data folder
+peru <- read.csv("outputs/data/peru_diagram_df.csv")
+
+# Canonical levels and colors
+rating_levels <- c("Very low", "Low", "Medium", "High", "Very high")
+rating_colors <- c(
+  "Very low"  = "#1a9850",
+  "Low"       = "#91cf60",
+  "Medium"    = "#ffffbf",
+  "High"      = "#fc8d59",
+  "Very high" = "#d73027"
+)
+
+# Pretty labels
+es_labels <- c(
+  "Habitat_maint" = "Habitat quality",
+  "Poll"          = "Pollinator abundance",
+  "Biomass"       = "Carbon stored in biomass",
+  "Soil_qual"     = "Nutrient retention by landscape",
+  "Soil_ret"      = "Sediment retention by landscape",
+  "Water_flow_reg"= "Water yield",
+  "Rec"           = "Recreation potential",
+  "Spirit_art"    = "Emblematic species"
+)
+
+# Ecosystem services to plot
+selected_es <- c("Habitat_maint","Water_flow_reg", "Rec", "Poll", 
+                 "Soil_ret", "Biomass", "Soil_qual", "Spirit_art")
+
+# --- helper to clean and summarise ---
+clean_ES_data <- function(df, ES) {
+  df %>%
+    filter(Ecosystem_Service == ES, !is.na(rating)) %>%
+    mutate(
+      rating = as.character(rating) |> str_trim(),
+      rating = dplyr::recode(rating,
+                             "VL" = "Very low", "L" = "Low", "M" = "Medium",
+                             "H" = "High", "VH" = "Very high",
+                             .default = rating
+      ),
+      rating = case_when(
+        str_to_lower(rating) %in% c("very low","very-low") ~ "Very low",
+        str_to_lower(rating) %in% c("low")                 ~ "Low",
+        str_to_lower(rating) %in% c("medium","med")        ~ "Medium",
+        str_to_lower(rating) %in% c("high")                ~ "High",
+        str_to_lower(rating) %in% c("very high","very-high") ~ "Very high",
+        TRUE ~ rating
+      ),
+      rating = factor(rating, levels = rating_levels)
+    ) %>%
+    filter(!is.na(rating))
+}
+
+build_summary <- function(df) {
+  df %>%
+    mutate(rating = as.character(rating)) %>%
+    group_by(rating) %>%
+    summarise(
+      n_classes   = n(),
+      classes_list = paste(sort(ISIC_class), collapse = "<br>"),
+      .groups = "drop"
+    ) %>%
+    tidyr::complete(
+      rating = rating_levels,
+      fill = list(n_classes = 0, classes_list = "")
+    ) %>%
+    mutate(rating = factor(rating, levels = rating_levels)) %>%
+    arrange(rating)
+}
+
+# --- function to build one plot for a given ES ---
+make_plot <- function(ES) {
+  ES_data <- clean_ES_data(peru, ES)
+  
+  all_sum <- build_summary(ES_data)
+  cats    <- sort(unique(ES_data$ISIC_cat))
+  
+  cat_summaries <- lapply(cats, function(cat) {
+    df <- build_summary(filter(ES_data, ISIC_cat == cat))
+    df$ISIC_cat <- cat
+    df
+  })
+  names(cat_summaries) <- cats
+  
+  # base figure
+  p <- plot_ly()
+  
+  # All categories trace
+  p <- add_bars(
+    p, data = all_sum,
+    x = ~rating, y = ~n_classes,
+    text = ~paste0(
+      "Category: All<br>",
+      "Rating: ", rating, "<br>",
+      "# classes: ", n_classes,
+      ifelse(classes_list == "", "", paste0("<br><br>", classes_list))
+    ),
+    hovertemplate = "%{text}<extra></extra>",
+    textposition  = "none",
+    marker = list(color = unname(rating_colors[as.character(all_sum$rating)])),
+    name = "All categories", visible = TRUE
+  )
+  
+  # Per-category traces
+  for (cat in cats) {
+    df <- cat_summaries[[cat]]
+    p <- add_bars(
+      p, data = df,
+      x = ~rating, y = ~n_classes,
+      text = ~paste0(
+        "Category: ", ISIC_cat, "<br>",
+        "Rating: ", rating, "<br>",
+        "# classes: ", n_classes,
+        ifelse(classes_list == "", "", paste0("<br><br>", classes_list))
+      ),
+      hovertemplate = "%{text}<extra></extra>",
+      textposition  = "none",
+      marker = list(color = unname(rating_colors[as.character(df$rating)])),
+      name = cat, visible = FALSE
+    )
+  }
+  
+  # Visibility setup
+  n_traces   <- 1 + length(cats)
+  vis_all    <- c(TRUE, rep(FALSE, length(cats)))
+  vis_percat <- lapply(seq_along(cats), function(i) { v <- rep(FALSE, n_traces); v[i+1] <- TRUE; v })
+  
+  ymax_all <- max(all_sum$n_classes, 0)
+  ymax_cat <- sapply(cat_summaries, function(df) max(df$n_classes, 0))
+  
+  buttons <- c(
+    list(list(
+      method = "update",
+      label  = "All categories",
+      args   = list(
+        list(visible = vis_all),
+        list(
+          title = paste("Dependency on", es_labels[ES], "— All ISIC categories"),
+          yaxis = list(range = c(0, max(1, ymax_all) * 1.1))
+        )
+      )
+    )),
+    lapply(seq_along(cats), function(i) {
+      list(
+        method = "update",
+        label  = cats[i],
+        args   = list(
+          list(visible = vis_percat[[i]]),
+          list(
+            #title = paste("Dependency on", es_labels[ES], "—", cats[i]),
+            yaxis = list(range = c(0, max(1, ymax_cat[i]) * 1.1))
+          )
+        )
+      )
+    })
+  )
+  
+  p <- layout(
+    p,
+    barmode = "group",
+    #title   = paste("Dependency on", es_labels[ES], "— All ISIC categories"),
+    xaxis   = list(title = "Dependency rating"),
+    yaxis   = list(title = "Number of ISIC classes"),
+    showlegend = FALSE,
+    updatemenus = list(list(
+      type = "dropdown", y = 1.15, x = 0, showactive = TRUE, buttons = buttons
+    ))
+  )
+  
+  if (max(all_sum$n_classes) == 0) {
+    p <- p %>% layout(
+      annotations = list(list(
+        x = 0.5, y = 0.5, xref = "paper", yref = "paper",
+        text = "No ISIC classes with non-NA ratings for this ES",
+        showarrow = FALSE
+      ))
+    )
+  }
+  
+  return(p)
+}
+
+# --- generate plots for all selected services ---
+plots <- lapply(selected_es, make_plot)
+names(plots) <- selected_es
+
+plots[["Water_flow_reg"]]  # show water yield
+
+```
+
+#### Pollinator Abundance
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+plots[["Poll"]]            # show pollinator abundance
+```
+
+#### Habitat Quality
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+plots[["Habitat_maint"]]  # show Habitat quality 
+```
+
+#### Recreation Potential
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+plots[["Rec"]]            # show Recreation potential
+```
+
+#### Sediment Retention
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+plots[["Soil_ret"]]       # show Sediment retention 
+```
+
+#### Carbon Stored in Biomass
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+plots[["Biomass"]]        # show Carbon stored in biomass
+```
+
+#### Nutrient Retention
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+plots[["Soil_qual"]]      # show Nutrient retention
+```
+
+#### Emblematic Species
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+plots[["Spirit_art"]]     # show Emblematic species
+```
+:::
+::::
+::::::
 
 ## Comunicación y Difusión {#communication}
+
 ### Project report
 
-Sub pluribus dente, diva illi ac [mandata
-moenia](http://pars.com/postquaminicere) illi, c quam flumina, recessit loca.
-Abripit Lethaei crines tuae seque cupidine et, erat acres virorum illis.
+Sub pluribus dente, diva illi ac [mandata moenia](http://pars.com/postquaminicere) illi, c quam flumina, recessit loca. Abripit Lethaei crines tuae seque cupidine et, erat acres virorum illis.
 
-Dare nec emittunt induit; parte *via criminis solvit* ignibus et solio. Sua
-meliore Crete non cum ignoscite forma; e munere. Ante his galeam serpens.
-Senemque illa sine solet et oculos pietasque quondam; est aquae, vestem, **in**?
+Dare nec emittunt induit; parte *via criminis solvit* ignibus et solio. Sua meliore Crete non cum ignoscite forma; e munere. Ante his galeam serpens. Senemque illa sine solet et oculos pietasque quondam; est aquae, vestem, **in**?
 
 ### Social Media
 
-Pyram tum illam armis adflabat. Ait obvius inde sumus tenuissima qui credere
-sentit [dextra](http://me-doleas.com/nonfaciat.php) Cythereiadasque
-[levitate](http://flexit.io/antiquique). Trachine grata; est rogat lenta
-pulveris, partimque circumdata, hunc arte postquam, matrisque, mea tamen.
+Pyram tum illam armis adflabat. Ait obvius inde sumus tenuissima qui credere sentit [dextra](http://me-doleas.com/nonfaciat.php) Cythereiadasque [levitate](http://flexit.io/antiquique). Trachine grata; est rogat lenta pulveris, partimque circumdata, hunc arte postquam, matrisque, mea tamen.
 
-Spectantur numero; adeundi quaerunt talia sacerdos scribit ferox corpora flumina
-**urgeturque scilicet misereri** mulcebunt tepida, at vivis pugnandi. Sororum
-suppositosque armo praecutiunt, de utero cacumine subito salutifera priorum
-stamina iubentque de tulit vocandus esse! Quoniam Lycii. Lecti laniata; ambo
-eque quasque, si **uterum cervix**.
+Spectantur numero; adeundi quaerunt talia sacerdos scribit ferox corpora flumina **urgeturque scilicet misereri** mulcebunt tepida, at vivis pugnandi. Sororum suppositosque armo praecutiunt, de utero cacumine subito salutifera priorum stamina iubentque de tulit vocandus esse! Quoniam Lycii. Lecti laniata; ambo eque quasque, si **uterum cervix**.
 
 ### Virtual presentation
 
 Sub pluribus dente, diva illi ac
-
-</div>
-
-
+:::::::
