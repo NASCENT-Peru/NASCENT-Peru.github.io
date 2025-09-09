@@ -1,0 +1,426 @@
+/* Grid Layout Styles */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 250px repeat(4, 1fr);
+  gap: 1px;
+  background-color: white;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+/* Dynamic grid columns based on expanded state */
+.grid-layout.one-expanded {
+  grid-template-columns: 250px 2fr 0.5fr 0.5fr 0.5fr;
+}
+
+.grid-layout.two-expanded {
+  grid-template-columns: 250px 1.5fr 1.5fr 0.5fr 0.5fr;
+}
+
+.grid-layout.three-expanded {
+  grid-template-columns: 250px 1.33fr 1.33fr 1.33fr 0.5fr;
+}
+
+.grid-layout.four-expanded {
+  grid-template-columns: 250px repeat(4, 1fr);
+}
+
+/* Scenario header row */
+.scenarios-header {
+  display: contents;
+  background-color: transparent;
+}
+
+.subject-header-placeholder {
+  background-color: transparent;
+  border-bottom: 2px solid #ddd;
+  padding: 15px;
+  grid-column: 1;
+}
+
+/* Scenario headers */
+.scenario-header {
+  background-color: #f1f3f4;
+  color: #333;
+  padding: 10px 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #ddd;
+  position: relative;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Smaller font for collapsed scenario headers */
+.scenario-header.collapsed {
+  font-size: 0.85rem;
+  padding: 10px 8px;
+}
+
+/* Even smaller font when multiple columns are collapsed */
+.grid-layout.three-expanded .scenario-header.collapsed,
+.grid-layout.two-expanded .scenario-header.collapsed {
+  font-size: 0.75rem;
+  padding: 10px 5px;
+}
+
+.grid-layout.one-expanded .scenario-header.collapsed {
+  font-size: 0.7rem;
+  padding: 10px 3px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: normal;
+}
+
+.scenario-header.collapsed:hover { background-color: #e0e2e4; }
+.scenario-header:hover { background-color: #dee2e6; }
+.scenario-header:not(.collapsed) {
+  background-color: #3a7a89;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 15px;
+  writing-mode: initial;
+  text-orientation: initial;
+}
+.scenario-header:not(.collapsed):hover { background-color: #3a7a89; }
+.scenario-header.dimmed { opacity: 0.6; }
+.scenario-header::after { content: none; }
+
+/* Subject rows */
+.subject-row { display: contents; }
+
+.subject-header {
+  background-color: #f1f3f4;
+  color: #333;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+}
+.subject-header.collapsed:hover { background-color: #e0e2e4; }
+.subject-header:hover { background-color: #dee2e6; }
+.subject-header:not(.collapsed) { background-color: #3a7a89; color: #fff; }
+.subject-header:not(.collapsed):hover { background-color: #3a7a89; }
+.subject-header.dimmed { background-color: #f1f3f4; opacity: 0.7; }
+.subject-header::after { content: none; }
+
+/* ---------------------------
+   Content cells (UPDATED)
+   Smooth height animation
+----------------------------*/
+.content-cell {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 15px;                 /* full padding when expanded */
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.3s ease;
+  will-change: max-height;
+  max-height: none;              /* JS sets to scrollHeight during expand, then back to none */
+}
+
+/* Collapsed due to subject row */
+.content-cell.collapsed {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Hide children smoothly */
+.content-cell.collapsed > * {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.content-cell:not(.collapsed) > * {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Dimmed due to scenario/subject state (but still present) */
+.content-cell.dimmed {
+  background-color: #ddd;
+  opacity: 0.6;
+}
+
+/* Scenario "collapsed" state = dim only, do NOT hide */
+.content-cell.scenario-collapsed {
+  background-color: #ddd;
+  opacity: 0.4;
+  /* keep padding to avoid layout jump */
+}
+.content-cell.scenario-collapsed > * {
+  background-color: #ddd;
+  opacity: 0.4;
+}
+
+/* Ensure collapsed row overrides scenario-collapsed */
+.content-cell.collapsed.scenario-collapsed {
+  max-height: 0 !important;
+  padding: 0 !important;
+}
+
+/* Expanded cells (no fixed max-height anymore) */
+.content-cell:not(.collapsed):not(.scenario-collapsed) {
+  opacity: 1;
+  padding: 15px;
+  overflow: hidden;
+  max-height: none; /* allow JS to reset to auto after transition */
+}
+
+/* Optional: tighter headings inside cells to reduce extra space */
+.content-cell h4 {
+  margin: 0.25rem 0;
+}
+
+/* Grid positioning for content cells */
+.content-cell[data-scenario="bau"] { grid-column: 2; }
+.content-cell[data-scenario="nature"] { grid-column: 3; }
+.content-cell[data-scenario="society"] { grid-column: 4; }
+.content-cell[data-scenario="culture"] { grid-column: 5; }
+
+/* Map container */
+.map-container {
+  position: relative;
+  height: 400px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.map-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.zoom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 10;
+}
+.zoom button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.2s;
+}
+.zoom button:hover { background: #f0f0f0; }
+
+/* Tooltip */
+.map-tooltip {
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.map-tooltip.show { opacity: 1; }
+
+/* Card styles for expandable content */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: white;
+}
+.card.expandable { cursor: pointer; }
+
+.grid-layout h2 { border-bottom: none !important; }
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+}
+#radarChart {
+  width: 100%;
+  height: 100%;
+}
+
+/* Panel tabset styles */
+.panel-tabset {
+  margin: 15px 0;
+}
+
+/* Make tabs rounded */
+.panel-tabset .nav-tabs .nav-link {
+  border: 1px solid #dee2e6 !important;
+  border-radius: 8px 8px 0 0 !important; /* round top corners */
+  background-color: #f8f9fa !important;
+  color: #333 !important;
+  padding: 8px 16px;
+  margin-right: 4px; /* little gap between tabs */
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+.panel-tabset .nav-tabs .nav-link:hover {
+  background-color: #e9ecef !important;
+}
+
+/* Active tab */
+.panel-tabset .nav-tabs .nav-link.active {
+  background-color: #3b7a89 !important;
+  border-color: #3b7a89 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+/* Container for all buttons */
+#bau-landuse-buttons,
+#nat-landuse-buttons,
+#cul-landuse-buttons,
+#soc-landuse-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Each button styled as a pill */
+.landusechange {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #fdfdfd;
+  font-size: 14px;
+  line-height: 1.2;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* On hover */
+.landusechange:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Active (clicked) button */
+.landusechange.active {
+  background-color: #e0e0e0;
+  font-weight: 600;
+  border-color: #999;
+}
+
+/* Color swatch box */
+.landusechange .color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .grid-layout { grid-template-columns: 200px 1fr 1fr; }
+  .content-cell[data-scenario="society"],
+  .content-cell[data-scenario="culture"] { display: none; }
+  .scenario-header[data-scenario="society"],
+  .scenario-header[data-scenario="culture"] { display: none; }
+}
+
+@media (max-width: 768px) {
+  .grid-layout { grid-template-columns: 150px 1fr; font-size: 0.9em; }
+  .content-cell[data-scenario="nature"],
+  .content-cell[data-scenario="society"],
+  .content-cell[data-scenario="culture"] { display: none; }
+  .scenario-header[data-scenario="nature"],
+  .scenario-header[data-scenario="society"],
+  .scenario-header[data-scenario="culture"] { display: none; }
+  .subject-header,
+  .scenario-header { padding: 10px; }
+
+  /* Reset vertical text on mobile */
+  .grid-layout.one-expanded .scenario-header.collapsed {
+    writing-mode: initial;
+    text-orientation: initial;
+    font-size: 0.8rem;
+  }
+}
+
+/* Expandable headers */
+.expandable-header { user-select: none; }
+.expandable-header:active { transform: scale(0.98); }
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Popover helpers */
+.popover-key { cursor: pointer; }
+.popover-key img {
+  width: 10%;
+  max-width: 40px;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+.subject-header { position: relative; }
+
+.info-icon {
+    display: inline-flex;       /* inline so it flows with text */
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: #666;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.5em;         /* small space after heading text */
+    vertical-align: middle;     /* align with text */
+    opacity: 0;                 /* hidden by default */
+    transition: background 0.2s, opacity 0.2s;
+}
+
+.subject-header:hover .info-icon {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

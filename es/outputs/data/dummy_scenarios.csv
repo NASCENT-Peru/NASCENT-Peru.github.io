@@ -1,0 +1,6 @@
+"Scenario","Ecosystem_Service","avg_change","std"
+"Scenario 1","Poll",-0.3,0.05
+"Scenario 1","Habitat_maint",-0.6,0.1
+"Scenario 2","Water_flow_reg",-0.2,0.05
+"Scenario 2","Soil_qual",-0.1,0.03
+"Scenario 2","Soil_ret",-0.1,0.03
