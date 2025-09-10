@@ -127,7 +127,7 @@ save_indexed_png <- function(raster_obj,
   }
 
   # Return the magick image object invisibly
-  invisible(img_indexed)
+  return(img_indexed)
 }
 
 # Helper function to inspect the saved PNG properties
@@ -430,8 +430,6 @@ create_firefly_change_map <- function(raster_data,
   return(p)
 }
 
-
-
 ### =========================================================================
 ### Main
 ### =========================================================================
@@ -559,62 +557,96 @@ for(scenario in scenarios){
 lulc_2020 <- rast(map_files["2020"])
 lulc_2060 <- rast(map_files["2060"])
 
-# set 0 to NA in both layers
-lulc_2020[lulc_2020 == 0] <- NA
-lulc_2060[lulc_2060 == 0] <- NA
+# remove water bodies from the list of LULC classes
+change_classes <- LULC_pal$class_value[LULC_pal$class_name != "Water body"]
 
-# save over both the rasters
-writeRaster(lulc_2020, file.path(output_dir, "lulc-2020.tif"), overwrite=TRUE)
-writeRaster(lulc_2060, file.path(output_dir, "lulc-2060.tif"), overwrite=TRUE)
-
-# load the rasters again to be sure
-lulc_2020 <- rast(file.path(output_dir, "lulc-2020.tif"))
-lulc_2060 <- rast(file.path(output_dir, "lulc-2060.tif"))
+# reverse the order of change_classes so that higher value classes are processed first
+change_classes <- rev(change_classes)
 
 # loop over the unique class_values
-for(class in LULC_pal$class_value){}
-class = LULC_pal$class_value[1]
+for(class in change_classes){
 
   cat(paste0("Processing class: ", LULC_pal$class_name[LULC_pal$class_value == class], "\n"))
 
-  # Apply the rules
-  change_map <- ifel(
-    lulc_2020 == lulc_2060,
-    0,  # persistence
-    ifel(
-      lulc_2060 == class & lulc_2020 != class,
-      2,  # gain
-      ifel(
-        lulc_2020 == class & lulc_2060 != class,
-        1,  # loss
-        NA  # other changes can be NA
-      )
-    )
-  )
+  # # Efficient calculation
+  # change_map <- (lulc_2020 == class & lulc_2060 == class) * 1 +   # persistence
+  #   (lulc_2060 == class & lulc_2020 != class) * 3 +   # gain
+  #   (lulc_2020 == class & lulc_2060 != class) * 2    # loss
 
-  # Write to disk (very important for large rasters)
-  change_rast_path <- file.path(output_dir, paste0("lulc-", LULC_pal$class_name[LULC_pal$class_value == class], "-change.tif"))
-  writeRaster(change_map, change_rast_path, overwrite=TRUE)
+  clean_class <- tolower(gsub(" ", "_", LULC_pal$class_name[LULC_pal$class_value == class]))
 
-  # create firefly map
-  change_map <- create_firefly_change_map(change_rast)
+  change_rast_path <- file.path(output_dir, paste0(clean_class, "-change.tif"))
+  #writeRaster(change_map, change_rast_path, overwrite=TRUE)
+  change_map <- rast(change_rast_path)
 
-  # replace any whitespaces in the class with '_'
-  clean_class <- gsub
+  change_cols <- setNames(c("#1c1c1a", "#1c1c1a", "#fd6211", "#78ff00"), c(0, 1, 2, 3))
+
+  # save an index png
+  change_png_path <- file.path(output_dir, paste0(clean_class, "-change.png"))
+
+  img <- save_indexed_png(raster_obj = change_map,
+                          output_path = change_png_path,
+                          color_palette = change_cols,
+                          width = 25,
+                          height = 20,
+                          resolution = 600,
+                          units = "cm",
+                          margins = c(0, 0, 0, 0),
+                          background = "transparent",
+                          colorspace = "sRGB",
+                          max_colors = 256,
+                          show_legend = FALSE,
+                          axes = FALSE,
+                          box = FALSE,
+                          cleanup_temp = TRUE,
+                          verbose = TRUE)
+
+  # Function to make a glow layer from a mask
+  make_glow <- function(mask, color, blur_radius = 8, opacity = 0.8) {
+    mask %>%
+      image_blur(0, blur_radius) %>%         # spread out mask
+      image_colorize(opacity * 100, color)   # tint the glow
+  }
+
+  # Known hex colors in your indexed PNG
+  # (replace with the actual values from your raster legend)
+  col_land   <- "#1c1c1a" # value 0
+  col_nonchg <- "#1c1c1a" # value 1
+  col_neg    <- "#fd6211" # value 2 (positive change)
+  col_pos    <- "#78ff00" # value 3 (negative change)
+
+  # --- Create masks for positive and negative classes ---
+  mask_neg <- img %>% image_transparent(col_land) %>%
+    image_transparent(col_nonchg) %>%
+    image_transparent(col_pos)   # remove everything but col_pos
+  mask_pos <- img %>% image_transparent(col_land) %>%
+    image_transparent(col_nonchg) %>%
+    image_transparent(col_neg)   # remove everything but col_neg
+
+  # --- Build glow layers ---
+  glow_neg <- make_glow(mask_neg, color = "#fd6211", blur_radius = 8, opacity = 0.8)
+  glow_pos <- make_glow(mask_pos, color = "#78ff00",   blur_radius = 8, opacity = 0.8)
+
+  # --- Composite back with additive blending ---
+  out <- img %>%
+    image_composite(glow_pos, operator = "linear-dodge") %>%
+    image_composite(glow_neg, operator = "linear-dodge")
+
+  # --- Save result ---
+  out_path <- gsub("-change.png", "-change-glow.png", change_png_path)
+  image_write(out, path = out_path)
 
   for(scenario in scenarios){
 
-    # create path
-    change_map_path <- file.path(output_dir, paste0(scenario, "-", clean_class, "-change.png"))
+    # copy to scenario-specific file
+    scenario_out_path <- file.path(output_dir, paste0(scenario, "-", clean_class, "-change.png"))
+    file.copy(out_path, scenario_out_path, overwrite = TRUE)
 
-    # save
-    ggsave(change_map,
-           change_map_path,
-           width = 25,
-           height = 20,
-           resolution = 300,
-           units = "cm",)
   }
+}
+
+
+
 
 
 
