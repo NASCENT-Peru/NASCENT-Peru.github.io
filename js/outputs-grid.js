@@ -28,13 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
         updateGridDisplay();
     }
 
-    // Toggle subject row expansion — only one row open at a time
+    // Toggle subject row expansion — allow collapse on second click
     function toggleSubjectExpansion(subject) {
         if (state.expandedSubjects.has(subject)) {
-            state.expandedSubjects.clear(); // collapse it
+            // collapse if it's already open
+            state.expandedSubjects.delete(subject);
         } else {
-            state.expandedSubjects.clear(); // close others
-            state.expandedSubjects.add(subject); // open this one
+            // close others and open this one
+            state.expandedSubjects.clear();
+            state.expandedSubjects.add(subject);
         }
         updateGridDisplay();
     }
@@ -93,7 +95,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const scenario = cell.getAttribute('data-scenario');
             const subject = cell.getAttribute('data-subject');
 
-            const shouldCollapse = (hasExpandedSubjects && !state.expandedSubjects.has(subject));
+            let shouldCollapse;
+            if (state.expandedSubjects.size === 0) {
+                // no subject selected → collapse all rows
+                shouldCollapse = true;
+            } else {
+                // collapse rows that aren’t the expanded one
+                shouldCollapse = !state.expandedSubjects.has(subject);
+            }
 
             if (shouldCollapse && !cell.classList.contains('collapsed')) {
                 animateContentCell(cell, false); // collapse
@@ -182,13 +191,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Instruction notes
+    // Instruction notes with exemption for default row
     function updateInstructionNotes() {
         const instructionText = document.getElementById('instruction-text');
         const hasExpandedScenarios = state.expandedScenarios.size > 0;
         const hasExpandedSubjects = state.expandedSubjects.size > 0;
+
         if (instructionText) {
-            instructionText.style.display = (hasExpandedScenarios || hasExpandedSubjects) ? 'none' : 'block';
+            // Exempt the default row "characteristics"
+            const onlyDefaultRowOpen =
+                state.expandedSubjects.size === 1 &&
+                state.expandedSubjects.has('characteristics') &&
+                state.expandedScenarios.size === 0;
+
+            if (hasExpandedScenarios || hasExpandedSubjects) {
+                instructionText.style.display = onlyDefaultRowOpen ? 'block' : 'none';
+            } else {
+                instructionText.style.display = 'block';
+            }
         }
     }
 
@@ -291,32 +311,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-const ecosystemContent = `
+    const ecosystemContent = `
 <p>Ecosystem services influence a wide range of economic sectors, and future changes in these services will affect the Peruvian economy. To assess this impact, we examined the relationships between <strong>8 ecosystem services</strong> and <strong>7 economic sectors</strong>, using data from the <a href="https://www.encorenature.org/en" target="_blank" rel="noopener noreferrer">ENCORE database</a>, which evaluates sectoral dependencies on ecosystem services. Only the sectors relevant to Peru were included.</p>
 <p>We analyzed <strong>two scenarios</strong> to evaluate the impact of ecosystem service changes on economic sectors. We calculate the impact as the product of the <strong>average change</strong> in ecosystem services and the <strong>materiality rating</strong> of each economic sector:</p>
 <p>$$Impact = avg\\_change \\times mat\\_rating + std$$</p>
 <p>The results of the scenario analyses are shown below in the bar plots.</p>
 `;
 
-const el = document.getElementById('ecosystem-icon');
-if (typeof bootstrap !== 'undefined' && el) {
-    const pop = new bootstrap.Popover(el, {
-        html: true,
-        content: ecosystemContent,
-        trigger: 'hover focus',
-        placement: 'right'
-    });
+    const el = document.getElementById('ecosystem-icon');
+    if (typeof bootstrap !== 'undefined' && el) {
+        const pop = new bootstrap.Popover(el, {
+            html: true,
+            content: ecosystemContent,
+            trigger: 'hover focus',
+            placement: 'right'
+        });
 
-    // Ensure math renders after the popover is shown
-    el.addEventListener('shown.bs.popover', () => {
-        if (window.MathJax) {
-            // v3 MathJax
-            MathJax.typesetPromise();
-        }
-    });
-}
-
+        // Ensure math renders after the popover is shown
+        el.addEventListener('shown.bs.popover', () => {
+            if (window.MathJax) {
+                // v3 MathJax
+                MathJax.typesetPromise();
+            }
+        });
+    }
 
 });
+
 
 

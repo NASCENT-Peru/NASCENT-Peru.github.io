@@ -1,0 +1,10 @@
+[
+  { "class_name": "[-1,-0.75)", "colour": "#873426" },
+  { "class_name": "[-0.75,-0.5)", "colour": "#A64B2A" },
+  { "class_name": "[-0.5,-0.25)", "colour": "#D27E3F" },
+  { "class_name": "[-0.25,0)", "colour": "#E5C965" },
+  { "class_name": "[0,0.25)", "colour": "#A8D08D" },
+  { "class_name": "[0.25,0.5)", "colour": "#70AD47" },
+  { "class_name": "[0.5,0.75)", "colour": "#4F7F3F" },
+  { "class_name": "[0.75,1]", "colour": "#3B5C3E" }
+]

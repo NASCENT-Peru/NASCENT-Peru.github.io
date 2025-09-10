@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 #### Change
 <!-- Map -->
 ```{=html}
-<div class="map-container" id="bau-change-map" data-sync-key="lulc">
+<div class="map-container" id="bauChangeMap" data-sync-key="lulc-buttons">
   <canvas></canvas>
   <div class="zoom">
     <button class="out">-</button>
@@ -88,20 +88,20 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- Buttons container -->
-<div id="bau-landuse-buttons"></div>
+<div id="bau-landuse-buttons" data-sync-key="lulc-buttons"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Create map instance with a base map (could be a default "overview" PNG)
-  const mapInst = createInteractiveMap(
-    'bau-change-map',
+  const bauChangeMap = createInteractiveMap(
+    'bauChangeMap',
     'data/lulc/bau-forested_areas-change.png', // pick a default class map to load first
     'en',
-    false
+    true
   );
 
   // Attach land-use buttons for scenario "bau"
-  attachLandUseButtons(mapInst, 'bau-landuse-buttons', 'data/lulc/LULC_pal.json', 'bau');
+  attachLandUseButtons(bauChangeMap, 'bau-landuse-buttons', 'data/lulc/LULC_pal.json', 'bau');
 });
 </script>
 ```
@@ -170,8 +170,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 #### 2060
-
-:::{.card expandable="true"}
 <!-- Map -->
 ```{=html}
 <div class="map-container" id="nature2060lulc" data-sync-key="lulc">
@@ -188,9 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-:::
 
-:::{.card expandable="true"}
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
@@ -208,13 +204,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 ```
-:::
 
 #### Change
 
-:::{.card expandable="true"}
 ```{=html}
-<div class="map-container" id="nat-change-map" data-sync-key="lulc">
+<div class="map-container" id="natChangeMap" data-sync-key="lulc-buttons">
   <canvas></canvas>
   <div class="zoom">
     <button class="out">-</button>
@@ -223,26 +217,24 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- Buttons container -->
-<div id="nat-landuse-buttons"></div>
+<div id="nat-landuse-buttons" data-sync-key="lulc-buttons"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Create map instance with a base map (could be a default "overview" PNG)
-  const mapInst = createInteractiveMap(
-    'nat-change-map',
-    'data/lulc/bau-forested_areas-change.png', // pick a default class map to load first
+  const natChangeMap = createInteractiveMap(
+    'natChangeMap',
+    'data/lulc/nat-forested_areas-change.png', // pick a default class map to load first
     'en',
-    false
+    true
   );
 
-  // Attach land-use buttons for scenario "bau"
-  attachLandUseButtons(mapInst, 'nat-landuse-buttons', 'data/lulc/LULC_pal.json', 'nat');
+  // Attach land-use buttons for scenario "nat"
+  attachLandUseButtons(natChangeMap, 'nat-landuse-buttons', 'data/lulc/LULC_pal.json', 'nat');
 });
 </script>
 ```
-:::
 
-:::{.card expandable="true"}
 ```{=html}
 <!-- Chart container -->
 <div class="chart-container" style="position: relative; height: 400px; width: 100%;">
@@ -260,8 +252,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 ```
-:::
-
 ::::
 :::
 
@@ -343,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 #### Change
 ```{=html}
-<div class="map-container" id="soc-change-map" data-sync-key="lulc">
+<div class="map-container" id="socChangeMap" data-sync-key="lulc-buttons">
   <canvas></canvas>
   <div class="zoom">
     <button class="out">-</button>
@@ -352,20 +342,20 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- Buttons container -->
-<div id="soc-landuse-buttons"></div>
+<div id="soc-landuse-buttons" data-sync-key="lulc-buttons"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Create map instance with a base map (could be a default "overview" PNG)
-  const mapInst = createInteractiveMap(
-    'soc-change-map',
-    'data/lulc/bau-forested_areas-change.png', // pick a default class map to load first
+  const socChangeMap = createInteractiveMap(
+    'socChangeMap',
+    'data/lulc/soc-forested_areas-change.png', // pick a default class map to load first
     'en',
-    false
+    true
   );
 
-  // Attach land-use buttons for scenario "bau"
-  attachLandUseButtons(mapInst, 'soc-landuse-buttons', 'data/lulc/LULC_pal.json', 'soc');
+  // Attach land-use buttons for scenario "soc"
+  attachLandUseButtons(socChangeMap, 'soc-landuse-buttons', 'data/lulc/LULC_pal.json', 'soc');
 });
 </script>
 ```
@@ -468,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 #### Change
 ```{=html}
-<div class="map-container" id="cul-change-map" data-sync-key="lulc">
+<div class="map-container" id="culChangeMap" data-sync-key="lulc-buttons">
   <canvas></canvas>
   <div class="zoom">
     <button class="out">-</button>
@@ -477,20 +467,20 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <!-- Buttons container -->
-<div id="cul-landuse-buttons"></div>
+<div id="cul-landuse-buttons" data-sync-key="lulc-buttons"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Create map instance with a base map (could be a default "overview" PNG)
-  const mapInst = createInteractiveMap(
-    'cul-change-map',
-    'data/lulc/bau-forested_areas-change.png', // pick a default class map to load first
+  const culChangeMap = createInteractiveMap(
+    'culChangeMap',
+    'data/lulc/cul-forested_areas-change.png', // pick a default class map to load first
     'en',
-    false
+    true
   );
 
-  // Attach land-use buttons for scenario "bau"
-  attachLandUseButtons(mapInst, 'cul-landuse-buttons', 'data/lulc/LULC_pal.json', 'cul');
+  // Attach land-use buttons for scenario "cul"
+  attachLandUseButtons(culChangeMap, 'cul-landuse-buttons', 'data/lulc/LULC_pal.json', 'cul');
 });
 </script>
 ```
