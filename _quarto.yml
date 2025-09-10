@@ -26,6 +26,7 @@ website:
       - menu:
               - project/project_scrolly.qmd
               - scenarios/scenarios.qmd
+              - outputs/output-grid.qmd
         text: "Outputs"
       - impressions/impressions.qmd
       - glossary/glossary.qmd
