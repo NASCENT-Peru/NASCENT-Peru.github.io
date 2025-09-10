@@ -155,13 +155,13 @@
   opacity: 0.6;
 }
 
-/* Scenario "collapsed" state = dim only, do NOT hide */
-.content-cell.scenario-collapsed {
+/* Apply dim only to visible (not fully collapsed) cells when scenario collapsed */
+.content-cell.scenario-collapsed:not(.collapsed) {
   background-color: #ddd;
   opacity: 0.4;
   /* keep padding to avoid layout jump */
 }
-.content-cell.scenario-collapsed > * {
+.content-cell.scenario-collapsed:not(.collapsed) > * {
   background-color: #ddd;
   opacity: 0.4;
 }
@@ -308,38 +308,35 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  border: 1px solid #ccc;
   border-radius: 20px;
   padding: 6px 12px;
   cursor: pointer;
-  background-color: #fdfdfd;
   font-size: 14px;
   line-height: 1.2;
-  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  transition: transform 0.1s, box-shadow 0.2s;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  color: #fff; /* text color defaults to white for contrast */
+  font-weight: 500;
+  border: 1px solid transparent;
 }
 
-/* On hover */
+/* On hover: slightly darker shadow/scale effect */
 .landusechange:hover {
-  background-color: #f0f0f0;
   transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Active (clicked) button */
+/* Active button: add border and subtle brightness change */
 .landusechange.active {
-  background-color: #e0e0e0;
-  font-weight: 600;
-  border-color: #999;
+  border: 2px solid #333;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
 }
 
-/* Color swatch box */
+/* Remove small swatch, use full background color */
 .landusechange .color {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid #333;
+  display: none;
 }
+
 
 /* Responsive design */
 @media (max-width: 1200px) {
@@ -373,9 +370,15 @@
 .expandable-header { user-select: none; }
 .expandable-header:active { transform: scale(0.98); }
 
-/* Smooth transitions for all interactive elements */
 * {
-  transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+/* Keep background snap immediate for content cells */
+.content-cell,
+.scenario-header,
+.subject-header {
+  transition: background-color 0s ease, opacity 0.3s ease, padding 0.3s ease, max-height 0.4s ease;
 }
 
 /* Popover helpers */

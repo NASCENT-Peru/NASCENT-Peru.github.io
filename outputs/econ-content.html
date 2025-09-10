@@ -69,15 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="../site_libs/plotly-binding-4.11.0/plotly.js"></script>
-<script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
-<script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
-<link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
-<script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
-<link href="../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
-<script src="../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -119,6 +110,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../scenarios/scenarios.html">
  <span class="dropdown-text">Scenario narratives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../outputs/output-grid.html">
+ <span class="dropdown-text">NASCENT Scenario Explorer</span></a>
   </li>  
     </ul>
   </li>
@@ -199,82 +194,64 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="content-cell" data-scenario="bau" data-subject="econ">
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-6b2c09a9175be691d0d3" style="width:100%;height:650px;"></div>
-<script type="application/json" data-for="htmlwidget-6b2c09a9175be691d0d3">{"x":{"data":[{"orientation":"v","width":0.70000000000000007,"base":-0.88670075825610484,"x":[1],"y":[0.88670075825610484],"text":"ISIC: Agriculture<br>Mean Impact: -0.887<br>SD: 0.653","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(135,52,38,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"[-1,-0.75)","legendgroup":"[-1,-0.75)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.69999999999999929,"base":-0.44937066792993935,"x":[6],"y":[0.44937066792993935],"text":"ISIC: Services<br>Mean Impact: -0.449<br>SD: 0.163","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(210,126,63,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"[-0.5,-0.25)","legendgroup":"[-0.5,-0.25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.70000000000000018,0.69999999999999929,0.69999999999999973,0.70000000000000018,0.69999999999999929],"base":[0,0,0,0,0],"x":[3,7,4,2,5],"y":[0,0,0,0,0],"text":["ISIC: Manufacturing<br>Mean Impact: 0<br>SD: 0","ISIC: Transport<br>Mean Impact: 0<br>SD: 0","ISIC: Mining<br>Mean Impact: 0<br>SD: 0","ISIC: Construction<br>Mean Impact: 0<br>SD: 0","ISIC: Public Administration<br>Mean Impact: 0<br>SD: 0"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(168,208,141,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"[0,0.25)","legendgroup":"[0,0.25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1],"y":[-0.88670075825610484],"text":"ISIC: Agriculture<br>Mean Impact: -0.887<br>SD: 0.653","type":"scatter","mode":"lines","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[0.65283609171232826],"arrayminus":[0.65283609171232815],"type":"data","width":14.222222222222239,"symmetric":false,"color":"rgba(0,0,0,1)"},"name":"[-1,-0.75)","legendgroup":"[-1,-0.75)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[6],"y":[-0.44937066792993935],"text":"ISIC: Services<br>Mean Impact: -0.449<br>SD: 0.163","type":"scatter","mode":"lines","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[0.16330009516432514],"arrayminus":[0.16330009516432514],"type":"data","width":14.222222222222175,"symmetric":false,"color":"rgba(0,0,0,1)"},"name":"[-0.5,-0.25)","legendgroup":"[-0.5,-0.25)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3,7,4,2,5],"y":[0,0,0,0,0],"text":["ISIC: Manufacturing<br>Mean Impact: 0<br>SD: 0","ISIC: Transport<br>Mean Impact: 0<br>SD: 0","ISIC: Mining<br>Mean Impact: 0<br>SD: 0","ISIC: Construction<br>Mean Impact: 0<br>SD: 0","ISIC: Public Administration<br>Mean Impact: 0<br>SD: 0"],"type":"scatter","mode":"lines","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[0,0,0,0,0],"arrayminus":[0,0,0,0,0],"type":"data","width":14.222222222222239,"symmetric":false,"color":"rgba(0,0,0,1)"},"name":"[0,0.25)","legendgroup":"[0,0.25)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.09838107098382,"r":7.9701120797011216,"b":98.553174358770988,"l":53.399750933997524},"font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243},"title":{"text":"Impact of change in Ecosystem service provosion according to ISIC Category","font":{"color":"rgba(0,0,0,1)","family":"","size":19.128268991282695},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,7.5999999999999996],"tickmode":"array","ticktext":["Agriculture","Construction","Manufacturing","Mining","Public Administration","Services","Transport"],"tickvals":[1,2,3,4.0000000000000009,5,6,7],"categoryorder":"array","categoryarray":["Agriculture","Construction","Manufacturing","Mining","Public Administration","Services","Transport"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.9850560398505608,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":12.7521793275218},"tickangle":-45,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.72455564360919278,"zeroline":false,"anchor":"y","title":{"text":"ISIC Category","font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-1.1000000000000001,1.1000000000000001],"tickmode":"array","ticktext":["-1.0","-0.5","0.0","0.5","1.0"],"tickvals":[-1,-0.5,0,0.5,1],"categoryorder":"array","categoryarray":["-1.0","-0.5","0.0","0.5","1.0"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.9850560398505608,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":12.7521793275218},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.72455564360919278,"zeroline":false,"anchor":"x","title":{"text":"Economical Impact","font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":12.7521793275218},"title":{"text":"Impact","font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"9f823b6f7765":{"x":{},"y":{},"fill":{},"text":{},"type":"bar"},"9f82394469fa":{"x":{},"y":{},"fill":{},"text":{},"ymin":{},"ymax":{}}},"cur_data":"9f823b6f7765","visdat":{"9f823b6f7765":["function (y) ","x"],"9f82394469fa":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="chart-container">
+  <canvas id="impactCanvasBAU"></canvas>
 </div>
-</div>
+
+<script>
+  makeImpactChartCSVErrorBars(
+    "impactCanvasBAU",
+    "data/peru_diagram_df.csv",
+    "data/dummy_scenarios.csv",
+    "data/bin_palette.json",
+    "BAU"
+  );
+</script>
 </div>
 <div class="content-cell" data-scenario="nature" data-subject="econ">
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-3a88348a6b0771041c31" style="width:100%;height:650px;"></div>
-<script type="application/json" data-for="htmlwidget-3a88348a6b0771041c31">{"x":{"data":[{"orientation":"v","width":0.70000000000000007,"base":-0.57774973935994034,"x":[1],"y":[0.57774973935994034],"text":"ISIC: Agriculture<br>Mean Impact: -0.578<br>SD: 0.195","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(166,75,42,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"[-0.75,-0.5)","legendgroup":"[-0.75,-0.5)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.70000000000000018,0.70000000000000018,0.69999999999999973,0.69999999999999929,0.69999999999999929],"base":[-0.47260917332576829,-0.44300748946329954,-0.48262971663248599,-0.26525244425094319,-0.25758730475943387],"x":[2,3,4,5,7],"y":[0.47260917332576829,0.44300748946329954,0.48262971663248599,0.26525244425094319,0.25758730475943387],"text":["ISIC: Construction<br>Mean Impact: -0.473<br>SD: 0.139","ISIC: Manufacturing<br>Mean Impact: -0.443<br>SD: 0.258","ISIC: Mining<br>Mean Impact: -0.483<br>SD: 0.241","ISIC: Public Administration<br>Mean Impact: -0.265<br>SD: 0.158","ISIC: Transport<br>Mean Impact: -0.258<br>SD: 0.146"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(210,126,63,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"[-0.5,-0.25)","legendgroup":"[-0.5,-0.25)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.69999999999999929,"base":-0.21912771753647745,"x":[6],"y":[0.21912771753647745],"text":"ISIC: Services<br>Mean Impact: -0.219<br>SD: 0.144","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(229,201,101,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"[-0.25,0)","legendgroup":"[-0.25,0)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1],"y":[-0.57774973935994034],"text":"ISIC: Agriculture<br>Mean Impact: -0.578<br>SD: 0.195","type":"scatter","mode":"lines","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[0.19505088799933712],"arrayminus":[0.19505088799933712],"type":"data","width":14.222222222222239,"symmetric":false,"color":"rgba(0,0,0,1)"},"name":"[-0.75,-0.5)","legendgroup":"[-0.75,-0.5)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2,3,4,5,7],"y":[-0.47260917332576829,-0.44300748946329954,-0.48262971663248599,-0.26525244425094319,-0.25758730475943387],"text":["ISIC: Construction<br>Mean Impact: -0.473<br>SD: 0.139","ISIC: Manufacturing<br>Mean Impact: -0.443<br>SD: 0.258","ISIC: Mining<br>Mean Impact: -0.483<br>SD: 0.241","ISIC: Public Administration<br>Mean Impact: -0.265<br>SD: 0.158","ISIC: Transport<br>Mean Impact: -0.258<br>SD: 0.146"],"type":"scatter","mode":"lines","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[0.13917124036758705,0.25835783908847776,0.24122003369747824,0.15843980816378858,0.14646912670728027],"arrayminus":[0.13917124036758705,0.25835783908847781,0.24122003369747824,0.15843980816378855,0.14646912670728024],"type":"data","width":14.222222222222239,"symmetric":false,"color":"rgba(0,0,0,1)"},"name":"[-0.5,-0.25)","legendgroup":"[-0.5,-0.25)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[6],"y":[-0.21912771753647745],"text":"ISIC: Services<br>Mean Impact: -0.219<br>SD: 0.144","type":"scatter","mode":"lines","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[0.14406516065756508],"arrayminus":[0.14406516065756511],"type":"data","width":14.222222222222175,"symmetric":false,"color":"rgba(0,0,0,1)"},"name":"[-0.25,0)","legendgroup":"[-0.25,0)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.09838107098382,"r":7.9701120797011216,"b":98.553174358770988,"l":53.399750933997524},"font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243},"title":{"text":"Impact of change in Ecosystem service provosion according to ISIC Category","font":{"color":"rgba(0,0,0,1)","family":"","size":19.128268991282695},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,7.5999999999999996],"tickmode":"array","ticktext":["Agriculture","Construction","Manufacturing","Mining","Public Administration","Services","Transport"],"tickvals":[1,2,3,4.0000000000000009,5,6,7],"categoryorder":"array","categoryarray":["Agriculture","Construction","Manufacturing","Mining","Public Administration","Services","Transport"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.9850560398505608,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":12.7521793275218},"tickangle":-45,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.72455564360919278,"zeroline":false,"anchor":"y","title":{"text":"ISIC Category","font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-1.1000000000000001,1.1000000000000001],"tickmode":"array","ticktext":["-1.0","-0.5","0.0","0.5","1.0"],"tickvals":[-1,-0.5,0,0.5,1],"categoryorder":"array","categoryarray":["-1.0","-0.5","0.0","0.5","1.0"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.9850560398505608,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":12.7521793275218},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.72455564360919278,"zeroline":false,"anchor":"x","title":{"text":"Economical Impact","font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":12.7521793275218},"title":{"text":"Impact","font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"9f82c928eab":{"x":{},"y":{},"fill":{},"text":{},"type":"bar"},"9f824d29b0bc":{"x":{},"y":{},"fill":{},"text":{},"ymin":{},"ymax":{}}},"cur_data":"9f82c928eab","visdat":{"9f82c928eab":["function (y) ","x"],"9f824d29b0bc":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="chart-container">
+  <canvas id="impactCanvasNature"></canvas>
 </div>
-</div>
+
+<script>
+  makeImpactChartCSVErrorBars(
+    "impactCanvasNature",
+    "data/peru_diagram_df.csv",
+    "data/dummy_scenarios.csv",
+    "data/bin_palette.json",
+    "Nature"
+  );
+</script>
 </div>
 <div class="content-cell" data-scenario="society" data-subject="econ">
-<div class="tabset-margin-container"></div><div class="panel-tabset" data-group="econ-services">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Water Yield</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Pollinator Abundance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Habitat Quality</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Recreation Potential</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Sediment Retention</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">Carbon Stored in Biomass</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">Nutrient Retention</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false">Emblematic Species</a></li></ul>
-<div class="tab-content" data-group="econ-services">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="chart-container">
+  <canvas id="impactCanvasSociety"></canvas>
+</div>
 
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-
-</div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-
-</div>
-<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
-
-</div>
-<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
-
-</div>
-<div id="tabset-1-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-8-tab">
-
-</div>
-</div>
-</div>
+<script>
+  makeImpactChartCSVErrorBars(
+    "impactCanvasSociety",
+    "data/peru_diagram_df.csv",
+    "data/dummy_scenarios.csv",
+    "data/bin_palette.json",
+    "Society"
+  );
+</script>
 </div>
 <div class="content-cell" data-scenario="culture" data-subject="econ">
-<div class="tabset-margin-container"></div><div class="panel-tabset" data-group="econ-services">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Water Yield</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Pollinator Abundance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Habitat Quality</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Recreation Potential</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Sediment Retention</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Carbon Stored in Biomass</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false">Nutrient Retention</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false">Emblematic Species</a></li></ul>
-<div class="tab-content" data-group="econ-services">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="chart-container">
+  <canvas id="impactCanvasCulture"></canvas>
+</div>
 
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-
-</div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-
-</div>
-<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-
-</div>
-<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
-
-</div>
-<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
-
-</div>
-<div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
-
-</div>
-<div id="tabset-2-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-8-tab">
-
-</div>
-</div>
-</div>
+<script>
+  makeImpactChartCSVErrorBars(
+    "impactCanvasCulture",
+    "data/peru_diagram_df.csv",
+    "data/dummy_scenarios.csv",
+    "data/bin_palette.json",
+    "Culture"
+  );
+</script>
 </div>
 
 

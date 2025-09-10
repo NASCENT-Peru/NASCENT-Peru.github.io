@@ -1,6 +1,33 @@
-"Scenario","Ecosystem_Service","avg_change","std"
-"Scenario 1","Poll",-0.3,0.05
-"Scenario 1","Habitat_maint",-0.6,0.1
-"Scenario 2","Water_flow_reg",-0.2,0.05
-"Scenario 2","Soil_qual",-0.1,0.03
-"Scenario 2","Soil_ret",-0.1,0.03
+Scenario,Ecosystem_Service,avg_change,std
+BAU,Poll,-0.3,0.05
+BAU,Habitat_maint,-0.6,0.1
+BAU,Water_flow_reg,-0.2,0.05
+BAU,Soil_qual,-0.1,0.03
+BAU,Soil_ret,-0.1,0.03
+BAU,Biomass,-0.3,0.04
+BAU,Rec,-0.4,0.02
+BAU,Spirit_art,-0.7,0.03
+Nature,Poll,0.17,0.03
+Nature,Habitat_maint,0.26,0.11
+Nature,Water_flow_reg,0.12,0.07
+Nature,Soil_qual,0.09,0.02
+Nature,Soil_ret,0.15,0.02
+Nature,Biomass,0.35,0.04
+Nature,Rec,0.28,0.01
+Nature,Spirit_art,0.66,0.04
+Culture,Poll,0.34,0.06
+Culture,Habitat_maint,0.71,0.08
+Culture,Water_flow_reg,0.18,0.05
+Culture,Soil_qual,0.06,0.04
+Culture,Soil_ret,0.1,0.04
+Culture,Biomass,0.26,0.05
+Culture,Rec,0.4,0.02
+Culture,Spirit_art,0.73,0.02
+Society,Poll,0.39,0.06
+Society,Habitat_maint,0.59,0.08
+Society,Water_flow_reg,0.18,0.07
+Society,Soil_qual,0.1,0.04
+Society,Soil_ret,0.08,0.02
+Society,Biomass,0.4,0.04
+Society,Rec,0.44,0.02
+Society,Spirit_art,0.59,0.03
