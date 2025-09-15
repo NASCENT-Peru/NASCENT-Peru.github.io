@@ -166,10 +166,502 @@ document.addEventListener('DOMContentLoaded', function() {
 :::
 
 ::: {.content-cell data-scenario="nature" data-subject="es"}
+:::: {.panel-tabset group="es-services"}
+
+#### Carbon Storage
+<!-- Carbon storage map for nat -->
+```{=html}
+<div class="map-container" id="natCar">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natCar', 'data/es/nat-car-2020.png', 'en');
+});
+</script>
+```
+
+#### Habitat Quality
+<!-- Habitat Quality map for nat -->
+```{=html}
+<div class="map-container" id="natHab">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natHab', 'data/es/nat-hab-2020.png', 'en');
+});
+</script>
+```
+
+#### Recreation Potential
+
+<!-- Recreation potential map for nat -->
+```{=html}
+<div class="map-container" id="natRec">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natRec', 'data/es/nat-rec-2020.png', 'en');
+});
+</script>
+```
+
+#### Pollinator Abundance
+
+<!-- pollination map for nat -->
+```{=html}
+<div class="map-container" id="natPol">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natPol', 'data/es/nat-pol-2020.png', 'en');
+});
+</script>
+```
+
+#### Water Regulation
+
+<!-- Water regulation map for nat -->
+```{=html}
+<div class="map-container" id="natWy">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natWy', 'data/es/nat-wy-2020.png', 'en');
+});
+</script>
+```
+
+#### Sediment Retention
+<!-- Sediment retention map for nat -->
+```{=html}
+<div class="map-container" id="natSdr">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natSdr', 'data/es/nat-sdr-2020.png', 'en');
+});
+</script>
+```
+
+#### Nutrient Retention
+```{=html}
+<div class="map-container" id="natNdr">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natNdr', 'data/es/nat-ndr-2020.png', 'en');
+});
+</script>
+```
+
+#### Emblematic Species
+```{=html}
+<div class="map-container" id="natId">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natId', 'data/es/nat-id-2020.png', 'en');
+});
+</script>
+```
+
+#### Biodiversity
+```{=html}
+<div class="map-container" id="natBio">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('natId', 'data/es/nat-bio-2020.png', 'en');
+});
+</script>
+```
+::::
 :::
 
 ::: {.content-cell data-scenario="society" data-subject="es"}
+:::: {.panel-tabset group="es-services"}
+
+#### Carbon Storage
+<!-- Carbon storage map for soc -->
+```{=html}
+<div class="map-container" id="socCar">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socCar', 'data/es/soc-car-2020.png', 'en');
+});
+</script>
+```
+
+#### Habitat Quality
+<!-- Habitat Quality map for soc -->
+```{=html}
+<div class="map-container" id="socHab">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socHab', 'data/es/soc-hab-2020.png', 'en');
+});
+</script>
+```
+
+#### Recreation Potential
+
+<!-- Recreation potential map for soc -->
+```{=html}
+<div class="map-container" id="socRec">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socRec', 'data/es/soc-rec-2020.png', 'en');
+});
+</script>
+```
+
+#### Pollinator Abundance
+
+<!-- pollination map for soc -->
+```{=html}
+<div class="map-container" id="socPol">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socPol', 'data/es/soc-pol-2020.png', 'en');
+});
+</script>
+```
+
+#### Water Regulation
+
+<!-- Water regulation map for soc -->
+```{=html}
+<div class="map-container" id="socWy">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socWy', 'data/es/soc-wy-2020.png', 'en');
+});
+</script>
+```
+
+#### Sediment Retention
+<!-- Sediment retention map for soc -->
+```{=html}
+<div class="map-container" id="socSdr">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socSdr', 'data/es/soc-sdr-2020.png', 'en');
+});
+</script>
+```
+
+#### Nutrient Retention
+```{=html}
+<div class="map-container" id="socNdr">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socNdr', 'data/es/soc-ndr-2020.png', 'en');
+});
+</script>
+```
+
+#### Emblematic Species
+```{=html}
+<div class="map-container" id="socId">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socId', 'data/es/soc-id-2020.png', 'en');
+});
+</script>
+```
+
+#### Biodiversity
+```{=html}
+<div class="map-container" id="socBio">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('socId', 'data/es/soc-bio-2020.png', 'en');
+});
+</script>
+```
+::::
 :::
 
 ::: {.content-cell data-scenario="culture" data-subject="es"}
+:::: {.panel-tabset group="es-services"}
+
+#### Carbon Storage
+<!-- Carbon storage map for cul -->
+```{=html}
+<div class="map-container" id="culCar">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culCar', 'data/es/cul-car-2020.png', 'en');
+});
+</script>
+```
+
+#### Habitat Quality
+<!-- Habitat Quality map for cul -->
+```{=html}
+<div class="map-container" id="culHab">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culHab', 'data/es/cul-hab-2020.png', 'en');
+});
+</script>
+```
+
+#### Recreation Potential
+
+<!-- Recreation potential map for cul -->
+```{=html}
+<div class="map-container" id="culRec">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culRec', 'data/es/cul-rec-2020.png', 'en');
+});
+</script>
+```
+
+#### Pollinator Abundance
+
+<!-- pollination map for cul -->
+```{=html}
+<div class="map-container" id="culPol">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culPol', 'data/es/cul-pol-2020.png', 'en');
+});
+</script>
+```
+
+#### Water Regulation
+
+<!-- Water regulation map for cul -->
+```{=html}
+<div class="map-container" id="culWy">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culWy', 'data/es/cul-wy-2020.png', 'en');
+});
+</script>
+```
+
+#### Sediment Retention
+<!-- Sediment retention map for cul -->
+```{=html}
+<div class="map-container" id="culSdr">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culSdr', 'data/es/cul-sdr-2020.png', 'en');
+});
+</script>
+```
+
+#### Nutrient Retention
+```{=html}
+<div class="map-container" id="culNdr">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culNdr', 'data/es/cul-ndr-2020.png', 'en');
+});
+</script>
+```
+
+#### Emblematic Species
+```{=html}
+<div class="map-container" id="culId">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culId', 'data/es/cul-id-2020.png', 'en');
+});
+</script>
+```
+
+#### Biodiversity
+```{=html}
+<div class="map-container" id="culBio">
+  <canvas style="width:100%; height:100%; display:block;"></canvas>
+  <div class="zoom">
+    <button class="out">-</button>
+    <button class="in">+</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  createInteractiveMap('culId', 'data/es/cul-bio-2020.png', 'en');
+});
+</script>
+```
+::::
 :::
