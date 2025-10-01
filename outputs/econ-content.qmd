@@ -16,7 +16,6 @@
 ```
 ::::
 
-
 :::: {.content-cell data-scenario="nature" data-subject="econ"}
 ```{=html}
 <div class="chart-container">
